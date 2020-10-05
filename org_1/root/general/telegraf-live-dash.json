@@ -80,6 +80,78 @@
       "timeShift": null,
       "title": "Panel Title",
       "type": "graph3"
+    },
+    {
+      "datasource": "-- Grafana --",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "axis": {
+              "grid": true,
+              "label": "",
+              "side": 3,
+              "width": 60
+            },
+            "bars": {
+              "show": false
+            },
+            "fill": {
+              "alpha": 0.1
+            },
+            "filterable": false,
+            "line": {
+              "show": true,
+              "width": 1
+            },
+            "nullValues": "null",
+            "points": {
+              "radius": 4,
+              "show": false
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.0-pre",
+      "targets": [
+        {
+          "channel": "telegraf",
+          "measurements": {
+            "name": ""
+          },
+          "queryType": "measurements",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "table"
     }
   ],
   "schemaVersion": 26,
