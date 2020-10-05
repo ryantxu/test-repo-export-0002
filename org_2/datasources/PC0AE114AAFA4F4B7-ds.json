@@ -1,0 +1,23 @@
+{
+  "id": 3,
+  "name": "gdev-slow-prometheus",
+  "type": "prometheus",
+  "access": "proxy",
+  "url": "http://localhost:3011",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "manageAlerts": false
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "PC0AE114AAFA4F4B7",
+  "created": "2020-10-05T11:17:31-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
