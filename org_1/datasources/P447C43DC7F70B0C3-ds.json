@@ -1,0 +1,28 @@
+{
+  "id": 17,
+  "name": "gdev-elasticsearch-v7-filebeat",
+  "type": "elasticsearch",
+  "access": "proxy",
+  "url": "http://localhost:12200",
+  "user": "",
+  "database": "[filebeat-]YYYY.MM.DD",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "esVersion": "7.10.0",
+    "interval": "Daily",
+    "logLevelField": "fields.level",
+    "logMessageField": "message",
+    "timeField": "@timestamp",
+    "timeInterval": "10s"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "P447C43DC7F70B0C3",
+  "created": "2020-10-05T11:17:31-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
