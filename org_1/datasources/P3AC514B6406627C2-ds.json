@@ -1,0 +1,21 @@
+{
+  "id": 22,
+  "name": "gdev-mssql-ds-tests",
+  "type": "mssql",
+  "access": "proxy",
+  "url": "localhost:1433",
+  "user": "grafana",
+  "database": "grafanatest",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "P3AC514B6406627C2",
+  "created": "2020-10-05T11:17:31-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
