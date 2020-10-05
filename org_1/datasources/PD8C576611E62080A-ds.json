@@ -1,0 +1,21 @@
+{
+  "id": 4,
+  "name": "gdev-testdata",
+  "type": "testdata",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": true,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "PD8C576611E62080A",
+  "created": "2020-10-05T11:17:31-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
