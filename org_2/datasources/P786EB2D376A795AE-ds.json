@@ -1,0 +1,21 @@
+{
+  "id": 20,
+  "name": "gdev-mysql-ds-tests",
+  "type": "mysql",
+  "access": "proxy",
+  "url": "localhost:3306",
+  "user": "grafana",
+  "database": "grafana_ds_tests",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "P786EB2D376A795AE",
+  "created": "2020-10-05T11:17:31-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
