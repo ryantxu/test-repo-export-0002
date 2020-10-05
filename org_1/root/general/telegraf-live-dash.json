@@ -49,74 +49,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 4,
-      "options": {
-        "legend": {
-          "asTable": false,
-          "isVisible": true,
-          "placement": "bottom"
-        },
-        "tooltipOptions": {
-          "mode": "single"
-        }
-      },
-      "pluginVersion": "7.3.0-pre",
-      "targets": [
-        {
-          "channel": "telegraf",
-          "measurements": {
-            "name": "system"
-          },
-          "queryType": "measurements",
-          "refId": "A"
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Panel Title",
-      "type": "graph3"
-    },
-    {
-      "datasource": "-- Grafana --",
-      "fieldConfig": {
-        "defaults": {
-          "custom": {
-            "axis": {
-              "grid": true,
-              "label": "",
-              "side": 3,
-              "width": 60
-            },
-            "bars": {
-              "show": false
-            },
-            "fill": {
-              "alpha": 0.1
-            },
-            "line": {
-              "show": true,
-              "width": 1
-            },
-            "nullValues": "null",
-            "points": {
-              "radius": 4,
-              "show": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": []
-      },
-      "gridPos": {
         "h": 11,
         "w": 24,
         "x": 0,
-        "y": 8
+        "y": 0
       },
       "id": 2,
       "options": {
@@ -153,7 +89,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-30s",
     "to": "now"
   },
   "timepicker": {},
