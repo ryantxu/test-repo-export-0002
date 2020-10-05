@@ -1,0 +1,25 @@
+{
+  "id": 16,
+  "name": "gdev-elasticsearch-v7-logs",
+  "type": "elasticsearch",
+  "access": "proxy",
+  "url": "http://localhost:12200",
+  "user": "",
+  "database": "[logs-]YYYY.MM.DD",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "esVersion": "7.10.0",
+    "interval": "Daily",
+    "timeField": "@timestamp"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "PA21C45C6A8494F0F",
+  "created": "2020-10-05T11:17:31-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
