@@ -141,9 +141,7 @@
       "targets": [
         {
           "channel": "telegraf",
-          "measurements": {
-            "name": ""
-          },
+          "measurements": {},
           "queryType": "measurements",
           "refId": "A"
         }
