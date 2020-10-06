@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -53,7 +52,9 @@
       },
       "id": 2,
       "options": {
-        "displayMode": "lcd",
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
         "orientation": "horizontal",
         "reduceOptions": {
           "calcs": [
@@ -62,7 +63,7 @@
           "fields": "",
           "values": false
         },
-        "showUnfilled": true
+        "textMode": "auto"
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
@@ -74,7 +75,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
-      "type": "bargauge"
+      "type": "stat"
     }
   ],
   "schemaVersion": 26,
