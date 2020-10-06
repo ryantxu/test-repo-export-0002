@@ -94,6 +94,30 @@
                 "value": "Polution"
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "temp oakland"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "fahrenheit"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "wind oakland"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "velocitymph"
+              }
+            ]
           }
         ]
       },
@@ -125,13 +149,16 @@
       "targets": [
         {
           "channel": "iqair",
+          "measurements": {
+            "name": ""
+          },
           "queryType": "measurements",
           "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Panel Title",
+      "title": "Oakland",
       "type": "gauge"
     }
   ],
