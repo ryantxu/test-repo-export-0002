@@ -104,6 +104,10 @@
               {
                 "id": "unit",
                 "value": "fahrenheit"
+              },
+              {
+                "id": "displayName",
+                "value": "Temperature"
               }
             ]
           },
@@ -116,6 +120,10 @@
               {
                 "id": "unit",
                 "value": "velocitymph"
+              },
+              {
+                "id": "displayName",
+                "value": "Wind Speed"
               }
             ]
           }
