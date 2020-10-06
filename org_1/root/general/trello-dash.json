@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -27,8 +26,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 14,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -37,7 +36,7 @@
         "board": {
           "cardDraggable": true,
           "collapsibleLanes": false,
-          "editable": false,
+          "editable": true,
           "laneDraggable": true
         },
         "source": {
