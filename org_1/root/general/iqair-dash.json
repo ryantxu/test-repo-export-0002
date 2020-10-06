@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -23,6 +22,7 @@
       "fieldConfig": {
         "defaults": {
           "custom": {},
+          "displayName": "${__field.name}",
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
