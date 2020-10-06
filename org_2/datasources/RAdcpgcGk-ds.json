@@ -1,0 +1,21 @@
+{
+  "id": 31,
+  "name": "Oracle Cloud Infrastructure Metrics",
+  "type": "oci-metrics-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "RAdcpgcGk",
+  "created": "2020-10-05T17:31:30-07:00",
+  "updated": "2020-10-05T17:31:30-07:00"
+}
