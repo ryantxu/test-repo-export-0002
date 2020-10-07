@@ -55,8 +55,8 @@
       "options": {
         "colorMode": "value",
         "fixAlignment": {
-          "text": "76",
-          "title": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          "text": "",
+          "title": ""
         },
         "graphMode": "area",
         "justifyMode": "auto",
