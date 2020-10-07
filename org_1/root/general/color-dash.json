@@ -54,6 +54,10 @@
       "id": 2,
       "options": {
         "colorMode": "value",
+        "fixAlignment": {
+          "text": "76",
+          "title": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        },
         "graphMode": "area",
         "justifyMode": "auto",
         "orientation": "horizontal",
