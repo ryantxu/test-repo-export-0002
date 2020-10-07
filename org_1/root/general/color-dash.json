@@ -40,8 +40,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 12,
-        "w": 4,
+        "h": 7,
+        "w": 6,
         "x": 0,
         "y": 0
       },
@@ -60,7 +60,7 @@
           "fields": "",
           "values": false
         },
-        "showUnfilled": true
+        "showUnfilled": false
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
@@ -114,7 +114,7 @@
         "h": 12,
         "w": 16,
         "x": 0,
-        "y": 12
+        "y": 7
       },
       "id": 2,
       "options": {
