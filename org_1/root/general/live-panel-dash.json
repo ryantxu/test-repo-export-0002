@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -33,6 +32,13 @@
         "y": 0
       },
       "id": 2,
+      "options": {
+        "channel": {
+          "namespace": "testdata",
+          "path": "random-2s-stream",
+          "scope": "grafana"
+        }
+      },
       "pluginVersion": "7.3.0-pre",
       "targets": [
         {
