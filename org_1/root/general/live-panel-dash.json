@@ -43,6 +43,21 @@
           "show": true
         },
         "publish": {
+          "json": {
+            "measures": [
+              {
+                "labels": {
+                  "city": "oakland"
+                },
+                "name": "name",
+                "values": {
+                  "aiq": 44,
+                  "temp": 44.2,
+                  "wind": 4.2
+                }
+              }
+            ]
+          },
           "show": true
         },
         "status": {
