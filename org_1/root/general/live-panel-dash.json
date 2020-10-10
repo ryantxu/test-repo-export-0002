@@ -34,8 +34,7 @@
       "id": 2,
       "options": {
         "channel": {
-          "namespace": "testdata",
-          "path": "random-2s-stream",
+          "namespace": "broadcast",
           "scope": "grafana"
         },
         "message": {
