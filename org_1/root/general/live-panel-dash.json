@@ -26,8 +26,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 20,
+        "w": 16,
         "x": 0,
         "y": 0
       },
@@ -37,6 +37,16 @@
           "namespace": "testdata",
           "path": "random-2s-stream",
           "scope": "grafana"
+        },
+        "message": {
+          "mode": "json",
+          "show": true
+        },
+        "publish": {
+          "show": true
+        },
+        "status": {
+          "show": true
         }
       },
       "pluginVersion": "7.3.0-pre",
