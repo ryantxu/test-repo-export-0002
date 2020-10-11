@@ -27,7 +27,7 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 10,
+        "w": 13,
         "x": 0,
         "y": 0
       },
@@ -38,8 +38,59 @@
           "path": "oak",
           "scope": "grafana"
         },
+        "json": {
+          "measures": [
+            {
+              "config": {
+                "aiq": {
+                  "max": 350,
+                  "min": 0,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": null
+                      },
+                      {
+                        "color": "yellow",
+                        "value": 50
+                      },
+                      {
+                        "color": "orange",
+                        "value": 100
+                      },
+                      {
+                        "color": "red",
+                        "value": 150
+                      },
+                      {
+                        "color": "purple",
+                        "value": 200
+                      },
+                      {
+                        "color": "dark-red",
+                        "value": 300
+                      }
+                    ]
+                  },
+                  "unit": "US AQI"
+                }
+              },
+              "labels": {
+                "city": "oakland"
+              },
+              "name": "name",
+              "values": {
+                "aiq": 44,
+                "temp": 44.2,
+                "wind": 4.2
+              }
+            }
+          ]
+        },
         "message": "json",
-        "publish": false,
+        "publish": true,
         "status": "dis"
       },
       "pluginVersion": "7.3.0-pre",
