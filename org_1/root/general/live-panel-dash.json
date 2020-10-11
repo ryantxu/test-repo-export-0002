@@ -38,10 +38,7 @@
           "path": "oak",
           "scope": "grafana"
         },
-        "message": {
-          "mode": "json",
-          "show": true
-        },
+        "message": "json",
         "publish": {
           "json": {
             "measures": [
@@ -104,9 +101,7 @@
           },
           "show": true
         },
-        "status": {
-          "show": true
-        }
+        "status": "dis"
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
