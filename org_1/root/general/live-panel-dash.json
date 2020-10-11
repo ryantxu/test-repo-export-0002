@@ -26,8 +26,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 20,
-        "w": 16,
+        "h": 8,
+        "w": 10,
         "x": 0,
         "y": 0
       },
@@ -39,68 +39,7 @@
           "scope": "grafana"
         },
         "message": "json",
-        "publish": {
-          "json": {
-            "measures": [
-              {
-                "config": {
-                  "aiq": {
-                    "max": 350,
-                    "min": 0,
-                    "thresholds": {
-                      "mode": "absolute",
-                      "steps": [
-                        {
-                          "color": "green",
-                          "value": null
-                        },
-                        {
-                          "color": "yellow",
-                          "value": 50
-                        },
-                        {
-                          "color": "orange",
-                          "value": 100
-                        },
-                        {
-                          "color": "red",
-                          "value": 150
-                        },
-                        {
-                          "color": "purple",
-                          "value": 200
-                        },
-                        {
-                          "color": "dark-red",
-                          "value": 300
-                        }
-                      ]
-                    },
-                    "unit": "US AQI"
-                  },
-                  "temp": {
-                    "displayName": "Temperature",
-                    "unit": "fahrenheit"
-                  },
-                  "wind": {
-                    "displayName": "Wind speed",
-                    "unit": "velocitymph"
-                  }
-                },
-                "labels": {
-                  "city": "oakland"
-                },
-                "name": "name",
-                "values": {
-                  "aiq": 44,
-                  "temp": 44.2,
-                  "wind": 4.2
-                }
-              }
-            ]
-          },
-          "show": true
-        },
+        "publish": false,
         "status": "dis"
       },
       "pluginVersion": "7.3.0-pre",
