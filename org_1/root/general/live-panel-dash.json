@@ -18,57 +18,6 @@
   "links": [],
   "panels": [
     {
-      "datasource": "-- Grafana --",
-      "fieldConfig": {
-        "defaults": {
-          "custom": {
-            "align": null,
-            "filterable": false
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 4,
-      "options": {
-        "showHeader": true
-      },
-      "pluginVersion": "7.3.0-pre",
-      "targets": [
-        {
-          "channel": "oak",
-          "measurements": {
-            "name": ""
-          },
-          "queryType": "measurements",
-          "refId": "A"
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Panel Title",
-      "type": "table"
-    },
-    {
       "datasource": null,
       "fieldConfig": {
         "defaults": {
@@ -80,7 +29,7 @@
         "h": 8,
         "w": 13,
         "x": 0,
-        "y": 8
+        "y": 0
       },
       "id": 2,
       "options": {
