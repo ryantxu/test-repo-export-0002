@@ -34,8 +34,8 @@
       "id": 2,
       "options": {
         "channel": {
-          "namespace": "broadcast",
-          "path": "aaa",
+          "namespace": "measurements",
+          "path": "oak",
           "scope": "grafana"
         },
         "message": {
@@ -46,6 +46,50 @@
           "json": {
             "measures": [
               {
+                "config": {
+                  "aiq": {
+                    "max": 350,
+                    "min": 0,
+                    "thresholds": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green",
+                          "value": null
+                        },
+                        {
+                          "color": "yellow",
+                          "value": 50
+                        },
+                        {
+                          "color": "orange",
+                          "value": 100
+                        },
+                        {
+                          "color": "red",
+                          "value": 150
+                        },
+                        {
+                          "color": "purple",
+                          "value": 200
+                        },
+                        {
+                          "color": "dark-red",
+                          "value": 300
+                        }
+                      ]
+                    },
+                    "unit": "US AQI"
+                  },
+                  "temp": {
+                    "displayName": "Temperature",
+                    "unit": "fahrenheit"
+                  },
+                  "wind": {
+                    "displayName": "Wind speed",
+                    "unit": "velocitymph"
+                  }
+                },
                 "labels": {
                   "city": "oakland"
                 },
