@@ -132,7 +132,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "-- Dashboard --",
+      "datasource": "-- Grafana --",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -183,8 +183,8 @@
       },
       "gridPos": {
         "h": 7,
-        "w": 6,
-        "x": 18,
+        "w": 8,
+        "x": 16,
         "y": 0
       },
       "id": 6,
@@ -194,8 +194,8 @@
       "pluginVersion": "7.3.0-pre",
       "targets": [
         {
-          "panelId": 4,
-          "queryType": "randomWalk",
+          "channel": "aqi",
+          "queryType": "measurements",
           "refId": "A"
         }
       ],
