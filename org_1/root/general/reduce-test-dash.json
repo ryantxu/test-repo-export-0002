@@ -50,6 +50,7 @@
       },
       "id": 2,
       "options": {
+        "frameIndex": 2,
         "showHeader": true
       },
       "pluginVersion": "7.3.0-pre",
@@ -77,7 +78,8 @@
             "includeTimeField": false,
             "mode": "reduceFields",
             "reducers": [
-              "lastNotNull"
+              "lastNotNull",
+              "first"
             ]
           }
         }
