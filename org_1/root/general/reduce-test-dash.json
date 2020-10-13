@@ -74,7 +74,8 @@
         {
           "id": "reduce",
           "options": {
-            "includeTimeField": false,
+            "includeTimeField": true,
+            "mode": "reduceFields",
             "reducers": [
               "lastNotNull"
             ]
