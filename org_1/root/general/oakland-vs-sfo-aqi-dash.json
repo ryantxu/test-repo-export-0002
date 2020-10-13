@@ -270,7 +270,7 @@
               },
               "name": "oakland",
               "values": {
-                "value": 100
+                "value": 150
               }
             }
           ]
@@ -353,7 +353,7 @@
               },
               "name": "sfo",
               "values": {
-                "value": 30
+                "value": 90
               }
             }
           ]
