@@ -135,46 +135,18 @@
       "datasource": "-- Grafana --",
       "fieldConfig": {
         "defaults": {
-          "color": {
-            "mode": "continuous-GrYlRd"
-          },
-          "custom": {
-            "align": null,
-            "filterable": false
-          },
+          "custom": {},
           "mappings": [],
-          "max": 50,
-          "min": -50,
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "red",
+                "color": "green",
                 "value": null
               },
               {
-                "color": "#EAB839",
-                "value": -50
-              },
-              {
-                "color": "#6ED0E0",
-                "value": -25
-              },
-              {
-                "color": "green",
-                "value": -10
-              },
-              {
-                "color": "green",
-                "value": 10
-              },
-              {
-                "color": "#1F78C1",
-                "value": 25
-              },
-              {
-                "color": "#BA43A9",
-                "value": 50
+                "color": "red",
+                "value": 80
               }
             ]
           }
@@ -187,23 +159,34 @@
         "x": 16,
         "y": 0
       },
-      "id": 6,
+      "id": 9,
       "options": {
-        "showHeader": true
+        "displayMode": "gradient",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
         {
           "channel": "aqi",
+          "measurements": {
+            "name": ""
+          },
           "queryType": "measurements",
           "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Oakland",
-      "transformations": [],
-      "type": "table"
+      "title": "San Francisco",
+      "type": "bargauge"
     },
     {
       "datasource": null,
@@ -370,6 +353,165 @@
       "timeShift": null,
       "title": " POST SFO",
       "type": "live"
+    },
+    {
+      "datasource": "-- Grafana --",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "max": 50,
+          "min": -50,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "#EAB839",
+                "value": -50
+              },
+              {
+                "color": "#6ED0E0",
+                "value": -25
+              },
+              {
+                "color": "green",
+                "value": -10
+              },
+              {
+                "color": "green",
+                "value": 10
+              },
+              {
+                "color": "#1F78C1",
+                "value": 25
+              },
+              {
+                "color": "#BA43A9",
+                "value": 50
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 8,
+        "x": 16,
+        "y": 7
+      },
+      "id": 6,
+      "options": {
+        "frameIndex": 0,
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.0-pre",
+      "targets": [
+        {
+          "channel": "aqi",
+          "queryType": "measurements",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Oakland",
+      "transformations": [],
+      "type": "table"
+    },
+    {
+      "datasource": "-- Grafana --",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "max": 50,
+          "min": -50,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "#EAB839",
+                "value": -50
+              },
+              {
+                "color": "#6ED0E0",
+                "value": -25
+              },
+              {
+                "color": "green",
+                "value": -10
+              },
+              {
+                "color": "green",
+                "value": 10
+              },
+              {
+                "color": "#1F78C1",
+                "value": 25
+              },
+              {
+                "color": "#BA43A9",
+                "value": 50
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 8,
+        "x": 16,
+        "y": 14
+      },
+      "id": 8,
+      "options": {
+        "frameIndex": 0,
+        "showHeader": true
+      },
+      "pluginVersion": "7.3.0-pre",
+      "targets": [
+        {
+          "channel": "aqi",
+          "queryType": "measurements",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Oakland",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "lastNotNull"
+            ]
+          }
+        }
+      ],
+      "type": "table"
     }
   ],
   "schemaVersion": 26,
