@@ -185,7 +185,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "San Francisco",
+      "title": "All Readings",
       "type": "bargauge"
     },
     {
@@ -197,7 +197,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 11,
+        "h": 13,
         "w": 8,
         "x": 0,
         "y": 7
@@ -250,7 +250,7 @@
               },
               "name": "oakland",
               "values": {
-                "value": 290
+                "value": 20
               }
             }
           ]
@@ -280,7 +280,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 11,
+        "h": 13,
         "w": 8,
         "x": 8,
         "y": 7
@@ -333,7 +333,7 @@
               },
               "name": "sfo",
               "values": {
-                "value": 40
+                "value": 60
               }
             }
           ]
@@ -353,6 +353,116 @@
       "timeShift": null,
       "title": " POST SFO",
       "type": "live"
+    },
+    {
+      "datasource": "-- Grafana --",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              },
+              {
+                "color": "semi-dark-green",
+                "value": -20
+              },
+              {
+                "color": "super-light-green",
+                "value": -10
+              },
+              {
+                "color": "light-yellow",
+                "value": 10
+              },
+              {
+                "color": "dark-yellow",
+                "value": 20
+              },
+              {
+                "color": "semi-dark-red",
+                "value": 30
+              }
+            ]
+          },
+          "unit": "AQI"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 7
+      },
+      "id": 8,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.3.0-pre",
+      "targets": [
+        {
+          "channel": "aqi",
+          "queryType": "measurements",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Difference (OAK vs SFO)",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "includeTimeField": false,
+            "mode": "reduceFields",
+            "reducers": [
+              "lastNotNull"
+            ]
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "OAK vs SFO",
+            "binary": {
+              "left": "oakland",
+              "operator": "-",
+              "reducer": "sum",
+              "right": "sfo"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            },
+            "replaceFields": true
+          }
+        }
+      ],
+      "type": "stat"
     },
     {
       "datasource": "-- Grafana --",
@@ -408,11 +518,11 @@
         "h": 7,
         "w": 8,
         "x": 16,
-        "y": 7
+        "y": 13
       },
       "id": 6,
       "options": {
-        "frameIndex": 0,
+        "frameIndex": 1,
         "showHeader": true
       },
       "pluginVersion": "7.3.0-pre",
@@ -425,92 +535,8 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Oakland",
+      "title": "Raw Readings",
       "transformations": [],
-      "type": "table"
-    },
-    {
-      "datasource": "-- Grafana --",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "continuous-GrYlRd"
-          },
-          "custom": {
-            "align": null,
-            "filterable": false
-          },
-          "mappings": [],
-          "max": 50,
-          "min": -50,
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "red",
-                "value": null
-              },
-              {
-                "color": "#EAB839",
-                "value": -50
-              },
-              {
-                "color": "#6ED0E0",
-                "value": -25
-              },
-              {
-                "color": "green",
-                "value": -10
-              },
-              {
-                "color": "green",
-                "value": 10
-              },
-              {
-                "color": "#1F78C1",
-                "value": 25
-              },
-              {
-                "color": "#BA43A9",
-                "value": 50
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 11,
-        "w": 8,
-        "x": 16,
-        "y": 14
-      },
-      "id": 8,
-      "options": {
-        "frameIndex": 0,
-        "showHeader": true
-      },
-      "pluginVersion": "7.3.0-pre",
-      "targets": [
-        {
-          "channel": "aqi",
-          "queryType": "measurements",
-          "refId": "A"
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Oakland",
-      "transformations": [
-        {
-          "id": "reduce",
-          "options": {
-            "reducers": [
-              "lastNotNull"
-            ]
-          }
-        }
-      ],
       "type": "table"
     }
   ],
