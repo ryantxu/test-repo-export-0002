@@ -40,8 +40,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
-        "w": 9,
+        "h": 7,
+        "w": 8,
         "x": 0,
         "y": 0
       },
@@ -97,9 +97,9 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
-        "w": 9,
-        "x": 9,
+        "h": 7,
+        "w": 8,
+        "x": 8,
         "y": 0
       },
       "id": 7,
@@ -128,11 +128,11 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Oakland",
+      "title": "San Francisco",
       "type": "gauge"
     },
     {
-      "datasource": "-- Grafana --",
+      "datasource": "-- Dashboard --",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -194,11 +194,8 @@
       "pluginVersion": "7.3.0-pre",
       "targets": [
         {
-          "channel": "aqi",
-          "measurements": {
-            "name": ""
-          },
-          "queryType": "measurements",
+          "panelId": 4,
+          "queryType": "randomWalk",
           "refId": "A"
         }
       ],
@@ -218,9 +215,9 @@
       },
       "gridPos": {
         "h": 11,
-        "w": 9,
+        "w": 8,
         "x": 0,
-        "y": 6
+        "y": 7
       },
       "id": 2,
       "options": {
@@ -270,7 +267,7 @@
               },
               "name": "oakland",
               "values": {
-                "value": 150
+                "value": 290
               }
             }
           ]
@@ -301,9 +298,9 @@
       },
       "gridPos": {
         "h": 11,
-        "w": 9,
-        "x": 9,
-        "y": 6
+        "w": 8,
+        "x": 8,
+        "y": 7
       },
       "id": 5,
       "options": {
@@ -353,7 +350,7 @@
               },
               "name": "sfo",
               "values": {
-                "value": 90
+                "value": 40
               }
             }
           ]
