@@ -174,7 +174,7 @@
               }
             ]
           },
-          "unit": "AQI"
+          "unit": "none"
         },
         "overrides": []
       },
@@ -186,8 +186,18 @@
       },
       "id": 8,
       "options": {
-        "frameIndex": 0,
-        "showHeader": true
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
@@ -207,7 +217,7 @@
             "includeTimeField": false,
             "mode": "reduceFields",
             "reducers": [
-              "max"
+              "lastNotNull"
             ]
           }
         },
@@ -217,9 +227,26 @@
             "frameNameLabel": "frame",
             "frameNameMode": "field"
           }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "delta",
+            "binary": {
+              "left": "oakland",
+              "operator": "-",
+              "reducer": "sum",
+              "right": "sfo"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            },
+            "replaceFields": true
+          }
         }
       ],
-      "type": "table"
+      "type": "stat"
     },
     {
       "datasource": null,
@@ -283,7 +310,7 @@
               },
               "name": "oakland",
               "values": {
-                "Value": 20
+                "Value": 45
               }
             }
           ]
@@ -366,7 +393,7 @@
               },
               "name": "sfo",
               "values": {
-                "Value": 90
+                "Value": 26
               }
             }
           ]
