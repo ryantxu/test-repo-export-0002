@@ -207,7 +207,9 @@
   ],
   "schemaVersion": 26,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "aqi"
+  ],
   "templating": {
     "list": []
   },
