@@ -246,7 +246,7 @@
           "measures": [
             {
               "config": {
-                "value": {
+                "Value": {
                   "max": 350,
                   "min": 0,
                   "thresholds": {
@@ -329,7 +329,7 @@
           "measures": [
             {
               "config": {
-                "value": {
+                "Value": {
                   "max": 350,
                   "min": 0,
                   "thresholds": {
