@@ -186,18 +186,8 @@
       },
       "id": 8,
       "options": {
-        "colorMode": "background",
-        "graphMode": "area",
-        "justifyMode": "auto",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "textMode": "auto"
+        "frameIndex": 0,
+        "showHeader": true
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
@@ -217,29 +207,19 @@
             "includeTimeField": false,
             "mode": "reduceFields",
             "reducers": [
-              "lastNotNull"
+              "max"
             ]
           }
         },
         {
-          "id": "calculateField",
+          "id": "concatenate",
           "options": {
-            "alias": "OAK vs SFO",
-            "binary": {
-              "left": "oakland",
-              "operator": "-",
-              "reducer": "sum",
-              "right": "sfo"
-            },
-            "mode": "binary",
-            "reduce": {
-              "reducer": "sum"
-            },
-            "replaceFields": true
+            "frameNameLabel": "frame",
+            "frameNameMode": "field"
           }
         }
       ],
-      "type": "stat"
+      "type": "table"
     },
     {
       "datasource": null,
@@ -303,7 +283,7 @@
               },
               "name": "oakland",
               "values": {
-                "value": 20
+                "Value": 20
               }
             }
           ]
@@ -386,7 +366,7 @@
               },
               "name": "sfo",
               "values": {
-                "value": 90
+                "Value": 90
               }
             }
           ]
