@@ -15,7 +15,15 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "links": [],
+  "links": [
+    {
+      "icon": "external link",
+      "tags": [
+        "aqi"
+      ],
+      "type": "dashboards"
+    }
+  ],
   "panels": [
     {
       "datasource": "-- Grafana --",
@@ -549,7 +557,9 @@
   ],
   "schemaVersion": 26,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "aqi"
+  ],
   "templating": {
     "list": []
   },
