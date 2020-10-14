@@ -135,21 +135,46 @@
       "datasource": "-- Grafana --",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
           "mappings": [],
+          "max": 100,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "dark-green",
                 "value": null
               },
               {
-                "color": "red",
-                "value": 80
+                "color": "semi-dark-green",
+                "value": -20
+              },
+              {
+                "color": "super-light-green",
+                "value": -10
+              },
+              {
+                "color": "light-yellow",
+                "value": 10
+              },
+              {
+                "color": "dark-yellow",
+                "value": 20
+              },
+              {
+                "color": "semi-dark-red",
+                "value": 30
               }
             ]
-          }
+          },
+          "unit": "AQI"
         },
         "overrides": []
       },
@@ -159,9 +184,11 @@
         "x": 16,
         "y": 0
       },
-      "id": 9,
+      "id": 8,
       "options": {
-        "displayMode": "gradient",
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -170,23 +197,49 @@
           "fields": "",
           "values": false
         },
-        "showUnfilled": true
+        "textMode": "auto"
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
         {
           "channel": "aqi",
-          "measurements": {
-            "name": ""
-          },
           "queryType": "measurements",
           "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "All Readings",
-      "type": "bargauge"
+      "title": "Difference (OAK vs SFO)",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "includeTimeField": false,
+            "mode": "reduceFields",
+            "reducers": [
+              "lastNotNull"
+            ]
+          }
+        },
+        {
+          "id": "calculateField",
+          "options": {
+            "alias": "OAK vs SFO",
+            "binary": {
+              "left": "oakland",
+              "operator": "-",
+              "reducer": "sum",
+              "right": "sfo"
+            },
+            "mode": "binary",
+            "reduce": {
+              "reducer": "sum"
+            },
+            "replaceFields": true
+          }
+        }
+      ],
+      "type": "stat"
     },
     {
       "datasource": null,
@@ -333,7 +386,7 @@
               },
               "name": "sfo",
               "values": {
-                "value": 60
+                "value": 90
               }
             }
           ]
@@ -358,60 +411,33 @@
       "datasource": "-- Grafana --",
       "fieldConfig": {
         "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "custom": {
-            "align": null,
-            "filterable": false
-          },
+          "custom": {},
           "mappings": [],
-          "max": 100,
-          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "dark-green",
+                "color": "green",
                 "value": null
               },
               {
-                "color": "semi-dark-green",
-                "value": -20
-              },
-              {
-                "color": "super-light-green",
-                "value": -10
-              },
-              {
-                "color": "light-yellow",
-                "value": 10
-              },
-              {
-                "color": "dark-yellow",
-                "value": 20
-              },
-              {
-                "color": "semi-dark-red",
-                "value": 30
+                "color": "red",
+                "value": 80
               }
             ]
-          },
-          "unit": "AQI"
+          }
         },
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
+        "h": 7,
         "w": 8,
         "x": 16,
         "y": 7
       },
-      "id": 8,
+      "id": 9,
       "options": {
-        "colorMode": "background",
-        "graphMode": "area",
-        "justifyMode": "auto",
+        "displayMode": "gradient",
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -420,49 +446,23 @@
           "fields": "",
           "values": false
         },
-        "textMode": "auto"
+        "showUnfilled": true
       },
       "pluginVersion": "7.3.0-pre",
       "targets": [
         {
           "channel": "aqi",
+          "measurements": {
+            "name": ""
+          },
           "queryType": "measurements",
           "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Difference (OAK vs SFO)",
-      "transformations": [
-        {
-          "id": "reduce",
-          "options": {
-            "includeTimeField": false,
-            "mode": "reduceFields",
-            "reducers": [
-              "lastNotNull"
-            ]
-          }
-        },
-        {
-          "id": "calculateField",
-          "options": {
-            "alias": "OAK vs SFO",
-            "binary": {
-              "left": "oakland",
-              "operator": "-",
-              "reducer": "sum",
-              "right": "sfo"
-            },
-            "mode": "binary",
-            "reduce": {
-              "reducer": "sum"
-            },
-            "replaceFields": true
-          }
-        }
-      ],
-      "type": "stat"
+      "title": "All Readings",
+      "type": "bargauge"
     },
     {
       "datasource": "-- Grafana --",
@@ -515,10 +515,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 6,
         "w": 8,
         "x": 16,
-        "y": 13
+        "y": 14
       },
       "id": 6,
       "options": {
