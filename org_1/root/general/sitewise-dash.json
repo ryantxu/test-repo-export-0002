@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -64,6 +63,12 @@
       "spaceLength": 10,
       "stack": false,
       "steppedLine": false,
+      "targets": [
+        {
+          "queryType": "PropertyValue",
+          "refId": "A"
+        }
+      ],
       "thresholds": [],
       "timeFrom": null,
       "timeRegions": [],
