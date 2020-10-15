@@ -66,6 +66,7 @@
       "targets": [
         {
           "alias": "",
+          "channel": "random-2s-stream",
           "csvWave": {
             "timeStep": 60,
             "valuesCSV": "0,0,2,2,1,1"
@@ -81,7 +82,7 @@
           },
           "queryType": "randomWalk",
           "refId": "A",
-          "scenarioId": "streaming_client",
+          "scenarioId": "live",
           "stream": {
             "bands": 1,
             "noise": 2.2,
