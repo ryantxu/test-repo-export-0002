@@ -65,7 +65,8 @@
       "steppedLine": false,
       "targets": [
         {
-          "assetId": "asagasdgasg",
+          "assetId": "aaaaa",
+          "propertyId": "bbbbb",
           "queryType": "PropertyValue",
           "refId": "A"
         }
