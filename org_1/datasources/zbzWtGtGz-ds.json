@@ -1,0 +1,21 @@
+{
+  "id": 36,
+  "name": "HMGRAPHITE",
+  "type": "graphite",
+  "access": "proxy",
+  "url": "https://graphite-us-central1.grafana.net/graphite",
+  "user": "",
+  "database": "",
+  "basicAuth": true,
+  "basicAuthUser": "5274",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "zbzWtGtGz",
+  "created": "2020-10-19T16:59:06-07:00",
+  "updated": "2020-10-19T16:59:37-07:00"
+}
