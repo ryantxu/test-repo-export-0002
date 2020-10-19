@@ -22,7 +22,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-saturated"
+            "mode": "palette-classic"
           },
           "custom": {
             "axis": {
@@ -119,7 +119,7 @@
       "options": {
         "showHeader": true
       },
-      "pluginVersion": "7.3.0-pre",
+      "pluginVersion": "7.4.0-pre",
       "targets": [
         {
           "channel": "telegraf",
