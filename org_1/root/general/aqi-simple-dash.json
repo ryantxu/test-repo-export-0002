@@ -66,7 +66,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "7.3.0-pre",
+      "pluginVersion": "7.4.0-pre",
       "targets": [
         {
           "channel": "aqi",
@@ -108,7 +108,7 @@
             {
               "name": "oakland",
               "values": {
-                "Value": 90
+                "aqi": 90
               }
             }
           ]
@@ -154,7 +154,7 @@
           "measures": [
             {
               "config": {
-                "Value": {
+                "aqi": {
                   "max": 350,
                   "min": 0,
                   "thresholds": {
@@ -191,7 +191,7 @@
               },
               "name": "oakland",
               "values": {
-                "Value": 20
+                "aqi": 20
               }
             }
           ]
