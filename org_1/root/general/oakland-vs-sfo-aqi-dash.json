@@ -278,10 +278,10 @@
           "scope": "grafana"
         },
         "json": {
-          "measures": [
+          "measurements": [
             {
               "config": {
-                "value": {
+                "aqi": {
                   "max": 350,
                   "min": 0,
                   "thresholds": {
@@ -318,7 +318,7 @@
               },
               "name": "oakland",
               "values": {
-                "value": 45
+                "aqi": 45
               }
             }
           ]
@@ -361,10 +361,10 @@
           "scope": "grafana"
         },
         "json": {
-          "measures": [
+          "measurements": [
             {
               "config": {
-                "value": {
+                "aqi": {
                   "max": 350,
                   "min": 0,
                   "thresholds": {
@@ -401,7 +401,7 @@
               },
               "name": "sfo",
               "values": {
-                "value": 26
+                "aqi": 26
               }
             }
           ]
