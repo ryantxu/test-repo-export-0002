@@ -241,10 +241,10 @@
           "options": {
             "alias": "delta",
             "binary": {
-              "left": "oakland",
+              "left": "oakland · aqi",
               "operator": "-",
               "reducer": "sum",
-              "right": "sfo"
+              "right": "sfo · aqi"
             },
             "mode": "binary",
             "reduce": {
