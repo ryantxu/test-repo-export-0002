@@ -71,7 +71,7 @@
         {
           "channel": "aqi",
           "measurements": {
-            "name": "oakland"
+            "name": ""
           },
           "queryType": "measurements",
           "refId": "A"
@@ -104,7 +104,7 @@
           "scope": "grafana"
         },
         "json": {
-          "measures": [
+          "measurements": [
             {
               "name": "oakland",
               "values": {
@@ -151,7 +151,7 @@
           "scope": "grafana"
         },
         "json": {
-          "measures": [
+          "measurements": [
             {
               "config": {
                 "aqi": {
