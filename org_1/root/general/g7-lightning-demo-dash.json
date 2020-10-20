@@ -18,6 +18,59 @@
   "links": [],
   "panels": [
     {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 9,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "content": "\n# Enable grafana live\n\n7.3, beta is out now\n\nfeature flag \n\n\nThink about how events can be used\n\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "alias": "",
+          "csvWave": {
+            "timeStep": 60,
+            "valuesCSV": "0,0,2,2,1,1"
+          },
+          "lines": 10,
+          "points": [],
+          "pulseWave": {
+            "offCount": 3,
+            "offValue": 1,
+            "onCount": 3,
+            "onValue": 2,
+            "timeStep": 60
+          },
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "stream": {
+            "bands": 1,
+            "noise": 2.2,
+            "speed": 250,
+            "spread": 3.5,
+            "type": "signal"
+          },
+          "stringInput": ""
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "text"
+    },
+    {
       "datasource": "gdev-testdata",
       "fieldConfig": {
         "defaults": {
@@ -52,9 +105,9 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 17,
-        "w": 13,
-        "x": 0,
+        "h": 19,
+        "w": 15,
+        "x": 9,
         "y": 0
       },
       "id": 2,
@@ -102,6 +155,112 @@
       "title": "Random walk streaming",
       "transparent": true,
       "type": "graph3"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 9,
+        "x": 0,
+        "y": 6
+      },
+      "id": 5,
+      "options": {
+        "content": "\n# Enable grafana live\n\n7.3, beta is out now\n\nfeature flag \n\n\nThink about how events can be used\n\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "alias": "",
+          "csvWave": {
+            "timeStep": 60,
+            "valuesCSV": "0,0,2,2,1,1"
+          },
+          "lines": 10,
+          "points": [],
+          "pulseWave": {
+            "offCount": 3,
+            "offValue": 1,
+            "onCount": 3,
+            "onValue": 2,
+            "timeStep": 60
+          },
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "stream": {
+            "bands": 1,
+            "noise": 2.2,
+            "speed": 250,
+            "spread": 3.5,
+            "type": "signal"
+          },
+          "stringInput": ""
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "text"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 9,
+        "x": 0,
+        "y": 12
+      },
+      "id": 6,
+      "options": {
+        "content": "\n# Enable grafana live\n\n7.3, beta is out now\n\nfeature flag \n\n\nThink about how events can be used\n\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "alias": "",
+          "csvWave": {
+            "timeStep": 60,
+            "valuesCSV": "0,0,2,2,1,1"
+          },
+          "lines": 10,
+          "points": [],
+          "pulseWave": {
+            "offCount": 3,
+            "offValue": 1,
+            "onCount": 3,
+            "onValue": 2,
+            "timeStep": 60
+          },
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "stream": {
+            "bands": 1,
+            "noise": 2.2,
+            "speed": 250,
+            "spread": 3.5,
+            "type": "signal"
+          },
+          "stringInput": ""
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "text"
     }
   ],
   "schemaVersion": 26,
@@ -111,10 +270,10 @@
     "list": []
   },
   "time": {
-    "from": "now-1m",
+    "from": "now-30s",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
-  "title": "New dashboard Copy"
+  "title": "G7 lightning demo"
 }
