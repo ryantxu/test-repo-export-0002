@@ -26,14 +26,14 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 5,
         "w": 9,
         "x": 0,
         "y": 0
       },
       "id": 4,
       "options": {
-        "content": "# Load all your data, regardless of source\n\nOff-the-shelf or custom plugins can load your data from anywhere.\n",
+        "content": "\u003cbr/\u003e\u003cbr/\u003e\n# Load all your data, regardless of source\n\nOff-the-shelf or custom plugins can load your data from anywhere.\n",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -105,7 +105,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 18,
+        "h": 19,
         "w": 15,
         "x": 9,
         "y": 0
@@ -168,7 +168,7 @@
         "h": 8,
         "w": 9,
         "x": 0,
-        "y": 4
+        "y": 5
       },
       "id": 5,
       "options": {
@@ -221,11 +221,11 @@
         "h": 6,
         "w": 9,
         "x": 0,
-        "y": 12
+        "y": 13
       },
       "id": 6,
       "options": {
-        "content": "\n# Consider new applicaitons and workflows\n\nWith the improved tools and base infrastrucute, new applications and workflows are now possible.\n",
+        "content": "\u003cbr/\u003e\u003cbr/\u003e\n\n\n# Consider new applicaitons and workflows\n\nWith the improved tools and base infrastrucute, new applications and workflows are now possible.\n",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
