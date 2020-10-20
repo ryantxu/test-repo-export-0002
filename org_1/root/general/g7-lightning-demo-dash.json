@@ -172,7 +172,7 @@
       },
       "id": 5,
       "options": {
-        "content": "# Enable grafana live (alpha in 7.2)\n\n\u003cimg src=\"https://user-images.githubusercontent.com/705951/96542238-7e46f900-1256-11eb-86b3-9f38e96b0f34.png\" /\u003e",
+        "content": "# Enable grafana live (alpha in 7.3)\n\n\u003cimg src=\"https://user-images.githubusercontent.com/705951/96542238-7e46f900-1256-11eb-86b3-9f38e96b0f34.png\" /\u003e",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
