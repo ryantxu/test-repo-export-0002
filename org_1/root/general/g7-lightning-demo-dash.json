@@ -105,7 +105,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 18,
+        "h": 20,
         "w": 15,
         "x": 9,
         "y": 0
@@ -165,14 +165,14 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
+        "h": 8,
         "w": 9,
         "x": 0,
         "y": 6
       },
       "id": 5,
       "options": {
-        "content": "\n# Enable grafana live\n\nshow feature flags\n\nin 7.2beta\n",
+        "content": "# Enable grafana live\n\n\u003cimg src=\"https://user-images.githubusercontent.com/705951/96542238-7e46f900-1256-11eb-86b3-9f38e96b0f34.png\" /\u003e",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -221,7 +221,7 @@
         "h": 6,
         "w": 9,
         "x": 0,
-        "y": 12
+        "y": 14
       },
       "id": 6,
       "options": {
