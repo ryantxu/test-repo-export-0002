@@ -15,13 +15,15 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
       "datasource": "gdev-testdata",
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
           "custom": {
             "axis": {
               "grid": true,
@@ -33,7 +35,7 @@
               "show": false
             },
             "fill": {
-              "alpha": 0.1
+              "alpha": 0
             },
             "line": {
               "show": true,
@@ -42,7 +44,7 @@
             "nullValues": "null",
             "points": {
               "radius": 4,
-              "show": false
+              "show": true
             }
           },
           "mappings": []
@@ -50,8 +52,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 15,
-        "w": 15,
+        "h": 17,
+        "w": 13,
         "x": 0,
         "y": 0
       },
@@ -97,7 +99,8 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Panel Title",
+      "title": "Random walk streaming",
+      "transparent": true,
       "type": "graph3"
     }
   ],
