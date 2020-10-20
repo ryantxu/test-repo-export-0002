@@ -58,7 +58,9 @@
   ],
   "schemaVersion": 26,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "events"
+  ],
   "templating": {
     "list": []
   },
