@@ -26,14 +26,14 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 5,
+        "h": 8,
         "w": 9,
         "x": 0,
         "y": 0
       },
       "id": 4,
       "options": {
-        "content": "\u003cbr/\u003e\u003cbr/\u003e\n# Load all your data, regardless of source\n\nOff-the-shelf or custom plugins can load your data from anywhere.\n",
+        "content": "\u003cimg style=\"float:right;\" width=\"180\" src=\"https://grafana.com/static/assets/img/blog/migrated/democratize-metrics-red.png\" /\u003e\n\u003cbr/\u003e\n\u003ch1\u003e\nDemocratize metrics\n\u003c/h1\u003e\nLoad your data from any source.  Custom or out-of-the-box plugins\n",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -168,7 +168,7 @@
         "h": 8,
         "w": 9,
         "x": 0,
-        "y": 5
+        "y": 8
       },
       "id": 5,
       "options": {
@@ -221,7 +221,7 @@
         "h": 6,
         "w": 9,
         "x": 0,
-        "y": 13
+        "y": 16
       },
       "id": 6,
       "options": {
