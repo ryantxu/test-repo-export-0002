@@ -1,0 +1,21 @@
+{
+  "id": 38,
+  "name": "InfluxDBnest",
+  "type": "influxdb",
+  "access": "proxy",
+  "url": "http://206.189.237.132:8086",
+  "user": "",
+  "database": "nest",
+  "basicAuth": true,
+  "basicAuthUser": "mac",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "ZWJItGtMk",
+  "created": "2020-10-19T17:01:33-07:00",
+  "updated": "2020-10-19T17:02:07-07:00"
+}
