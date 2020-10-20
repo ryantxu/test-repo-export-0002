@@ -143,7 +143,7 @@
           "stream": {
             "bands": 1,
             "noise": 3,
-            "speed": 100,
+            "speed": 50,
             "spread": 5,
             "type": "signal"
           },
@@ -271,7 +271,7 @@
     "list": []
   },
   "time": {
-    "from": "now-30s",
+    "from": "now-1m",
     "to": "now"
   },
   "timepicker": {},
