@@ -33,7 +33,7 @@
       },
       "id": 4,
       "options": {
-        "content": "\n# Enable grafana live\n\n7.3, beta is out now\n\nfeature flag \n\n\nThink about how events can be used\n\n",
+        "content": "Plugins let you talk to your data regardless of where it is",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -67,7 +67,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Panel Title",
+      "title": "",
       "type": "text"
     },
     {
@@ -105,7 +105,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 19,
+        "h": 18,
         "w": 15,
         "x": 9,
         "y": 0
@@ -172,7 +172,7 @@
       },
       "id": 5,
       "options": {
-        "content": "\n# Enable grafana live\n\n7.3, beta is out now\n\nfeature flag \n\n\nThink about how events can be used\n\n",
+        "content": "\n# Enable grafana live\n\nshow feature flags\n\nin 7.2beta\n",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -206,7 +206,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Panel Title",
+      "title": "",
       "type": "text"
     },
     {
@@ -225,7 +225,7 @@
       },
       "id": 6,
       "options": {
-        "content": "\n# Enable grafana live\n\n7.3, beta is out now\n\nfeature flag \n\n\nThink about how events can be used\n\n",
+        "content": "\n# Consider new applicaitons and workflows\n\nloads of effor that will support new features \n\n",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -259,10 +259,11 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Panel Title",
+      "title": "",
       "type": "text"
     }
   ],
+  "refresh": false,
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
