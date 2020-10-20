@@ -26,14 +26,14 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
+        "h": 4,
         "w": 9,
         "x": 0,
         "y": 0
       },
       "id": 4,
       "options": {
-        "content": "Plugins let you talk to your data regardless of where it is",
+        "content": "# Load all your data, regardless of source\n\nOff-the-shelf or custom plugins can load your data from anywhere.\n",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -105,7 +105,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 20,
+        "h": 18,
         "w": 15,
         "x": 9,
         "y": 0
@@ -168,11 +168,11 @@
         "h": 8,
         "w": 9,
         "x": 0,
-        "y": 6
+        "y": 4
       },
       "id": 5,
       "options": {
-        "content": "# Enable grafana live\n\n\u003cimg src=\"https://user-images.githubusercontent.com/705951/96542238-7e46f900-1256-11eb-86b3-9f38e96b0f34.png\" /\u003e",
+        "content": "# Enable grafana live (alpha in 7.2)\n\n\u003cimg src=\"https://user-images.githubusercontent.com/705951/96542238-7e46f900-1256-11eb-86b3-9f38e96b0f34.png\" /\u003e",
         "mode": "markdown"
       },
       "pluginVersion": "7.4.0-pre",
@@ -221,7 +221,7 @@
         "h": 6,
         "w": 9,
         "x": 0,
-        "y": 14
+        "y": 12
       },
       "id": 6,
       "options": {
