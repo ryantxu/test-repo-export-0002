@@ -1,0 +1,21 @@
+{
+  "id": 37,
+  "name": "HMPROM",
+  "type": "prometheus",
+  "access": "proxy",
+  "url": "https://prometheus-us-central1.grafana.net/api/prom",
+  "user": "",
+  "database": "",
+  "basicAuth": true,
+  "basicAuthUser": "8954",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "S3jGpGpMz",
+  "created": "2020-10-19T17:00:08-07:00",
+  "updated": "2020-10-19T17:00:36-07:00"
+}
