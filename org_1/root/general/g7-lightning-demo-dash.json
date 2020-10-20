@@ -142,9 +142,9 @@
           "scenarioId": "streaming_client",
           "stream": {
             "bands": 1,
-            "noise": 2.2,
+            "noise": 3,
             "speed": 100,
-            "spread": 3.5,
+            "spread": 5,
             "type": "signal"
           },
           "stringInput": ""
