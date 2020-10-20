@@ -318,7 +318,7 @@
               },
               "name": "oakland",
               "values": {
-                "aqi": 45
+                "aqi": 120
               }
             }
           ]
@@ -401,7 +401,7 @@
               },
               "name": "sfo",
               "values": {
-                "aqi": 26
+                "aqi": 200
               }
             }
           ]
