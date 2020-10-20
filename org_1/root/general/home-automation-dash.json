@@ -1,66 +1,4 @@
 {
-  "__requires": [
-    {
-      "id": "bargauge",
-      "name": "Bar gauge",
-      "type": "panel",
-      "version": ""
-    },
-    {
-      "id": "gauge",
-      "name": "Gauge",
-      "type": "panel",
-      "version": ""
-    },
-    {
-      "id": "grafana",
-      "name": "Grafana",
-      "type": "grafana",
-      "version": "7.2.1"
-    },
-    {
-      "id": "graph",
-      "name": "Graph",
-      "type": "panel",
-      "version": ""
-    },
-    {
-      "id": "graphite",
-      "name": "Graphite",
-      "type": "datasource",
-      "version": "1.0.0"
-    },
-    {
-      "id": "heatmap",
-      "name": "Heatmap",
-      "type": "panel",
-      "version": ""
-    },
-    {
-      "id": "influxdb",
-      "name": "InfluxDB",
-      "type": "datasource",
-      "version": "1.0.0"
-    },
-    {
-      "id": "prometheus",
-      "name": "Prometheus",
-      "type": "datasource",
-      "version": "1.0.0"
-    },
-    {
-      "id": "stat",
-      "name": "Stat",
-      "type": "panel",
-      "version": ""
-    },
-    {
-      "id": "table-old",
-      "name": "Table (old)",
-      "type": "panel",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -141,7 +79,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.2.1",
+      "pluginVersion": "7.4.0-pre",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -284,6 +222,7 @@
       "fieldConfig": {
         "defaults": {
           "custom": {},
+          "decimals": 1,
           "links": [],
           "mappings": [],
           "max": 75,
@@ -297,17 +236,30 @@
               },
               {
                 "color": "green",
-                "value": 68
+                "value": 69
               },
               {
                 "color": "red",
-                "value": 72
+                "value": 71
               }
             ]
           },
           "unit": "fahrenheit"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Office"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "celsius"
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 7,
@@ -318,18 +270,20 @@
       "id": 17,
       "links": [],
       "options": {
-        "displayMode": "gradient",
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
         },
-        "showUnfilled": true
+        "textMode": "auto"
       },
-      "pluginVersion": "7.2.1",
+      "pluginVersion": "7.4.0-pre",
       "targets": [
         {
           "expr": "(ecobee_temperature_actual)",
@@ -343,7 +297,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Temperatures",
-      "type": "bargauge"
+      "type": "stat"
     },
     {
       "cacheTimeout": null,
@@ -351,6 +305,7 @@
       "fieldConfig": {
         "defaults": {
           "custom": {},
+          "decimals": 1,
           "links": [],
           "mappings": [],
           "max": 75,
@@ -364,17 +319,30 @@
               },
               {
                 "color": "green",
-                "value": 68
+                "value": 69
               },
               {
                 "color": "red",
-                "value": 72
+                "value": 71
               }
             ]
           },
           "unit": "fahrenheit"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Office"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "celsius"
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 7,
@@ -382,12 +350,13 @@
         "x": 0,
         "y": 7
       },
-      "id": 16,
+      "id": 20,
       "links": [],
       "options": {
+        "orientation": "auto",
         "reduceOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "fields": "",
           "values": false
@@ -395,7 +364,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "7.2.1",
+      "pluginVersion": "7.4.0-pre",
       "targets": [
         {
           "expr": "(ecobee_temperature_actual)",
@@ -457,7 +426,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.2.1",
+      "pluginVersion": "7.4.0-pre",
       "targets": [
         {
           "panelId": 13,
@@ -541,7 +510,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "7.2.1",
+      "pluginVersion": "7.4.0-pre",
       "targets": [
         {
           "datasource": "HMPROM",
