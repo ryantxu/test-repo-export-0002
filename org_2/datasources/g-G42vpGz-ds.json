@@ -1,0 +1,24 @@
+{
+  "id": 40,
+  "name": "CloudWatch",
+  "type": "cloudwatch",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "authType": "default",
+    "defaultRegion": "us-east-2"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "g-G42vpGz",
+  "created": "2020-10-21T15:54:28-07:00",
+  "updated": "2021-11-02T12:17:36-07:00"
+}
