@@ -55,6 +55,7 @@
       "pluginVersion": "7.4.0-pre",
       "targets": [
         {
+          "assetId": "7e2d9e45-60d3-4024-bd4d-8b31125f4016",
           "filter": "TOP_LEVEL",
           "queryType": "PropertyValue",
           "refId": "A",
