@@ -55,7 +55,6 @@
       "pluginVersion": "7.4.0-pre",
       "targets": [
         {
-          "assetId": "agdasgasdg",
           "filter": "TOP_LEVEL",
           "queryType": "PropertyValue",
           "refId": "A",
