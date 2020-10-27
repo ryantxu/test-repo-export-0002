@@ -1,0 +1,26 @@
+{
+  "id": 43,
+  "name": "Open Automation Software (OAS)",
+  "type": "grafana-oas-datasource",
+  "access": "proxy",
+  "url": "http://192.168.1.197:58725/OASREST/v2",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "captureX": "/home/ryan/workspace/grafana/plugins/oas-datasource/config/demo-alarms.json\n/home/ryan/workspace/grafana/plugins/oas-datasource/config/demo-control.json\n/home/ryan/workspace/grafana/plugins/oas-datasource/config/demo-signals.json",
+    "live": "http://localhost:3000/",
+    "tagsConfig": "/home/ryan/workspace/grafana/plugins/oas-datasource/config/demo-tags.json",
+    "user": ""
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "9D2UuEtMk",
+  "created": "2020-10-26T21:01:47-07:00",
+  "updated": "2021-02-09T11:31:14-08:00"
+}
