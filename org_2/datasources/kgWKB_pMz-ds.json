@@ -1,0 +1,21 @@
+{
+  "id": 46,
+  "name": "Drone CI-1",
+  "type": "grafana-drone-datasource",
+  "access": "proxy",
+  "url": "https://drone.grafana.net/",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "kgWKB_pMz",
+  "created": "2020-10-28T08:09:07-07:00",
+  "updated": "2022-01-04T10:30:08-08:00"
+}
