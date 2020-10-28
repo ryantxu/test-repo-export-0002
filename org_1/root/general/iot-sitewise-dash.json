@@ -59,6 +59,9 @@
             "AVERAGE",
             "MAXIMUM"
           ],
+          "aggregates": [
+            "AVERAGE"
+          ],
           "assetId": "7e2d9e45-60d3-4024-bd4d-8b31125f4016",
           "filter": "TOP_LEVEL",
           "propertyId": "37c3107e-4de7-4332-832d-6db69bcea7fa",
