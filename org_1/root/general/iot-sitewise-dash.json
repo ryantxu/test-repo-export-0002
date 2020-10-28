@@ -18,6 +18,10 @@
   "links": [],
   "panels": [
     {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
       "datasource": "AWS IoT SiteWise",
       "fieldConfig": {
         "defaults": {
@@ -42,17 +46,40 @@
         },
         "overrides": []
       },
+      "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 9,
         "w": 12,
         "x": 0,
         "y": 0
       },
+      "hiddenSeries": false,
       "id": 2,
-      "options": {
-        "showHeader": true
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
       },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
       "pluginVersion": "7.4.0-pre",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
       "targets": [
         {
           "aggregates": [
@@ -60,18 +87,54 @@
           ],
           "assetId": "7e2d9e45-60d3-4024-bd4d-8b31125f4016",
           "filter": "TOP_LEVEL",
-          "propertyId": "34744e0d-1ea2-4dfb-b5d6-29a993444051",
+          "propertyId": "37c3107e-4de7-4332-832d-6db69bcea7fa",
           "queryType": "PropertyAggregate",
           "refId": "A",
           "region": "us-east-1",
-          "resolution": "AUTO",
+          "resolution": "1m",
           "timeOrdering": "ASCENDING"
         }
       ],
+      "thresholds": [],
       "timeFrom": null,
+      "timeRegions": [],
       "timeShift": null,
       "title": "Panel Title",
-      "type": "table"
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
     }
   ],
   "schemaVersion": 26,
