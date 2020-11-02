@@ -98,83 +98,6 @@
       "datasource": null,
       "fieldConfig": {
         "defaults": {
-          "custom": {},
-          "decimals": 3,
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 9,
-        "w": 12,
-        "x": 12,
-        "y": 0
-      },
-      "id": 3,
-      "options": {
-        "displayMode": "gradient",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showUnfilled": true
-      },
-      "pluginVersion": "7.4.0-pre",
-      "targets": [
-        {
-          "alias": "",
-          "channel": "random-2s-stream",
-          "csvWave": {
-            "timeStep": 60,
-            "valuesCSV": "0,0,2,2,1,1"
-          },
-          "lines": 10,
-          "points": [],
-          "pulseWave": {
-            "offCount": 3,
-            "offValue": 1,
-            "onCount": 3,
-            "onValue": 2,
-            "timeStep": 60
-          },
-          "refId": "A",
-          "scenarioId": "live",
-          "stream": {
-            "bands": 1,
-            "noise": 2.2,
-            "speed": 250,
-            "spread": 3.5,
-            "type": "signal"
-          },
-          "stringInput": ""
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Panel Title",
-      "type": "bargauge"
-    },
-    {
-      "datasource": null,
-      "fieldConfig": {
-        "defaults": {
           "custom": {
             "axis": {
               "grid": true,
@@ -220,7 +143,7 @@
         "h": 9,
         "w": 12,
         "x": 12,
-        "y": 9
+        "y": 0
       },
       "id": 4,
       "options": {
@@ -267,6 +190,85 @@
       "timeShift": null,
       "title": "Panel Title",
       "type": "graph3"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "decimals": 3,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 9
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "alias": "",
+          "channel": "random-2s-stream",
+          "csvWave": {
+            "timeStep": 60,
+            "valuesCSV": "0,0,2,2,1,1"
+          },
+          "lines": 10,
+          "points": [],
+          "pulseWave": {
+            "offCount": 3,
+            "offValue": 1,
+            "onCount": 3,
+            "onValue": 2,
+            "timeStep": 60
+          },
+          "refId": "A",
+          "scenarioId": "live",
+          "stream": {
+            "bands": 1,
+            "noise": 2.2,
+            "speed": 250,
+            "spread": 3.5,
+            "type": "signal"
+          },
+          "stringInput": ""
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "stat"
     }
   ],
   "schemaVersion": 26,
@@ -276,7 +278,7 @@
     "list": []
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-1m",
     "to": "now"
   },
   "timepicker": {},
