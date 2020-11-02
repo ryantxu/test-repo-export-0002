@@ -75,7 +75,8 @@
           "measurements": {
             "fields": [
               "id",
-              "time"
+              "time",
+              "tat_degC"
             ],
             "name": ""
           },
