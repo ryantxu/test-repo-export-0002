@@ -128,7 +128,10 @@
         {
           "channel": "aqi",
           "measurements": {
-            "name": ""
+            "fields": [
+              "bbb"
+            ],
+            "name": "oakland"
           },
           "queryType": "measurements",
           "refId": "A"
