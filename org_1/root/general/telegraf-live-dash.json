@@ -73,7 +73,7 @@
         {
           "channel": "telegraf",
           "measurements": {
-            "name": "avionics_airdata_AirData"
+            "name": ""
           },
           "queryType": "measurements",
           "refId": "A"
