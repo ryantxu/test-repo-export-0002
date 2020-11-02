@@ -73,6 +73,10 @@
         {
           "channel": "telegraf",
           "measurements": {
+            "fields": [
+              "id",
+              "time"
+            ],
             "name": ""
           },
           "queryType": "measurements",
