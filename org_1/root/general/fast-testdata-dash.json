@@ -66,7 +66,7 @@
       "targets": [
         {
           "alias": "",
-          "channel": "fast",
+          "channel": "random-2s-stream",
           "csvWave": {
             "timeStep": 60,
             "valuesCSV": "0,0,2,2,1,1"
