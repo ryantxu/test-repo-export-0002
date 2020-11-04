@@ -1,0 +1,23 @@
+{
+  "id": 54,
+  "name": "Signal Generator",
+  "type": "grafana-signal-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "captureX": "/home/ryan/workspace/grafana/plugins/signal-generator-datasource/config/demo-streams.json"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "-P1DMF2Gk",
+  "created": "2020-11-03T16:55:45-08:00",
+  "updated": "2021-04-06T14:40:48-07:00"
+}
