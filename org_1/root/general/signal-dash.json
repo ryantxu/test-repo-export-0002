@@ -29,11 +29,11 @@
         },
         "overrides": []
       },
-      "fill": 0,
+      "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 15,
-        "w": 17,
+        "h": 8,
+        "w": 12,
         "x": 0,
         "y": 0
       },
@@ -50,7 +50,6 @@
       },
       "lines": true,
       "linewidth": 1,
-      "maxDataPoints": 1000,
       "nullPointMode": "null",
       "options": {
         "alertThreshold": true
@@ -66,14 +65,18 @@
       "steppedLine": false,
       "targets": [
         {
-          "ease": "*Quad",
           "queryType": "AWG",
           "refId": "A",
-          "wave": [
+          "signals": [
             {
-              "amplitude": 1,
-              "period": "1m",
-              "type": "Sin"
+              "component": [
+                {
+                  "amplitude": 1,
+                  "period": "1h",
+                  "type": "Sawtooth"
+                }
+              ],
+              "name": ""
             }
           ]
         }
@@ -98,7 +101,7 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:113",
+          "$$hashKey": "object:174",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -107,7 +110,7 @@
           "show": true
         },
         {
-          "$$hashKey": "object:114",
+          "$$hashKey": "object:175",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -122,6 +125,7 @@
       }
     }
   ],
+  "refresh": false,
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
@@ -129,8 +133,8 @@
     "list": []
   },
   "time": {
-    "from": "now-5m",
-    "to": "now"
+    "from": "2020-11-04T17:45:54.781Z",
+    "to": "2020-11-04T17:47:55.434Z"
   },
   "timepicker": {},
   "timezone": "",
