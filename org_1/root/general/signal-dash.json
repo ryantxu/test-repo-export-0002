@@ -76,7 +76,13 @@
                   "type": "Sin"
                 }
               ],
-              "name": ""
+              "config": {
+                "unit": "percentunit"
+              },
+              "labels": {
+                "a": "b"
+              },
+              "name": "Test"
             }
           ]
         }
