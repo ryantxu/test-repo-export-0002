@@ -71,58 +71,9 @@
             {
               "component": [
                 {
-                  "amplitude": 1,
+                  "amplitude": 6,
                   "period": "1m",
                   "type": "Sin"
-                }
-              ],
-              "name": ""
-            }
-          ]
-        },
-        {
-          "queryType": "AWG",
-          "refId": "B",
-          "signals": [
-            {
-              "component": [
-                {
-                  "amplitude": 1,
-                  "period": "1m",
-                  "type": "Triangle"
-                }
-              ],
-              "name": ""
-            }
-          ]
-        },
-        {
-          "queryType": "AWG",
-          "refId": "C",
-          "signals": [
-            {
-              "component": [
-                {
-                  "amplitude": 1,
-                  "duty": 0.5,
-                  "period": "1m",
-                  "type": "Square"
-                }
-              ],
-              "name": ""
-            }
-          ]
-        },
-        {
-          "queryType": "AWG",
-          "refId": "D",
-          "signals": [
-            {
-              "component": [
-                {
-                  "amplitude": 1,
-                  "period": "1m",
-                  "type": "Sawtooth"
                 }
               ],
               "name": ""
