@@ -142,7 +142,7 @@
         },
         "overrides": []
       },
-      "fill": 1,
+      "fill": 0,
       "fillGradient": 0,
       "gridPos": {
         "h": 9,
@@ -172,14 +172,35 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "seriesOverrides": [],
+      "seriesOverrides": [
+        {
+          "$$hashKey": "object:215",
+          "alias": "max",
+          "fillBelowTo": "avg",
+          "lines": false
+        },
+        {
+          "$$hashKey": "object:220",
+          "alias": "avg",
+          "fillBelowTo": "min",
+          "lines": true,
+          "linewidth": 2
+        },
+        {
+          "$$hashKey": "object:231",
+          "alias": "min",
+          "lines": false
+        }
+      ],
       "spaceLength": 10,
       "stack": false,
       "steppedLine": false,
       "targets": [
         {
           "aggregates": [
-            "AVERAGE"
+            "AVERAGE",
+            "MINIMUM",
+            "MAXIMUM"
           ],
           "assetId": "7e2d9e45-60d3-4024-bd4d-8b31125f4016",
           "filter": "TOP_LEVEL",
@@ -187,7 +208,7 @@
           "queryType": "PropertyAggregate",
           "refId": "A",
           "region": "us-east-1",
-          "resolution": "1m",
+          "resolution": "1h",
           "timeOrdering": "ASCENDING"
         }
       ],
@@ -240,7 +261,7 @@
     "list": []
   },
   "time": {
-    "from": "now-24h",
+    "from": "now-7d",
     "to": "now"
   },
   "timepicker": {},
