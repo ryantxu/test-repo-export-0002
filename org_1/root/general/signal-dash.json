@@ -65,14 +65,14 @@
       "steppedLine": false,
       "targets": [
         {
-          "queryType": "easing",
+          "queryType": "AWG",
           "refId": "A",
           "signals": [
             {
               "component": [
                 {
                   "amplitude": 1,
-                  "period": "1h",
+                  "period": "1m",
                   "type": "Sawtooth"
                 }
               ],
@@ -133,8 +133,8 @@
     "list": []
   },
   "time": {
-    "from": "2020-11-04T17:45:54.781Z",
-    "to": "2020-11-04T17:47:55.434Z"
+    "from": "now-5m",
+    "to": "now"
   },
   "timepicker": {},
   "timezone": "",
