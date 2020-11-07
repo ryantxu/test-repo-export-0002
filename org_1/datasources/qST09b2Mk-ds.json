@@ -1,0 +1,21 @@
+{
+  "id": 55,
+  "name": "GraphQL",
+  "type": "grafana-graphql-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "qST09b2Mk",
+  "created": "2020-11-06T17:13:38-08:00",
+  "updated": "2020-11-06T17:13:49-08:00"
+}
