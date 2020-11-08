@@ -1,0 +1,21 @@
+{
+  "id": 56,
+  "name": "Grafana Work Stats",
+  "type": "grafana-workstats-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "m2M3lshMk",
+  "created": "2020-11-08T15:22:21-08:00",
+  "updated": "2020-11-08T15:22:21-08:00"
+}
