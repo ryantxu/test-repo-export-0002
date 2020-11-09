@@ -18,14 +18,32 @@
   "links": [],
   "panels": [
     {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
       "datasource": "Signal Generator",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
+          "custom": {
+            "axis": {
+              "grid": true,
+              "label": "",
+              "side": 3,
+              "width": 60
+            },
+            "bars": {
+              "show": false
+            },
+            "fill": {
+              "alpha": 0.1
+            },
+            "line": {
+              "show": true,
+              "width": 1
+            },
+            "nullValues": "null",
+            "points": {
+              "radius": 4,
+              "show": false
+            }
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -43,40 +61,34 @@
         },
         "overrides": []
       },
-      "fill": 1,
-      "fillGradient": 0,
       "gridPos": {
         "h": 9,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "hiddenSeries": false,
       "id": 2,
-      "legend": {
-        "avg": false,
-        "current": false,
-        "max": false,
-        "min": false,
-        "show": true,
-        "total": false,
-        "values": false
-      },
-      "lines": true,
-      "linewidth": 1,
-      "nullPointMode": "null",
       "options": {
-        "alertThreshold": true
+        "labelWidth": 20,
+        "sections": [
+          {
+            "values": [
+              {
+                "path": "enter.path"
+              }
+            ]
+          },
+          {
+            "values": [
+              {
+                "path": "enter.path"
+              }
+            ]
+          }
+        ],
+        "target": "ds"
       },
-      "percentage": false,
       "pluginVersion": "7.4.0-pre",
-      "pointradius": 2,
-      "points": false,
-      "renderer": "flot",
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
       "targets": [
         {
           "queryType": "AWG",
@@ -89,7 +101,7 @@
                   "offset": 0,
                   "period": "1m",
                   "phase": 0,
-                  "type": "Sin"
+                  "type": "Triangle"
                 }
               ],
               "name": "aaa"
@@ -97,46 +109,10 @@
           ]
         }
       ],
-      "thresholds": [],
       "timeFrom": null,
-      "timeRegions": [],
       "timeShift": null,
       "title": "Panel Title",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
+      "type": "form"
     }
   ],
   "schemaVersion": 26,
@@ -146,7 +122,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
