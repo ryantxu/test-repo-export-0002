@@ -15,11 +15,10 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
-      "datasource": null,
+      "datasource": "Signal Generator",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -48,9 +47,30 @@
       },
       "id": 2,
       "options": {
+        "labelWidth": 20,
         "target": "ds"
       },
       "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "queryType": "AWG",
+          "refId": "A",
+          "signals": [
+            {
+              "component": [
+                {
+                  "amplitude": 1,
+                  "offset": 0,
+                  "period": "1m",
+                  "phase": 0,
+                  "type": "Sin"
+                }
+              ],
+              "name": ""
+            }
+          ]
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
