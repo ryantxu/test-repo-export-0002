@@ -62,8 +62,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 5,
+        "w": 4,
         "x": 0,
         "y": 0
       },
@@ -74,14 +74,8 @@
           {
             "values": [
               {
-                "path": "enter.path"
-              }
-            ]
-          },
-          {
-            "values": [
-              {
-                "path": "enter.path"
+                "path": "stream.start",
+                "title": "Start Streaming"
               }
             ]
           }
