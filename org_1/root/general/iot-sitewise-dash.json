@@ -65,10 +65,19 @@
       "steppedLine": false,
       "targets": [
         {
-          "assetId": "7e2d9e45-60d3-4024-bd4d-8b31125f4016",
-          "propertyId": "aef138b9-57c7-4203-bb47-f7830eda3cae",
+          "assetId": "a9fe4e4a-e028-4be2-bd15-2f8dd0bee23b",
+          "propertyId": "a973cbe6-1fe3-43da-9c86-e72826ff076d",
           "queryType": "PropertyValueHistory",
           "refId": "A",
+          "region": "us-east-1",
+          "timeOrdering": "ASCENDING"
+        },
+        {
+          "assetId": "07412cb4-0a8b-4939-af9c-5dcb3b2933e5",
+          "propertyId": "a973cbe6-1fe3-43da-9c86-e72826ff076d",
+          "queryType": "PropertyValueHistory",
+          "refId": "B",
+          "region": "us-east-1",
           "timeOrdering": "ASCENDING"
         }
       ],
@@ -92,7 +101,7 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "format": "watt",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -254,6 +263,7 @@
       }
     }
   ],
+  "refresh": false,
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
