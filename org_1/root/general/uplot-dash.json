@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -26,13 +25,13 @@
             "mode": "palette-classic"
           },
           "custom": {
-            "axis": "auto",
+            "axis": "right",
             "axisGrid": true,
-            "axisLabel": "",
-            "axisWidth": 60,
+            "axisLabel": "asgasdga",
             "fillAlpha": 0.1,
             "line": "line",
             "lineWidth": 1,
+            "mode": "line",
             "pointRadius": 4,
             "points": "auto"
           },
@@ -54,8 +53,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 10,
+        "w": 14,
         "x": 0,
         "y": 0
       },
