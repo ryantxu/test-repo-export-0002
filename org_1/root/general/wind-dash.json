@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -34,6 +33,7 @@
       },
       "id": 2,
       "options": {
+        "speed": "A-series",
         "text": "Default value of text input option"
       },
       "pluginVersion": "7.4.0-pre",
