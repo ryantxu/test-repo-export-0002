@@ -33,6 +33,7 @@
       },
       "id": 2,
       "options": {
+        "rpmField": "A-series",
         "speed": "A-series",
         "text": "Default value of text input option"
       },
