@@ -72,19 +72,19 @@
             "fields": [
               {
                 "expr": "Sine(x)",
-                "name": "Value"
+                "name": "sine"
               },
               {
                 "expr": "Triangle(x)",
-                "name": "Value"
+                "name": "tri"
               },
               {
                 "expr": "Square(x)",
-                "name": "Value"
+                "name": "sq"
               },
               {
                 "expr": "Sawtooth(x)",
-                "name": "Value"
+                "name": "saw"
               }
             ],
             "period": "1m"
