@@ -65,12 +65,13 @@
       "steppedLine": false,
       "targets": [
         {
+          "period": "1m",
           "queryType": "AWG",
           "refId": "A",
           "signal": {
             "fields": [
               {
-                "expr": "Sine(x)*6 + 5",
+                "expr": "Sine(x)",
                 "name": "aaa"
               }
             ],
