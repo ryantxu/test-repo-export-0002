@@ -72,10 +72,18 @@
             "fields": [
               {
                 "expr": "Sine(x)",
-                "name": "aaa"
+                "name": "Value"
               },
               {
                 "expr": "Triangle(x)",
+                "name": "Value"
+              },
+              {
+                "expr": "Square(x)",
+                "name": "Value"
+              },
+              {
+                "expr": "Sawtooth(x)",
                 "name": "Value"
               }
             ],
