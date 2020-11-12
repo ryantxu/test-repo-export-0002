@@ -73,6 +73,10 @@
               {
                 "expr": "Sine(x)",
                 "name": "aaa"
+              },
+              {
+                "expr": "Triangle(x)",
+                "name": "Value"
               }
             ],
             "period": "1m"
