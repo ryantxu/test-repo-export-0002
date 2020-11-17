@@ -1,0 +1,1867 @@
+{
+  "__requires": [
+    {
+      "id": "bargauge",
+      "name": "Bar gauge",
+      "type": "panel",
+      "version": ""
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "type": "grafana",
+      "version": "7.2.2"
+    },
+    {
+      "id": "natel-plotly-panel",
+      "name": "Plotly",
+      "type": "panel",
+      "version": "0.0.6"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL",
+      "type": "datasource",
+      "version": "1.0.0"
+    },
+    {
+      "id": "ryantxu-ajax-panel",
+      "name": "AJAX",
+      "type": "panel",
+      "version": "0.0.7-dev"
+    },
+    {
+      "id": "stat",
+      "name": "Stat",
+      "type": "panel",
+      "version": ""
+    },
+    {
+      "id": "table",
+      "name": "Table",
+      "type": "panel",
+      "version": ""
+    }
+  ],
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "limit": 100,
+        "name": "Annotations \u0026 Alerts",
+        "showIn": 0,
+        "type": "dashboard"
+      },
+      {
+        "datasource": "-- Grafana --",
+        "enable": false,
+        "hide": false,
+        "iconColor": "rgba(255, 96, 96, 1)",
+        "limit": 100,
+        "name": "Annotations",
+        "rawQuery": "SELECT\n  extract(epoch from time_column) AS time,\n  text_column as text,\n  tags_column as tags\nFROM\n  metric_table\nWHERE\n  $__timeFilter(time_column)\n",
+        "showIn": 0,
+        "tags": [],
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 1,
+  "iteration": 1605618036933,
+  "links": [
+    {
+      "asDropdown": true,
+      "icon": "external link",
+      "includeVars": true,
+      "keepTime": true,
+      "tags": [
+        "Tenaris"
+      ],
+      "title": "Dashboards",
+      "type": "dashboards"
+    }
+  ],
+  "panels": [
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "max": 400,
+          "min": 0,
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 18,
+      "options": {
+        "displayMode": "lcd",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "7.2.2",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT $__time(e.edr_time_bucket), e.hookload_avg as hookload\nFROM rtcrmlab_owner.rtcrm_edr_enhanced_5min_v as e, rtcrmlab_owner.rtcrm_rig_state as r\nWHERE $__timeFilter(e.edr_time_bucket) \nand e.well_unique_id = '$Well'\nand e.rig_state_code = r.rig_state_code\nand e.rig_state_code in ($Well_Status)\norder by e.edr_time_bucket desc limit 1\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "",
+      "transparent": true,
+      "type": "bargauge"
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "max": 30,
+          "min": 0,
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 20,
+      "options": {
+        "displayMode": "lcd",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "7.2.2",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT   $__time(e.edr_time_bucket), e.surface_torque_avg as rotation_torque\nFROM rtcrmlab_owner.rtcrm_edr_enhanced_torque_5min_v as e, rtcrmlab_owner.rtcrm_rig_state as r\nWHERE $__timeFilter(e.edr_time_bucket) \nand e.well_unique_id = '$Well'\nand e.rig_state_code = r.rig_state_code\nand e.rig_state_code in ($Well_Status)\norder by e.edr_time_bucket desc limit 1\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "",
+      "transparent": true,
+      "type": "bargauge"
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 21,
+      "options": {
+        "displayMode": "lcd",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "7.2.2",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  $__time(p.calculated_time),\n  (cumulative_fatigue) as cumulative_fatigue\nfrom rtcrmlab_owner.rtcrm_fatigue_curve c\ninner join rtcrmlab_owner.rtcrm_fatigue_point p\non c.curve_id = p.curve_id\nWHERE\n  well_unique_id =  '$Well' \norder by p.calculated_time desc limit 1\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "",
+      "transparent": true,
+      "type": "bargauge"
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "max": 15,
+          "min": 0,
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 22,
+      "options": {
+        "displayMode": "lcd",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "7.2.2",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  time AS \"time\",\n  dogleg_severity as dls\nFROM rtcrmlab_owner.rtcrm_well_trajectory as a\nWHERE\n  $__timeFilter(time) \nand a.well_unique_id  = '$Well'\norder by time desc limit 1",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "",
+      "transparent": true,
+      "type": "bargauge"
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 17,
+        "w": 6,
+        "x": 0,
+        "y": 1
+      },
+      "id": 2,
+      "pconfig": {
+        "fixScale": "",
+        "layout": {
+          "dragmode": "zoom",
+          "font": {
+            "family": "\"Open Sans\", Helvetica, Arial, sans-serif"
+          },
+          "hovermode": "closest",
+          "legend": {
+            "orientation": "h"
+          },
+          "showlegend": false,
+          "xaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "Hook Look Load [kips]",
+            "type": "",
+            "zeroline": false
+          },
+          "yaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "Depth [Kft]",
+            "type": "linear",
+            "zeroline": false
+          },
+          "zaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "type": "linear",
+            "zeroline": false
+          }
+        },
+        "loadFromCDN": false,
+        "settings": {
+          "displayModeBar": true,
+          "type": "scatter"
+        },
+        "showAnnotations": true,
+        "traces": [
+          {
+            "mapping": {
+              "color": "rig_state_number",
+              "size": null,
+              "text": "tiempo",
+              "x": "hookload",
+              "y": "bit_depth",
+              "z": null
+            },
+            "name": "EDR",
+            "settings": {
+              "color_option": "ramp",
+              "line": {
+                "color": "#005f81",
+                "dash": "solid",
+                "shape": "linear",
+                "width": 6
+              },
+              "marker": {
+                "color": "#33B5E5",
+                "colorscale": "Jet",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": false,
+                "size": 4,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              }
+            },
+            "show": {
+              "line": true,
+              "lines": false,
+              "markers": true
+            }
+          },
+          {
+            "mapping": {
+              "color": "colors",
+              "size": null,
+              "text": "friction",
+              "x": "hookload_b",
+              "y": "depth_b",
+              "z": null
+            },
+            "name": "Hookload",
+            "settings": {
+              "color_option": "ramp",
+              "line": {
+                "color": "#005f81",
+                "dash": "solid",
+                "shape": "linear",
+                "width": 3
+              },
+              "marker": {
+                "color": "#33B5E5",
+                "colorscale": "Greens",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": false,
+                "size": 3,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              },
+              "textposition": ""
+            },
+            "show": {
+              "line": true,
+              "lines": false,
+              "markers": true
+            }
+          },
+          {
+            "mapping": {
+              "color": "rig_state_number",
+              "size": null,
+              "text": null,
+              "x": "sin_buckling",
+              "y": "depth_c",
+              "z": null
+            },
+            "name": "Sin Buckling",
+            "settings": {
+              "color_option": "solid",
+              "line": {
+                "color": "#C4162A",
+                "dash": "solid",
+                "shape": "linear",
+                "width": 3
+              },
+              "marker": {
+                "color": "#C4162A",
+                "colorscale": "Jet",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": false,
+                "size": 4,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              },
+              "textposition": ""
+            },
+            "show": {
+              "line": true,
+              "lines": true,
+              "markers": true
+            }
+          },
+          {
+            "mapping": {
+              "color": "rig_state_number",
+              "size": null,
+              "text": null,
+              "x": "hel_buckling",
+              "y": "depth_d",
+              "z": null
+            },
+            "name": "Hel Buckling",
+            "settings": {
+              "color_option": "solid",
+              "line": {
+                "color": "#B877D9",
+                "dash": "solid",
+                "shape": "linear",
+                "width": 3
+              },
+              "marker": {
+                "color": "#B877D9",
+                "colorscale": "Jet",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": false,
+                "size": 4,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              },
+              "textposition": ""
+            },
+            "show": {
+              "line": true,
+              "lines": true,
+              "markers": true
+            }
+          }
+        ]
+      },
+      "pluginVersion": "7.1.1",
+      "targets": [
+        {
+          "format": "table",
+          "group": [
+            {
+              "params": [
+                "$__interval",
+                "none"
+              ],
+              "type": "time"
+            }
+          ],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT   $__time(e.edr_time_bucket), concat(e.edr_time_bucket,' ',r.rig_state_desc) as tiempo, e.hookload_avg as hookload, -(e.bit_depth_avg/1000) as bit_depth, r.rig_state_number as rig_state_number\r\nFROM rtcrmlab_owner.rtcrm_edr_enhanced_5min_v as e, rtcrmlab_owner.rtcrm_rig_state as r\r\nWHERE $__timeFilter(e.edr_time_bucket) \r\nand e.well_unique_id = '$Well'\r\nand e.rig_state_code = r.rig_state_code\r\nand e.rig_state_code in ($Well_Status)\r\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "hookload"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "avg"
+                ],
+                "type": "aggregate"
+              },
+              {
+                "params": [
+                  "hookload"
+                ],
+                "type": "alias"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "bit_depth"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "avg"
+                ],
+                "type": "aggregate"
+              },
+              {
+                "params": [
+                  "bit_depth"
+                ],
+                "type": "alias"
+              }
+            ],
+            [
+              {
+                "params": [
+                  "rig_state_code"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "avg"
+                ],
+                "type": "aggregate"
+              },
+              {
+                "params": [
+                  "rig_state_code"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "rtcrmlab_owner.rtcrm_edr_enhanced",
+          "timeColumn": "edr_time",
+          "timeColumnType": "timestamptz",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "hide": false,
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT   now() as time, b.hookload/1000 as hookload_b, -(b.depth/1000) as depth_b, a.friction_factor as colors, concat('Friction: ',round(a.friction_factor::numeric,2),' Curve: ',(select curve_type_desc from rtcrmlab_owner.rtcrm_hookload_curve_type where curve_type_id=a.curve_type_id)) as friction\nFROM rtcrmlab_owner.rtcrm_hookload_curve as a, rtcrmlab_owner.rtcrm_hookload_point as b\nWHERE a.well_unique_id = '$Well'\nand a.curve_id = b.curve_id and\na.curve_type_id in ( $Curve_type )\n",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT   now() as time, b.sin_buckling/1000 as sin_buckling, -(b.depth/1000) as depth_c\nFROM rtcrmlab_owner.rtcrm_buckling_curve as a, rtcrmlab_owner.rtcrm_buckling_point as b\nWHERE a.well_unique_id = '$Well'\nand a.curve_id = b.curve_id\n",
+          "refId": "C",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT   now() as time, b.hel_buckling/1000 as hel_buckling, -(b.depth/1000) as depth_d\nFROM rtcrmlab_owner.rtcrm_buckling_curve as a, rtcrmlab_owner.rtcrm_buckling_point as b\nWHERE a.well_unique_id = '$Well'\nand a.curve_id = b.curve_id\n\n",
+          "refId": "D",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Hook Load vs Depth",
+      "transformations": [],
+      "type": "natel-plotly-panel",
+      "version": 1
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 17,
+        "w": 6,
+        "x": 6,
+        "y": 1
+      },
+      "id": 4,
+      "pconfig": {
+        "fixScale": "",
+        "layout": {
+          "dragmode": "zoom",
+          "font": {
+            "family": "\"Open Sans\", Helvetica, Arial, sans-serif"
+          },
+          "hovermode": "closest",
+          "legend": {
+            "orientation": "h"
+          },
+          "showlegend": false,
+          "xaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "Torque [klbs-ft]",
+            "type": "auto",
+            "zeroline": false
+          },
+          "yaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "Depth [kft]",
+            "type": "linear",
+            "zeroline": false
+          },
+          "zaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "type": "linear",
+            "zeroline": false
+          }
+        },
+        "loadFromCDN": false,
+        "settings": {
+          "displayModeBar": true,
+          "type": "scatter"
+        },
+        "showAnnotations": true,
+        "traces": [
+          {
+            "mapping": {
+              "color": "rig_state_number",
+              "size": null,
+              "text": "tiempo",
+              "x": "rotation_torque",
+              "y": "bit_depth",
+              "z": null
+            },
+            "name": "Torque",
+            "settings": {
+              "color_option": "ramp",
+              "line": {
+                "color": "#C0D8FF",
+                "dash": "solid",
+                "shape": "spline",
+                "width": 1
+              },
+              "marker": {
+                "color": "#33B5E5",
+                "colorscale": "Jet",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": false,
+                "size": 4,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              }
+            },
+            "show": {
+              "line": true,
+              "lines": false,
+              "markers": true
+            }
+          },
+          {
+            "mapping": {
+              "color": "colors",
+              "size": null,
+              "text": "description",
+              "x": "torque",
+              "y": "depth",
+              "z": null
+            },
+            "name": "Torque Model",
+            "settings": {
+              "color_option": "ramp",
+              "line": {
+                "color": "#C0D8FF",
+                "dash": "solid",
+                "shape": "vh",
+                "width": 1
+              },
+              "marker": {
+                "color": "#33B5E5",
+                "colorscale": "Greens",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": false,
+                "size": 4,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              }
+            },
+            "show": {
+              "line": true,
+              "lines": false,
+              "markers": true
+            }
+          }
+        ]
+      },
+      "pluginVersion": "7.1.1",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT   $__time(e.edr_time_bucket), concat(e.edr_time_bucket,' ',r.rig_state_desc) as tiempo, e.surface_torque_avg as rotation_torque, -(e.bit_depth_avg/1000) as bit_depth, r.rig_state_number\nFROM rtcrmlab_owner.rtcrm_edr_enhanced_torque_5min_v as e, rtcrmlab_owner.rtcrm_rig_state as r\nWHERE $__timeFilter(e.edr_time_bucket) \nand e.well_unique_id = '$Well'\nand e.rig_state_code = r.rig_state_code\nand e.rig_state_code in ($Well_Status)\n\n\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT   now() as time, b.torque/1000 as torque, -(b.depth/1000) as depth, a.friction_factor as colors, concat(' Friction: ',round(a.friction_factor::numeric,2)) as description\nFROM rtcrmlab_owner.rtcrm_torque_curve as a, rtcrmlab_owner.rtcrm_torque_point as b\nWHERE a.well_unique_id = '$Well'\nand a.curve_id = b.curve_id\n\n",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Surface Rotary Torque vs Depth",
+      "type": "natel-plotly-panel",
+      "version": 1
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 17,
+        "w": 6,
+        "x": 12,
+        "y": 1
+      },
+      "id": 5,
+      "pconfig": {
+        "fixScale": "",
+        "layout": {
+          "dragmode": "lasso",
+          "font": {
+            "family": "\"Open Sans\", Helvetica, Arial, sans-serif"
+          },
+          "hovermode": "closest",
+          "legend": {
+            "orientation": "h"
+          },
+          "showlegend": false,
+          "xaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "Cumulative Fatigue [%]",
+            "type": "auto",
+            "zeroline": false
+          },
+          "yaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "Depth [kft]",
+            "type": "linear",
+            "zeroline": false
+          },
+          "zaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "type": "linear",
+            "zeroline": false
+          }
+        },
+        "loadFromCDN": false,
+        "settings": {
+          "displayModeBar": false,
+          "type": "scatter"
+        },
+        "showAnnotations": true,
+        "traces": [
+          {
+            "mapping": {
+              "color": "rig_state_code",
+              "size": null,
+              "text": "calculated_time",
+              "x": "cumulative_fatigue",
+              "y": "depth",
+              "z": null
+            },
+            "name": "Torque",
+            "settings": {
+              "color_option": "solid",
+              "line": {
+                "color": "#C0D8FF",
+                "dash": "solid",
+                "shape": "spline",
+                "width": 2
+              },
+              "marker": {
+                "color": "#C8F2C2",
+                "colorscale": "Jet",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": false,
+                "size": 4,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              }
+            },
+            "show": {
+              "line": true,
+              "lines": false,
+              "markers": true
+            }
+          }
+        ]
+      },
+      "pluginVersion": "7.1.1",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "select * from rtcrm_fatigue_curve_fn('$Well')\n\n\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Cumulative Fatigue vs Depth",
+      "type": "natel-plotly-panel",
+      "version": 1
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 17,
+        "w": 6,
+        "x": 18,
+        "y": 1
+      },
+      "id": 8,
+      "pconfig": {
+        "fixScale": "",
+        "layout": {
+          "dragmode": "lasso",
+          "font": {
+            "family": "\"Open Sans\", Helvetica, Arial, sans-serif"
+          },
+          "hovermode": "closest",
+          "legend": {
+            "orientation": "h"
+          },
+          "showlegend": false,
+          "xaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "E-W [kft]",
+            "type": "linear",
+            "zeroline": false
+          },
+          "yaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "N-S [kft]",
+            "type": "linear",
+            "zeroline": false
+          },
+          "zaxis": {
+            "rangemode": "normal",
+            "showgrid": true,
+            "title": "Depth [kft]",
+            "type": "linear",
+            "zeroline": false
+          }
+        },
+        "loadFromCDN": false,
+        "settings": {
+          "displayModeBar": false,
+          "type": "scatter3d"
+        },
+        "showAnnotations": true,
+        "traces": [
+          {
+            "mapping": {
+              "color": "dls",
+              "size": null,
+              "text": "legend",
+              "x": "ew_ft",
+              "y": "ns_ft",
+              "z": "bitdepth_ft"
+            },
+            "name": "DLS",
+            "settings": {
+              "color_option": "ramp",
+              "line": {
+                "color": "#3274D9",
+                "dash": "solid",
+                "shape": "linear",
+                "width": 10
+              },
+              "marker": {
+                "color": "#3274D9",
+                "colorscale": "Reds",
+                "line": {
+                  "color": "#DDD",
+                  "width": 0
+                },
+                "showscale": true,
+                "size": 5,
+                "sizemin": 3,
+                "sizemode": "diameter",
+                "sizeref": 0.2,
+                "symbol": "circle"
+              }
+            },
+            "show": {
+              "line": true,
+              "lines": false,
+              "markers": true
+            }
+          }
+        ]
+      },
+      "pluginVersion": "7.1.1",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  time AS \"time\",\n  (north_south/1000) as ns_ft,\n  (east_west/1000) as ew_ft,\n  -(tot_vert_depth/1000) as bitdepth_ft,\n  dogleg_severity as dls,\n  concat(time,' DLS: ',dogleg_severity) as legend\nFROM rtcrmlab_owner.rtcrm_well_trajectory as a\nWHERE\na.well_unique_id  = '$Well'\n\n\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "3D DLS vs Depth",
+      "type": "natel-plotly-panel",
+      "version": 1
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "center",
+            "displayMode": "color-background",
+            "filterable": false
+          },
+          "mappings": [
+            {
+              "from": "",
+              "id": 0,
+              "text": "",
+              "to": "",
+              "type": 1,
+              "value": ""
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 50
+              },
+              {
+                "color": "#EAB839",
+                "value": 70
+              },
+              {
+                "color": "red",
+                "value": 100
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Depth [Kft]"
+            },
+            "properties": [
+              {
+                "id": "custom.displayMode",
+                "value": "gradient-gauge"
+              },
+              {
+                "id": "custom.width",
+                "value": 86
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Current Value"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 163
+              },
+              {
+                "id": "custom.displayMode",
+                "value": "color-background"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Alarm Creation Time"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 167
+              },
+              {
+                "id": "custom.align",
+                "value": null
+              },
+              {
+                "id": "custom.displayMode",
+                "value": "auto"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Description"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": null
+              },
+              {
+                "id": "custom.align",
+                "value": null
+              },
+              {
+                "id": "custom.displayMode"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Time"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 169
+              },
+              {
+                "id": "custom.align",
+                "value": null
+              },
+              {
+                "id": "custom.displayMode",
+                "value": "auto"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Code"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 107
+              },
+              {
+                "id": "custom.displayMode"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Message"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": null
+              },
+              {
+                "id": "custom.align",
+                "value": null
+              },
+              {
+                "id": "custom.displayMode"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 19,
+        "x": 0,
+        "y": 18
+      },
+      "id": 7,
+      "options": {
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Alarm Creation Time"
+          }
+        ]
+      },
+      "pluginVersion": "7.2.2",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  alarm_log_datetime AS \"Time\",\n  creation_datetime as \"Alarm Creation Time\",\n  alarm_current_value::float as \"Current Value\",\n  (alarm_log_depth)/1000 as \"Depth [Kft]\",\n  alarm_code as \"Code\",\n  (select distinct alarm_message from rtcrmlab_owner.rtcrm_alarm as a where a.alarm_code = b.alarm_code) as \"Message\",\n  (select distinct alarm_description from rtcrmlab_owner.rtcrm_alarm as a where a.alarm_code = b.alarm_code) as \"Description\"\n\nFROM rtcrmlab_owner.rtcrm_alarm_log as b\nWHERE\n  $__timeFilter(creation_datetime) and\n  b.well_unique_id  = '$Well'\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "rtcrmlab_owner.rtcrm_alarm_log",
+          "timeColumn": "alarm_log_datetime",
+          "timeColumnType": "timestamptz",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Alarms Log",
+      "type": "table"
+    },
+    {
+      "cacheTimeout": null,
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null
+          },
+          "mappings": [
+            {
+              "from": "",
+              "id": 0,
+              "text": "",
+              "to": "",
+              "type": 1,
+              "value": ""
+            }
+          ],
+          "noValue": "0",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "dark-red",
+                "value": 0
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 3,
+        "x": 19,
+        "y": 18
+      },
+      "id": 10,
+      "interval": null,
+      "links": [],
+      "maxDataPoints": 3,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "count"
+          ],
+          "fields": "/^alarm_log_depth$/",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.2.2",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  $__time(creation_datetime),\n  alarm_log_depth\nFROM\n  rtcrmlab_owner.rtcrm_alarm_log as b\nWHERE\n  $__timeFilter(creation_datetime) and\n  b.well_unique_id  = '$Well'\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Active Alerts",
+      "type": "stat"
+    },
+    {
+      "cacheTimeout": null,
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "noValue": "Unknown",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ingestion"
+            },
+            "properties": [
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "red",
+                      "value": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 2,
+        "x": 22,
+        "y": 18
+      },
+      "id": 12,
+      "interval": null,
+      "links": [],
+      "maxDataPoints": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "/^ingestion$/",
+          "values": false
+        },
+        "textMode": "value"
+      },
+      "pluginVersion": "7.2.2",
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "SELECT\n  $__time(last_update),\n  ingestion\nFROM\n  rtcrmlab_owner.rtcrm_well_ingestion_monitor_v as b\n  \nWHERE\n  $__timeFilter(last_update) and\n  b.well_unique_id =  '$Well'\n  \n\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Receiving Data",
+      "transparent": true,
+      "type": "stat"
+    },
+    {
+      "datasource": "-- Dashboard --",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 19,
+        "x": 0,
+        "y": 23
+      },
+      "header_js": "{}",
+      "id": 14,
+      "interval": "1s",
+      "method": "iframe",
+      "mode": "html",
+      "params_js": "{\r\n  well_unique_id:ctrl.template('$Well'),\r\n  type_id:'1',\r\n  from:ctrl.range.from.format('x'),  // x is unix ms timestamp\r\n  to:ctrl.range.to.format('x'),\r\n  height:ctrl.height,\r\n  now:Date.now(),\r\n  interval:Date.now(),\r\n  since:ctrl.template('$__from'),\r\n}",
+      "pluginVersion": "7.2.0",
+      "request": "http",
+      "responseType": "text",
+      "showErrors": false,
+      "showTime": false,
+      "showTimeFormat": "LTS",
+      "showTimePrefix": null,
+      "showTimeValue": "request",
+      "skipSameURL": false,
+      "targets": [
+        {
+          "panelId": 14,
+          "refId": "A"
+        }
+      ],
+      "templateResponse": true,
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Alarms Log",
+      "type": "ryantxu-ajax-panel",
+      "url": "https://fuprtcrm06lab.azurewebsites.net/api/HttpTrigger",
+      "withCredentials": false
+    },
+    {
+      "datasource": "gdev-postgres",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 5,
+        "x": 19,
+        "y": 23
+      },
+      "header_js": "",
+      "id": 16,
+      "interval": "5s",
+      "method": "iframe",
+      "mode": "html",
+      "params_js": "{\r\n  well_unique_id:ctrl.template('$Well'),\r\n  type_id:'4',\r\n  from:ctrl.range.from.format(),  // x is unix ms timestamp\r\n  to:ctrl.range.to.format(), \r\n  height:ctrl.height,\r\n  now:Date.now(),\r\n  interval:Date.now(),\r\n  since:ctrl.template('$__from'),\r\n}",
+      "pluginVersion": "7.2.0",
+      "request": "http",
+      "responseType": "document",
+      "showErrors": false,
+      "showTime": false,
+      "showTimeFormat": "LTS",
+      "showTimePrefix": null,
+      "showTimeValue": "request",
+      "skipSameURL": false,
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": true,
+          "rawSql": "select well_unique_id from rtcrmlab_owner.rtcrm_running_guidelines",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "templateResponse": true,
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "ryantxu-ajax-panel",
+      "url": "https://fuprtcrm06lab.azurewebsites.net/api/HttpTrigger",
+      "withCredentials": false
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 26,
+  "style": "dark",
+  "tags": [
+    "Tenaris"
+  ],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {},
+        "datasource": "gdev-postgres",
+        "definition": "select distinct well_name as __text, well_unique_id as __value from rtcrmlab_owner.rtcrm_well",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Well",
+        "multi": false,
+        "name": "Well",
+        "options": [],
+        "query": "select distinct well_name as __text, well_unique_id as __value from rtcrmlab_owner.rtcrm_well",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": "",
+        "current": {},
+        "datasource": "gdev-postgres",
+        "definition": "Select distinct rig_state_code as __value, rig_state_desc as __text from rtcrmlab_owner.rtcrm_rig_state",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Well Status",
+        "multi": true,
+        "name": "Well_Status",
+        "options": [],
+        "query": "Select distinct rig_state_code as __value, rig_state_desc as __text from rtcrmlab_owner.rtcrm_rig_state",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {},
+        "datasource": "gdev-postgres",
+        "definition": "Select distinct curve_type_id as __value, curve_type_desc as __text from rtcrmlab_owner.rtcrm_hookload_curve_type",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Curve Type",
+        "multi": true,
+        "name": "Curve_type",
+        "options": [],
+        "query": "Select distinct curve_type_id as __value, curve_type_desc as __text from rtcrmlab_owner.rtcrm_hookload_curve_type",
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6y",
+    "to": "now"
+  },
+  "timepicker": {
+    "hidden": false,
+    "refresh_intervals": [
+      "10s",
+      "15s",
+      "30s",
+      "1m"
+    ]
+  },
+  "timezone": "",
+  "title": "Tenaris Real Time Casing Running - Performance Monitoring"
+}
