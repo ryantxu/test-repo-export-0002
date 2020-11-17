@@ -1,0 +1,72 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "gdev-testdata",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 17,
+        "x": 0,
+        "y": 0
+      },
+      "header_js": "",
+      "id": 2,
+      "interval": "5s",
+      "method": "iframe",
+      "mode": "html",
+      "params_js": "{\r\n  well_unique_id:ctrl.template('$Well'),\r\n  type_id:'4',\r\n  from:ctrl.range.from.format(),  // x is unix ms timestamp\r\n  to:ctrl.range.to.format(), \r\n  height:ctrl.height,\r\n  now:Date.now(),\r\n  interval:Date.now(),\r\n  since:ctrl.template('$__from'),\r\n}",
+      "pluginVersion": "7.2.0",
+      "request": "http",
+      "responseType": "document",
+      "showErrors": false,
+      "showTime": true,
+      "showTimeFormat": "LTS",
+      "showTimePrefix": null,
+      "showTimeValue": "request",
+      "skipSameURL": false,
+      "templateResponse": true,
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "ryantxu-ajax-panel",
+      "url": "https://httpbin.org/anything?",
+      "withCredentials": false
+    }
+  ],
+  "schemaVersion": 26,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "save"
+}
