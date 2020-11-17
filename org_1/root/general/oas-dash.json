@@ -53,7 +53,7 @@
       },
       "id": 2,
       "options": {
-        "frameIndex": 5,
+        "frameIndex": 21,
         "showHeader": true
       },
       "pluginVersion": "7.4.0-pre",
@@ -196,7 +196,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
