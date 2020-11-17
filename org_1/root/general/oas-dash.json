@@ -166,7 +166,16 @@
           {
             "values": [
               {
-                "path": "enter.path"
+                "path": "enter.path",
+                "title": "aaaa"
+              },
+              {
+                "path": "",
+                "title": "bbbb"
+              },
+              {
+                "path": "",
+                "title": "wwwwww"
               }
             ]
           }
