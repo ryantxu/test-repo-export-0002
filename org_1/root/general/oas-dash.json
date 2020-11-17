@@ -216,15 +216,7 @@
       },
       "id": 3,
       "options": {
-        "reduceOptions": {
-          "calcs": [
-            "mean"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showHeader": true
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
@@ -237,7 +229,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Sine (with settings from OAS) ",
-      "type": "gauge"
+      "type": "table"
     }
   ],
   "refresh": "",
