@@ -166,7 +166,7 @@
           {
             "values": [
               {
-                "path": "Write Float",
+                "path": "Write Float.Value",
                 "title": "Float"
               }
             ]
