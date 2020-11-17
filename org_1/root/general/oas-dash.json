@@ -21,6 +21,9 @@
       "datasource": "Open Automation Software (OAS)",
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
           "custom": {
             "align": null,
             "filterable": false
@@ -70,6 +73,9 @@
       "datasource": "Open Automation Software (OAS)",
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
           "custom": {
             "align": null,
             "filterable": false
@@ -121,6 +127,64 @@
       "timeShift": null,
       "title": "Sine (with settings from OAS) ",
       "type": "gauge"
+    },
+    {
+      "datasource": "Open Automation Software (OAS)",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 9
+      },
+      "id": 5,
+      "options": {
+        "id": "test",
+        "sections": [
+          {
+            "values": [
+              {
+                "path": "enter.path"
+              }
+            ]
+          }
+        ],
+        "target": "ds"
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "path": "Sine",
+          "queryType": "GetTagValue",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "edge-form-panel"
     }
   ],
   "schemaVersion": 26,
