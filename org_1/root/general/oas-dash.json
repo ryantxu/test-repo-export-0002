@@ -166,19 +166,8 @@
           {
             "values": [
               {
-                "path": "aa.bbb",
-                "title": "aaa"
-              },
-              {
-                "path": "",
-                "title": "bbb"
-              },
-              {
-                "path": "",
-                "title": "ccc"
-              },
-              {
-                "path": ""
+                "path": "Write Float",
+                "title": "Float"
               }
             ]
           }
