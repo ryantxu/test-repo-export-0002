@@ -1,0 +1,21 @@
+{
+  "id": 57,
+  "name": "X-Ray",
+  "type": "grafana-x-ray-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "p3DHrooMk",
+  "created": "2020-11-17T23:27:09-08:00",
+  "updated": "2020-11-17T23:27:09-08:00"
+}
