@@ -246,7 +246,7 @@
       "type": "table"
     }
   ],
-  "refresh": "1s",
+  "refresh": "",
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
