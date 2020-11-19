@@ -169,7 +169,7 @@
       },
       "gridPos": {
         "h": 6,
-        "w": 24,
+        "w": 16,
         "x": 0,
         "y": 7
       },
@@ -188,6 +188,57 @@
       "timeShift": null,
       "title": "Reuse (table)",
       "type": "table"
+    },
+    {
+      "datasource": "Open Automation Software (OAS)",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 7
+      },
+      "id": 6,
+      "options": {
+        "sections": [
+          {
+            "values": [
+              {
+                "path": "Write Float.Value",
+                "title": "Value"
+              }
+            ]
+          }
+        ],
+        "target": "ds"
+      },
+      "pluginVersion": "7.4.0-pre",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "edge-form-panel"
     },
     {
       "datasource": "-- Dashboard --",
