@@ -232,11 +232,12 @@
       "targets": [
         {
           "path": "Sine",
+          "period": "5s",
           "queryType": "StreamTags",
           "refId": "A",
           "tags": [
-            "Sine",
-            "Sine2"
+            "Sine.Value",
+            "Sine2.Value"
           ]
         }
       ],
