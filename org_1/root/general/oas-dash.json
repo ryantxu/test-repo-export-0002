@@ -233,7 +233,11 @@
         {
           "path": "Sine",
           "queryType": "StreamTags",
-          "refId": "A"
+          "refId": "A",
+          "tags": [
+            "Sine",
+            "Sine2"
+          ]
         }
       ],
       "timeFrom": null,
