@@ -86,7 +86,7 @@
       "targets": [
         {
           "path": "Sine",
-          "period": "5s",
+          "period": "1s",
           "queryType": "StreamTags",
           "refId": "A",
           "tags": [
@@ -139,7 +139,7 @@
       }
     },
     {
-      "datasource": "Open Automation Software (OAS)",
+      "datasource": "-- Dashboard --",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -179,23 +179,17 @@
       "pluginVersion": "7.4.0-pre",
       "targets": [
         {
-          "path": "Sine",
-          "period": "5s",
-          "queryType": "StreamTags",
-          "refId": "A",
-          "tags": [
-            "Sine.Value",
-            "Sine2.Value"
-          ]
+          "panelId": 3,
+          "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Sine (with settings from OAS) ",
+      "title": "Reuse (table)",
       "type": "table"
     },
     {
-      "datasource": "Open Automation Software (OAS)",
+      "datasource": "-- Dashboard --",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -246,19 +240,13 @@
       "pluginVersion": "7.4.0-pre",
       "targets": [
         {
-          "path": "Sine",
-          "period": "5s",
-          "queryType": "StreamTags",
-          "refId": "A",
-          "tags": [
-            "Sine.Value",
-            "Sine2.Value"
-          ]
+          "panelId": 3,
+          "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Sine (with settings from OAS) ",
+      "title": "Reuse (single stats)",
       "type": "stat"
     }
   ],
