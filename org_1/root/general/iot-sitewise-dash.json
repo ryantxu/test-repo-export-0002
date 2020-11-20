@@ -66,6 +66,7 @@
       "targets": [
         {
           "assetId": "a9fe4e4a-e028-4be2-bd15-2f8dd0bee23b",
+          "maxPageAggregations": 1,
           "propertyId": "a973cbe6-1fe3-43da-9c86-e72826ff076d",
           "queryType": "PropertyValueHistory",
           "refId": "A",
@@ -74,6 +75,7 @@
         },
         {
           "assetId": "07412cb4-0a8b-4939-af9c-5dcb3b2933e5",
+          "maxPageAggregations": 1,
           "propertyId": "a973cbe6-1fe3-43da-9c86-e72826ff076d",
           "queryType": "PropertyValueHistory",
           "refId": "B",
