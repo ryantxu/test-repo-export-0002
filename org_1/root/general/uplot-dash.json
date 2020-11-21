@@ -75,16 +75,6 @@
         "type": "xy",
         "xy": {
           "xFields": {
-            "id": "byName",
-            "options": "Min"
-          },
-          "yFields": {
-            "id": "byName",
-            "options": "Max"
-          }
-        },
-        "xyPlotConfig": {
-          "xFields": {
             "id": "first"
           },
           "yFields": {
