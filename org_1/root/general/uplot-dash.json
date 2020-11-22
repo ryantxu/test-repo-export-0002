@@ -80,6 +80,14 @@
           "yFields": {
             "id": "numeric"
           }
+        },
+        "xyPlotConfig": {
+          "xFields": {
+            "id": "first"
+          },
+          "yFields": {
+            "id": "numeric"
+          }
         }
       },
       "pluginVersion": "7.4.0-pre",
