@@ -75,10 +75,12 @@
         "type": "xy",
         "xy": {
           "xFields": {
-            "id": "first"
+            "id": "byName",
+            "options": "Min"
           },
           "yFields": {
-            "id": "numeric"
+            "id": "byName",
+            "options": "Max"
           }
         },
         "xyPlotConfig": {
