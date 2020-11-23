@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -68,7 +67,17 @@
         "tooltipOptions": {
           "mode": "single"
         },
-        "type": "timeseries",
+        "type": "xy",
+        "xy": {
+          "xFields": {
+            "id": "byName",
+            "options": "Min"
+          },
+          "yFields": {
+            "id": "byName",
+            "options": "Max"
+          }
+        },
         "xyPlotConfig": {
           "xFields": {
             "id": "first"
