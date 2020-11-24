@@ -100,7 +100,7 @@
             "anchor": {
               "left": true,
               "right": true,
-              "top": true
+              "top": false
             },
             "id": "X1606200903993",
             "position": {
@@ -111,39 +111,9 @@
             },
             "text": "Hello World",
             "type": "button"
-          },
-          {
-            "anchor": {
-              "right": true,
-              "top": true
-            },
-            "id": "X1606200904946",
-            "position": {
-              "height": 150,
-              "width": 200,
-              "x": -14,
-              "y": 219
-            },
-            "text": "Hello World",
-            "type": "button"
-          },
-          {
-            "anchor": {
-              "right": true,
-              "top": true
-            },
-            "id": "X1606200906384",
-            "position": {
-              "height": 150,
-              "width": 200,
-              "x": 238.00001525878906,
-              "y": 67
-            },
-            "text": "Hello World",
-            "type": "button"
           }
         ],
-        "width": 641
+        "width": 605
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
