@@ -105,8 +105,8 @@
             "position": {
               "height": 150,
               "width": 200,
-              "x": null,
-              "y": 0
+              "x": 95,
+              "y": 30
             },
             "text": "Hello World",
             "type": "button"
