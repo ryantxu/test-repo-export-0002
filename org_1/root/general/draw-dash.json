@@ -94,7 +94,7 @@
           }
         ],
         "editing": true,
-        "height": 296,
+        "height": 307,
         "items": [
           {
             "anchor": {
@@ -105,8 +105,8 @@
             "position": {
               "height": 150,
               "width": 200,
-              "x": null,
-              "y": 0
+              "x": 46.00000762939453,
+              "y": 73.99998474121094
             },
             "text": "Hello World",
             "type": "button"
@@ -118,10 +118,10 @@
             },
             "id": "X1606180883707",
             "position": {
-              "height": 150,
-              "width": 200,
-              "x": 207.99998474121094,
-              "y": 136
+              "height": 109,
+              "width": 178,
+              "x": 179.99998474121094,
+              "y": 134
             },
             "text": "Hello World",
             "type": "button"
@@ -133,10 +133,25 @@
             },
             "id": "X1606180889011",
             "position": {
+              "height": 129,
+              "width": 216,
+              "x": 404.9999542236328,
+              "y": 131.99993896484375
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606181091804",
+            "position": {
               "height": 150,
               "width": 200,
-              "x": 527.9999847412109,
-              "y": 85.99996948242188
+              "x": 302.99998474121094,
+              "y": 28.999984741210938
             },
             "text": "Hello World",
             "type": "button"
