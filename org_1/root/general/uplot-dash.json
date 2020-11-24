@@ -27,7 +27,6 @@
           "custom": {
             "axis": "right",
             "axisGrid": true,
-            "axisLabel": "asgasdga",
             "axisPlacement": "auto",
             "axisWidth": 60,
             "fillAlpha": 0.1,
