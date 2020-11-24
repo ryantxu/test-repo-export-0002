@@ -43,7 +43,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 12,
+        "h": 13,
         "w": 17,
         "x": 0,
         "y": 0
@@ -94,26 +94,61 @@
           }
         ],
         "editing": true,
-        "height": 367,
+        "height": 440,
         "items": [
           {
             "anchor": {
+              "bottom": false,
               "left": true,
-              "right": true,
-              "top": false
+              "right": false,
+              "top": true
             },
             "id": "X1606200903993",
             "position": {
+              "height": 163,
+              "width": 364,
+              "x": 285.9999542236328,
+              "y": 137.99993896484375
+            },
+            "text": "aaa",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "bottom": false,
+              "left": true,
+              "right": false,
+              "top": true
+            },
+            "id": "X1606207623717",
+            "position": {
               "height": 150,
               "width": 200,
-              "x": 263.99998474121094,
-              "y": 238.99996948242188
+              "x": 140,
+              "y": 36
             },
-            "text": "Hello World",
+            "text": "bbb",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "bottom": false,
+              "left": true,
+              "right": false,
+              "top": true
+            },
+            "id": "X1606207624581",
+            "position": {
+              "height": 177,
+              "width": 212,
+              "x": 42,
+              "y": 129
+            },
+            "text": "ccc",
             "type": "button"
           }
         ],
-        "width": 605
+        "width": 1151
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
@@ -150,7 +185,7 @@
         "h": 15,
         "w": 13,
         "x": 0,
-        "y": 12
+        "y": 13
       },
       "id": 2,
       "options": {
