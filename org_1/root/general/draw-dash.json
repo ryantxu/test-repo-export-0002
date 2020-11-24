@@ -146,9 +146,25 @@
             },
             "text": "ccc",
             "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606259921135",
+            "position": {
+              "height": 180,
+              "width": 240,
+              "x": 110,
+              "y": 105
+            },
+            "text": "Wind Turbine",
+            "type": "wind-turbine"
           }
         ],
-        "width": 1151
+        "width": 579
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
