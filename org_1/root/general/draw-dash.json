@@ -241,8 +241,8 @@
             "type": "switch"
           }
         ],
-        "editing": false,
-        "height": 262,
+        "editing": true,
+        "height": 367,
         "items": [
           {
             "anchor": {
@@ -374,7 +374,7 @@
             "type": "switch"
           }
         ],
-        "width": 434
+        "width": 649
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
