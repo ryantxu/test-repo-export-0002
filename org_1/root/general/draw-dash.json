@@ -241,8 +241,8 @@
             "type": "switch"
           }
         ],
-        "editing": true,
-        "height": 516,
+        "editing": false,
+        "height": 262,
         "items": [
           {
             "anchor": {
@@ -279,11 +279,56 @@
             "position": {
               "height": 150,
               "width": 200,
-              "x": 16,
-              "y": 25.000022888183594
+              "x": 106,
+              "y": 110.00003051757812
             },
             "text": "SWITCH",
             "type": "switch"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606190473471",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 24,
+              "y": 16
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606190478333",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 56.99999237060547,
+              "y": 65.00001525878906
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606190488889",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 164.99998474121094,
+              "y": 161
+            },
+            "text": "Hello World",
+            "type": "button"
           }
         ],
         "things": [
@@ -329,7 +374,7 @@
             "type": "switch"
           }
         ],
-        "width": 691
+        "width": 434
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
