@@ -93,37 +93,22 @@
             "type": "switch"
           }
         ],
-        "editing": false,
-        "height": 402,
+        "editing": true,
+        "height": 424,
         "items": [
           {
             "anchor": {
               "right": true,
               "top": true
             },
-            "id": "X1606180216646",
+            "id": "X1606181091804",
             "position": {
               "height": 150,
               "width": 200,
-              "x": 126,
-              "y": 58.999977111816406
+              "x": 266.99998474121094,
+              "y": 165
             },
-            "text": "AAAA",
-            "type": "button"
-          },
-          {
-            "anchor": {
-              "right": true,
-              "top": true
-            },
-            "id": "X1606180883707",
-            "position": {
-              "height": 109,
-              "width": 178,
-              "x": 199.99996948242188,
-              "y": 100
-            },
-            "text": "BBBB",
+            "text": "DDDD",
             "type": "button"
           },
           {
@@ -146,18 +131,33 @@
               "right": true,
               "top": true
             },
-            "id": "X1606181091804",
+            "id": "X1606180883707",
+            "position": {
+              "height": 109,
+              "width": 178,
+              "x": 199.99996948242188,
+              "y": 100
+            },
+            "text": "BBBB",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606180216646",
             "position": {
               "height": 150,
               "width": 200,
-              "x": 266.99998474121094,
-              "y": 165
+              "x": 126,
+              "y": 58.999977111816406
             },
-            "text": "DDDD",
+            "text": "AAAA",
             "type": "button"
           }
         ],
-        "width": 756
+        "width": 739
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
