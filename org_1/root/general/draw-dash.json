@@ -94,22 +94,8 @@
           }
         ],
         "editing": true,
+        "height": 296,
         "items": [
-          {
-            "anchor": {
-              "right": true,
-              "top": true
-            },
-            "id": "X1606180215257",
-            "position": {
-              "height": 150,
-              "width": 200,
-              "x": 10,
-              "y": 50
-            },
-            "text": "Hello World",
-            "type": "button"
-          },
           {
             "anchor": {
               "right": true,
@@ -119,13 +105,44 @@
             "position": {
               "height": 150,
               "width": 200,
-              "x": 10,
-              "y": 50
+              "x": null,
+              "y": 0
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606180883707",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 207.99998474121094,
+              "y": 136
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606180889011",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 527.9999847412109,
+              "y": 85.99996948242188
             },
             "text": "Hello World",
             "type": "button"
           }
-        ]
+        ],
+        "width": 816
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
