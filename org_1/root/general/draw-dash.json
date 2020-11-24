@@ -1,0 +1,163 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 13,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "editing": true,
+        "height": 516,
+        "items": [
+          {
+            "anchor": {
+              "left": true,
+              "right": true
+            },
+            "id": "a",
+            "position": {
+              "height": 127,
+              "width": 279,
+              "x": 34.99998474121094,
+              "y": 359.0000228881836
+            },
+            "text": "Hello World",
+            "type": "text"
+          },
+          {
+            "anchor": {
+              "bottom": true,
+              "right": true
+            },
+            "id": "b",
+            "position": {
+              "height": 82,
+              "width": 200,
+              "x": 440.99998474121094,
+              "y": 191
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "id": "c",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 16,
+              "y": 25.000022888183594
+            },
+            "text": "SWITCH",
+            "type": "switch"
+          }
+        ],
+        "things": [
+          {
+            "anchor": {
+              "left": true,
+              "right": true
+            },
+            "id": "a",
+            "position": {
+              "height": 100,
+              "width": 505,
+              "x": 79.99998474121094,
+              "y": 26.99999237060547
+            },
+            "text": "Hello World",
+            "type": "text"
+          },
+          {
+            "anchor": {
+              "bottom": true,
+              "right": true
+            },
+            "id": "b",
+            "position": {
+              "height": 150,
+              "width": 401,
+              "x": 221.99998474121094,
+              "y": 203.99996948242188
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "id": "c",
+            "position": {
+              "height": 80,
+              "width": 572,
+              "x": 103.00001525878906,
+              "y": 217.0001220703125
+            },
+            "text": "SWITCH",
+            "type": "switch"
+          }
+        ],
+        "width": 691
+      },
+      "pluginVersion": "7.4.0-pre",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "edge-draw-panel"
+    }
+  ],
+  "schemaVersion": 26,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "draw"
+}
