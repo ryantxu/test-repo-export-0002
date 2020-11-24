@@ -153,18 +153,19 @@
               "top": true
             },
             "args": {},
+            "dimension": "A-series",
             "id": "X1606259921135",
             "position": {
-              "height": 180,
+              "height": 285,
               "width": 240,
-              "x": 110,
-              "y": 105
+              "x": 466.00001525878906,
+              "y": 24.000015258789062
             },
             "text": "Wind Turbine",
             "type": "wind-turbine"
           }
         ],
-        "width": 579
+        "width": 1151
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
