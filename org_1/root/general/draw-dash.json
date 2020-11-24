@@ -93,7 +93,39 @@
             "type": "switch"
           }
         ],
-        "editing": true
+        "editing": true,
+        "items": [
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606180215257",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 50
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "right": true,
+              "top": true
+            },
+            "id": "X1606180216646",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 50
+            },
+            "text": "Hello World",
+            "type": "button"
+          }
+        ]
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
