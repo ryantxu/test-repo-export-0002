@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -91,9 +90,10 @@
           "queryType": "StreamTags",
           "refId": "A",
           "tags": [
-            "Sine.Value",
-            "Sine2.Value",
-            "Write Float.Value"
+            "Tanks.Pump.Value",
+            "Tanks.Tank 1.Level.Value",
+            "Tanks.Tank 1.Fill Valve.Value",
+            "Tanks.Tank 1.Drain Valve.Value"
           ]
         }
       ],
