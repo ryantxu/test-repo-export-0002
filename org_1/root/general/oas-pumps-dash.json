@@ -18,67 +18,6 @@
   "links": [],
   "panels": [
     {
-      "datasource": "Open Automation Software (OAS)",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "custom": {
-            "align": null,
-            "filterable": false
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 24,
-        "x": 0,
-        "y": 0
-      },
-      "id": 8,
-      "options": {
-        "frameIndex": 5,
-        "showHeader": true
-      },
-      "pluginVersion": "7.4.0-pre",
-      "targets": [
-        {
-          "path": "Tanks.Tank 1.Drain Valve",
-          "queryType": "StreamTags",
-          "refId": "A",
-          "tags": [
-            "Tanks.Pump.Value",
-            "Tanks.Tank 1.Drain Valve.Value",
-            "Tanks.Tank 1.Fill Valve.Value",
-            "Tanks.Tank 1.Level.Value",
-            "Tanks.Tank 2.Drain Valve.Value",
-            "Tanks.Tank 2.Fill Valve.Value",
-            "Tanks.Tank 2.Level.Value"
-          ]
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "All Data",
-      "type": "table"
-    },
-    {
       "aliasColors": {},
       "bars": false,
       "dashLength": 10,
@@ -115,9 +54,9 @@
       "fillGradient": 0,
       "gridPos": {
         "h": 7,
-        "w": 24,
+        "w": 19,
         "x": 0,
-        "y": 7
+        "y": 0
       },
       "hiddenSeries": false,
       "id": 3,
@@ -172,14 +111,16 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:8926",
           "format": "short",
           "label": null,
           "logBase": 1,
-          "max": null,
-          "min": null,
+          "max": "10",
+          "min": "0",
           "show": true
         },
         {
+          "$$hashKey": "object:8927",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -197,8 +138,14 @@
       "backgroundColor": "rgba(128,128,128,0.1)",
       "colorMaps": [
         {
-          "color": "#CCC",
-          "text": "N/A"
+          "$$hashKey": "object:3703",
+          "color": "#7EB26D",
+          "text": "ON"
+        },
+        {
+          "$$hashKey": "object:3705",
+          "color": "#FFF899",
+          "text": "OFF"
         }
       ],
       "crosshairColor": "#8F070C",
@@ -235,9 +182,9 @@
       },
       "gridPos": {
         "h": 7,
-        "w": 24,
+        "w": 19,
         "x": 0,
-        "y": 14
+        "y": 7
       },
       "highlightOnMouseover": true,
       "id": 9,
@@ -247,12 +194,13 @@
       "pluginVersion": "7.4.0-pre",
       "rangeMaps": [
         {
+          "$$hashKey": "object:3281",
           "from": "null",
           "text": "N/A",
           "to": "null"
         }
       ],
-      "rowHeight": 50,
+      "rowHeight": 40,
       "showLegend": false,
       "showLegendNames": true,
       "showLegendPercent": true,
@@ -308,22 +256,108 @@
       "timeShift": null,
       "timeTextColor": "#d8d9da",
       "title": "Pumps and Valves",
-      "transformations": [],
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Tanks.Tank 1.Level.Value": true,
+              "Tanks.Tank 2.Level.Value": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        }
+      ],
       "type": "natel-discrete-panel",
       "units": "short",
       "use12HourClock": false,
       "useTimePrecision": false,
       "valueMaps": [
         {
+          "$$hashKey": "object:3279",
           "op": "=",
           "text": "N/A",
           "value": "null"
+        },
+        {
+          "$$hashKey": "object:5752",
+          "op": "=",
+          "text": "ON",
+          "value": "True"
+        },
+        {
+          "$$hashKey": "object:6226",
+          "op": "=",
+          "text": "OFF",
+          "value": "False"
         }
       ],
       "valueTextColor": "#000000",
       "writeAllValues": false,
       "writeLastValue": true,
       "writeMetricNames": true
+    },
+    {
+      "datasource": "Open Automation Software (OAS)",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 14
+      },
+      "id": 8,
+      "options": {
+        "frameIndex": 5,
+        "showHeader": true
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "path": "Tanks.Tank 1.Drain Valve",
+          "queryType": "StreamTags",
+          "refId": "A",
+          "tags": [
+            "Tanks.Pump.Value",
+            "Tanks.Tank 1.Drain Valve.Value",
+            "Tanks.Tank 1.Fill Valve.Value",
+            "Tanks.Tank 1.Level.Value",
+            "Tanks.Tank 2.Drain Valve.Value",
+            "Tanks.Tank 2.Fill Valve.Value",
+            "Tanks.Tank 2.Level.Value"
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "All Data",
+      "type": "table"
     },
     {
       "datasource": "-- Dashboard --",
