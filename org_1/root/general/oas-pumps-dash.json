@@ -211,8 +211,29 @@
           }
         ],
         "editing": true,
-        "height": 513,
+        "height": 478,
         "items": [
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 2.Fill Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 2.Fill Valve.Value",
+            "id": "X1606268497960",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 191.9998779296875,
+              "y": 435.9999694824219
+            },
+            "text": "FILL (2)",
+            "type": "button"
+          },
           {
             "anchor": {
               "left": true,
@@ -265,7 +286,7 @@
               "x": 26.99993896484375,
               "y": 177.99999237060547
             },
-            "text": "DRAIN",
+            "text": "DRAIN (1)",
             "type": "button"
           },
           {
@@ -286,7 +307,7 @@
               "x": 162,
               "y": 178.99996185302734
             },
-            "text": "FILL",
+            "text": "FILL (1)",
             "type": "button"
           },
           {
@@ -304,10 +325,10 @@
             "position": {
               "height": 45,
               "width": 90,
-              "x": 21.0001220703125,
-              "y": 418.0000305175781
+              "x": 33.000244140625,
+              "y": 419.0000228881836
             },
-            "text": "DRAIN",
+            "text": "DRAIN (2)",
             "type": "button"
           },
           {
@@ -316,23 +337,23 @@
               "top": true
             },
             "args": {
-              "path": "Tanks.Tank 2.Fill Valve.Value",
+              "path": "Tanks.Pump.Value",
               "url": "http://localhost:3000/api/datasources/43/resources/action",
               "variant": "primary"
             },
-            "dimension": "Tanks.Tank 2.Fill Valve.Value",
+            "dimension": "Tanks.Pump.Value",
             "id": "Gaggds",
             "position": {
               "height": 45,
               "width": 90,
-              "x": 171.9998779296875,
-              "y": 415.9999694824219
+              "x": 13.9998779296875,
+              "y": 6.99993896484375
             },
-            "text": "FILL",
+            "text": "Pump",
             "type": "button"
           }
         ],
-        "width": 1046
+        "width": 320
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
