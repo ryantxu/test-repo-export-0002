@@ -135,6 +135,153 @@
       }
     },
     {
+      "datasource": "-- Dashboard --",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 14,
+        "w": 5,
+        "x": 19,
+        "y": 0
+      },
+      "id": 11,
+      "options": {
+        "alllayers": [
+          {
+            "anchor": {
+              "left": true,
+              "right": true
+            },
+            "id": "a",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 20
+            },
+            "text": "Hello World",
+            "type": "text"
+          },
+          {
+            "anchor": {
+              "bottom": true,
+              "right": true
+            },
+            "id": "b",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 50
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "id": "c",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 70
+            },
+            "text": "SWITCH",
+            "type": "switch"
+          }
+        ],
+        "editing": true,
+        "height": 478,
+        "items": [
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "dimension": "Tanks.Tank 1.Level.Value",
+            "id": "X1606266331419",
+            "position": {
+              "height": 158,
+              "width": 191,
+              "x": 30,
+              "y": 10
+            },
+            "text": "LEVEL 1",
+            "type": "wind-turbine"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "dimension": "Tanks.Tank 2.Level.Value",
+            "id": "X1606266413270",
+            "position": {
+              "height": 158,
+              "width": 191,
+              "x": 44,
+              "y": 241.99996185302734
+            },
+            "text": "LEVEL 2",
+            "type": "wind-turbine"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "url": "",
+              "variant": "primary"
+            },
+            "id": "X1606266499716",
+            "position": {
+              "height": 180,
+              "width": 240,
+              "x": 90,
+              "y": 80
+            },
+            "text": "Button",
+            "type": "button"
+          }
+        ],
+        "width": 280
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "edge-draw-panel"
+    },
+    {
       "backgroundColor": "rgba(128,128,128,0.1)",
       "colorMaps": [
         {
