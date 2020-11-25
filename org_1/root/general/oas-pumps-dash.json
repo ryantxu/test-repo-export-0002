@@ -210,7 +210,7 @@
             "type": "switch"
           }
         ],
-        "editing": true,
+        "editing": false,
         "height": 478,
         "items": [
           {
