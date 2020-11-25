@@ -272,9 +272,11 @@
               "top": true
             },
             "args": {
-              "url": "",
+              "path": "Tanks.Tank 1.Fill Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
               "variant": "primary"
             },
+            "dimension": "Tanks.Tank 1.Fill Valve.Value",
             "id": "X1606266661033",
             "position": {
               "height": 45,
@@ -286,7 +288,7 @@
             "type": "button"
           }
         ],
-        "width": 280
+        "width": 194
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
