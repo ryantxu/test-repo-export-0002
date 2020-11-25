@@ -46,8 +46,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -75,11 +75,138 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Panel Title",
+      "title": "All Data",
       "type": "table"
     },
     {
-      "datasource": "Open Automation Software (OAS)",
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "-- Dashboard --",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 7
+      },
+      "hiddenSeries": false,
+      "id": 3,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.4.0-pre",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Tank Levels",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "transformations": [],
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "backgroundColor": "rgba(128,128,128,0.1)",
+      "colorMaps": [
+        {
+          "color": "#CCC",
+          "text": "N/A"
+        }
+      ],
+      "crosshairColor": "#8F070C",
+      "datasource": "-- Dashboard --",
+      "description": "",
+      "display": "timeline",
+      "expandFromQueryS": 0,
+      "extendLastValue": true,
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -110,31 +237,93 @@
         "h": 7,
         "w": 24,
         "x": 0,
-        "y": 8
+        "y": 14
       },
-      "id": 3,
-      "options": {
-        "showHeader": true
-      },
+      "highlightOnMouseover": true,
+      "id": 9,
+      "legendSortBy": "-ms",
+      "lineColor": "rgba(0,0,0,0.1)",
+      "metricNameColor": "#000000",
       "pluginVersion": "7.4.0-pre",
-      "targets": [
+      "rangeMaps": [
         {
-          "path": "Sine",
-          "period": "1s",
-          "queryType": "StreamTags",
-          "refId": "A",
-          "tags": [
-            "Tanks.Pump.Value",
-            "Tanks.Tank 1.Level.Value",
-            "Tanks.Tank 1.Fill Valve.Value",
-            "Tanks.Tank 1.Drain Valve.Value"
-          ]
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
         }
       ],
+      "rowHeight": 50,
+      "showLegend": false,
+      "showLegendNames": true,
+      "showLegendPercent": true,
+      "showLegendValues": true,
+      "showTimeAxis": true,
+      "targets": [
+        {
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "textSize": 24,
+      "textSizeTime": 12,
       "timeFrom": null,
+      "timeOptions": [
+        {
+          "name": "Years",
+          "value": "years"
+        },
+        {
+          "name": "Months",
+          "value": "months"
+        },
+        {
+          "name": "Weeks",
+          "value": "weeks"
+        },
+        {
+          "name": "Days",
+          "value": "days"
+        },
+        {
+          "name": "Hours",
+          "value": "hours"
+        },
+        {
+          "name": "Minutes",
+          "value": "minutes"
+        },
+        {
+          "name": "Seconds",
+          "value": "seconds"
+        },
+        {
+          "name": "Milliseconds",
+          "value": "milliseconds"
+        }
+      ],
+      "timePrecision": {
+        "name": "Minutes",
+        "value": "minutes"
+      },
       "timeShift": null,
-      "title": "Sine (with settings from OAS) ",
-      "type": "table"
+      "timeTextColor": "#d8d9da",
+      "title": "Pumps and Valves",
+      "transformations": [],
+      "type": "natel-discrete-panel",
+      "units": "short",
+      "use12HourClock": false,
+      "useTimePrecision": false,
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueTextColor": "#000000",
+      "writeAllValues": false,
+      "writeLastValue": true,
+      "writeMetricNames": true
     },
     {
       "datasource": "-- Dashboard --",
@@ -168,7 +357,7 @@
         "h": 6,
         "w": 16,
         "x": 0,
-        "y": 15
+        "y": 21
       },
       "id": 2,
       "options": {
@@ -215,7 +404,7 @@
         "h": 6,
         "w": 8,
         "x": 16,
-        "y": 15
+        "y": 21
       },
       "id": 6,
       "options": {
@@ -269,7 +458,7 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 21
+        "y": 27
       },
       "id": 4,
       "options": {
