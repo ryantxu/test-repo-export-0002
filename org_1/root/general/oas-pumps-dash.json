@@ -253,15 +253,17 @@
               "top": true
             },
             "args": {
-              "url": "",
+              "path": "Tanks.Tank 1.Drain Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
               "variant": "primary"
             },
+            "dimension": "Tanks.Tank 1.Drain Valve.Value",
             "id": "X1606266499716",
             "position": {
               "height": 45,
               "width": 90,
-              "x": 26.999996185302734,
-              "y": 177.99996948242188
+              "x": 26.99993896484375,
+              "y": 177.99999237060547
             },
             "text": "DRAIN",
             "type": "button"
