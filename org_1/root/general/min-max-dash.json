@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -37,7 +36,7 @@
             "points": "auto"
           },
           "mappings": [],
-          "max": 100,
+          "max": 40,
           "thresholds": {
             "mode": "absolute",
             "steps": [
