@@ -211,7 +211,7 @@
           }
         ],
         "editing": true,
-        "height": 478,
+        "height": 513,
         "items": [
           {
             "anchor": {
@@ -288,9 +288,51 @@
             },
             "text": "FILL",
             "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 2.Drain Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 2.Drain Valve.Value",
+            "id": "X160626asdga99716",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 21.0001220703125,
+              "y": 418.0000305175781
+            },
+            "text": "DRAIN",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 2.Fill Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 2.Fill Valve.Value",
+            "id": "Gaggds",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 171.9998779296875,
+              "y": 415.9999694824219
+            },
+            "text": "FILL",
+            "type": "button"
           }
         ],
-        "width": 194
+        "width": 1046
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
