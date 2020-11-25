@@ -94,7 +94,7 @@
           }
         ],
         "editing": true,
-        "height": 440,
+        "height": 282,
         "items": [
           {
             "anchor": {
@@ -163,9 +163,26 @@
             },
             "text": "Wind Turbine",
             "type": "wind-turbine"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "dimension": "A-series",
+            "id": "X1606263334859",
+            "position": {
+              "height": 87,
+              "width": 231,
+              "x": 720.9999237060547,
+              "y": 118
+            },
+            "text": "Display Value",
+            "type": "display-value"
           }
         ],
-        "width": 1151
+        "width": 998
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
