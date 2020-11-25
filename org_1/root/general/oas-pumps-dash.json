@@ -258,12 +258,31 @@
             },
             "id": "X1606266499716",
             "position": {
-              "height": 180,
-              "width": 240,
-              "x": 90,
-              "y": 80
+              "height": 45,
+              "width": 90,
+              "x": 26.999996185302734,
+              "y": 177.99996948242188
             },
-            "text": "Button",
+            "text": "DRAIN",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "url": "",
+              "variant": "primary"
+            },
+            "id": "X1606266661033",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 162,
+              "y": 178.99996185302734
+            },
+            "text": "FILL",
             "type": "button"
           }
         ],
