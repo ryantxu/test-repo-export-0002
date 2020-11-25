@@ -43,8 +43,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 13,
-        "w": 17,
+        "h": 11,
+        "w": 19,
         "x": 0,
         "y": 0
       },
@@ -94,7 +94,7 @@
           }
         ],
         "editing": true,
-        "height": 282,
+        "height": 364,
         "items": [
           {
             "anchor": {
@@ -107,8 +107,8 @@
             "position": {
               "height": 163,
               "width": 364,
-              "x": 285.9999542236328,
-              "y": 137.99993896484375
+              "x": 287.99998474121094,
+              "y": 155.99996185302734
             },
             "text": "aaa",
             "type": "button"
@@ -124,8 +124,8 @@
             "position": {
               "height": 150,
               "width": 200,
-              "x": 140,
-              "y": 36
+              "x": 232.00001525878906,
+              "y": 33.00000762939453
             },
             "text": "bbb",
             "type": "button"
@@ -173,16 +173,16 @@
             "dimension": "A-series",
             "id": "X1606263334859",
             "position": {
-              "height": 87,
-              "width": 231,
-              "x": 720.9999237060547,
-              "y": 118
+              "height": 138,
+              "width": 138,
+              "x": 66.99992370605469,
+              "y": 7
             },
             "text": "Display Value",
             "type": "display-value"
           }
         ],
-        "width": 998
+        "width": 1138
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
@@ -219,7 +219,7 @@
         "h": 15,
         "w": 13,
         "x": 0,
-        "y": 13
+        "y": 11
       },
       "id": 2,
       "options": {
