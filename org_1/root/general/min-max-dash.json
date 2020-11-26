@@ -48,13 +48,19 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 19,
         "x": 0,
         "y": 0
       },
       "id": 4,
       "options": {
-        "showHeader": true
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "A-series2"
+          }
+        ]
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
