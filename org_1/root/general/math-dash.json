@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -78,7 +77,7 @@
         {
           "id": "calculateField",
           "options": {
-            "mode": "reduceRow",
+            "mode": "math",
             "reduce": {
               "reducer": "sum"
             }
