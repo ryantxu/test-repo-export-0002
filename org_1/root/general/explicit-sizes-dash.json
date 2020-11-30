@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -53,8 +52,8 @@
       "options": {
         "colorMode": "value",
         "fontSize": {
-          "title": 20,
-          "value": 50
+          "title": 90,
+          "value": 20
         },
         "graphMode": "area",
         "justifyMode": "auto",
@@ -69,10 +68,128 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "alias": "",
+          "csvWave": {
+            "timeStep": 60,
+            "valuesCSV": "0,0,2,2,1,1"
+          },
+          "lines": 10,
+          "points": [],
+          "pulseWave": {
+            "offCount": 3,
+            "offValue": 1,
+            "onCount": 3,
+            "onValue": 2,
+            "timeStep": 60
+          },
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "seriesCount": 4,
+          "stream": {
+            "bands": 1,
+            "noise": 2.2,
+            "speed": 250,
+            "spread": 3.5,
+            "type": "signal"
+          },
+          "stringInput": ""
+        },
+        {
+          "refId": "B"
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
       "type": "stat"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "fontSize": {
+          "title": 20,
+          "value": 50
+        },
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "alias": "",
+          "csvWave": {
+            "timeStep": 60,
+            "valuesCSV": "0,0,2,2,1,1"
+          },
+          "lines": 10,
+          "points": [],
+          "pulseWave": {
+            "offCount": 3,
+            "offValue": 1,
+            "onCount": 3,
+            "onValue": 2,
+            "timeStep": 60
+          },
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "seriesCount": 4,
+          "stream": {
+            "bands": 1,
+            "noise": 2.2,
+            "speed": 250,
+            "spread": 3.5,
+            "type": "signal"
+          },
+          "stringInput": ""
+        },
+        {
+          "refId": "B"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "gauge"
     }
   ],
   "schemaVersion": 26,
