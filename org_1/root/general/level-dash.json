@@ -94,8 +94,40 @@
           }
         ],
         "editing": true,
-        "height": 393,
+        "height": 288,
         "items": [
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606761323793",
+            "position": {
+              "height": 62,
+              "width": 55,
+              "x": 72,
+              "y": 56.999969482421875
+            },
+            "text": "Faucet",
+            "type": "Faucet"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606761380024",
+            "position": {
+              "height": 62,
+              "width": 55,
+              "x": 71.99999237060547,
+              "y": 227.00003051757812
+            },
+            "text": "Faucet",
+            "type": "Faucet"
+          },
           {
             "anchor": {
               "left": true,
@@ -114,7 +146,7 @@
             "type": "Tank"
           }
         ],
-        "width": 759
+        "width": 593
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
