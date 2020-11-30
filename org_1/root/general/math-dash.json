@@ -105,11 +105,14 @@
         {
           "id": "calculateField",
           "options": {
+            "alias": "XXXX",
             "math": {
-              "expr": "a + b",
+              "expr": "max - min",
               "symbols": {
                 "a": "Min",
-                "b": "Max"
+                "b": "Max",
+                "max": "Max",
+                "min": "Min"
               }
             },
             "mode": "math",
