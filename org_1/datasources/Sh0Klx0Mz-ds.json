@@ -1,0 +1,27 @@
+{
+  "id": 58,
+  "name": "AWS IoT SiteWise (aws account)",
+  "type": "grafana-iot-sitewise-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "authType": "keys",
+    "defaultRegion": "Edge",
+    "edgeAuthMode": "linux",
+    "edgeAuthUser": "test-swe-adminX",
+    "endpoint": "https://54.213.46.117:443"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "Sh0Klx0Mz",
+  "created": "2020-12-01T13:07:22-08:00",
+  "updated": "2021-07-28T11:54:38-07:00"
+}
