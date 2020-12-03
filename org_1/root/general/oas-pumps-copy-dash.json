@@ -282,6 +282,7 @@
               "top": true
             },
             "args": {},
+            "dimension": "Tanks.Pump.Value",
             "id": "X1606966541713",
             "position": {
               "height": 68,
@@ -298,6 +299,7 @@
               "top": true
             },
             "args": {},
+            "dimension": "Tanks.Tank 1.Level.Value",
             "id": "X1606966379638",
             "position": {
               "height": 170,
@@ -314,6 +316,7 @@
               "top": true
             },
             "args": {},
+            "dimension": "Tanks.Tank 1.Fill Valve.Value",
             "id": "X1606966598493",
             "position": {
               "height": 69,
@@ -330,6 +333,7 @@
               "top": true
             },
             "args": {},
+            "dimension": "Tanks.Tank 1.Drain Valve.Value",
             "id": "X1606966708359",
             "position": {
               "height": 59,
@@ -388,6 +392,7 @@
               "top": true
             },
             "args": {},
+            "dimension": "Tanks.Tank 2.Fill Valve.Value",
             "id": "X1606966838696",
             "position": {
               "height": 70,
@@ -404,6 +409,7 @@
               "top": true
             },
             "args": {},
+            "dimension": "Tanks.Tank 2.Drain Valve.Value",
             "id": "X1606966933625",
             "position": {
               "height": 69,
@@ -420,6 +426,7 @@
               "top": true
             },
             "args": {},
+            "dimension": "Tanks.Tank 2.Level.Value",
             "id": "X1606966961342",
             "position": {
               "height": 170,
