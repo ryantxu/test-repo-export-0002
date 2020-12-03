@@ -251,7 +251,7 @@
             "type": "switch"
           }
         ],
-        "editing": true,
+        "editing": false,
         "height": 516,
         "items": [
           {
@@ -479,7 +479,7 @@
             "type": "Tank"
           }
         ],
-        "width": 292
+        "width": 312
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
@@ -503,7 +503,7 @@
         },
         {
           "$$hashKey": "object:3705",
-          "color": "#F2495C",
+          "color": "rgb(71, 28, 30)",
           "text": "OFF"
         }
       ],
