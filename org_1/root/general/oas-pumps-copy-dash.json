@@ -1,0 +1,610 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "-- Dashboard --",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 7,
+        "w": 19,
+        "x": 0,
+        "y": 0
+      },
+      "hiddenSeries": false,
+      "id": 3,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.4.0-pre",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Tank Levels",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "transformations": [],
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:8926",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": "10",
+          "min": "0",
+          "show": true
+        },
+        {
+          "$$hashKey": "object:8927",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "datasource": "-- Dashboard --",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 5,
+        "x": 19,
+        "y": 0
+      },
+      "id": 11,
+      "options": {
+        "alllayers": [
+          {
+            "anchor": {
+              "left": true,
+              "right": true
+            },
+            "id": "a",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 20
+            },
+            "text": "Hello World",
+            "type": "text"
+          },
+          {
+            "anchor": {
+              "bottom": true,
+              "right": true
+            },
+            "id": "b",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 50
+            },
+            "text": "Hello World",
+            "type": "button"
+          },
+          {
+            "id": "c",
+            "position": {
+              "height": 150,
+              "width": 200,
+              "x": 10,
+              "y": 70
+            },
+            "text": "SWITCH",
+            "type": "switch"
+          }
+        ],
+        "editing": false,
+        "height": 478,
+        "items": [
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 2.Fill Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 2.Fill Valve.Value",
+            "id": "X1606268497960",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 174.99986267089844,
+              "y": 418.9999694824219
+            },
+            "text": "FILL (2)",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "dimension": "Tanks.Tank 1.Level.Value",
+            "id": "X1606266331419",
+            "position": {
+              "height": 158,
+              "width": 191,
+              "x": 30,
+              "y": 10
+            },
+            "text": "LEVEL 1",
+            "type": "wind-turbine"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "dimension": "Tanks.Tank 2.Level.Value",
+            "id": "X1606266413270",
+            "position": {
+              "height": 158,
+              "width": 191,
+              "x": 44,
+              "y": 241.99996185302734
+            },
+            "text": "LEVEL 2",
+            "type": "wind-turbine"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 1.Drain Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 1.Drain Valve.Value",
+            "id": "X1606266499716",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 26.9998779296875,
+              "y": 177.99999237060547
+            },
+            "text": "DRAIN (1)",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 1.Fill Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 1.Fill Valve.Value",
+            "id": "X1606266661033",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 162,
+              "y": 178.99996185302734
+            },
+            "text": "FILL (1)",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 2.Drain Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 2.Drain Valve.Value",
+            "id": "X160626asdga99716",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 33.000244140625,
+              "y": 419.0000228881836
+            },
+            "text": "DRAIN (2)",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Pump.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Pump.Value",
+            "id": "Gaggds",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 13.9998779296875,
+              "y": 6.999931335449219
+            },
+            "text": "Pump",
+            "type": "button"
+          }
+        ],
+        "width": 320
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "edge-draw-panel"
+    },
+    {
+      "backgroundColor": "rgba(128,128,128,0.1)",
+      "colorMaps": [
+        {
+          "$$hashKey": "object:3703",
+          "color": "#7EB26D",
+          "text": "ON"
+        },
+        {
+          "$$hashKey": "object:3705",
+          "color": "#FFF899",
+          "text": "OFF"
+        }
+      ],
+      "crosshairColor": "#8F070C",
+      "datasource": "-- Dashboard --",
+      "description": "",
+      "display": "timeline",
+      "expandFromQueryS": 0,
+      "extendLastValue": true,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 19,
+        "x": 0,
+        "y": 7
+      },
+      "highlightOnMouseover": true,
+      "id": 9,
+      "legendSortBy": "-ms",
+      "lineColor": "rgba(0,0,0,0.1)",
+      "metricNameColor": "#000000",
+      "pluginVersion": "7.4.0-pre",
+      "rangeMaps": [
+        {
+          "$$hashKey": "object:3281",
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "rowHeight": 40,
+      "showLegend": false,
+      "showLegendNames": true,
+      "showLegendPercent": true,
+      "showLegendValues": true,
+      "showTimeAxis": true,
+      "targets": [
+        {
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "textSize": 24,
+      "textSizeTime": 12,
+      "timeFrom": null,
+      "timeOptions": [
+        {
+          "name": "Years",
+          "value": "years"
+        },
+        {
+          "name": "Months",
+          "value": "months"
+        },
+        {
+          "name": "Weeks",
+          "value": "weeks"
+        },
+        {
+          "name": "Days",
+          "value": "days"
+        },
+        {
+          "name": "Hours",
+          "value": "hours"
+        },
+        {
+          "name": "Minutes",
+          "value": "minutes"
+        },
+        {
+          "name": "Seconds",
+          "value": "seconds"
+        },
+        {
+          "name": "Milliseconds",
+          "value": "milliseconds"
+        }
+      ],
+      "timePrecision": {
+        "name": "Minutes",
+        "value": "minutes"
+      },
+      "timeShift": null,
+      "timeTextColor": "#d8d9da",
+      "title": "Pumps and Valves",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Tanks.Tank 1.Level.Value": true,
+              "Tanks.Tank 2.Level.Value": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        }
+      ],
+      "type": "natel-discrete-panel",
+      "units": "short",
+      "use12HourClock": false,
+      "useTimePrecision": false,
+      "valueMaps": [
+        {
+          "$$hashKey": "object:3279",
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        },
+        {
+          "$$hashKey": "object:5752",
+          "op": "=",
+          "text": "ON",
+          "value": "True"
+        },
+        {
+          "$$hashKey": "object:6226",
+          "op": "=",
+          "text": "OFF",
+          "value": "False"
+        }
+      ],
+      "valueTextColor": "#000000",
+      "writeAllValues": false,
+      "writeLastValue": true,
+      "writeMetricNames": true
+    },
+    {
+      "datasource": "Open Automation Software (OAS)",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 15
+      },
+      "id": 8,
+      "options": {
+        "frameIndex": 5,
+        "showHeader": true
+      },
+      "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "path": "Tanks.Tank 1.Drain Valve",
+          "queryType": "StreamTags",
+          "refId": "A",
+          "tags": [
+            "Tanks.Pump.Value",
+            "Tanks.Tank 1.Drain Valve.Value",
+            "Tanks.Tank 1.Fill Valve.Value",
+            "Tanks.Tank 1.Level.Value",
+            "Tanks.Tank 2.Drain Valve.Value",
+            "Tanks.Tank 2.Fill Valve.Value",
+            "Tanks.Tank 2.Level.Value"
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "All Data",
+      "type": "table"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-1m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "oas pumps Copy"
+}
