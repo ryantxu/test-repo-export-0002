@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -55,7 +54,7 @@
       "fillGradient": 0,
       "gridPos": {
         "h": 7,
-        "w": 19,
+        "w": 18,
         "x": 0,
         "y": 0
       },
@@ -162,8 +161,8 @@
       },
       "gridPos": {
         "h": 15,
-        "w": 5,
-        "x": 19,
+        "w": 6,
+        "x": 18,
         "y": 0
       },
       "id": 11,
@@ -211,8 +210,8 @@
             "type": "switch"
           }
         ],
-        "editing": false,
-        "height": 478,
+        "editing": true,
+        "height": 516,
         "items": [
           {
             "anchor": {
@@ -229,107 +228,10 @@
             "position": {
               "height": 45,
               "width": 90,
-              "x": 174.99986267089844,
-              "y": 418.9999694824219
+              "x": 203.99984741210938,
+              "y": 238.99996948242188
             },
             "text": "FILL (2)",
-            "type": "button"
-          },
-          {
-            "anchor": {
-              "left": true,
-              "top": true
-            },
-            "args": {},
-            "dimension": "Tanks.Tank 1.Level.Value",
-            "id": "X1606266331419",
-            "position": {
-              "height": 158,
-              "width": 191,
-              "x": 30,
-              "y": 10
-            },
-            "text": "LEVEL 1",
-            "type": "wind-turbine"
-          },
-          {
-            "anchor": {
-              "left": true,
-              "top": true
-            },
-            "args": {},
-            "dimension": "Tanks.Tank 2.Level.Value",
-            "id": "X1606266413270",
-            "position": {
-              "height": 158,
-              "width": 191,
-              "x": 44,
-              "y": 241.99996185302734
-            },
-            "text": "LEVEL 2",
-            "type": "wind-turbine"
-          },
-          {
-            "anchor": {
-              "left": true,
-              "top": true
-            },
-            "args": {
-              "path": "Tanks.Tank 1.Drain Valve.Value",
-              "url": "http://localhost:3000/api/datasources/43/resources/action",
-              "variant": "primary"
-            },
-            "dimension": "Tanks.Tank 1.Drain Valve.Value",
-            "id": "X1606266499716",
-            "position": {
-              "height": 45,
-              "width": 90,
-              "x": 26.9998779296875,
-              "y": 177.99999237060547
-            },
-            "text": "DRAIN (1)",
-            "type": "button"
-          },
-          {
-            "anchor": {
-              "left": true,
-              "top": true
-            },
-            "args": {
-              "path": "Tanks.Tank 1.Fill Valve.Value",
-              "url": "http://localhost:3000/api/datasources/43/resources/action",
-              "variant": "primary"
-            },
-            "dimension": "Tanks.Tank 1.Fill Valve.Value",
-            "id": "X1606266661033",
-            "position": {
-              "height": 45,
-              "width": 90,
-              "x": 162,
-              "y": 178.99996185302734
-            },
-            "text": "FILL (1)",
-            "type": "button"
-          },
-          {
-            "anchor": {
-              "left": true,
-              "top": true
-            },
-            "args": {
-              "path": "Tanks.Tank 2.Drain Valve.Value",
-              "url": "http://localhost:3000/api/datasources/43/resources/action",
-              "variant": "primary"
-            },
-            "dimension": "Tanks.Tank 2.Drain Valve.Value",
-            "id": "X160626asdga99716",
-            "position": {
-              "height": 45,
-              "width": 90,
-              "x": 33.000244140625,
-              "y": 419.0000228881836
-            },
-            "text": "DRAIN (2)",
             "type": "button"
           },
           {
@@ -347,14 +249,189 @@
             "position": {
               "height": 45,
               "width": 90,
-              "x": 13.9998779296875,
-              "y": 6.999931335449219
+              "x": 94.9998550415039,
+              "y": 447.9997863769531
             },
             "text": "Pump",
             "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 2.Drain Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 2.Drain Valve.Value",
+            "id": "X160626asdga99716",
+            "position": {
+              "height": 55,
+              "width": 90,
+              "x": 205.00022888183594,
+              "y": 355.9999694824219
+            },
+            "text": "DRAIN (2)",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606966541713",
+            "position": {
+              "height": 68,
+              "width": 65,
+              "x": 10.999984741210938,
+              "y": 441.0000305175781
+            },
+            "text": "Pump",
+            "type": "Pump"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606966379638",
+            "position": {
+              "height": 170,
+              "width": 127,
+              "x": 68.00001525878906,
+              "y": 6
+            },
+            "text": "Tank 1",
+            "type": "Tank"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606966598493",
+            "position": {
+              "height": 69,
+              "width": 57,
+              "x": 5.000032424926758,
+              "y": -0.000030517578125
+            },
+            "text": "Fill 1",
+            "type": "Faucet"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606966708359",
+            "position": {
+              "height": 59,
+              "width": 57,
+              "x": 7.000032424926758,
+              "y": 125.99996948242188
+            },
+            "text": "Drain 1",
+            "type": "Faucet"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 1.Fill Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 1.Fill Valve.Value",
+            "id": "X1606266661033",
+            "position": {
+              "height": 45,
+              "width": 90,
+              "x": 204.00001525878906,
+              "y": 6.9999542236328125
+            },
+            "text": "FILL (1)",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {
+              "path": "Tanks.Tank 1.Drain Valve.Value",
+              "url": "http://localhost:3000/api/datasources/43/resources/action",
+              "variant": "primary"
+            },
+            "dimension": "Tanks.Tank 1.Drain Valve.Value",
+            "id": "X1606266499716",
+            "position": {
+              "height": 36,
+              "width": 90,
+              "x": 200.99986267089844,
+              "y": 142.00003051757812
+            },
+            "text": "DRAIN (1)",
+            "type": "button"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606966838696",
+            "position": {
+              "height": 70,
+              "width": 58,
+              "x": 8.00003433227539,
+              "y": 231.99993896484375
+            },
+            "text": "Fill 1",
+            "type": "Faucet"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606966933625",
+            "position": {
+              "height": 69,
+              "width": 57,
+              "x": 11.00003433227539,
+              "y": 331.99993896484375
+            },
+            "text": "Drain 2",
+            "type": "Faucet"
+          },
+          {
+            "anchor": {
+              "left": true,
+              "top": true
+            },
+            "args": {},
+            "id": "X1606966961342",
+            "position": {
+              "height": 170,
+              "width": 127,
+              "x": 69.00001525878906,
+              "y": 232
+            },
+            "text": "Tank 1",
+            "type": "Tank"
           }
         ],
-        "width": 320
+        "width": 315
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
@@ -416,7 +493,7 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 19,
+        "w": 18,
         "x": 0,
         "y": 7
       },
