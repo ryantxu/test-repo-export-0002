@@ -160,10 +160,34 @@
         "overrides": [
           {
             "matcher": {
-              "id": "byRegexp",
-              "options": "*Level*"
+              "id": "byName",
+              "options": "Tanks.Tank 1.Level.Value"
             },
             "properties": [
+              {
+                "id": "min",
+                "value": 0
+              },
+              {
+                "id": "max",
+                "value": 10
+              },
+              {
+                "id": "unit",
+                "value": "lengthft"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Tanks.Tank 2.Level.Value"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "lengthft"
+              },
               {
                 "id": "min",
                 "value": 0
@@ -455,7 +479,7 @@
             "type": "Tank"
           }
         ],
-        "width": 315
+        "width": 292
       },
       "pluginVersion": "7.4.0-pre",
       "targets": [
