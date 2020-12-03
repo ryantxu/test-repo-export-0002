@@ -56,7 +56,12 @@
               "id": "byName",
               "options": "A-series"
             },
-            "properties": []
+            "properties": [
+              {
+                "id": "custom.axisPlacement",
+                "value": "auto"
+              }
+            ]
           }
         ]
       },
