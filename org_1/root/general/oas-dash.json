@@ -232,7 +232,7 @@
       "targets": [
         {
           "path": "Sine",
-          "period": "5s",
+          "period": "1s",
           "queryType": "StreamTags",
           "refId": "A",
           "tags": [
@@ -248,7 +248,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 26,
+  "schemaVersion": 27,
   "style": "dark",
   "tags": [],
   "templating": {
