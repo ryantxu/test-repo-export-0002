@@ -157,7 +157,24 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byRegexp",
+              "options": "*Level*"
+            },
+            "properties": [
+              {
+                "id": "min",
+                "value": 0
+              },
+              {
+                "id": "max",
+                "value": 10
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 15,
