@@ -87,7 +87,10 @@
                 "name": "saw"
               }
             ],
-            "period": "1m"
+            "period": "1m",
+            "time": {
+              "period": "1m"
+            }
           },
           "signals": [
             {
@@ -154,7 +157,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 26,
+  "schemaVersion": 27,
   "style": "dark",
   "tags": [],
   "templating": {
