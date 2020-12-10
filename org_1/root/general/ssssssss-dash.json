@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -66,7 +65,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "queryType": "stream",
+          "queryType": "AWG",
           "refId": "A",
           "signal": {
             "fields": [
@@ -82,7 +81,9 @@
         }
       ],
       "thresholds": [],
+      "timeFrom": null,
       "timeRegions": [],
+      "timeShift": null,
       "title": "Panel Title",
       "tooltip": {
         "shared": true,
