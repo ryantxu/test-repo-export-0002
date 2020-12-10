@@ -22,10 +22,22 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "palette-classic"
           },
-          "custom": {},
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "drawStyle": "line",
+            "fillGradient": 0,
+            "fillOpacity": 0.1,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 6,
+            "showPoints": "never",
+            "spanNulls": true
+          },
           "mappings": [],
+          "nullValueMode": "null",
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -38,7 +50,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "short"
         },
         "overrides": []
       },
@@ -48,27 +61,22 @@
         "x": 0,
         "y": 0
       },
-      "id": 4,
+      "id": 2,
       "options": {
-        "colorMode": "background",
-        "graphMode": "area",
-        "justifyMode": "auto",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
+        "graph": {},
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
         },
-        "text": {},
-        "textMode": "auto"
+        "tooltipOptions": {
+          "mode": "single"
+        }
       },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
-      "type": "stat"
+      "type": "graph3"
     }
   ],
   "refresh": false,
