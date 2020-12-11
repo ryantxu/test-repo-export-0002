@@ -28,7 +28,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "drawStyle": "line",
-            "fillGradient": 0,
+            "fillGradient": 0.2,
             "fillOpacity": 0.1,
             "lineInterpolation": "linear",
             "lineWidth": 1,
