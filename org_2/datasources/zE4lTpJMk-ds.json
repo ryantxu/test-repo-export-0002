@@ -1,0 +1,21 @@
+{
+  "id": 60,
+  "name": "NOAA Tides and Currents",
+  "type": "ryantxu-noaa-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "zE4lTpJMk",
+  "created": "2020-12-11T21:42:39-08:00",
+  "updated": "2021-04-25T15:39:26-07:00"
+}
