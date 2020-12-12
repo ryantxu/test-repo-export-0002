@@ -93,6 +93,11 @@
           "product": "water_level",
           "refId": "B",
           "station": 9414750
+        },
+        {
+          "product": "high_low",
+          "refId": "C",
+          "station": 9414750
         }
       ],
       "thresholds": [],
