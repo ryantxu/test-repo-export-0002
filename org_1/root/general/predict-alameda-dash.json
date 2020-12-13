@@ -88,7 +88,7 @@
           "product": "air_temperature",
           "refId": "A",
           "station": 9414750,
-          "units": "metric"
+          "units": "english"
         }
       ],
       "thresholds": [],
