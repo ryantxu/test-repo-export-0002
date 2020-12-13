@@ -85,9 +85,10 @@
       "steppedLine": false,
       "targets": [
         {
-          "product": "predictions",
+          "product": "air_temperature",
           "refId": "A",
-          "station": 9414750
+          "station": 9414750,
+          "units": "metric"
         }
       ],
       "thresholds": [],
