@@ -97,6 +97,13 @@
           "refId": "B",
           "station": 9414750,
           "units": "english"
+        },
+        {
+          "date": "latest",
+          "product": "high_low",
+          "refId": "C",
+          "station": 9414750,
+          "units": "english"
         }
       ],
       "thresholds": [],
