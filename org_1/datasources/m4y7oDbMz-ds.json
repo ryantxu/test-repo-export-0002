@@ -1,0 +1,21 @@
+{
+  "id": 61,
+  "name": "Raspberry Pi",
+  "type": "grafana-raspberry-pi-datasource",
+  "access": "proxy",
+  "url": "http://localhost:58725/OASREST/v2",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "m4y7oDbMz",
+  "created": "2020-12-22T18:30:12-08:00",
+  "updated": "2021-05-23T14:01:16-07:00"
+}
