@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -44,12 +43,46 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 16,
+        "w": 14,
         "x": 0,
         "y": 0
       },
       "id": 2,
+      "options": {
+        "root": {
+          "anchor": {
+            "bottom": true,
+            "left": true,
+            "right": true,
+            "top": true
+          },
+          "items": [
+            {
+              "anchor": {
+                "bottom": true,
+                "left": true,
+                "right": true,
+                "top": false
+              },
+              "placement": {
+                "bottom": 50.018463134765625,
+                "height": 188,
+                "left": 267,
+                "right": 108.01416015625
+              },
+              "type": "????"
+            }
+          ],
+          "placement": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "type": "layer"
+        }
+      },
       "pluginVersion": "7.4.0-pre",
       "timeFrom": null,
       "timeShift": null,
