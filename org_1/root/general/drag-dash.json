@@ -43,44 +43,32 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 16,
-        "w": 14,
+        "h": 12,
+        "w": 16,
         "x": 0,
         "y": 0
       },
       "id": 2,
       "options": {
         "root": {
-          "anchor": {
-            "bottom": true,
-            "left": true,
-            "right": true,
-            "top": true
-          },
           "items": [
             {
               "anchor": {
                 "bottom": true,
                 "left": true,
                 "right": true,
-                "top": false
+                "top": true
               },
+              "id": "ZZZZ",
               "placement": {
-                "bottom": 15.018463134765625,
-                "height": 188,
-                "left": 12,
-                "right": 698.01416015625
+                "bottom": 106.88942149064565,
+                "left": 84.18895011574406,
+                "right": 108.16279490183432,
+                "top": 57.60336291873022
               },
               "type": "????"
             }
-          ],
-          "placement": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "type": "layer"
+          ]
         }
       },
       "pluginVersion": "7.4.0-pre",
