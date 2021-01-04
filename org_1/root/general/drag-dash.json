@@ -67,6 +67,34 @@
                 "width": 261.49005126953125
               },
               "type": "text-box"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "s349tk",
+              "placement": {
+                "height": 207.8764190673828,
+                "left": 55,
+                "top": 50,
+                "width": 261.49005126953125
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "78ojkz",
+              "placement": {
+                "height": 207.8764190673828,
+                "left": 79,
+                "top": 79,
+                "width": 261.49005126953125
+              },
+              "type": "text-box"
             }
           ],
           "type": "layer"
