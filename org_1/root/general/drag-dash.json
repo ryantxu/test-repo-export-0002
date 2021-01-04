@@ -119,6 +119,20 @@
                 "width": 96.71875
               },
               "type": "????"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "b5c06z",
+              "placement": {
+                "height": 207.8764190673828,
+                "left": 468,
+                "top": 105,
+                "width": 261.49005126953125
+              },
+              "type": "text-box"
             }
           ],
           "type": "layer"
