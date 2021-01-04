@@ -50,21 +50,10 @@
       },
       "id": 2,
       "options": {
+        "editing": true,
         "root": {
           "id": "h12qqv",
           "items": [
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "id": "foo9vx",
-              "placement": {
-                "left": 79,
-                "top": 206
-              },
-              "type": "????"
-            },
             {
               "anchor": {
                 "left": true,
@@ -84,12 +73,50 @@
                 "left": true,
                 "top": true
               },
-              "id": "et39ic",
+              "id": "foo9vx",
               "placement": {
-                "height": 178.8579559326172,
-                "left": 135,
-                "top": 167,
-                "width": 203.3536834716797
+                "left": 79,
+                "top": 206
+              },
+              "type": "????"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "pnhcat",
+              "placement": {
+                "left": 59,
+                "top": 289
+              },
+              "type": "????"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "p9j5hj",
+              "placement": {
+                "height": 97.8678970336914,
+                "left": 363,
+                "top": 258,
+                "width": 104.92755126953125
+              },
+              "type": "????"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "xprn2i",
+              "placement": {
+                "height": 140.70880126953125,
+                "left": 430,
+                "top": 62,
+                "width": 96.71875
               },
               "type": "????"
             }
