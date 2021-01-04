@@ -59,77 +59,11 @@
                 "left": true,
                 "top": true
               },
-              "id": "peme9o",
-              "placement": {
-                "height": 140.70880126953125,
-                "left": 209,
-                "top": 104,
-                "width": 96.71875
-              },
-              "type": "????"
-            },
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "id": "foo9vx",
-              "placement": {
-                "left": 79,
-                "top": 206
-              },
-              "type": "????"
-            },
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "id": "pnhcat",
-              "placement": {
-                "left": 59,
-                "top": 289
-              },
-              "type": "????"
-            },
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "id": "p9j5hj",
-              "placement": {
-                "height": 97.8678970336914,
-                "left": 363,
-                "top": 258,
-                "width": 104.92755126953125
-              },
-              "type": "????"
-            },
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "id": "xprn2i",
-              "placement": {
-                "height": 140.70880126953125,
-                "left": 430,
-                "top": 62,
-                "width": 96.71875
-              },
-              "type": "????"
-            },
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "id": "b5c06z",
+              "id": "aj5bta",
               "placement": {
                 "height": 207.8764190673828,
-                "left": 468,
-                "top": 105,
+                "left": 35,
+                "top": 25,
                 "width": 261.49005126953125
               },
               "type": "text-box"
