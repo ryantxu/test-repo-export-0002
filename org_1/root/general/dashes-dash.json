@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -35,7 +34,7 @@
             "fillOpacity": 10,
             "lineInterpolation": "linear",
             "lineStyle": {
-              "fill": "dash"
+              "fill": "solid"
             },
             "lineWidth": 1,
             "pointSize": 6,
@@ -71,6 +70,7 @@
         "y": 0
       },
       "id": 2,
+      "maxDataPoints": 20,
       "options": {
         "graph": {},
         "legend": {
