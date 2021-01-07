@@ -25,6 +25,7 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "align": null,
             "axisLabel": "",
             "axisPlacement": "auto",
             "drawStyle": "line",
@@ -32,6 +33,7 @@
               "label": "None"
             },
             "fillOpacity": 10,
+            "filterable": false,
             "hideFrom": {
               "graph": false,
               "legend": false,
@@ -71,14 +73,16 @@
       },
       "id": 2,
       "options": {
-        "dims": {
-          "xFields": {
-            "id": "byName",
-            "options": "A-series"
-          },
-          "yFields": {
-            "id": "byName",
-            "options": "B-series"
+        "graph": {
+          "dims": {
+            "xFields": {
+              "id": "byName",
+              "options": "A-series"
+            },
+            "yFields": {
+              "id": "byName",
+              "options": "B-series"
+            }
           }
         },
         "legend": {
@@ -107,6 +111,12 @@
         }
       ],
       "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "seriesToColumns",
+          "options": {}
+        }
+      ],
       "type": "xychart"
     }
   ],
