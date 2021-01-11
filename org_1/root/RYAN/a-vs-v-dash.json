@@ -75,7 +75,7 @@
       "options": {
         "dims": {
           "sort": true,
-          "x": "Min"
+          "x": "Max"
         },
         "graph": {
           "dims": {
