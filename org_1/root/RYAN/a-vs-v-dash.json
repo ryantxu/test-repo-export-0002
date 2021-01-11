@@ -73,6 +73,10 @@
       },
       "id": 2,
       "options": {
+        "dims": {
+          "sort": true,
+          "x": "Min"
+        },
         "graph": {
           "dims": {
             "xFields": {
