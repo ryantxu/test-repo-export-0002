@@ -29,7 +29,7 @@
             "axisPlacement": "auto",
             "drawStyle": "line",
             "fillGradient": "none",
-            "fillOpacity": 10,
+            "fillOpacity": 0,
             "hideFrom": {
               "graph": false,
               "legend": false,
@@ -102,6 +102,7 @@
           "refId": "B"
         },
         {
+          "hide": true,
           "refId": "C"
         }
       ],
@@ -111,6 +112,7 @@
       "type": "timeseries"
     }
   ],
+  "refresh": false,
   "schemaVersion": 27,
   "style": "dark",
   "tags": [],
