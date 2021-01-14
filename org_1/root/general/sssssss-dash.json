@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -82,6 +81,17 @@
         }
       },
       "pluginVersion": "7.4.0-pre",
+      "targets": [
+        {
+          "refId": "A"
+        },
+        {
+          "refId": "B"
+        },
+        {
+          "refId": "C"
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
