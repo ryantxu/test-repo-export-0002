@@ -61,7 +61,20 @@
           },
           "unit": "short"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "A-series"
+            },
+            "properties": [
+              {
+                "id": "custom.fillBelowTo",
+                "value": "B-series"
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 9,
