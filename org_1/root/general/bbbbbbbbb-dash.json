@@ -76,7 +76,15 @@
       "transformations": [
         {
           "id": "sortBy",
-          "options": {}
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "A-series"
+              }
+            ]
+          }
         }
       ],
       "type": "graph",
