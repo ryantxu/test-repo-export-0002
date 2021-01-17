@@ -22,7 +22,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "palette-classic"
           },
           "custom": {
             "align": null,
@@ -84,23 +84,16 @@
       },
       "id": 2,
       "options": {
-        "showHeader": true,
-        "sortBy": [
-          {
-            "desc": true,
-            "displayName": "A-series"
-          }
-        ]
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltipOptions": {
+          "mode": "single"
+        }
       },
       "pluginVersion": "7.4.0-pre",
-      "targets": [
-        {
-          "refId": "A"
-        },
-        {
-          "refId": "B"
-        }
-      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
@@ -112,13 +105,13 @@
             "sort": [
               {
                 "desc": false,
-                "field": "A-series"
+                "field": "Time"
               }
             ]
           }
         }
       ],
-      "type": "table"
+      "type": "timeseries"
     }
   ],
   "schemaVersion": 27,
