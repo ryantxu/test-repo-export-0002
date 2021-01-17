@@ -104,7 +104,7 @@
             "fields": {},
             "sort": [
               {
-                "desc": false,
+                "desc": true,
                 "field": "Time"
               }
             ]
