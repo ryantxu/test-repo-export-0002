@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -28,7 +27,7 @@
       },
       "gridPos": {
         "h": 6,
-        "w": 13,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -55,8 +54,8 @@
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 8,
-        "w": 13,
+        "h": 7,
+        "w": 24,
         "x": 0,
         "y": 6
       },
