@@ -50,7 +50,27 @@
       },
       "id": 4,
       "options": {
-        "editing": true
+        "editing": true,
+        "root": {
+          "id": "an2grx",
+          "items": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "hwey4b",
+              "placement": {
+                "height": 73.87783813476562,
+                "left": 115,
+                "top": 28,
+                "width": 153.47158813476562
+              },
+              "type": "text-box"
+            }
+          ],
+          "type": "layer"
+        }
       },
       "pluginVersion": "7.5.0-pre",
       "timeFrom": null,
