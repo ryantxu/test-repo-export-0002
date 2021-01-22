@@ -69,6 +69,7 @@
       },
       "id": 2,
       "options": {
+        "dims": {},
         "legend": {
           "calcs": [],
           "displayMode": "list",
