@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -71,6 +70,7 @@
       "id": 2,
       "options": {
         "legend": {
+          "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
@@ -96,7 +96,7 @@
             "timeStep": 60
           },
           "refId": "A",
-          "scenarioId": "arrow",
+          "scenarioId": "random_walk_table",
           "stream": {
             "bands": 1,
             "noise": 2.2,
