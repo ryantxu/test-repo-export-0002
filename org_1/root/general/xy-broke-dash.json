@@ -1,0 +1,127 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "drawStyle": "points",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "graph": false,
+              "legend": false,
+              "tooltip": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltipOptions": {
+          "mode": "single"
+        }
+      },
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "alias": "",
+          "csvWave": {
+            "timeStep": 60,
+            "valuesCSV": "0,0,2,2,1,1"
+          },
+          "lines": 10,
+          "points": [],
+          "pulseWave": {
+            "offCount": 3,
+            "offValue": 1,
+            "onCount": 3,
+            "onValue": 2,
+            "timeStep": 60
+          },
+          "refId": "A",
+          "scenarioId": "arrow",
+          "stream": {
+            "bands": 1,
+            "noise": 2.2,
+            "speed": 250,
+            "spread": 3.5,
+            "type": "signal"
+          },
+          "stringInput": "QVJST1cxAAD/////8AEAABAAAAAAAAoADgAMAAsABAAKAAAAFAAAAAAAAAEDAAoADAAAAAgABAAKAAAACAAAAOwAAAADAAAATAAAACgAAAAEAAAAmP7//wgAAAAMAAAAAQAAAEEAAAAFAAAAcmVmSWQAAAC4/v//CAAAAAwAAAAAAAAAAAAAAAQAAABuYW1lAAAAANj+//8IAAAAhAAAAHsAAAB7ImN1c3RvbSI6eyJDb2x1bW5UeXBlcyI6WyJyZWFsIiwicmVhbCJdfSwiZXhlY3V0ZWRRdWVyeVN0cmluZyI6ImRhdGF0YWJsZSAoYTpyZWFsLCBiOnJlYWwpIFtcbiAgICAxLCAxMDQwLFxuICAgIDIsIDIsXG5dIn0ABAAAAG1ldGEAAAAAAgAAAGwAAAAEAAAArv///xQAAAA4AAAAOAAAAAAAAwE4AAAAAQAAAAQAAACc////CAAAAAwAAAABAAAAYgAAAAQAAABuYW1lAAAAAAAAAACS////AAACAAEAAABiABIAGAAUABMAEgAMAAAACAAEABIAAAAUAAAAQAAAAEgAAAAAAAMBSAAAAAEAAAAMAAAACAAMAAgABAAIAAAACAAAAAwAAAABAAAAYQAAAAQAAABuYW1lAAAAAAAAAAAAAAYACAAGAAYAAAAAAAIAAQAAAGEAAAD/////uAAAABQAAAAAAAAADAAWABQAEwAMAAQADAAAACAAAAAAAAAAFAAAAAAAAAMDAAoAGAAMAAgABAAKAAAAFAAAAFgAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAAAAAAAABAAAAAAABAkEAAAAAAAAAAQBAAAAAMABQAEgAMAAgABAAMAAAAEAAAACwAAAA8AAAAAAADAAEAAAAAAgAAAAAAAMAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoADAAAAAgABAAKAAAACAAAAOwAAAADAAAATAAAACgAAAAEAAAAmP7//wgAAAAMAAAAAQAAAEEAAAAFAAAAcmVmSWQAAAC4/v//CAAAAAwAAAAAAAAAAAAAAAQAAABuYW1lAAAAANj+//8IAAAAhAAAAHsAAAB7ImN1c3RvbSI6eyJDb2x1bW5UeXBlcyI6WyJyZWFsIiwicmVhbCJdfSwiZXhlY3V0ZWRRdWVyeVN0cmluZyI6ImRhdGF0YWJsZSAoYTpyZWFsLCBiOnJlYWwpIFtcbiAgICAxLCAxMDQwLFxuICAgIDIsIDIsXG5dIn0ABAAAAG1ldGEAAAAAAgAAAGwAAAAEAAAArv///xQAAAA4AAAAOAAAAAAAAwE4AAAAAQAAAAQAAACc////CAAAAAwAAAABAAAAYgAAAAQAAABuYW1lAAAAAAAAAACS////AAACAAEAAABiABIAGAAUABMAEgAMAAAACAAEABIAAAAUAAAAQAAAAEgAAAAAAAMBSAAAAAEAAAAMAAAACAAMAAgABAAIAAAACAAAAAwAAAABAAAAYQAAAAQAAABuYW1lAAAAAAAAAAAAAAYACAAGAAYAAAAAAAIAAQAAAGEAAAAgAgAAQVJST1cx"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "xychart"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "xy broke"
+}
