@@ -15,6 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
+  "iteration": 1611615251642,
   "links": [],
   "panels": [
     {
@@ -92,18 +93,13 @@
         "options": [
           {
             "selected": true,
-            "text": "Demo Turbine Asset Model",
-            "value": "Demo Turbine Asset Model"
-          },
-          {
-            "selected": false,
-            "text": "Demo Wind Farm Asset Model",
-            "value": "Demo Wind Farm Asset Model"
+            "text": "Demo Wind Farm Asset",
+            "value": "Demo Wind Farm Asset"
           }
         ],
         "query": {
           "filter": "TOP_LEVEL",
-          "queryType": "ListAssetModels"
+          "queryType": "ListAssets"
         },
         "refresh": 0,
         "regex": "",
