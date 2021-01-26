@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -66,7 +65,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "queryType": "AWG",
+          "queryType": "streams",
           "refId": "A",
           "signal": {
             "fields": [
