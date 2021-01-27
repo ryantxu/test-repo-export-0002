@@ -43,9 +43,9 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 14,
+        "h": 9,
         "w": 5,
-        "x": 0,
+        "x": 1,
         "y": 0
       },
       "id": 2,
@@ -89,6 +89,85 @@
         }
       ],
       "type": "barchart"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 0,
+        "y": 9
+      },
+      "id": 3,
+      "options": {
+        "displayMode": "gradient",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true,
+        "text": {}
+      },
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "refId": "A"
+        },
+        {
+          "hide": false,
+          "refId": "B"
+        },
+        {
+          "hide": false,
+          "refId": "C"
+        },
+        {
+          "hide": false,
+          "refId": "D"
+        }
+      ],
+      "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "reduce",
+          "options": {
+            "reducers": [
+              "max",
+              "first",
+              "last",
+              "mean"
+            ]
+          }
+        }
+      ],
+      "type": "bargauge"
     }
   ],
   "schemaVersion": 27,
