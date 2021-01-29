@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -26,6 +25,8 @@
             "mode": "palette-classic"
           },
           "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
             "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
@@ -92,8 +93,9 @@
           "id": "reduce",
           "options": {
             "reducers": [
-              "max",
-              "first"
+              "first",
+              "last",
+              "mean"
             ]
           }
         }
