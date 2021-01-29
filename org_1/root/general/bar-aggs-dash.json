@@ -90,10 +90,23 @@
       "datasource": null,
       "fieldConfig": {
         "defaults": {
-          "color": {},
-          "custom": {
-            "hideFrom": {}
+          "color": {
+            "mode": "palette-classic"
           },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "axisSoftMin": 0,
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "graph": false,
+              "legend": false,
+              "tooltip": false
+            },
+            "lineWidth": 1
+          },
+          "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": []
@@ -109,9 +122,10 @@
       },
       "id": 2,
       "options": {
-        "barWidth": 0.97,
+        "barWidth": 0.94,
         "groupWidth": 0.7,
         "legend": {
+          "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
@@ -131,6 +145,14 @@
         {
           "hide": false,
           "refId": "C"
+        },
+        {
+          "hide": false,
+          "refId": "D"
+        },
+        {
+          "hide": false,
+          "refId": "E"
         }
       ],
       "timeFrom": null,
@@ -143,7 +165,8 @@
             "reducers": [
               "first",
               "last",
-              "mean"
+              "min",
+              "max"
             ]
           }
         }
