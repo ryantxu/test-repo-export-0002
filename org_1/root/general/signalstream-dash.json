@@ -50,10 +50,18 @@
         "y": 0
       },
       "id": 7,
-      "options": {},
+      "options": {
+        "elements": [
+          {
+            "path": "EMS_PX_PLC.maincontrol.busGenOper_bESSOn",
+            "type": "radio"
+          }
+        ]
+      },
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
+          "oneshot": true,
           "queryType": "streams",
           "refId": "A",
           "signal": {
