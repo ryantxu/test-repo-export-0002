@@ -1,0 +1,21 @@
+{
+  "id": 66,
+  "name": "Edge streaming",
+  "type": "edge-streaming-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "81BIx-YGk",
+  "created": "2021-02-01T23:23:10-08:00",
+  "updated": "2021-02-01T23:23:54-08:00"
+}
