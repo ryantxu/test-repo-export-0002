@@ -22,6 +22,69 @@
       "fieldConfig": {
         "defaults": {
           "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 7,
+      "options": {},
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "queryType": "streams",
+          "refId": "A",
+          "signal": {
+            "fields": [
+              {
+                "expr": "Sine(x)",
+                "name": "Value"
+              }
+            ],
+            "time": {
+              "period": "1m"
+            }
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "groupBy",
+          "options": {}
+        }
+      ],
+      "type": "edge-form2-panel"
+    },
+    {
+      "datasource": "Signal Generator",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
             "mode": "palette-classic"
           },
           "custom": {
@@ -65,8 +128,8 @@
       },
       "gridPos": {
         "h": 10,
-        "w": 24,
-        "x": 0,
+        "w": 18,
+        "x": 6,
         "y": 0
       },
       "id": 2,
