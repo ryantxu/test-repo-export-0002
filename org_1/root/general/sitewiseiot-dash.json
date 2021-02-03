@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -59,9 +58,10 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
+          "assetId": "6edf67ad-e647-45bd-b609-4974a86729ce",
           "filter": "TOP_LEVEL",
           "maxPageAggregations": 1,
-          "queryType": "ListAssets",
+          "queryType": "DescribeAssetModel",
           "refId": "A"
         }
       ],
