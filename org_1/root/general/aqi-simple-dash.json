@@ -29,6 +29,9 @@
       "datasource": "-- Grafana --",
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
           "custom": {},
           "mappings": [],
           "thresholds": {
@@ -48,7 +51,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 6,
         "w": 8,
         "x": 0,
         "y": 0
@@ -64,9 +67,10 @@
           "values": false
         },
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "text": {}
       },
-      "pluginVersion": "7.4.0-pre",
+      "pluginVersion": "7.5.0-pre",
       "targets": [
         {
           "channel": "aqi",
@@ -86,6 +90,9 @@
       "datasource": "-- Grafana --",
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
           "custom": {
             "align": null,
             "filterable": false
@@ -108,7 +115,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 6,
         "w": 8,
         "x": 8,
         "y": 0
@@ -117,7 +124,7 @@
       "options": {
         "showHeader": true
       },
-      "pluginVersion": "7.4.0-pre",
+      "pluginVersion": "7.5.0-pre",
       "targets": [
         {
           "channel": "aqi",
@@ -145,7 +152,7 @@
         "h": 7,
         "w": 8,
         "x": 0,
-        "y": 7
+        "y": 6
       },
       "id": 2,
       "options": {
@@ -159,7 +166,7 @@
             {
               "name": "oakland",
               "values": {
-                "aqi": 60
+                "aqi": 70
               }
             }
           ]
@@ -189,10 +196,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 17,
+        "h": 16,
         "w": 8,
         "x": 8,
-        "y": 7
+        "y": 6
       },
       "id": 5,
       "options": {
@@ -272,10 +279,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 10,
+        "h": 9,
         "w": 8,
         "x": 0,
-        "y": 14
+        "y": 13
       },
       "id": 6,
       "options": {
@@ -327,14 +334,14 @@
         "h": 7,
         "w": 12,
         "x": 8,
-        "y": 24
+        "y": 22
       },
       "id": 8,
       "options": {
         "content": "",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.0-pre",
+      "pluginVersion": "7.5.0-pre",
       "targets": [
         {
           "alias": "",
@@ -370,7 +377,7 @@
       "type": "text"
     }
   ],
-  "schemaVersion": 26,
+  "schemaVersion": 27,
   "style": "dark",
   "tags": [
     "aqi"
