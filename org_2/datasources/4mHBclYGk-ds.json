@@ -1,0 +1,27 @@
+{
+  "id": 67,
+  "name": "Amazon Timestream",
+  "type": "grafana-timestream-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "authType": "keys",
+    "defaultDatabase": "\"grafanaDB\"",
+    "defaultMeasure": "cpu_hi",
+    "defaultRegion": "us-west-2",
+    "defaultTable": "\"DevOps\""
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "4mHBclYGk",
+  "created": "2021-02-04T14:59:53-08:00",
+  "updated": "2021-06-30T14:46:48-07:00"
+}
