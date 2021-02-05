@@ -118,7 +118,7 @@
             "scaleDistribution": {
               "type": "linear"
             },
-            "showPoints": "never",
+            "showPoints": "always",
             "spanNulls": true
           },
           "mappings": [],
@@ -149,9 +149,7 @@
       "options": {
         "graph": {},
         "legend": {
-          "calcs": [
-            "last"
-          ],
+          "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
@@ -180,12 +178,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
-      "transformations": [
-        {
-          "id": "groupBy",
-          "options": {}
-        }
-      ],
+      "transformations": [],
       "type": "timeseries"
     },
     {
@@ -248,6 +241,7 @@
       "type": "stat"
     }
   ],
+  "refresh": false,
   "schemaVersion": 27,
   "style": "dark",
   "tags": [],
