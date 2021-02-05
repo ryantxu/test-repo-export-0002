@@ -66,7 +66,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "oneshot": false,
+          "oneshot": true,
           "queryType": "streams",
           "refId": "A",
           "signal": {
