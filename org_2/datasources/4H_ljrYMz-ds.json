@@ -1,0 +1,52 @@
+{
+  "id": 68,
+  "name": "Direct Input",
+  "type": "input",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "data": [
+      {
+        "fields": [
+          {
+            "config": {},
+            "name": "a",
+            "type": "number",
+            "values": [
+              1
+            ]
+          },
+          {
+            "config": {},
+            "name": "b",
+            "type": "number",
+            "values": [
+              2
+            ]
+          },
+          {
+            "config": {},
+            "name": "c",
+            "type": "number",
+            "values": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "4H_ljrYMz",
+  "created": "2021-02-05T14:39:03-08:00",
+  "updated": "2021-04-03T09:20:10-07:00"
+}
