@@ -51,6 +51,10 @@
       },
       "id": 7,
       "options": {
+        "action": {
+          "ds": "-P1DMF2Gk",
+          "type": "ds"
+        },
         "elements": [
           {
             "path": "EMS_PX_PLC.maincontrol.busGenOper_bESSOn",
