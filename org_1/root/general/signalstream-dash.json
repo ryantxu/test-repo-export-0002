@@ -60,6 +60,14 @@
           {
             "path": "EMS_PX_PLC.maincontrol.busGenOper_bESSOn",
             "type": "radio"
+          },
+          {
+            "path": "EMS_PX_PLC.maincontrol.busGenOper_u16SetOperation",
+            "type": "radio"
+          },
+          {
+            "path": "EMS_PX_PLC.maincontrol.busGenOper_i32ModeSelectionWay",
+            "type": "radio"
           }
         ]
       },
@@ -118,7 +126,7 @@
             "scaleDistribution": {
               "type": "linear"
             },
-            "showPoints": "always",
+            "showPoints": "auto",
             "spanNulls": true
           },
           "mappings": [],
