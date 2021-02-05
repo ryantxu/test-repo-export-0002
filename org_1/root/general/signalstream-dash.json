@@ -53,6 +53,7 @@
       "options": {
         "action": {
           "ds": "-P1DMF2Gk",
+          "path": "stream",
           "type": "ds"
         },
         "elements": [
