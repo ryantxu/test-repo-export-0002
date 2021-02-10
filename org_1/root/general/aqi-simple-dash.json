@@ -162,11 +162,26 @@
           "scope": "grafana"
         },
         "json": {
-          "measurements": [
+          "batch": [
             {
-              "name": "oakland",
-              "values": {
-                "aqi": 70
+              "data": [
+                [
+                  1234,
+                  25
+                ]
+              ],
+              "schema": {
+                "fields": [
+                  {
+                    "name": "Time",
+                    "type": "time"
+                  },
+                  {
+                    "name": "Value",
+                    "type": "number"
+                  }
+                ],
+                "name": "oakland"
               }
             }
           ]
