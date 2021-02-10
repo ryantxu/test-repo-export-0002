@@ -1,0 +1,143 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "-- Grafana --",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "channel": "test",
+          "queryType": "measurements",
+          "refId": "A"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "table"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 2,
+      "options": {
+        "channel": {
+          "namespace": "measurements",
+          "path": "test",
+          "scope": "grafana"
+        },
+        "json": {
+          "batch": [
+            {
+              "data": {
+                "values": [
+                  [
+                    1612919411000
+                  ],
+                  [
+                    25
+                  ]
+                ]
+              },
+              "schema": {
+                "fields": [
+                  {
+                    "name": "Time",
+                    "type": "time"
+                  },
+                  {
+                    "name": "Value",
+                    "type": "number"
+                  }
+                ],
+                "name": "oakland"
+              }
+            }
+          ]
+        },
+        "message": "none",
+        "publish": true
+      },
+      "pluginVersion": "7.5.0-pre",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "live"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "json batch"
+}
