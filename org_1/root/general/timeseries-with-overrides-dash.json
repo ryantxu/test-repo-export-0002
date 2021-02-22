@@ -59,7 +59,7 @@
               }
             ]
           },
-          "unit": "short"
+          "unit": "areaM2"
         },
         "overrides": [
           {
@@ -75,6 +75,13 @@
               {
                 "id": "custom.showPoints",
                 "value": "never"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "red",
+                  "mode": "fixed"
+                }
               }
             ]
           },
