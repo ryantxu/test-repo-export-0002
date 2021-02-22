@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -40,8 +39,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 11,
+        "w": 13,
         "x": 0,
         "y": 0
       },
@@ -49,7 +48,7 @@
       "id": 2,
       "legendSortBy": "-ms",
       "lineColor": "rgba(0,0,0,0.1)",
-      "maxDataPoints": 100,
+      "maxDataPoints": 50,
       "metricNameColor": "#000000",
       "pluginVersion": "7.5.0-pre",
       "rangeMaps": [
@@ -138,7 +137,7 @@
       "title": "Panel Title",
       "transformations": [],
       "type": "natel-discrete-panel",
-      "units": "short",
+      "units": "degree",
       "use12HourClock": false,
       "useTimePrecision": false,
       "valueMaps": [
@@ -152,7 +151,7 @@
       "valueTextColor": "#000000",
       "writeAllValues": false,
       "writeLastValue": true,
-      "writeMetricNames": false
+      "writeMetricNames": true
     }
   ],
   "schemaVersion": 27,
