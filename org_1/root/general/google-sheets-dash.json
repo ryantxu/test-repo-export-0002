@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -28,13 +27,23 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisWidth": 60,
-            "fillAlpha": 0.1,
-            "lineMode": "linear",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {
+              "graph": false,
+              "legend": false,
+              "tooltip": false
+            },
+            "lineInterpolation": "linear",
             "lineWidth": 1,
-            "mode": "line",
-            "pointRadius": 4,
-            "points": "auto"
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": true
           },
           "mappings": [],
           "thresholds": {
@@ -49,7 +58,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "short"
         },
         "overrides": []
       },
@@ -61,7 +71,9 @@
       },
       "id": 2,
       "options": {
+        "graph": {},
         "legend": {
+          "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
@@ -69,7 +81,7 @@
           "mode": "single"
         }
       },
-      "pluginVersion": "7.4.0-pre",
+      "pluginVersion": "7.5.0-pre",
       "targets": [
         {
           "cacheDurationSeconds": 300,
@@ -80,10 +92,11 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
-      "type": "graph3"
+      "type": "timeseries"
     }
   ],
-  "schemaVersion": 26,
+  "refresh": false,
+  "schemaVersion": 27,
   "style": "dark",
   "tags": [],
   "templating": {
