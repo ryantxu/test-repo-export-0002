@@ -1,0 +1,21 @@
+{
+  "id": 78,
+  "name": "PLC",
+  "type": "grafana-plc-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "aNFEiFsGk",
+  "created": "2021-02-23T12:49:03-08:00",
+  "updated": "2021-02-23T12:49:06-08:00"
+}
