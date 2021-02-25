@@ -38,8 +38,8 @@
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 9,
-        "w": 14,
+        "h": 7,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -138,10 +138,10 @@
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
-        "h": 9,
-        "w": 14,
+        "h": 7,
+        "w": 24,
         "x": 0,
-        "y": 9
+        "y": 7
       },
       "hiddenSeries": false,
       "id": 3,
