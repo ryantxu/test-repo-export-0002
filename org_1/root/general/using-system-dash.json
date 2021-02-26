@@ -72,6 +72,10 @@
       "targets": [
         {
           "channel": "telegraf/system",
+          "fields": [
+            "system load1",
+            "system load5"
+          ],
           "hide": false,
           "queryType": "measurements",
           "refId": "B"
