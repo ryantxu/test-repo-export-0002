@@ -45,6 +45,7 @@
       },
       "id": 3,
       "options": {
+        "frameIndex": 0,
         "showHeader": true
       },
       "pluginVersion": "7.5.0-pre",
@@ -56,7 +57,15 @@
             "fields": [
               "system load1",
               "system load5"
-            ]
+            ],
+            "filter": {
+              "include": {
+                "names": [
+                  "system load1",
+                  "system load15"
+                ]
+              }
+            }
           },
           "queryType": "measurements",
           "refId": "B"
@@ -70,19 +79,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
-      "transformations": [
-        {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "system load1",
-                "system load15"
-              ]
-            }
-          }
-        }
-      ],
+      "transformations": [],
       "type": "table"
     }
   ],
