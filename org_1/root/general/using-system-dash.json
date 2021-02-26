@@ -51,26 +51,6 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "telegraf/system",
-          "hide": false,
-          "measurements": {
-            "fields": [
-              "system load1",
-              "system load5"
-            ],
-            "filter": {
-              "include": {
-                "names": [
-                  "system load1",
-                  "system load15"
-                ]
-              }
-            }
-          },
-          "queryType": "measurements",
-          "refId": "B"
-        },
-        {
           "channel": "telegraf/avionics_airdata_AirData",
           "queryType": "measurements",
           "refId": "A"
