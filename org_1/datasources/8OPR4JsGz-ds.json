@@ -1,0 +1,21 @@
+{
+  "id": 80,
+  "name": "Google Sheets-1",
+  "type": "grafana-googlesheets-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "8OPR4JsGz",
+  "created": "2021-02-25T21:42:35-08:00",
+  "updated": "2021-02-25T21:42:35-08:00"
+}
