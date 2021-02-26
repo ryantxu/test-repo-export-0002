@@ -171,6 +171,12 @@
       "steppedLine": false,
       "targets": [
         {
+          "channel": "telegraf/system",
+          "hide": false,
+          "queryType": "measurements",
+          "refId": "B"
+        },
+        {
           "channel": "telegraf/avionics_airdata_AirData",
           "queryType": "measurements",
           "refId": "A"
