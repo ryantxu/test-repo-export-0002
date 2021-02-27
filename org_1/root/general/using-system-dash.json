@@ -54,7 +54,7 @@
           "channel": "telegraf/avionics_airdata_AirData",
           "measurements": {
             "fields": [
-              "bbb"
+              "baro_pressure_Pa"
             ]
           },
           "queryType": "measurements",
