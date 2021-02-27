@@ -52,6 +52,11 @@
       "targets": [
         {
           "channel": "telegraf/avionics_airdata_AirData",
+          "measurements": {
+            "fields": [
+              "bbb"
+            ]
+          },
           "queryType": "measurements",
           "refId": "A"
         }
