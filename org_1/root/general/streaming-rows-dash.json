@@ -113,6 +113,19 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "time",
+                "value"
+              ]
+            }
+          }
+        }
+      ],
       "type": "timeseries"
     }
   ],
