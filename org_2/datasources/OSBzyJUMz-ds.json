@@ -1,0 +1,23 @@
+{
+  "id": 84,
+  "name": "CloudWatch-2",
+  "type": "cloudwatch",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "authType": "ec2_iam_role"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "OSBzyJUMz",
+  "created": "2021-03-10T12:55:53-08:00",
+  "updated": "2021-03-10T12:56:07-08:00"
+}
