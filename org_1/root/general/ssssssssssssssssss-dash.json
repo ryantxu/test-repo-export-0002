@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -91,7 +90,9 @@
         }
       ],
       "thresholds": [],
+      "timeFrom": null,
       "timeRegions": [],
+      "timeShift": null,
       "title": "Panel Title",
       "tooltip": {
         "shared": true,
@@ -137,7 +138,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-30s",
     "to": "now"
   },
   "timepicker": {},
