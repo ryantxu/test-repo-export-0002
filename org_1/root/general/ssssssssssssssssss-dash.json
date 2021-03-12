@@ -64,8 +64,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 11,
-        "w": 10,
+        "h": 13,
+        "w": 13,
         "x": 0,
         "y": 0
       },
@@ -73,9 +73,7 @@
       "maxDataPoints": 10,
       "options": {
         "legend": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
