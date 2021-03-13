@@ -49,7 +49,7 @@
         "y": 0
       },
       "id": 2,
-      "maxDataPoints": 20,
+      "maxDataPoints": 10,
       "options": {
         "colorMode": "value",
         "graphMode": "area",
@@ -87,7 +87,7 @@
           "stream": {
             "bands": 1,
             "noise": 2.2,
-            "speed": 500,
+            "speed": 100,
             "spread": 3.5,
             "type": "signal"
           },
