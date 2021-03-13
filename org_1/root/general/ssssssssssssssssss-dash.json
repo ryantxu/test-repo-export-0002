@@ -87,7 +87,7 @@
           "stream": {
             "bands": 1,
             "noise": 2.2,
-            "speed": 100,
+            "speed": 50,
             "spread": 3.5,
             "type": "signal"
           },
