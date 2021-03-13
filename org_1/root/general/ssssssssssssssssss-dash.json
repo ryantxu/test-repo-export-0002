@@ -70,7 +70,7 @@
         "y": 0
       },
       "id": 2,
-      "maxDataPoints": 10,
+      "maxDataPoints": 20,
       "options": {
         "legend": {
           "calcs": [],
@@ -103,7 +103,7 @@
           "stream": {
             "bands": 1,
             "noise": 2.2,
-            "speed": 50,
+            "speed": 500,
             "spread": 3.5,
             "type": "signal"
           },
