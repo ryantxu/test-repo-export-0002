@@ -70,6 +70,7 @@
         "y": 0
       },
       "id": 4,
+      "maxDataPoints": 20,
       "options": {
         "graph": {},
         "legend": {
@@ -118,11 +119,11 @@
       "type": "timeseries"
     },
     {
-      "datasource": null,
+      "datasource": "-- Dashboard --",
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "palette-classic"
           },
           "custom": {
             "fillOpacity": 80,
@@ -184,32 +185,9 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "alias": "",
-          "csvWave": {
-            "timeStep": 60,
-            "valuesCSV": "0,0,2,2,1,1"
-          },
-          "lines": 10,
-          "max": 10,
-          "min": 5,
-          "points": [],
-          "pulseWave": {
-            "offCount": 3,
-            "offValue": 1,
-            "onCount": 3,
-            "onValue": 2,
-            "timeStep": 60
-          },
-          "refId": "A",
-          "scenarioId": "random_walk",
-          "stream": {
-            "bands": 1,
-            "noise": 2.2,
-            "speed": 250,
-            "spread": 3.5,
-            "type": "signal"
-          },
-          "stringInput": ""
+          "panelId": 4,
+          "queryType": "randomWalk",
+          "refId": "A"
         }
       ],
       "timeFrom": null,
