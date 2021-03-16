@@ -83,7 +83,7 @@
       "targets": [
         {
           "alias": "",
-          "channel": "random-2s-stream",
+          "channel": "random-20hz-stream",
           "csvWave": {
             "timeStep": 60,
             "valuesCSV": "0,0,2,2,1,1"
@@ -123,7 +123,7 @@
     "list": []
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-1m",
     "to": "now"
   },
   "timepicker": {},
