@@ -46,6 +46,8 @@
             "spanNulls": true
           },
           "mappings": [],
+          "max": 20,
+          "min": 10,
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -103,6 +105,7 @@
           },
           "refId": "A",
           "scenarioId": "random_walk",
+          "spread": 3,
           "stream": {
             "bands": 1,
             "noise": 2.2,
