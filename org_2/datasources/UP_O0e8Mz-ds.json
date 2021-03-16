@@ -1,0 +1,26 @@
+{
+  "id": 86,
+  "name": "PLC Tag",
+  "type": "grafana-plctag-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "arguments": "-protocol=modbus_tcp -ip=localhost -path=0 -plc=",
+    "captureX": "/home/ryan/workspace/grafana/plugins/grafana-plctag-datasource/config/simple-tags-modbus.json\n/home/ryan/workspace/grafana/plugins/grafana-plctag-datasource/config/simple-tags-modbus-alarms.json",
+    "command": "/home/ryan/Downloads/libplctag_2.3.5_ubuntu_x64_1/cli -offline=1",
+    "program": "/home/ryan/Downloads/libplctag_2.3.6_ubuntu_x64/cli"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "UP_O0e8Mz",
+  "created": "2021-03-15T22:27:56-07:00",
+  "updated": "2021-06-12T09:13:14-07:00"
+}
