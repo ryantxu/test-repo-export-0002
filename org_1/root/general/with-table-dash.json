@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -26,7 +25,7 @@
             "mode": "thresholds"
           },
           "custom": {
-            "align": null,
+            "align": "right",
             "filterable": false
           },
           "decimals": 3,
@@ -58,6 +57,18 @@
                 "value": "lcd-gauge"
               }
             ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "A"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 200
+              }
+            ]
           }
         ]
       },
@@ -69,7 +80,8 @@
       },
       "id": 2,
       "options": {
-        "showHeader": true
+        "showHeader": true,
+        "sortBy": []
       },
       "pluginVersion": "7.5.0-pre",
       "targets": [
