@@ -156,7 +156,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-GrYlRd"
           },
           "custom": {
             "fillOpacity": 80,
@@ -231,6 +231,7 @@
       "type": "timeline"
     }
   ],
+  "refresh": false,
   "schemaVersion": 27,
   "style": "dark",
   "tags": [],
