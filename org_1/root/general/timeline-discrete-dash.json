@@ -67,7 +67,7 @@
       },
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 21,
         "x": 0,
         "y": 0
       },
@@ -156,7 +156,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-GrYlRd"
+            "mode": "continuous-purples"
           },
           "custom": {
             "fillOpacity": 80,
@@ -201,7 +201,7 @@
       },
       "gridPos": {
         "h": 9,
-        "w": 12,
+        "w": 21,
         "x": 0,
         "y": 8
       },
