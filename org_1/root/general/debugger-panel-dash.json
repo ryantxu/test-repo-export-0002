@@ -53,6 +53,11 @@
           "dataChanged": true,
           "render": true,
           "schemaChanged": true
+        },
+        "counters": {
+          "dataChanged": true,
+          "render": true,
+          "schemaChanged": false
         }
       },
       "pluginVersion": "7.5.0-pre",
@@ -77,7 +82,7 @@
           "stream": {
             "bands": 1,
             "noise": 2.2,
-            "speed": 500,
+            "speed": 50,
             "spread": 3.5,
             "type": "signal"
           },
