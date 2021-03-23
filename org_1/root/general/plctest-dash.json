@@ -266,6 +266,7 @@
       "type": "table"
     }
   ],
+  "refresh": false,
   "schemaVersion": 27,
   "style": "dark",
   "tags": [],
