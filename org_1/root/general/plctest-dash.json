@@ -209,7 +209,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "queryType": "stream",
+          "queryType": "read",
           "refId": "A"
         }
       ],
