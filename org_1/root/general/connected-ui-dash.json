@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -44,7 +43,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": 3600
+            "spanNulls": 86400
           },
           "mappings": [],
           "thresholds": {
