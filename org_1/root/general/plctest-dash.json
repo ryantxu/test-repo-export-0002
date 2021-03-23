@@ -59,7 +59,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "queryType": "tracker",
+          "queryType": "alarms",
           "refId": "A"
         }
       ],
@@ -215,6 +215,55 @@
       ],
       "title": "Panel Title",
       "type": "edge-form2-panel"
+    },
+    {
+      "datasource": "PLC Tag",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 6,
+      "options": {
+        "frameIndex": 5,
+        "showHeader": true
+      },
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "queryType": "tracker",
+          "refId": "A"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "table"
     }
   ],
   "schemaVersion": 27,
