@@ -58,7 +58,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "queryType": "trackers",
+          "queryType": "tracker",
           "refId": "A"
         }
       ],
@@ -72,7 +72,9 @@
       "dashes": false,
       "datasource": "PLC Tag",
       "fieldConfig": {
-        "defaults": {},
+        "defaults": {
+          "unit": "short"
+        },
         "overrides": []
       },
       "fill": 1,
