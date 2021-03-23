@@ -53,6 +53,7 @@
       },
       "id": 4,
       "options": {
+        "frameIndex": 5,
         "showHeader": true
       },
       "pluginVersion": "7.5.0-pre",
