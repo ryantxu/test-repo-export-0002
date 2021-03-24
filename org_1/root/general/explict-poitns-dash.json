@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -105,6 +104,40 @@
             ]
           ],
           "refId": "B",
+          "scenarioId": "manual_entry"
+        },
+        {
+          "points": [
+            [
+              4,
+              1616557148000
+            ],
+            [
+              null,
+              1616558756000
+            ],
+            [
+              4,
+              1616561658000
+            ],
+            [
+              null,
+              1616562446000
+            ],
+            [
+              4,
+              1616564104000
+            ],
+            [
+              null,
+              1616564548000
+            ],
+            [
+              4,
+              1616564871000
+            ]
+          ],
+          "refId": "C",
           "scenarioId": "manual_entry"
         }
       ],
