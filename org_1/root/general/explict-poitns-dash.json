@@ -1,0 +1,128 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": null,
+            "filterable": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "frameIndex": 1,
+        "showHeader": true
+      },
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "points": [
+            [
+              0,
+              1616551651000
+            ],
+            [
+              1,
+              1616556554000
+            ],
+            [
+              2,
+              1616559873000
+            ],
+            [
+              0,
+              1616561077000
+            ],
+            [
+              3,
+              1616563090000
+            ]
+          ],
+          "refId": "A",
+          "scenarioId": "manual_entry"
+        },
+        {
+          "points": [
+            [
+              4,
+              1616555060000
+            ],
+            [
+              5,
+              1616560081000
+            ],
+            [
+              4,
+              1616562217000
+            ],
+            [
+              5,
+              1616565458
+            ]
+          ],
+          "refId": "B",
+          "scenarioId": "manual_entry"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "table"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "explict poitns"
+}
