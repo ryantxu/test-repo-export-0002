@@ -173,7 +173,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "singlestat (migrated on demand)",
-      "type": "grafana-singlestat-panel",
+      "type": "singlestat",
       "valueFontSize": "80%",
       "valueMaps": [
         {
