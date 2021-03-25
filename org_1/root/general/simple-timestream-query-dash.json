@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -59,8 +58,8 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "queryType": "samples",
-          "rawQuery": "SHOW DATABASES",
+          "queryType": "raw",
+          "rawQuery": "select measure_name, availability_zone, region, cell, silo, instance_type, instance_name, create_time_series(time, measure_value::double)\n\nfrom $__database.$__table\n\nwhere (measure_name = 'cpu_user' or measure_name = 'cpu_system')\n\nand availability_zone ='us-east-1-1' and microservice_name = 'hercules'\n\nand region = 'us-east-1' and cell = 'us-east-1-cell-1' and silo = 'us-east-1-cell-1-silo-1'\n\nand instance_type = 'r5.4xlarge' and $__timeFilter\n\ngroup by measure_name, availability_zone, region, cell, silo, instance_type, instance_name\n",
           "refId": "A"
         }
       ],
