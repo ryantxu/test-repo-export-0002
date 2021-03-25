@@ -1,0 +1,21 @@
+{
+  "id": 88,
+  "name": "Grafana Data Source Backend Plugin Template",
+  "type": "myorgid-simple-backend-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "DfkY5UwMz",
+  "created": "2021-03-25T14:24:38-07:00",
+  "updated": "2021-03-25T14:24:38-07:00"
+}
