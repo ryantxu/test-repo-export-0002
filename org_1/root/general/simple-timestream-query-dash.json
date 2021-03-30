@@ -46,27 +46,21 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "id": 7,
+      "id": 9,
       "options": {
         "showHeader": true
       },
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "queryType": "samples",
-          "rawQuery": "SELECT * FROM $__database.$__table LIMIT 10",
+          "queryType": "raw",
+          "rawQuery": "DESCRIBE $__database.\"IoT\"",
           "refId": "A"
-        },
-        {
-          "hide": false,
-          "queryType": "samples",
-          "rawQuery": "SELECT * FROM $__database.$__table LIMIT 10",
-          "refId": "B"
         }
       ],
       "title": "Panel Title",
@@ -79,7 +73,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 9
+        "y": 8
       },
       "id": 4,
       "panels": [
@@ -115,7 +109,7 @@
             "h": 9,
             "w": 12,
             "x": 0,
-            "y": 10
+            "y": 1
           },
           "id": 2,
           "options": {
@@ -127,6 +121,61 @@
               "queryType": "raw",
               "rawQuery": "select measure_name, availability_zone, region, cell, silo, instance_type, instance_name, create_time_series(time, measure_value::double)\n\nfrom $__database.$__table\n\nwhere (measure_name = 'cpu_user' or measure_name = 'cpu_system')\n\nand availability_zone ='us-east-1-1' and microservice_name = 'hercules'\n\nand region = 'us-east-1' and cell = 'us-east-1-cell-1' and silo = 'us-east-1-cell-1-silo-1'\n\nand instance_type = 'r5.4xlarge' and $__timeFilter\n\ngroup by measure_name, availability_zone, region, cell, silo, instance_type, instance_name\n",
               "refId": "A"
+            }
+          ],
+          "title": "Panel Title",
+          "type": "table"
+        },
+        {
+          "datasource": "Amazon Timestream",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": null,
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 9,
+            "w": 12,
+            "x": 12,
+            "y": 1
+          },
+          "id": 7,
+          "options": {
+            "showHeader": true
+          },
+          "pluginVersion": "7.5.0-pre",
+          "targets": [
+            {
+              "queryType": "samples",
+              "rawQuery": "SELECT * FROM $__database.$__table LIMIT 10",
+              "refId": "A"
+            },
+            {
+              "hide": false,
+              "queryType": "samples",
+              "rawQuery": "SELECT * FROM $__database.$__table LIMIT 10",
+              "refId": "B"
             }
           ],
           "title": "Panel Title",
