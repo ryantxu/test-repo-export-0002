@@ -61,6 +61,12 @@
           "queryType": "samples",
           "rawQuery": "SELECT * FROM $__database.$__table LIMIT 10",
           "refId": "A"
+        },
+        {
+          "hide": false,
+          "queryType": "samples",
+          "rawQuery": "SELECT * FROM $__database.$__table LIMIT 10",
+          "refId": "B"
         }
       ],
       "title": "Panel Title",
