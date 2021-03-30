@@ -61,6 +61,12 @@
           "queryType": "raw",
           "rawQuery": "DESCRIBE $__database.\"IoT\"",
           "refId": "A"
+        },
+        {
+          "hide": false,
+          "queryType": "raw",
+          "rawQuery": "DESCRIBE $__database.\"DevOps\"",
+          "refId": "B"
         }
       ],
       "title": "Panel Title",
