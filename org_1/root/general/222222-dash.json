@@ -85,7 +85,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "telemetry/mypath/system",
+          "channel": "push/example/system",
           "hide": false,
           "queryType": "measurements",
           "refId": "A"
