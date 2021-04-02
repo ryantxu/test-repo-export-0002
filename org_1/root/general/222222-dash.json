@@ -70,7 +70,7 @@
         "y": 0
       },
       "id": 2,
-      "maxDataPoints": 5,
+      "maxDataPoints": 100,
       "options": {
         "graph": {},
         "legend": {
