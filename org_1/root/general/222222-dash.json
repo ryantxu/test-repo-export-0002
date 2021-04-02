@@ -85,10 +85,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "plugin/testdata/random-20hz-stream",
-          "filter": {
-            "fields": []
-          },
+          "channel": "plugin/testdata/random-20Hz-stream",
           "hide": false,
           "queryType": "measurements",
           "refId": "A"
