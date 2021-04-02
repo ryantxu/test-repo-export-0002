@@ -84,7 +84,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "random-2s-stream",
+          "channel": "random-20Hz-stream",
           "refId": "A",
           "scenarioId": "live"
         }
