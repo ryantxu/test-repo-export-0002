@@ -89,7 +89,8 @@
           "filter": {
             "fields": [
               "load1",
-              "time"
+              "time",
+              "n_cpus"
             ]
           },
           "hide": false,
