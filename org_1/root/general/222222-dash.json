@@ -85,7 +85,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "push/example/system",
+          "channel": "stream/example/system",
           "hide": false,
           "queryType": "measurements",
           "refId": "A"
