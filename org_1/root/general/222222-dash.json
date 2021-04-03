@@ -86,6 +86,12 @@
       "targets": [
         {
           "channel": "stream/example/system",
+          "filter": {
+            "fields": [
+              "load1",
+              "time"
+            ]
+          },
           "hide": false,
           "queryType": "measurements",
           "refId": "A"
