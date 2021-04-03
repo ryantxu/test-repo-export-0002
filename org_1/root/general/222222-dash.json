@@ -85,6 +85,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
+          "buffer": 10000,
           "channel": "stream/example/system",
           "filter": {
             "fields": [
