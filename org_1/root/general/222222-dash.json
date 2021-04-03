@@ -88,11 +88,7 @@
           "buffer": 5000,
           "channel": "stream/example/system",
           "filter": {
-            "fields": [
-              "load1",
-              "time",
-              "n_cpus"
-            ]
+            "fields": []
           },
           "hide": false,
           "queryType": "measurements",
