@@ -22,28 +22,11 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "thresholds"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 10,
-            "gradientMode": "none",
-            "hideFrom": {
-              "graph": false,
-              "legend": false,
-              "tooltip": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "never",
-            "spanNulls": true
+            "align": null,
+            "filterable": false
           },
           "mappings": [],
           "thresholds": {
@@ -72,23 +55,18 @@
       "id": 2,
       "maxDataPoints": 100,
       "options": {
-        "graph": {},
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom"
-        },
-        "tooltipOptions": {
-          "mode": "single"
-        }
+        "showHeader": true
       },
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
           "buffer": 5000,
-          "channel": "stream/example/system",
+          "channel": "plugin/testdata/random-2s-stream",
           "filter": {
-            "fields": []
+            "fields": [
+              "Time",
+              "Value"
+            ]
           },
           "hide": false,
           "queryType": "measurements",
@@ -98,7 +76,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
-      "type": "timeseries"
+      "type": "table"
     }
   ],
   "schemaVersion": 27,
