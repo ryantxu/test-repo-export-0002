@@ -65,7 +65,8 @@
           "filter": {
             "fields": [
               "Time",
-              "Value"
+              "Value",
+              "Max"
             ]
           },
           "hide": false,
