@@ -24,9 +24,7 @@
       "dashes": false,
       "datasource": "Signal Generator",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "fill": 0,
@@ -55,7 +53,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.0-pre",
+      "pluginVersion": "7.5.0-pre",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -109,7 +107,8 @@
               },
               "name": "Test"
             }
-          ]
+          ],
+          "stream": true
         }
       ],
       "thresholds": [],
