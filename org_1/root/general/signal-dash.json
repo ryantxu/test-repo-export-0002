@@ -69,7 +69,7 @@
           "signal": {
             "fields": [
               {
-                "expr": "Sine(x)",
+                "expr": "Sine(x)+0.5",
                 "name": "sine"
               },
               {
@@ -77,7 +77,7 @@
                 "name": "tri"
               },
               {
-                "expr": "Square(x)",
+                "expr": "Square(x+1)",
                 "name": "sq"
               },
               {
@@ -87,7 +87,7 @@
             ],
             "period": "1m",
             "time": {
-              "period": "1m"
+              "period": "10s"
             }
           },
           "signals": [
@@ -163,7 +163,7 @@
     "list": []
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-30s",
     "to": "now"
   },
   "timepicker": {},
