@@ -42,14 +42,15 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 11,
+        "w": 13,
         "x": 0,
         "y": 0
       },
       "id": 2,
       "options": {
-        "editing": true,
+        "editing": false,
+        "mode": "list",
         "root": {
           "id": "e8cw0h",
           "items": [
@@ -83,6 +84,34 @@
                 "width": 181.95169067382812
               },
               "type": "display-value"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "4hjdh5",
+              "placement": {
+                "height": 50,
+                "left": 60,
+                "top": 80,
+                "width": 200
+              },
+              "type": "static-text"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "grg0w0",
+              "placement": {
+                "height": 50,
+                "left": 80,
+                "top": 105,
+                "width": 200
+              },
+              "type": "static-text"
             }
           ],
           "type": "layer"
