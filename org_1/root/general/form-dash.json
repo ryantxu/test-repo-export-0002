@@ -1,0 +1,117 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "editing": true,
+        "root": {
+          "id": "v0haks",
+          "items": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "elirk6",
+              "placement": {
+                "left": 20,
+                "top": 30
+              },
+              "type": "????"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "b59wqt",
+              "placement": {
+                "left": 40,
+                "top": 55
+              },
+              "type": "????"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "7pkjfp",
+              "placement": {
+                "left": 60,
+                "top": 80
+              },
+              "type": "????"
+            }
+          ],
+          "type": "layer"
+        }
+      },
+      "pluginVersion": "7.5.0-pre",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "edge-draw-panel"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "form"
+}
