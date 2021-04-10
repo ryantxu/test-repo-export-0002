@@ -48,7 +48,7 @@
       },
       "lines": true,
       "linewidth": 1,
-      "maxDataPoints": 5,
+      "maxDataPoints": null,
       "nullPointMode": "null",
       "options": {
         "alertThreshold": true
