@@ -26,7 +26,7 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "absolute",
+            "mode": "percentage",
             "steps": [
               {
                 "color": "green",
@@ -51,45 +51,38 @@
       "options": {
         "editing": true,
         "root": {
-          "id": "v0haks",
+          "id": "e8cw0h",
           "items": [
             {
               "anchor": {
                 "left": true,
                 "top": true
               },
-              "id": "elirk6",
+              "args": {},
+              "id": "g96bzw",
               "placement": {
+                "height": 200,
                 "left": 20,
-                "top": 30
+                "top": 30,
+                "width": 300
               },
-              "type": "????"
+              "type": "display-value"
             },
             {
               "anchor": {
                 "left": true,
                 "top": true
               },
-              "id": "b59wqt",
+              "args": {},
+              "dimension": "A-series",
+              "id": "zjh7xt",
               "placement": {
-                "left": 40,
-                "top": 55
+                "height": 144.9701690673828,
+                "left": 259,
+                "top": 65,
+                "width": 181.95169067382812
               },
-              "type": "????"
-            },
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "id": "7pkjfp",
-              "placement": {
-                "height": 84.89346313476562,
-                "left": 253,
-                "top": 142,
-                "width": 260.8522644042969
-              },
-              "type": "????"
+              "type": "display-value"
             }
           ],
           "type": "layer"
