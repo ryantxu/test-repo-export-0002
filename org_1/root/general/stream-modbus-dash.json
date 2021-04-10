@@ -108,6 +108,80 @@
         "align": false,
         "alignLevel": null
       }
+    },
+    {
+      "datasource": "PLC Tag",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 16,
+        "x": 0,
+        "y": 12
+      },
+      "id": 3,
+      "maxDataPoints": 2,
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "queryType": "stream",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {
+              "Alarm8": false,
+              "RefrigInputs": true,
+              "bCompressor": true,
+              "bLamp": true,
+              "bSignal": true,
+              "clearAlarms": true,
+              "doorOpen": true,
+              "inputLock": true,
+              "rIndicators": true,
+              "rTempActualW1": true,
+              "rTempActualW2": true,
+              "setTempW1": true,
+              "wAlarmStates": true
+            },
+            "indexByName": {},
+            "renameByName": {}
+          }
+        }
+      ],
+      "type": "table"
     }
   ],
   "schemaVersion": 27,
