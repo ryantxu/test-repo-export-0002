@@ -59,6 +59,36 @@
                 "left": true,
                 "top": true
               },
+              "dimension": "Alarm10",
+              "id": "5fu34i",
+              "placement": {
+                "height": 30,
+                "left": 60,
+                "top": 80,
+                "width": 200
+              },
+              "type": "checkbox"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "dimension": "Alarm9",
+              "id": "frzzf7",
+              "placement": {
+                "height": 30,
+                "left": 40,
+                "top": 55,
+                "width": 200
+              },
+              "type": "checkbox"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
               "dimension": "Alarm8",
               "id": "kcbtgx",
               "placement": {
