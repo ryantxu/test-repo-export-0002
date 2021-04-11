@@ -101,7 +101,7 @@
                 "top": 28,
                 "width": 200
               },
-              "type": "checkbox"
+              "type": "radio"
             }
           ],
           "type": "layer"
