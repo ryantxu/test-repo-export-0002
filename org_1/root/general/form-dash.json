@@ -50,6 +50,74 @@
       "id": 2,
       "options": {
         "editing": true,
+        "mode": "list",
+        "root": {
+          "id": "e8cw0h",
+          "items": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "dimension": "Alarm8",
+              "id": "kcbtgx",
+              "placement": {
+                "height": 35.96590805053711,
+                "left": 35,
+                "top": 28,
+                "width": 200
+              },
+              "type": "checkbox"
+            }
+          ],
+          "type": "layer"
+        }
+      },
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "queryType": "stream",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "edge-draw-panel"
+    },
+    {
+      "datasource": "PLC Tag",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 13,
+        "x": 0,
+        "y": 11
+      },
+      "id": 3,
+      "options": {
+        "editing": true,
         "mode": "design",
         "root": {
           "id": "e8cw0h",
