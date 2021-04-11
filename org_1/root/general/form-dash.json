@@ -60,29 +60,15 @@
                 "top": true
               },
               "args": {},
+              "dimension": "A-series",
               "id": "kd1tqf",
               "placement": {
-                "height": 143.92755126953125,
-                "left": 472,
-                "top": 21,
-                "width": 181.9076690673828
+                "height": 192.9033966064453,
+                "left": 162,
+                "top": 124,
+                "width": 191.87783813476562
               },
               "type": "wind-turbine"
-            },
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "args": {},
-              "id": "g96bzw",
-              "placement": {
-                "height": 200,
-                "left": 20,
-                "top": 30,
-                "width": 300
-              },
-              "type": "display-value"
             },
             {
               "anchor": {
