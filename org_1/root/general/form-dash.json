@@ -18,7 +18,7 @@
   "links": [],
   "panels": [
     {
-      "datasource": null,
+      "datasource": "PLC Tag",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -119,11 +119,12 @@
                 "left": true,
                 "top": true
               },
+              "dimension": "Alarm8",
               "id": "kcbtgx",
               "placement": {
-                "height": 50,
-                "left": 50,
-                "top": 25,
+                "height": 35.96590805053711,
+                "left": 35,
+                "top": 28,
                 "width": 200
               },
               "type": "checkbox"
@@ -133,6 +134,12 @@
         }
       },
       "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "queryType": "stream",
+          "refId": "A"
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
