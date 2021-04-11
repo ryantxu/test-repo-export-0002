@@ -49,11 +49,26 @@
       },
       "id": 2,
       "options": {
-        "editing": false,
-        "mode": "list",
+        "editing": true,
+        "mode": "design",
         "root": {
           "id": "e8cw0h",
           "items": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "args": {},
+              "id": "kd1tqf",
+              "placement": {
+                "height": 143.92755126953125,
+                "left": 472,
+                "top": 21,
+                "width": 181.9076690673828
+              },
+              "type": "wind-turbine"
+            },
             {
               "anchor": {
                 "left": true,
