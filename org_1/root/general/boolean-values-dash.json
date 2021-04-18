@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -42,7 +41,7 @@
               }
             ]
           },
-          "unit": "areaMI2"
+          "unit": "on_off"
         },
         "overrides": []
       },
