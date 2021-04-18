@@ -127,7 +127,8 @@
           "dataChanged": true,
           "render": true,
           "schemaChanged": true
-        }
+        },
+        "mode": "events"
       },
       "pluginVersion": "7.5.0-pre",
       "timeFrom": null,
