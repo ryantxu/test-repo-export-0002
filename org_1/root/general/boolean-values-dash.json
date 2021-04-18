@@ -41,7 +41,7 @@
               }
             ]
           },
-          "unit": "on_off"
+          "unit": "bool:A/"
         },
         "overrides": []
       },
@@ -53,21 +53,30 @@
       },
       "id": 2,
       "options": {
-        "frameIndex": 0,
+        "frameIndex": 1,
         "showHeader": true
       },
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
+          "alias": "bools",
           "refId": "A",
           "scenarioId": "csv_metric_values",
           "stringInput": "T,F,T"
         },
         {
+          "alias": "numbers",
           "hide": false,
           "refId": "B",
           "scenarioId": "csv_metric_values",
-          "stringInput": "A,B,C"
+          "stringInput": "0,1,0,,1,1"
+        },
+        {
+          "alias": "bools",
+          "hide": false,
+          "refId": "C",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "T,F,T"
         }
       ],
       "title": "Panel Title",
