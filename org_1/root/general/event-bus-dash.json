@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -91,6 +90,51 @@
       ],
       "title": "Panel Title",
       "type": "piechart"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "counters": {
+          "dataChanged": true,
+          "render": true,
+          "schemaChanged": true
+        },
+        "mode": "render"
+      },
+      "pluginVersion": "7.5.0-pre",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Panel Title",
+      "type": "debug"
     }
   ],
   "schemaVersion": 27,
