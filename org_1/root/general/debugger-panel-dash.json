@@ -42,8 +42,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 12,
-        "w": 10,
+        "h": 11,
+        "w": 14,
         "x": 0,
         "y": 0
       },
@@ -57,7 +57,7 @@
         "counters": {
           "dataChanged": true,
           "render": true,
-          "schemaChanged": false
+          "schemaChanged": true
         }
       },
       "pluginVersion": "7.5.0-pre",
