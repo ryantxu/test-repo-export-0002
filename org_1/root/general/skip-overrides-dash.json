@@ -118,7 +118,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "plugin/testdata/random-20Hz-stream",
+          "channel": "plugin/testdata/random-2s-stream",
           "queryType": "measurements",
           "refId": "A"
         }
