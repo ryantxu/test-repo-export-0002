@@ -18,7 +18,7 @@
   "links": [],
   "panels": [
     {
-      "datasource": null,
+      "datasource": "-- Grafana --",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -88,31 +88,15 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "alias": "",
-          "channel": "random-20Hz-stream",
-          "csvWave": {
-            "timeStep": 60,
-            "valuesCSV": "0,0,2,2,1,1"
+          "channel": "plugin/testdata/random-20Hz-stream",
+          "filter": {
+            "fields": [
+              "Time",
+              "Value"
+            ]
           },
-          "lines": 10,
-          "points": [],
-          "pulseWave": {
-            "offCount": 3,
-            "offValue": 1,
-            "onCount": 3,
-            "onValue": 2,
-            "timeStep": 60
-          },
-          "refId": "A",
-          "scenarioId": "live",
-          "stream": {
-            "bands": 1,
-            "noise": 2.2,
-            "speed": 250,
-            "spread": 3.5,
-            "type": "signal"
-          },
-          "stringInput": ""
+          "queryType": "measurements",
+          "refId": "A"
         }
       ],
       "title": "Panel Title",
