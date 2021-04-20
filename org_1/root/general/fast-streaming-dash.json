@@ -90,10 +90,7 @@
         {
           "channel": "plugin/testdata/random-20Hz-stream",
           "filter": {
-            "fields": [
-              "Time",
-              "Value"
-            ]
+            "fields": []
           },
           "queryType": "measurements",
           "refId": "A"
