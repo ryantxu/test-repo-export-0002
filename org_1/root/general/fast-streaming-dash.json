@@ -43,7 +43,11 @@
               "type": "linear"
             },
             "showPoints": "auto",
-            "spanNulls": true
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
           },
           "mappings": [],
           "thresholds": {
@@ -85,7 +89,7 @@
       "targets": [
         {
           "alias": "",
-          "channel": "random-20hz-stream",
+          "channel": "random-20Hz-stream",
           "csvWave": {
             "timeStep": 60,
             "valuesCSV": "0,0,2,2,1,1"
