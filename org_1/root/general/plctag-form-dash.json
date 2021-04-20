@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -51,6 +50,7 @@
       "id": 2,
       "options": {
         "action": {
+          "ds": "UP_O0e8Mz",
           "type": "ds"
         },
         "editing": true,
@@ -63,6 +63,7 @@
                 "left": true,
                 "top": true
               },
+              "dimension": "clearAlarms",
               "id": "jwkhie",
               "placement": {
                 "height": 30,
