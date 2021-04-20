@@ -78,11 +78,12 @@
                 "left": true,
                 "top": true
               },
+              "dimension": "A-series",
               "id": "ua0pg3",
               "placement": {
                 "height": 44.92329406738281,
-                "left": 279,
-                "top": 64,
+                "left": 462,
+                "top": 141,
                 "width": 208.9630584716797
               },
               "type": "switch"
