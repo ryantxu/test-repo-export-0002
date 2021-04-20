@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -73,6 +72,20 @@
                 "width": 100
               },
               "type": "Tank"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "id": "ua0pg3",
+              "placement": {
+                "height": 44.92329406738281,
+                "left": 279,
+                "top": 64,
+                "width": 208.9630584716797
+              },
+              "type": "switch"
             }
           ],
           "type": "layer"
