@@ -87,7 +87,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "stream/telegraf/system",
+          "channel": "stream/telegraf/cpu",
           "queryType": "measurements",
           "refId": "A"
         }
