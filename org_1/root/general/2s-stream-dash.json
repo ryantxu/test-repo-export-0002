@@ -87,9 +87,9 @@
       "targets": [
         {
           "alias": "",
+          "channel": "random-2s-stream",
           "refId": "A",
-          "scenarioId": "grafana_api",
-          "stringInput": "datasources"
+          "scenarioId": "live"
         }
       ],
       "timeFrom": null,
