@@ -1,0 +1,24 @@
+{
+  "id": 91,
+  "name": "MQTT",
+  "type": "mqtt-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "host": "localhost",
+    "port": 1883
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "c5ZXxmrGk",
+  "created": "2021-04-23T09:56:35-07:00",
+  "updated": "2021-04-23T09:57:04-07:00"
+}
