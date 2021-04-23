@@ -19,7 +19,7 @@
   "panels": [
     {
       "aliasColors": {
-        "A-series": "purple"
+        "A-series": "red"
       },
       "bars": false,
       "dashLength": 10,
