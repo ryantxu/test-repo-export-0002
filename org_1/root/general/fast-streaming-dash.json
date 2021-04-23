@@ -88,7 +88,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "plugin/testdata/random-20Hz-stream",
+          "channel": "stream/telegraf/cpu",
           "filter": {
             "fields": []
           },
