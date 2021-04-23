@@ -18,7 +18,9 @@
   "links": [],
   "panels": [
     {
-      "aliasColors": {},
+      "aliasColors": {
+        "A-series": "blue"
+      },
       "bars": false,
       "dashLength": 10,
       "dashes": false,
