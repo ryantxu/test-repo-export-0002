@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -169,7 +168,44 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": "Alameda (CA)",
+          "value": "9414750"
+        },
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "Station",
+        "multi": false,
+        "name": "station",
+        "options": [
+          {
+            "selected": true,
+            "text": "Alameda (CA)",
+            "value": "9414750"
+          },
+          {
+            "selected": false,
+            "text": "Point Reyes (CA)",
+            "value": "9415020"
+          },
+          {
+            "selected": false,
+            "text": "The Battery (NY)",
+            "value": "8518750"
+          }
+        ],
+        "query": "Alameda (CA) : 9414750, Point Reyes (CA) : 9415020, The Battery (NY)  : 8518750",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
   },
   "time": {
     "from": "now/d",
