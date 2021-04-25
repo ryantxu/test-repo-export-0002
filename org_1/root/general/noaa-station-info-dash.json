@@ -15,6 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
+  "iteration": 1619391893798,
   "links": [],
   "panels": [
     {
@@ -90,14 +91,14 @@
           "date": "query",
           "product": "water_level",
           "refId": "A",
-          "station": 9414750
+          "station": null
         },
         {
           "date": "query",
           "hide": false,
           "product": "predictions",
           "refId": "B",
-          "station": 9414750
+          "station": null
         }
       ],
       "title": "Tides",
@@ -156,7 +157,7 @@
           "date": "latest",
           "product": "high_low",
           "refId": "A",
-          "station": 9414750
+          "station": null
         }
       ],
       "title": "Next Tide",
@@ -173,8 +174,8 @@
         "allValue": null,
         "current": {
           "selected": true,
-          "text": "Alameda (CA)",
-          "value": "9414750"
+          "text": "Point Reyes (CA)",
+          "value": "9415020"
         },
         "description": null,
         "error": null,
@@ -185,12 +186,12 @@
         "name": "station",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "Alameda (CA)",
             "value": "9414750"
           },
           {
-            "selected": false,
+            "selected": true,
             "text": "Point Reyes (CA)",
             "value": "9415020"
           },
