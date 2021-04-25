@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1619392596539,
+  "iteration": 1619392596547,
   "links": [],
   "panels": [
     {
@@ -219,8 +219,8 @@
         "allValue": null,
         "current": {
           "selected": true,
-          "text": "Point Reyes (CA)",
-          "value": "9415020"
+          "text": "Alameda (CA)",
+          "value": "9414750"
         },
         "description": null,
         "error": null,
@@ -231,12 +231,12 @@
         "name": "station",
         "options": [
           {
-            "selected": false,
+            "selected": true,
             "text": "Alameda (CA)",
             "value": "9414750"
           },
           {
-            "selected": true,
+            "selected": false,
             "text": "Point Reyes (CA)",
             "value": "9415020"
           },
