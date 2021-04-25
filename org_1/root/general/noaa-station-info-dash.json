@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1619391893798,
+  "iteration": 1619392596539,
   "links": [],
   "panels": [
     {
@@ -66,7 +66,52 @@
           },
           "unit": "lengthm"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "water_level"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "predictions"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-green",
+                  "mode": "fixed"
+                }
+              },
+              {
+                "id": "custom.fillOpacity",
+                "value": 0
+              },
+              {
+                "id": "custom.lineStyle",
+                "value": {
+                  "dash": [
+                    10,
+                    10
+                  ],
+                  "fill": "dash"
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 10,
@@ -91,14 +136,14 @@
           "date": "query",
           "product": "water_level",
           "refId": "A",
-          "station": null
+          "station": "$station"
         },
         {
           "date": "query",
           "hide": false,
           "product": "predictions",
           "refId": "B",
-          "station": null
+          "station": "$station"
         }
       ],
       "title": "Tides",
@@ -157,7 +202,7 @@
           "date": "latest",
           "product": "high_low",
           "refId": "A",
-          "station": null
+          "station": "$station"
         }
       ],
       "title": "Next Tide",
