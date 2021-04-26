@@ -60,6 +60,7 @@
             {
               "anchor": {
                 "left": true,
+                "right": false,
                 "top": true
               },
               "args": {
@@ -68,10 +69,10 @@
               "dimension": "A-series",
               "id": "9z8wm6",
               "placement": {
-                "height": 78.671875,
-                "left": 132,
-                "top": 36,
-                "width": 154.734375
+                "height": 163,
+                "left": 280,
+                "top": 89,
+                "width": 213
               },
               "type": "icon"
             }
