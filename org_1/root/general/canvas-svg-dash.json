@@ -62,7 +62,9 @@
                 "left": true,
                 "top": true
               },
-              "args": {},
+              "args": {
+                "path": "battery-bolt.svg"
+              },
               "dimension": "A-series",
               "id": "9z8wm6",
               "placement": {
