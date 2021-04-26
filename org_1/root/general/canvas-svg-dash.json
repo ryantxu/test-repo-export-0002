@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -64,6 +63,7 @@
                 "top": true
               },
               "args": {},
+              "dimension": "A-series",
               "id": "9z8wm6",
               "placement": {
                 "height": 59.88494110107422,
@@ -78,6 +78,13 @@
         }
       },
       "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "seriesCount": 1
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
