@@ -505,6 +505,7 @@
       }
     }
   ],
+  "refresh": false,
   "schemaVersion": 28,
   "style": "dark",
   "tags": [],
@@ -512,8 +513,8 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
-    "to": "now"
+    "from": "2020-09-14T16:13:20.000Z",
+    "to": "2020-09-15T20:00:00.000Z"
   },
   "timepicker": {},
   "timezone": "",
