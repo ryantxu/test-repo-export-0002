@@ -207,7 +207,7 @@
               }
             ]
           },
-          "unit": "short"
+          "unit": "celsius"
         },
         "overrides": []
       },
@@ -229,9 +229,16 @@
         }
       },
       "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "alias": "Temperature",
+          "refId": "A",
+          "scenarioId": "random_walk"
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Panel Title",
+      "title": "Only temperature",
       "type": "timeseries"
     },
     {
@@ -280,9 +287,25 @@
               }
             ]
           },
-          "unit": "short"
+          "unit": "velocitykmh"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Speed"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "yellow",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -290,7 +313,7 @@
         "x": 12,
         "y": 6
       },
-      "id": 6,
+      "id": 9,
       "options": {
         "legend": {
           "calcs": [],
@@ -302,6 +325,14 @@
         }
       },
       "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "alias": "Speed",
+          "hide": false,
+          "refId": "B",
+          "scenarioId": "random_walk"
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
