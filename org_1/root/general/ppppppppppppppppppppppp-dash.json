@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -62,8 +61,14 @@
         {
           "csvWave": [
             {
+              "labels": "A=B,B=X",
               "timeStep": 60,
               "valuesCSV": "0,0,2,2,1,1"
+            },
+            {
+              "labels": "A=C,B=Y",
+              "timeStep": 60,
+              "valuesCSV": "2,2,1,1"
             }
           ],
           "refId": "A",
@@ -71,7 +76,9 @@
         }
       ],
       "thresholds": [],
+      "timeFrom": null,
       "timeRegions": [],
+      "timeShift": null,
       "title": "Panel Title",
       "tooltip": {
         "shared": true,
