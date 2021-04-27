@@ -351,7 +351,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "flot panel",
+      "title": "flot panel (no units)",
       "tooltip": {
         "shared": true,
         "sort": 0,
