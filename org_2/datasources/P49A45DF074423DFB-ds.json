@@ -1,0 +1,25 @@
+{
+  "id": 94,
+  "name": "gdev-influxdb-flux",
+  "type": "influxdb",
+  "access": "proxy",
+  "url": "http://localhost:8086",
+  "user": "grafana",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "defaultBucket": "mybucket",
+    "organization": "myorg",
+    "version": "Flux"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "P49A45DF074423DFB",
+  "created": "2021-04-27T17:44:09-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
