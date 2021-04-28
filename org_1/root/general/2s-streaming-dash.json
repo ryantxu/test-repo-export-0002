@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -44,7 +43,11 @@
               "type": "linear"
             },
             "showPoints": "never",
-            "spanNulls": true
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
           },
           "mappings": [],
           "thresholds": {
@@ -65,8 +68,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 22,
+        "h": 18,
+        "w": 18,
         "x": 0,
         "y": 0
       },
@@ -85,7 +88,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "random-2s-stream",
+          "channel": "random-20Hz-stream",
           "refId": "A",
           "scenarioId": "live"
         }
@@ -94,14 +97,14 @@
       "type": "timeseries"
     }
   ],
-  "schemaVersion": 27,
+  "schemaVersion": 28,
   "style": "dark",
   "tags": [],
   "templating": {
     "list": []
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-30s",
     "to": "now"
   },
   "timepicker": {},
