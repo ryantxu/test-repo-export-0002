@@ -57,7 +57,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "stream/example/cpu_load_short",
+          "channel": "stream/example/system",
           "queryType": "measurements",
           "refId": "A"
         }
@@ -73,8 +73,10 @@
             "mode": "thresholds"
           },
           "mappings": [],
+          "max": 10,
+          "min": 0,
           "thresholds": {
-            "mode": "absolute",
+            "mode": "percentage",
             "steps": [
               {
                 "color": "green",
@@ -111,7 +113,7 @@
       "pluginVersion": "7.5.0-pre",
       "targets": [
         {
-          "channel": "stream/example/cpu_load_short",
+          "channel": "stream/example/system",
           "queryType": "measurements",
           "refId": "A"
         }
