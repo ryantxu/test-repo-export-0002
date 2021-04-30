@@ -14,7 +14,7 @@
   },
   "editable": true,
   "gnetId": null,
-  "graphTooltip": 2,
+  "graphTooltip": 0,
   "links": [],
   "panels": [
     {
@@ -325,7 +325,7 @@
       }
     }
   ],
-  "schemaVersion": 28,
+  "schemaVersion": 29,
   "style": "dark",
   "tags": [],
   "templating": {
