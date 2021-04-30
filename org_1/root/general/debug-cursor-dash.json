@@ -624,7 +624,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 28,
+  "schemaVersion": 29,
   "style": "dark",
   "tags": [],
   "templating": {
