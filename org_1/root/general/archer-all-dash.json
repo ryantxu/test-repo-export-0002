@@ -22,10 +22,35 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "palette-classic"
           },
           "custom": {
-            "displayMode": "auto"
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "graph": false,
+              "legend": false,
+              "tooltip": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
           },
           "mappings": [],
           "thresholds": {
@@ -52,7 +77,14 @@
       },
       "id": 2,
       "options": {
-        "showHeader": true
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltipOptions": {
+          "mode": "single"
+        }
       },
       "pluginVersion": "7.5.0-pre",
       "targets": [
@@ -65,7 +97,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
-      "type": "table"
+      "type": "timeseries"
     }
   ],
   "schemaVersion": 29,
