@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -23,12 +22,10 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "thresholds"
           },
           "custom": {
-            "fillOpacity": 80,
-            "gradientMode": "none",
-            "lineWidth": 1
+            "displayMode": "auto"
           },
           "mappings": [],
           "thresholds": {
@@ -54,9 +51,18 @@
         "y": 0
       },
       "id": 2,
-      "options": {},
+      "options": {
+        "showHeader": true
+      },
+      "pluginVersion": "7.5.0-pre",
       "title": "Panel Title",
-      "type": "histogram"
+      "transformations": [
+        {
+          "id": "histogram",
+          "options": {}
+        }
+      ],
+      "type": "table"
     }
   ],
   "schemaVersion": 29,
