@@ -22,10 +22,12 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "palette-classic"
           },
           "custom": {
-            "displayMode": "auto"
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -51,9 +53,7 @@
         "y": 0
       },
       "id": 2,
-      "options": {
-        "showHeader": true
-      },
+      "options": {},
       "pluginVersion": "7.5.0-pre",
       "title": "Panel Title",
       "transformations": [
@@ -62,7 +62,7 @@
           "options": {}
         }
       ],
-      "type": "table"
+      "type": "histogram"
     }
   ],
   "schemaVersion": 29,
