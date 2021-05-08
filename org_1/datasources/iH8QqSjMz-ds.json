@@ -1,0 +1,21 @@
+{
+  "id": 97,
+  "name": "TestData DB-2",
+  "type": "testdata",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "iH8QqSjMz",
+  "created": "2021-05-07T22:17:28-07:00",
+  "updated": "2021-05-07T22:17:28-07:00"
+}
