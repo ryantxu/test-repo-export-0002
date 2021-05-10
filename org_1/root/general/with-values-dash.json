@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -62,6 +61,17 @@
                 }
               },
               "type": "value"
+            },
+            {
+              "options": {
+                "from": 1,
+                "result": {
+                  "index": 2,
+                  "text": "aaa"
+                },
+                "to": 5
+              },
+              "type": "range"
             }
           ],
           "thresholds": {
