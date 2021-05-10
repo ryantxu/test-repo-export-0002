@@ -53,15 +53,21 @@
         "y": 0
       },
       "id": 2,
-      "options": {},
+      "options": {
+        "bucketOffset": 0,
+        "bucketSize": 0,
+        "combine": true
+      },
       "pluginVersion": "7.5.0-pre",
-      "title": "Panel Title",
-      "transformations": [
+      "targets": [
         {
-          "id": "histogram",
-          "options": {}
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "seriesCount": 7
         }
       ],
+      "title": "Panel Title",
+      "transformations": [],
       "type": "histogram"
     }
   ],
