@@ -24,8 +24,9 @@
           "color": {
             "mode": "thresholds"
           },
-          "custom": {},
           "mappings": [],
+          "max": 100,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -50,6 +51,9 @@
       },
       "id": 4,
       "options": {
+        "action": {
+          "type": "ds"
+        },
         "alllayers": [
           {
             "anchor": {
@@ -182,9 +186,70 @@
             "type": "display-value"
           }
         ],
+        "mode": "design",
+        "root": {
+          "id": "cvgznm",
+          "items": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "args": {},
+              "dimension": "level",
+              "id": "wsns9f",
+              "placement": {
+                "height": 200,
+                "left": 513,
+                "top": 58,
+                "width": 100
+              },
+              "type": "Tank"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "args": {},
+              "dimension": "pump_on",
+              "id": "ro7x8r",
+              "placement": {
+                "height": 75,
+                "left": 374,
+                "top": 63,
+                "width": 75
+              },
+              "type": "Faucet"
+            }
+          ],
+          "type": "layer"
+        },
         "width": 1138
       },
-      "pluginVersion": "7.4.0-pre",
+      "pluginVersion": "7.5.0-pre",
+      "targets": [
+        {
+          "alias": "pump_on",
+          "refId": "A",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "false"
+        },
+        {
+          "alias": "open",
+          "hide": false,
+          "refId": "B",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "false"
+        },
+        {
+          "alias": "level",
+          "hide": false,
+          "refId": "C",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "20"
+        }
+      ],
       "timeFrom": null,
       "timeShift": null,
       "title": "Panel Title",
@@ -197,7 +262,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "custom": {},
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -223,6 +287,9 @@
       },
       "id": 2,
       "options": {
+        "action": {
+          "type": "ds"
+        },
         "alllayers": [
           {
             "anchor": {
@@ -356,6 +423,12 @@
             "type": "button"
           }
         ],
+        "mode": "design",
+        "root": {
+          "id": "v3wlhi",
+          "items": [],
+          "type": "layer"
+        },
         "things": [
           {
             "anchor": {
@@ -408,7 +481,7 @@
       "type": "edge-draw-panel"
     }
   ],
-  "schemaVersion": 26,
+  "schemaVersion": 29,
   "style": "dark",
   "tags": [],
   "templating": {
