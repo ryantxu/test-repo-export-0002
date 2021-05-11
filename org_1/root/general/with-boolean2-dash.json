@@ -33,6 +33,16 @@
                 }
               },
               "type": "value"
+            },
+            {
+              "options": {
+                "match": "true",
+                "result": {
+                  "index": 1,
+                  "text": "TTTT"
+                }
+              },
+              "type": "special"
             }
           ],
           "thresholds": {
