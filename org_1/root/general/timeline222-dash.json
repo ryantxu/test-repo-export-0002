@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -25,28 +24,7 @@
           "color": {
             "mode": "thresholds"
           },
-          "custom": {
-            "mergeValues": true
-          },
-          "mappings": [
-            {
-              "options": {
-                "a": {
-                  "color": "red",
-                  "index": 0
-                },
-                "b": {
-                  "color": "blue",
-                  "index": 1
-                },
-                "c": {
-                  "color": "purple",
-                  "index": 2
-                }
-              },
-              "type": "value"
-            }
-          ],
+          "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
