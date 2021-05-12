@@ -1,0 +1,24 @@
+{
+  "id": 101,
+  "name": "MQTT-1",
+  "type": "grafana-mqtt-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "host": "localhost",
+    "port": 1883
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "Z0oo3aCMk",
+  "created": "2021-05-12T14:02:45-07:00",
+  "updated": "2021-05-26T16:20:38-07:00"
+}
