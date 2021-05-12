@@ -58,7 +58,7 @@
         {
           "refId": "A",
           "scenarioId": "csv_metric_values",
-          "stringInput": "true,false,true,true,true"
+          "stringInput": "true,false,true,"
         },
         {
           "hide": true,
