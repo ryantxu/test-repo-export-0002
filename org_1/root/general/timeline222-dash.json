@@ -59,6 +59,12 @@
           "refId": "A",
           "scenarioId": "csv_metric_values",
           "stringInput": "true,false,true,true,true"
+        },
+        {
+          "hide": false,
+          "refId": "B",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "a,b,b,a,a,c"
         }
       ],
       "title": "Panel Title",
