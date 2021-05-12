@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -71,8 +70,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 13,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -104,7 +103,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-30s",
     "to": "now"
   },
   "timepicker": {},
