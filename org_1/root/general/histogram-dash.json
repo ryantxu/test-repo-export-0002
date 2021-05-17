@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -28,6 +27,11 @@
           "custom": {
             "fillOpacity": 80,
             "gradientMode": "none",
+            "hideFrom": {
+              "graph": false,
+              "legend": false,
+              "tooltip": false
+            },
             "lineWidth": 1
           },
           "mappings": [],
@@ -43,7 +47,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "degree"
         },
         "overrides": []
       },
@@ -60,6 +65,9 @@
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single"
         }
       },
       "targets": [
