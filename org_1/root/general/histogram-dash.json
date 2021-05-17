@@ -15,6 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
+  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -55,23 +56,24 @@
       "id": 2,
       "options": {
         "bucketOffset": 0,
-        "bucketSize": 0,
-        "combine": true
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        }
       },
-      "pluginVersion": "7.5.0-pre",
       "targets": [
         {
           "refId": "A",
           "scenarioId": "random_walk",
-          "seriesCount": 7
+          "seriesCount": 3
         }
       ],
       "title": "Panel Title",
-      "transformations": [],
       "type": "histogram"
     }
   ],
-  "schemaVersion": 29,
+  "schemaVersion": 30,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -83,5 +85,5 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "histogram!"
+  "title": "histogram"
 }
