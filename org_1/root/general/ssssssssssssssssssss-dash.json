@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -94,18 +93,18 @@
           "alias": "SensorA",
           "refId": "A",
           "scenarioId": "csv_metric_values",
-          "stringInput": "LOW,HIGH,NORMAL,NORMAL,NORMAL,LOW,LOW,NORMAL,HIGH,CRITICAL"
+          "stringInput": "LOW,HIGH,CRITICAL"
         },
         {
           "alias": "SensorB",
-          "hide": false,
+          "hide": true,
           "refId": "B",
           "scenarioId": "csv_metric_values",
-          "stringInput": "NORMAL,LOW,LOW,CRITICAL,CRITICAL,LOW,LOW,NORMAL,HIGH,CRITICAL"
+          "stringInput": "NORMAL,LO,CRITICAL,LOW,LOW,NORMAL,HIGH,CRITICAL"
         },
         {
           "alias": "SensorA",
-          "hide": false,
+          "hide": true,
           "refId": "C",
           "scenarioId": "csv_metric_values",
           "stringInput": "NORMAL,NORMAL,NORMAL,NORMAL,CRITICAL,LOW,NORMAL,NORMAL,NORMAL,LOW"
