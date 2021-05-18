@@ -1,0 +1,21 @@
+{
+  "id": 104,
+  "name": "Anodot",
+  "type": "anodot-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "jrMI-Z3Gz",
+  "created": "2021-05-18T15:53:48-07:00",
+  "updated": "2021-05-18T15:53:48-07:00"
+}
