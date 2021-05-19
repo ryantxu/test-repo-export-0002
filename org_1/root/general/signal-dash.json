@@ -47,6 +47,9 @@
             "stacking": {
               "group": "A",
               "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
             }
           },
           "mappings": [],
@@ -81,7 +84,7 @@
           "displayMode": "list",
           "placement": "bottom"
         },
-        "tooltipOptions": {
+        "tooltip": {
           "mode": "single"
         }
       },
@@ -94,10 +97,16 @@
           "signal": {
             "fields": [
               {
+                "config": {
+                  "unit": "areaMI2"
+                },
                 "expr": "Sine(x)+0.5",
                 "name": "sine"
               },
               {
+                "config": {
+                  "unit": "grad"
+                },
                 "expr": "Triangle(x)",
                 "name": "tri"
               },
@@ -143,7 +152,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 28,
+  "schemaVersion": 30,
   "style": "dark",
   "tags": [
     "internal"
