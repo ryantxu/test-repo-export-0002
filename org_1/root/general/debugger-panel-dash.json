@@ -42,8 +42,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 11,
-        "w": 14,
+        "h": 9,
+        "w": 7,
         "x": 0,
         "y": 0
       },
@@ -58,7 +58,8 @@
           "dataChanged": true,
           "render": true,
           "schemaChanged": true
-        }
+        },
+        "mode": "render"
       },
       "pluginVersion": "7.5.0-pre",
       "targets": [
@@ -95,7 +96,7 @@
       "type": "debug"
     }
   ],
-  "schemaVersion": 27,
+  "schemaVersion": 30,
   "style": "dark",
   "tags": [],
   "templating": {
