@@ -97,16 +97,10 @@
           "signal": {
             "fields": [
               {
-                "config": {
-                  "unit": "areaMI2"
-                },
                 "expr": "Sine(x)+0.5",
                 "name": "sine"
               },
               {
-                "config": {
-                  "unit": "grad"
-                },
                 "expr": "Triangle(x)",
                 "name": "tri"
               },
@@ -151,7 +145,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [
