@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -27,6 +26,7 @@
           },
           "custom": {
             "align": null,
+            "displayMode": "auto",
             "filterable": false
           },
           "mappings": [],
@@ -56,10 +56,10 @@
       "options": {
         "showHeader": true
       },
-      "pluginVersion": "7.5.0-pre",
+      "pluginVersion": "8.1.0-pre",
       "targets": [
         {
-          "queryType": "stream",
+          "queryType": "alarms",
           "refId": "A"
         }
       ],
@@ -67,7 +67,7 @@
       "type": "table"
     }
   ],
-  "schemaVersion": 27,
+  "schemaVersion": 30,
   "style": "dark",
   "tags": [],
   "templating": {
