@@ -169,7 +169,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
+        "h": 10,
         "w": 24,
         "x": 0,
         "y": 13
@@ -178,6 +178,7 @@
       "pluginVersion": "8.1.0-pre",
       "targets": [
         {
+          "path": "all",
           "queryType": "alarms",
           "refId": "A"
         }
