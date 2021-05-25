@@ -137,6 +137,7 @@
       "pluginVersion": "8.1.0-pre",
       "targets": [
         {
+          "path": "all",
           "queryType": "alarms",
           "refId": "A"
         }
