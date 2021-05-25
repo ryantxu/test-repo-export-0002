@@ -125,7 +125,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 10,
+        "h": 6,
         "w": 24,
         "x": 0,
         "y": 7
@@ -141,8 +141,49 @@
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "Alarms (in standard table)",
       "type": "table"
+    },
+    {
+      "datasource": "PLC Tag",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 24,
+        "x": 0,
+        "y": 13
+      },
+      "id": 5,
+      "pluginVersion": "8.1.0-pre",
+      "targets": [
+        {
+          "queryType": "alarms",
+          "refId": "A"
+        }
+      ],
+      "title": "Alarms (in standard table)",
+      "type": "edge-alarms-panel"
     }
   ],
   "schemaVersion": 30,
