@@ -86,6 +86,12 @@
           "refId": "A",
           "scenarioId": "csv_metric_values",
           "stringInput": "1,20,90,30,5,0"
+        },
+        {
+          "hide": false,
+          "refId": "B",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "1,20,30,5,0"
         }
       ],
       "textSize": 24,
@@ -131,7 +137,7 @@
       "timeTextColor": "#d8d9da",
       "title": "Panel Title",
       "type": "natel-discrete-panel",
-      "units": "short",
+      "units": "currencyGBP",
       "use12HourClock": false,
       "useTimePrecision": false,
       "valueMaps": [
