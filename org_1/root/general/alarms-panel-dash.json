@@ -50,6 +50,7 @@
       "id": 2,
       "targets": [
         {
+          "path": "all",
           "queryType": "alarms",
           "refId": "A"
         }
