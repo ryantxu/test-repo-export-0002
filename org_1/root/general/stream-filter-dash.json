@@ -92,7 +92,7 @@
           "filter": {
             "fields": [
               "time",
-              "pf_l2"
+              "frequency"
             ]
           },
           "queryType": "measurements",
