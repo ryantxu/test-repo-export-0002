@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -89,7 +88,13 @@
       },
       "targets": [
         {
-          "channel": "plugin/testdata/random-2s-stream",
+          "channel": "stream/telegraf/mqtt_consumer",
+          "filter": {
+            "fields": [
+              "time",
+              "ax"
+            ]
+          },
           "queryType": "measurements",
           "refId": "A"
         }
@@ -98,6 +103,7 @@
       "type": "timeseries"
     }
   ],
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
