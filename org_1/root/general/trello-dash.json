@@ -50,7 +50,7 @@
       "type": "ryantxu-board-panel"
     }
   ],
-  "schemaVersion": 28,
+  "schemaVersion": 30,
   "style": "dark",
   "tags": [
     "events"
