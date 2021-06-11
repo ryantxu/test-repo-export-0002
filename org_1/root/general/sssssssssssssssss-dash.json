@@ -22,35 +22,11 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "continuous-RdYlGr"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "fillOpacity": 70,
+            "lineWidth": 0
           },
           "mappings": [],
           "thresholds": {
@@ -63,6 +39,10 @@
               {
                 "color": "red",
                 "value": 80
+              },
+              {
+                "color": "#EAB839",
+                "value": 90
               }
             ]
           }
@@ -77,11 +57,14 @@
       },
       "id": 2,
       "options": {
+        "alignValue": "left",
         "legend": {
-          "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
+        "mergeValues": true,
+        "rowHeight": 0.9,
+        "showValue": "auto",
         "tooltip": {
           "mode": "single"
         }
@@ -94,7 +77,7 @@
         }
       ],
       "title": "Panel Title",
-      "type": "timeseries"
+      "type": "state-timeline"
     }
   ],
   "schemaVersion": 30,
