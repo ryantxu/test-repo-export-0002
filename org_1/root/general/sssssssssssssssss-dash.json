@@ -15,7 +15,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -89,7 +88,7 @@
       },
       "targets": [
         {
-          "channel": "plugin/testdata/random-2s-stream",
+          "channel": "plugin/testdata/random-20Hz-stream",
           "queryType": "measurements",
           "refId": "A"
         }
