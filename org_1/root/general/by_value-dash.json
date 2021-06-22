@@ -70,6 +70,12 @@
           "refId": "A",
           "scenarioId": "csv_metric_values",
           "stringInput": "a,b,a,b,d"
+        },
+        {
+          "hide": false,
+          "refId": "B",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "1,2,-1,-2,-4,4,4"
         }
       ],
       "title": "Panel Title",
