@@ -101,7 +101,7 @@
       "options": {
         "controls": {
           "hideAttribution": false,
-          "hideZoom": true
+          "hideZoom": false
         }
       },
       "targets": [
