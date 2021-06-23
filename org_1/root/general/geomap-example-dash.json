@@ -111,7 +111,7 @@
       "type": "geomap"
     },
     {
-      "datasource": "-- Dashboard --",
+      "datasource": "TestData DB",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -181,8 +181,8 @@
       },
       "targets": [
         {
-          "panelId": 3,
-          "refId": "A"
+          "refId": "A",
+          "scenarioId": "flight_path"
         }
       ],
       "title": "Panel Title",
