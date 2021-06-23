@@ -160,7 +160,44 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lat"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "lat"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "heading"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "degree"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lng"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "lng"
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 11,
@@ -187,6 +224,22 @@
         }
       ],
       "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "organize",
+          "options": {
+            "excludeByName": {},
+            "indexByName": {
+              "altitude": 4,
+              "heading": 1,
+              "lat": 2,
+              "lng": 3,
+              "time": 0
+            },
+            "renameByName": {}
+          }
+        }
+      ],
       "type": "timeseries"
     }
   ],
