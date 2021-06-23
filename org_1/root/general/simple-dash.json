@@ -111,7 +111,7 @@
               {
                 "id": "color",
                 "value": {
-                  "fixedColor": "dark-purple",
+                  "fixedColor": "green",
                   "mode": "fixed"
                 }
               },
