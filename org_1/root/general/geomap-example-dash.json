@@ -99,7 +99,10 @@
       },
       "id": 2,
       "options": {
-        "showZoomControl": false
+        "controls": {
+          "hideAttribution": false,
+          "hideZoom": true
+        }
       },
       "targets": [
         {
