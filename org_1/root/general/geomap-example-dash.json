@@ -169,6 +169,7 @@
         "y": 12
       },
       "id": 4,
+      "maxDataPoints": null,
       "options": {
         "legend": {
           "calcs": [],
