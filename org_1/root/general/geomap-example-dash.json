@@ -117,9 +117,9 @@
       "circleMaxSize": 30,
       "circleMinSize": 2,
       "colors": [
-        "rgba(245, 54, 54, 0.9)",
+        "#B877D9",
         "rgba(237, 129, 40, 0.89)",
-        "rgba(50, 172, 45, 0.97)"
+        "#E0B400"
       ],
       "datasource": null,
       "decimals": 0,
@@ -135,7 +135,7 @@
       "id": 6,
       "initialZoom": 1,
       "locationData": "countries",
-      "mapCenter": "(0°, 0°)",
+      "mapCenter": "Last GeoHash",
       "mapCenterLatitude": 0,
       "mapCenterLongitude": 0,
       "maxDataPoints": 1,
@@ -150,7 +150,7 @@
         "queryType": "geohash"
       },
       "thresholds": "0,10",
-      "title": "World map",
+      "title": "World map (angular)",
       "type": "grafana-worldmap-panel",
       "unitPlural": "",
       "unitSingle": "",
