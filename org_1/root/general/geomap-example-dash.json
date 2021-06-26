@@ -99,9 +99,17 @@
       },
       "id": 2,
       "options": {
+        "basemap": {
+          "type": "esri-Canvas/World_Dark_Gray_Base"
+        },
         "controls": {
           "hideAttribution": false,
-          "hideZoom": false
+          "hideZoom": false,
+          "scaleShowBar": false,
+          "showAttribution": true,
+          "showOverview": false,
+          "showScale": false,
+          "showZoom": true
         }
       },
       "targets": [
