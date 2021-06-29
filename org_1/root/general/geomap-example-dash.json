@@ -14,7 +14,7 @@
   },
   "editable": true,
   "gnetId": null,
-  "graphTooltip": 0,
+  "graphTooltip": 2,
   "links": [],
   "panels": [
     {
@@ -122,47 +122,46 @@
       "type": "geomap"
     },
     {
-      "circleMaxSize": 30,
-      "circleMinSize": 2,
-      "colors": [
-        "#B877D9",
-        "rgba(237, 129, 40, 0.89)",
-        "#E0B400"
-      ],
       "datasource": null,
-      "decimals": 0,
-      "esMetric": "Count",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 13,
         "w": 6,
         "x": 18,
         "y": 0
       },
-      "hideEmpty": false,
-      "hideZero": false,
-      "id": 6,
-      "initialZoom": 1,
-      "locationData": "countries",
-      "mapCenter": "Last GeoHash",
-      "mapCenterLatitude": 0,
-      "mapCenterLongitude": 0,
-      "maxDataPoints": 1,
-      "mouseWheelZoom": false,
-      "showLegend": true,
-      "stickyLabels": false,
-      "tableQueryOptions": {
-        "geohashField": "geohash",
-        "latitudeField": "latitude",
-        "longitudeField": "longitude",
-        "metricField": "metric",
-        "queryType": "geohash"
+      "id": 8,
+      "options": {
+        "counters": {
+          "dataChanged": true,
+          "render": true,
+          "schemaChanged": true
+        },
+        "mode": "cursor"
       },
-      "thresholds": "0,10",
-      "title": "World map (angular)",
-      "type": "grafana-worldmap-panel",
-      "unitPlural": "",
-      "unitSingle": "",
-      "valueName": "total"
+      "title": "Panel Title",
+      "type": "debug"
     },
     {
       "datasource": "TestData DB",
@@ -255,7 +254,7 @@
       },
       "gridPos": {
         "h": 11,
-        "w": 24,
+        "w": 18,
         "x": 0,
         "y": 13
       },
@@ -280,6 +279,49 @@
       "title": "Panel Title",
       "transformations": [],
       "type": "timeseries"
+    },
+    {
+      "circleMaxSize": 30,
+      "circleMinSize": 2,
+      "colors": [
+        "#B877D9",
+        "rgba(237, 129, 40, 0.89)",
+        "#E0B400"
+      ],
+      "datasource": null,
+      "decimals": 0,
+      "esMetric": "Count",
+      "gridPos": {
+        "h": 11,
+        "w": 6,
+        "x": 18,
+        "y": 13
+      },
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 6,
+      "initialZoom": 1,
+      "locationData": "countries",
+      "mapCenter": "Last GeoHash",
+      "mapCenterLatitude": 0,
+      "mapCenterLongitude": 0,
+      "maxDataPoints": 1,
+      "mouseWheelZoom": false,
+      "showLegend": true,
+      "stickyLabels": false,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "latitudeField": "latitude",
+        "longitudeField": "longitude",
+        "metricField": "metric",
+        "queryType": "geohash"
+      },
+      "thresholds": "0,10",
+      "title": "World map (angular)",
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "total"
     }
   ],
   "schemaVersion": 30,
