@@ -100,7 +100,7 @@
       "id": 2,
       "options": {
         "basemap": {
-          "type": "esri-Canvas/World_Dark_Gray_Base"
+          "type": "grafana-theme"
         },
         "controls": {
           "hideAttribution": false,
