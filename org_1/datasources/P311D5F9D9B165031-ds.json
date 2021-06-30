@@ -1,0 +1,24 @@
+{
+  "id": 108,
+  "name": "gdev-opentsdb-v2.3",
+  "type": "opentsdb",
+  "access": "proxy",
+  "url": "http://localhost:4242",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "tsdbResolution": 1,
+    "tsdbVersion": 3
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "P311D5F9D9B165031",
+  "created": "2021-06-30T09:15:57-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
