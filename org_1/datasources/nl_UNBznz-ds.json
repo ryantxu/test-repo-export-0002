@@ -1,0 +1,21 @@
+{
+  "id": 110,
+  "name": "Grafana App Data Source Backend Plugin Template",
+  "type": "myorgid-simple-app-backend-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "nl_UNBznz",
+  "created": "2021-07-01T10:05:24-07:00",
+  "updated": "2021-07-01T10:29:56-07:00"
+}
