@@ -107,10 +107,16 @@
           "hideZoom": false,
           "scaleShowBar": false,
           "showAttribution": true,
+          "showDebug": false,
           "showOverview": false,
           "showScale": false,
           "showZoom": true
-        }
+        },
+        "layers": [
+          {
+            "type": "worldmap-behavior"
+          }
+        ]
       },
       "targets": [
         {
