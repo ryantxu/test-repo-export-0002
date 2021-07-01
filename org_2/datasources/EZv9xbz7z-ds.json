@@ -1,0 +1,21 @@
+{
+  "id": 109,
+  "name": "zzzzz",
+  "type": "myorgid-simple-app-backend-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "EZv9xbz7z",
+  "created": "2021-06-30T18:23:34-07:00",
+  "updated": "2021-07-01T14:58:17-07:00"
+}
