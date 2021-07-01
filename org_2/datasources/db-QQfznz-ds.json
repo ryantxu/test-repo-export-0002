@@ -1,0 +1,21 @@
+{
+  "id": 111,
+  "name": "Service catalog",
+  "type": "grafana-service-catalog-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "db-QQfznz",
+  "created": "2021-07-01T15:02:55-07:00",
+  "updated": "2021-07-05T17:40:24-07:00"
+}
