@@ -128,7 +128,9 @@
             "center": {
               "id": "zero"
             },
-            "id": "coords"
+            "id": "coords",
+            "lat": 50,
+            "lon": 100
           },
           "shared": false,
           "zoom": 3
