@@ -70,7 +70,10 @@
           "schemaChanged": true
         },
         "mode": "render",
-        "showZoomControl": true
+        "showZoomControl": true,
+        "view": {
+          "shared": true
+        }
       },
       "title": "Panel Title",
       "type": "geomap"
@@ -146,6 +149,61 @@
       },
       "title": "Panel Title",
       "type": "timeseries"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 10,
+        "x": 0,
+        "y": 10
+      },
+      "id": 5,
+      "options": {
+        "basemap": {
+          "type": "esri-World_Physical_Map"
+        },
+        "controls": {
+          "showAttribution": true,
+          "showDebug": false,
+          "showScale": false,
+          "showZoom": true
+        },
+        "counters": {
+          "dataChanged": true,
+          "render": true,
+          "schemaChanged": true
+        },
+        "mode": "render",
+        "showZoomControl": true,
+        "view": {
+          "shared": true
+        }
+      },
+      "title": "Panel Title",
+      "type": "geomap"
     }
   ],
   "schemaVersion": 30,
