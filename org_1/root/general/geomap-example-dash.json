@@ -8,6 +8,12 @@
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
         "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
         "type": "dashboard"
       }
     ]
@@ -116,7 +122,14 @@
           {
             "type": "worldmap-behavior"
           }
-        ]
+        ],
+        "view": {
+          "center": {
+            "id": "coords"
+          },
+          "shared": false,
+          "zoom": 3
+        }
       },
       "targets": [
         {
