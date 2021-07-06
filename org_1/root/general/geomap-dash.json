@@ -8,6 +8,12 @@
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
         "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
         "type": "dashboard"
       }
     ]
@@ -49,6 +55,15 @@
       },
       "id": 2,
       "options": {
+        "basemap": {
+          "type": "carto"
+        },
+        "controls": {
+          "showAttribution": true,
+          "showDebug": false,
+          "showScale": false,
+          "showZoom": true
+        },
         "counters": {
           "dataChanged": true,
           "render": true,
