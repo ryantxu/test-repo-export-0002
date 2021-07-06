@@ -113,7 +113,7 @@
           "hideZoom": false,
           "scaleShowBar": false,
           "showAttribution": true,
-          "showDebug": false,
+          "showDebug": true,
           "showOverview": false,
           "showScale": false,
           "showZoom": true
@@ -125,6 +125,9 @@
         ],
         "view": {
           "center": {
+            "center": {
+              "id": "zero"
+            },
             "id": "coords"
           },
           "shared": false,
