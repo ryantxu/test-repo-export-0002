@@ -137,14 +137,17 @@
         {
           "refId": "A",
           "scenarioId": "usa_stats",
-          "stringInput": "timeseries"
+          "stringInput": "timeseries",
+          "usa": {
+            "mode": "timeseries"
+          }
         }
       ],
       "title": "Panel Title",
       "type": "timeseries"
     }
   ],
-  "refresh": "",
+  "refresh": false,
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
