@@ -27,9 +27,10 @@
       "circleMaxSize": 30,
       "circleMinSize": 2,
       "colors": [
-        "rgba(245, 54, 54, 0.9)",
-        "rgba(237, 129, 40, 0.89)",
-        "rgba(50, 172, 45, 0.97)"
+        "#37872D",
+        "#E0B400",
+        "#C4162A",
+        "#8F3BB8"
       ],
       "datasource": null,
       "decimals": 0,
@@ -59,7 +60,7 @@
         "metricField": "metric",
         "queryType": "geohash"
       },
-      "thresholds": "0,10",
+      "thresholds": "0,50,100",
       "title": "Panel Title",
       "type": "grafana-worldmap-panel",
       "unitPlural": "",
