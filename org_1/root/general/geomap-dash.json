@@ -24,6 +24,49 @@
   "links": [],
   "panels": [
     {
+      "circleMaxSize": 30,
+      "circleMinSize": 2,
+      "colors": [
+        "rgba(245, 54, 54, 0.9)",
+        "rgba(237, 129, 40, 0.89)",
+        "rgba(50, 172, 45, 0.97)"
+      ],
+      "datasource": null,
+      "decimals": 0,
+      "esMetric": "Count",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 7,
+      "initialZoom": "6",
+      "locationData": "countries",
+      "mapCenter": "Europe",
+      "mapCenterLatitude": 46,
+      "mapCenterLongitude": 14,
+      "maxDataPoints": 1,
+      "mouseWheelZoom": true,
+      "showLegend": true,
+      "stickyLabels": false,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "latitudeField": "latitude",
+        "longitudeField": "longitude",
+        "metricField": "metric",
+        "queryType": "geohash"
+      },
+      "thresholds": "0,10",
+      "title": "Panel Title",
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "total"
+    },
+    {
       "datasource": null,
       "fieldConfig": {
         "defaults": {
@@ -51,12 +94,12 @@
         "h": 10,
         "w": 10,
         "x": 0,
-        "y": 0
+        "y": 8
       },
       "id": 2,
       "options": {
         "basemap": {
-          "type": "carto"
+          "type": "stamen-terrain"
         },
         "controls": {
           "showAttribution": true,
@@ -72,7 +115,11 @@
         "mode": "render",
         "showZoomControl": true,
         "view": {
-          "shared": true
+          "center": {
+            "id": "zero"
+          },
+          "shared": true,
+          "zoom": 1
         }
       },
       "title": "Panel Title",
@@ -134,7 +181,7 @@
         "h": 10,
         "w": 11,
         "x": 10,
-        "y": 0
+        "y": 8
       },
       "id": 4,
       "options": {
@@ -178,7 +225,7 @@
         "h": 10,
         "w": 10,
         "x": 0,
-        "y": 10
+        "y": 18
       },
       "id": 5,
       "options": {
@@ -199,7 +246,11 @@
         "mode": "render",
         "showZoomControl": true,
         "view": {
-          "shared": true
+          "center": {
+            "id": "zero"
+          },
+          "shared": true,
+          "zoom": 1
         }
       },
       "title": "Panel Title",
