@@ -119,6 +119,12 @@
           "render": true,
           "schemaChanged": true
         },
+        "layers": [
+          {
+            "config": {},
+            "type": "worldmap-behavior"
+          }
+        ],
         "mode": "render",
         "showZoomControl": true,
         "view": {
