@@ -100,7 +100,11 @@
       "id": 2,
       "options": {
         "basemap": {
-          "type": "stamen-terrain"
+          "config": {
+            "showLabels": true,
+            "theme": "auto"
+          },
+          "type": "default"
         },
         "controls": {
           "mouseWheelZoom": true,
