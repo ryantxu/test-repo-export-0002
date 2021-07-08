@@ -105,10 +105,9 @@
       "options": {
         "basemap": {
           "config": {
-            "showLabels": true,
-            "theme": "auto"
+            "server": "streets"
           },
-          "type": "default"
+          "type": "esri-xyz"
         },
         "controls": {
           "mouseWheelZoom": true,
@@ -133,7 +132,7 @@
         "showZoomControl": true,
         "view": {
           "center": {
-            "id": "zero"
+            "id": "coords"
           },
           "shared": true,
           "zoom": 1
