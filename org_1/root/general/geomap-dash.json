@@ -103,8 +103,10 @@
           "type": "stamen-terrain"
         },
         "controls": {
+          "mouseWheelZoom": true,
           "showAttribution": true,
-          "showDebug": false,
+          "showDebug": true,
+          "showLegend": true,
           "showScale": false,
           "showZoom": true
         },
@@ -234,8 +236,10 @@
           "type": "esri-World_Physical_Map"
         },
         "controls": {
+          "mouseWheelZoom": true,
           "showAttribution": true,
           "showDebug": false,
+          "showLegend": true,
           "showScale": false,
           "showZoom": true
         },
@@ -258,6 +262,7 @@
       "type": "geomap"
     }
   ],
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
