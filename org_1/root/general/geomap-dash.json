@@ -114,8 +114,8 @@
           "mouseWheelZoom": true,
           "showAttribution": true,
           "showDebug": true,
-          "showLegend": true,
-          "showScale": false,
+          "showLegend": false,
+          "showScale": true,
           "showZoom": true
         },
         "counters": {
