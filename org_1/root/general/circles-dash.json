@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -69,8 +68,8 @@
             "config": {
               "fieldMapping": {
                 "geohashField": "",
-                "latitudeField": "",
-                "longitudeField": "",
+                "latitudeField": "Lat",
+                "longitudeField": "Lng",
                 "metricField": "Count"
               },
               "maxSize": 10,
@@ -85,9 +84,9 @@
         ],
         "view": {
           "center": {
-            "id": "zero"
+            "id": "north-america"
           },
-          "zoom": 1
+          "zoom": 4
         }
       },
       "targets": [
