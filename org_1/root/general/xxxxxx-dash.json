@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -74,15 +73,13 @@
         "layers": [
           {
             "config": {
-              "maxSize": 20,
-              "minSize": 7,
-              "opacity": 0.4
+              "icon": "https://openlayers.org/en/latest/examples/data/icon.png"
             },
             "location": {
               "geohash": "State",
               "mode": "geohash"
             },
-            "type": "markers"
+            "type": "last-point-tracker"
           }
         ],
         "view": {
