@@ -66,20 +66,15 @@
         "layers": [
           {
             "config": {
-              "fieldMapping": {
-                "geohashField": "",
-                "latitudeField": "Lat",
-                "longitudeField": "Lng",
-                "metricField": "Count"
+              "location": {
+                "geohash": "State",
+                "mode": "geohash"
               },
               "maxSize": 10,
               "minSize": 1,
-              "opacity": 0.4,
-              "queryFormat": {
-                "locationType": "coordinates"
-              }
+              "opacity": 0.4
             },
-            "type": "circles"
+            "type": "markers"
           }
         ],
         "view": {
@@ -100,6 +95,7 @@
       "type": "geomap"
     }
   ],
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
