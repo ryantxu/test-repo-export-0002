@@ -144,7 +144,18 @@
         },
         "layers": [
           {
-            "config": {},
+            "config": {
+              "color": {
+                "field": "Price",
+                "fixed": "#8F3BB8"
+              },
+              "fillOpacity": 0.4,
+              "size": {
+                "fixed": 5,
+                "max": 10,
+                "min": 5
+              }
+            },
             "location": {
               "mode": "auto"
             },
