@@ -146,12 +146,11 @@
           {
             "config": {
               "color": {
-                "field": "Price",
                 "fixed": "#8F3BB8"
               },
               "fillOpacity": 0.4,
+              "opacity": 0,
               "size": {
-                "field": "Count",
                 "fixed": 7,
                 "max": 100,
                 "min": 1
