@@ -153,22 +153,23 @@
         ],
         "view": {
           "center": {
-            "id": "zero"
+            "id": "north-america"
           },
           "zoom": 1
         }
       },
       "targets": [
         {
+          "csvFileName": "flight_info_by_state.csv",
           "refId": "A",
-          "scenarioId": "flight_path"
+          "scenarioId": "csv_file"
         }
       ],
       "title": "Panel Title",
       "type": "geomap"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
