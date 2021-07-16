@@ -150,6 +150,7 @@
               },
               "fillOpacity": 0.4,
               "size": {
+                "field": "Count",
                 "fixed": 7,
                 "max": 100,
                 "min": 1
