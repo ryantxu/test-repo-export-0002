@@ -151,9 +151,10 @@
               },
               "fillOpacity": 0.4,
               "size": {
-                "fixed": 5,
-                "max": 10,
-                "min": 5
+                "field": "Count",
+                "fixed": 7,
+                "max": 100,
+                "min": 1
               }
             },
             "location": {
