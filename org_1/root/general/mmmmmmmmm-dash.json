@@ -149,7 +149,6 @@
                 "fixed": "#8F3BB8"
               },
               "fillOpacity": 0.4,
-              "opacity": 0,
               "size": {
                 "fixed": 7,
                 "max": 100,
