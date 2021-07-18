@@ -128,11 +128,8 @@
       "id": 2,
       "options": {
         "basemap": {
-          "config": {
-            "showLabels": true,
-            "theme": "auto"
-          },
-          "type": "default"
+          "config": {},
+          "type": "osm-standard"
         },
         "controls": {
           "mouseWheelZoom": true,
