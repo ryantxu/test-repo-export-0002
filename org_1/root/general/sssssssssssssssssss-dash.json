@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -58,10 +57,9 @@
       "options": {
         "basemap": {
           "config": {
-            "showLabels": true,
-            "theme": "auto"
+            "server": "streets"
           },
-          "type": "default"
+          "type": "esri-xyz"
         },
         "controls": {
           "mouseWheelZoom": true,
