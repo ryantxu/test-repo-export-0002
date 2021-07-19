@@ -57,7 +57,9 @@
       "options": {
         "basemap": {
           "config": {
-            "server": "streets"
+            "server": "streets",
+            "showLabels": true,
+            "theme": "auto"
           },
           "type": "esri-xyz"
         },
@@ -80,9 +82,9 @@
         ],
         "view": {
           "id": "coords",
-          "lat": 28.772757,
-          "lon": 21.050184,
-          "zoom": 7.35
+          "lat": 36.130841,
+          "lon": -5.331158,
+          "zoom": 12.51
         }
       },
       "title": "Panel Title",
