@@ -91,10 +91,10 @@
           }
         ],
         "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
-          "zoom": 1
+          "id": "coords",
+          "lat": 39.542898,
+          "lon": -80.690868,
+          "zoom": 3.71
         }
       },
       "targets": [
