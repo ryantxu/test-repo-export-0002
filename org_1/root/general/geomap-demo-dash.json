@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -36,12 +35,20 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "dark-purple",
                 "value": null
               },
               {
                 "color": "red",
-                "value": 80
+                "value": 3
+              },
+              {
+                "color": "#EAB839",
+                "value": 8
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 100
               }
             ]
           }
@@ -58,15 +65,16 @@
       "options": {
         "basemap": {
           "config": {
+            "server": "streets",
             "showLabels": true,
             "theme": "auto"
           },
-          "type": "default"
+          "type": "esri-xyz"
         },
         "controls": {
           "mouseWheelZoom": true,
           "showAttribution": true,
-          "showDebug": false,
+          "showDebug": true,
           "showLegend": true,
           "showScale": false,
           "showZoom": true
@@ -75,26 +83,30 @@
           {
             "config": {
               "color": {
-                "fixed": "#f00"
+                "field": "Count",
+                "fixed": "#56A64B"
               },
               "fillOpacity": 0.4,
               "size": {
-                "fixed": 5,
-                "max": 15,
-                "min": 2
+                "fixed": 10,
+                "max": 20,
+                "min": 1
               }
             },
             "location": {
+              "geohash": "DestLocation",
+              "latitude": "Lat",
+              "longitude": "Lng",
               "mode": "auto"
             },
             "type": "markers"
           }
         ],
         "view": {
-          "id": "coords",
-          "lat": 40.241379,
-          "lon": -4.52574,
-          "zoom": 5.19
+          "id": "north-america",
+          "lat": 40,
+          "lon": -100,
+          "zoom": 4
         }
       },
       "targets": [
