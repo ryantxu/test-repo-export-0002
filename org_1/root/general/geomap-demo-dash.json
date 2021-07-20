@@ -153,10 +153,107 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 18,
         "w": 12,
         "x": 12,
         "y": 0
+      },
+      "id": 4,
+      "options": {
+        "basemap": {
+          "config": {
+            "server": "streets",
+            "showLabels": true,
+            "theme": "auto"
+          },
+          "type": "esri-xyz"
+        },
+        "controls": {
+          "mouseWheelZoom": true,
+          "showAttribution": true,
+          "showDebug": false,
+          "showLegend": true,
+          "showScale": false,
+          "showZoom": true
+        },
+        "layers": [
+          {
+            "config": {
+              "color": {
+                "field": "Count",
+                "fixed": "#56A64B"
+              },
+              "fillOpacity": 0.4,
+              "size": {
+                "fixed": 10,
+                "max": 20,
+                "min": 1
+              }
+            },
+            "location": {
+              "geohash": "DestLocation",
+              "latitude": "Lat",
+              "longitude": "Lng",
+              "mode": "auto"
+            },
+            "type": "markers"
+          }
+        ],
+        "view": {
+          "id": "north-america",
+          "lat": 40,
+          "lon": -100,
+          "shared": false,
+          "zoom": 4
+        }
+      },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "geomap"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-purple",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 3
+              },
+              {
+                "color": "#EAB839",
+                "value": 8
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 100
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 9
       },
       "id": 3,
       "options": {
