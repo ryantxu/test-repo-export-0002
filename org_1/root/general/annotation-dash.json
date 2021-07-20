@@ -25,32 +25,6 @@
   "panels": [
     {
       "datasource": null,
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 4,
-      "options": {
-        "limit": 10,
-        "navigateAfter": "10m",
-        "navigateBefore": "10m",
-        "navigateToPanel": true,
-        "onlyFromThisDashboard": false,
-        "onlyInTimeRange": false,
-        "showTags": true,
-        "showTime": true,
-        "showUser": true,
-        "tags": [
-          "bbbb"
-        ]
-      },
-      "title": "Panel Title",
-      "type": "annolist"
-    },
-    {
-      "datasource": null,
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -105,7 +79,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 8
+        "y": 0
       },
       "id": 2,
       "options": {
@@ -120,6 +94,32 @@
       },
       "title": "Panel Title",
       "type": "timeseries"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "limit": 10,
+        "navigateAfter": "10m",
+        "navigateBefore": "10m",
+        "navigateToPanel": true,
+        "onlyFromThisDashboard": false,
+        "onlyInTimeRange": false,
+        "showTags": true,
+        "showTime": true,
+        "showUser": true,
+        "tags": [
+          "bbbb"
+        ]
+      },
+      "title": "Panel Title",
+      "type": "annolist"
     }
   ],
   "refresh": "",
