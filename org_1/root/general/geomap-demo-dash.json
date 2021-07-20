@@ -24,101 +24,61 @@
   "links": [],
   "panels": [
     {
+      "circleMaxSize": 30,
+      "circleMinSize": 2,
+      "colors": [
+        "rgba(245, 54, 54, 0.9)",
+        "rgba(237, 129, 40, 0.89)",
+        "rgba(50, 172, 45, 0.97)"
+      ],
       "datasource": null,
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "dark-purple",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 3
-              },
-              {
-                "color": "#EAB839",
-                "value": 8
-              },
-              {
-                "color": "#6ED0E0",
-                "value": 100
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
+      "decimals": 0,
+      "esMetric": "Count",
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "id": 2,
-      "options": {
-        "basemap": {
-          "config": {
-            "server": "streets",
-            "showLabels": true,
-            "theme": "auto"
-          },
-          "type": "esri-xyz"
-        },
-        "controls": {
-          "mouseWheelZoom": true,
-          "showAttribution": true,
-          "showDebug": false,
-          "showLegend": true,
-          "showScale": false,
-          "showZoom": true
-        },
-        "layers": [
-          {
-            "config": {
-              "color": {
-                "field": "Count",
-                "fixed": "#56A64B"
-              },
-              "fillOpacity": 0.4,
-              "size": {
-                "fixed": 10,
-                "max": 20,
-                "min": 1
-              }
-            },
-            "location": {
-              "geohash": "DestLocation",
-              "latitude": "Lat",
-              "longitude": "Lng",
-              "mode": "auto"
-            },
-            "type": "markers"
-          }
-        ],
-        "view": {
-          "id": "north-america",
-          "lat": 40,
-          "lon": -100,
-          "shared": true,
-          "zoom": 4
-        }
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 6,
+      "initialZoom": 1,
+      "locationData": "countries",
+      "mapCenter": "(0°, 0°)",
+      "mapCenterLatitude": 0,
+      "mapCenterLongitude": 0,
+      "mouseWheelZoom": false,
+      "showLegend": true,
+      "stickyLabels": false,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "latitudeField": "latitude",
+        "longitudeField": "longitude",
+        "metricField": "metric",
+        "queryType": "geohash"
       },
       "targets": [
         {
-          "csvFileName": "flight_info_by_state.csv",
+          "csvFileName": "population_by_state.csv",
           "refId": "A",
           "scenarioId": "csv_file"
         }
       ],
+      "thresholds": "0,10",
       "title": "Panel Title",
-      "type": "geomap"
+      "transformations": [
+        {
+          "id": "prepareTimeSeries",
+          "options": {
+            "format": "many"
+          }
+        }
+      ],
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "total"
     },
     {
       "datasource": null,
@@ -253,13 +213,112 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 9
+        "y": 8
+      },
+      "id": 2,
+      "options": {
+        "basemap": {
+          "config": {
+            "server": "streets",
+            "showLabels": true,
+            "theme": "auto"
+          },
+          "type": "esri-xyz"
+        },
+        "controls": {
+          "mouseWheelZoom": true,
+          "showAttribution": true,
+          "showDebug": false,
+          "showLegend": true,
+          "showScale": false,
+          "showZoom": true
+        },
+        "layers": [
+          {
+            "config": {
+              "color": {
+                "field": "Count",
+                "fixed": "#56A64B"
+              },
+              "fillOpacity": 0.4,
+              "size": {
+                "fixed": 10,
+                "max": 20,
+                "min": 1
+              }
+            },
+            "location": {
+              "geohash": "DestLocation",
+              "latitude": "Lat",
+              "longitude": "Lng",
+              "mode": "auto"
+            },
+            "type": "markers"
+          }
+        ],
+        "view": {
+          "id": "north-america",
+          "lat": 40,
+          "lon": -100,
+          "shared": true,
+          "zoom": 4
+        }
+      },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "geomap"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-purple",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 3
+              },
+              {
+                "color": "#EAB839",
+                "value": 8
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 100
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 17
       },
       "id": 3,
       "options": {
         "basemap": {
           "config": {
-            "server": "world-imagery"
+            "server": "world-imagery",
+            "showLabels": true,
+            "theme": "auto"
           },
           "type": "esri-xyz"
         },
