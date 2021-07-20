@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -42,7 +41,10 @@
         "onlyInTimeRange": false,
         "showTags": true,
         "showTime": true,
-        "showUser": true
+        "showUser": true,
+        "tags": [
+          "bbbb"
+        ]
       },
       "title": "Panel Title",
       "type": "annolist"
