@@ -123,9 +123,7 @@
         "showTags": true,
         "showTime": true,
         "showUser": true,
-        "tags": [
-          "bbbb"
-        ]
+        "tags": []
       },
       "title": "Panel Title",
       "type": "annolist"
