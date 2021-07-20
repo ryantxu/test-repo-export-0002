@@ -28,14 +28,14 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-purples"
           },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "dark-purple",
                 "value": null
               },
               {
@@ -73,20 +73,18 @@
         "layers": [
           {
             "config": {
-              "color": {
-                "fixed": "#f00"
-              },
-              "fillOpacity": 0.4,
-              "size": {
-                "fixed": 49.5,
-                "max": 100,
-                "min": 49.5
+              "blur": 15,
+              "radius": 5,
+              "weight": {
+                "fixed": 1,
+                "max": 1,
+                "min": 0
               }
             },
             "location": {
               "mode": "auto"
             },
-            "type": "markers"
+            "type": "heatmap"
           }
         ],
         "view": {
