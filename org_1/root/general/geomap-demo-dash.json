@@ -33,6 +33,7 @@
       ],
       "datasource": null,
       "decimals": 0,
+      "esLocationName": "",
       "esMetric": "Count",
       "gridPos": {
         "h": 8,
@@ -44,10 +45,11 @@
       "hideZero": false,
       "id": 6,
       "initialZoom": 1,
-      "locationData": "countries",
+      "locationData": "geohash",
       "mapCenter": "(0°, 0°)",
       "mapCenterLatitude": 0,
       "mapCenterLongitude": 0,
+      "maxDataPoints": 1,
       "mouseWheelZoom": false,
       "showLegend": true,
       "stickyLabels": false,
@@ -60,7 +62,7 @@
       },
       "targets": [
         {
-          "csvFileName": "population_by_state.csv",
+          "csvFileName": "flight_info_by_state.csv",
           "refId": "A",
           "scenarioId": "csv_file"
         }
