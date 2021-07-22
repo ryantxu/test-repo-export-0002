@@ -28,7 +28,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-RdYlGr"
+            "mode": "thresholds"
           },
           "mappings": [],
           "thresholds": {
@@ -71,7 +71,7 @@
           {
             "config": {
               "color": {
-                "field": "foo",
+                "field": "Count",
                 "fixed": "dark-green"
               },
               "fillOpacity": 0.4,
@@ -85,7 +85,7 @@
             "location": {
               "gazetteer": "https://raw.githubusercontent.com/grafana/worldmap-panel/master/src/data/probes.json",
               "lookup": "state",
-              "mode": "lookup",
+              "mode": "auto",
               "placenames": "public/gazetteer/usa-states.json"
             },
             "type": "markers"
@@ -100,12 +100,9 @@
       },
       "targets": [
         {
+          "csvFileName": "flight_info_by_state.csv",
           "refId": "A",
-          "scenarioId": "usa",
-          "usa": {
-            "mode": "values-as-rows",
-            "states": []
-          }
+          "scenarioId": "csv_file"
         }
       ],
       "title": "Panel Title",
