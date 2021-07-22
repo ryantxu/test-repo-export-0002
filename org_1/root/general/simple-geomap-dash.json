@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -83,7 +82,9 @@
               }
             },
             "location": {
-              "mode": "auto"
+              "lookup": "State",
+              "mode": "lookup",
+              "placenames": "public/gazetteer/usa-states.json"
             },
             "type": "markers"
           }
