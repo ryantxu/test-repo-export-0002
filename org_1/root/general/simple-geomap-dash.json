@@ -82,6 +82,7 @@
               }
             },
             "location": {
+              "gazetteer": "public/gazetteer/usa-states.json",
               "lookup": "State",
               "mode": "lookup",
               "placenames": "public/gazetteer/usa-states.json"
@@ -107,6 +108,7 @@
       "type": "geomap"
     }
   ],
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
