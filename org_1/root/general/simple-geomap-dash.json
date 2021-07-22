@@ -83,7 +83,7 @@
               }
             },
             "location": {
-              "gazetteer": "public/gazetteer/usa-states.json",
+              "gazetteer": "https://raw.githubusercontent.com/grafana/worldmap-panel/master/src/data/probes.json",
               "lookup": "state",
               "mode": "lookup",
               "placenames": "public/gazetteer/usa-states.json"
