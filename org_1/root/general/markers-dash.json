@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -56,6 +55,10 @@
       },
       "id": 2,
       "options": {
+        "basemap": {
+          "config": {},
+          "type": "default"
+        },
         "controls": {
           "mouseWheelZoom": true,
           "showAttribution": true,
@@ -67,17 +70,27 @@
         "layers": [
           {
             "config": {
+              "color": {
+                "fixed": "dark-purple"
+              },
               "fieldMapping": {
                 "geohashField": "DestLocation",
                 "latitudeField": "",
                 "longitudeField": "",
                 "metricField": "Price"
               },
+              "fillOpacity": 0.4,
               "maxSize": 10,
               "minSize": 1,
               "opacity": 0.4,
               "queryFormat": {
                 "locationType": "geohash"
+              },
+              "shape": "circle",
+              "size": {
+                "fixed": 5,
+                "max": 15,
+                "min": 2
               }
             },
             "type": "markers"
@@ -87,6 +100,9 @@
           "center": {
             "id": "zero"
           },
+          "id": "zero",
+          "lat": 0,
+          "lon": 0,
           "zoom": 1
         }
       },
