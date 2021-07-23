@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -42,7 +41,7 @@
         "message": "json",
         "publish": false
       },
-      "title": "Panel Title",
+      "title": "Full Update",
       "type": "live"
     },
     {
@@ -57,13 +56,13 @@
       "options": {
         "channel": {
           "namespace": "jBoHjOZ7k",
-          "path": "stream",
+          "path": "stream/changes",
           "scope": "ds"
         },
         "message": "json",
         "publish": false
       },
-      "title": "Panel Title",
+      "title": "Changes",
       "type": "live"
     }
   ],
