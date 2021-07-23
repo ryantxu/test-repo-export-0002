@@ -337,7 +337,7 @@
       },
       "gridPos": {
         "h": 9,
-        "w": 12,
+        "w": 6,
         "x": 0,
         "y": 8
       },
@@ -382,6 +382,86 @@
           "zoom": 1
         }
       },
+      "type": "geomap"
+    },
+    {
+      "datasource": null,
+      "description": "Map with descriptoin",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 6,
+        "x": 6,
+        "y": 8
+      },
+      "id": 10,
+      "options": {
+        "basemap": {
+          "config": {},
+          "type": "default"
+        },
+        "controls": {
+          "mouseWheelZoom": true,
+          "showAttribution": true,
+          "showDebug": false,
+          "showLegend": true,
+          "showScale": false,
+          "showZoom": true
+        },
+        "layers": [
+          {
+            "config": {
+              "color": {
+                "fixed": "dark-green"
+              },
+              "fillOpacity": 0.4,
+              "shape": "circle",
+              "size": {
+                "fixed": 5,
+                "max": 15,
+                "min": 2
+              }
+            },
+            "location": {
+              "mode": "auto"
+            },
+            "type": "markers"
+          }
+        ],
+        "view": {
+          "id": "zero",
+          "lat": 0,
+          "lon": 0,
+          "zoom": 1
+        }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "scenarioId": "random_walk_with_error"
+        }
+      ],
       "type": "geomap"
     },
     {
