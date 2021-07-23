@@ -28,7 +28,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "continuous-BlYlRd"
           },
           "mappings": [],
           "thresholds": {
@@ -41,6 +41,14 @@
               {
                 "color": "red",
                 "value": 80
+              },
+              {
+                "color": "#EAB839",
+                "value": 90
+              },
+              {
+                "color": "#6ED0E0",
+                "value": 100
               }
             ]
           }
@@ -71,6 +79,7 @@
           {
             "config": {
               "color": {
+                "field": "foo",
                 "fixed": "dark-purple"
               },
               "fieldMapping": {
@@ -93,6 +102,11 @@
                 "min": 2
               }
             },
+            "location": {
+              "gazetteer": "public/gazetteer/usa-states.json",
+              "lookup": "state",
+              "mode": "lookup"
+            },
             "type": "markers"
           }
         ],
@@ -108,9 +122,11 @@
       },
       "targets": [
         {
-          "csvFileName": "flight_info_by_state.csv",
           "refId": "A",
-          "scenarioId": "csv_file"
+          "scenarioId": "usa",
+          "usa": {
+            "mode": "values-as-rows"
+          }
         }
       ],
       "title": "Panel Title",
