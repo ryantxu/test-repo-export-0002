@@ -145,6 +145,28 @@
     },
     {
       "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -153,8 +175,19 @@
       },
       "id": 6,
       "options": {
-        "content": "\n\nText panel.... with error",
-        "mode": "markdown"
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
       },
       "pluginVersion": "8.1.0-pre",
       "targets": [
@@ -163,11 +196,33 @@
           "scenarioId": "random_walk_with_error"
         }
       ],
-      "type": "text"
+      "type": "stat"
     },
     {
       "datasource": null,
       "description": "Info here",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -176,8 +231,19 @@
       },
       "id": 7,
       "options": {
-        "content": "\n\nText panel.... with info",
-        "mode": "markdown"
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
       },
       "pluginVersion": "8.1.0-pre",
       "targets": [
@@ -186,10 +252,32 @@
           "scenarioId": "random_walk_with_error"
         }
       ],
-      "type": "text"
+      "type": "stat"
     },
     {
       "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -198,18 +286,29 @@
       },
       "id": 8,
       "options": {
-        "content": "\n\nText panel.... with time offset",
-        "mode": "markdown"
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {},
+        "textMode": "auto"
       },
       "pluginVersion": "8.1.0-pre",
       "targets": [
         {
           "refId": "A",
-          "scenarioId": "random_walk_with_error"
+          "scenarioId": "random_walk"
         }
       ],
       "timeFrom": "2h",
-      "type": "text"
+      "type": "stat"
     },
     {
       "datasource": null,
