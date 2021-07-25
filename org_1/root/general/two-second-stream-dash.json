@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "isLiveNow": false,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -170,7 +169,7 @@
     "list": []
   },
   "time": {
-    "from": "now-30s",
+    "from": "now-20s",
     "to": "now"
   },
   "timepicker": {},
