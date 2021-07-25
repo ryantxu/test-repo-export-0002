@@ -23,6 +23,7 @@
   "graphTooltip": 0,
   "isLiveNow": false,
   "links": [],
+  "liveNow": true,
   "panels": [
     {
       "datasource": "-- Grafana --",
