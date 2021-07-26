@@ -124,8 +124,20 @@
         },
         "layers": [
           {
-            "config": {},
-            "type": "worldmap-behavior"
+            "config": {
+              "color": {
+                "fixed": "dark-green"
+              },
+              "fillOpacity": 0.4,
+              "shape": "circle",
+              "showLegend": true,
+              "size": {
+                "fixed": 5,
+                "max": 15,
+                "min": 2
+              }
+            },
+            "type": "markers"
           }
         ],
         "mode": "render",
@@ -134,10 +146,20 @@
           "center": {
             "id": "coords"
           },
+          "id": "zero",
+          "lat": 0,
+          "lon": 0,
           "shared": true,
           "zoom": 1
         }
       },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
       "title": "Panel Title",
       "type": "geomap"
     },
@@ -246,6 +268,7 @@
       "id": 5,
       "options": {
         "basemap": {
+          "config": {},
           "type": "esri-World_Physical_Map"
         },
         "controls": {
@@ -261,12 +284,36 @@
           "render": true,
           "schemaChanged": true
         },
+        "layers": [
+          {
+            "config": {
+              "color": {
+                "fixed": "dark-green"
+              },
+              "fillOpacity": 0.4,
+              "shape": "circle",
+              "showLegend": true,
+              "size": {
+                "fixed": 5,
+                "max": 15,
+                "min": 2
+              }
+            },
+            "location": {
+              "mode": "auto"
+            },
+            "type": "markers"
+          }
+        ],
         "mode": "render",
         "showZoomControl": true,
         "view": {
           "center": {
             "id": "zero"
           },
+          "id": "zero",
+          "lat": 0,
+          "lon": 0,
           "shared": true,
           "zoom": 1
         }
