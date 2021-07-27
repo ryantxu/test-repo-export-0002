@@ -33,6 +33,24 @@
       },
       "id": 2,
       "options": {
+        "root": {
+          "elements": [
+            {
+              "config": {
+                "fill": {
+                  "fixed": "#F00"
+                },
+                "path": "aaaa"
+              },
+              "placement": {
+                "height": 75,
+                "width": 75
+              },
+              "type": "icon"
+            }
+          ],
+          "type": "group"
+        },
         "selected": {
           "elements": [
             {
