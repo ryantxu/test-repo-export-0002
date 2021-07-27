@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -52,8 +51,9 @@
           ]
         }
       },
+      "pluginVersion": "8.1.0-pre",
       "title": "Panel Title",
-      "type": "text"
+      "type": "canvas"
     }
   ],
   "refresh": "",
