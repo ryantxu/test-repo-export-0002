@@ -28,35 +28,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "mode": "continuous-BlYlRd"
           },
           "mappings": [],
           "thresholds": {
@@ -76,24 +48,65 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 16,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "id": 6,
+      "id": 2,
       "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom"
+        "basemap": {
+          "config": {
+            "server": "ocean"
+          },
+          "type": "esri-xyz"
         },
-        "tooltip": {
-          "mode": "single"
+        "controls": {
+          "mouseWheelZoom": true,
+          "showAttribution": true,
+          "showDebug": true,
+          "showScale": false,
+          "showTooltip": true,
+          "showZoom": true
+        },
+        "layers": [
+          {
+            "config": {
+              "color": {
+                "field": "Count",
+                "fixed": "dark-green"
+              },
+              "fillOpacity": 0.4,
+              "shape": "circle",
+              "showLegend": true,
+              "size": {
+                "fixed": 5,
+                "max": 15,
+                "min": 2
+              }
+            },
+            "location": {
+              "mode": "auto"
+            },
+            "type": "markers"
+          }
+        ],
+        "view": {
+          "id": "coords",
+          "lat": 33.229189,
+          "lon": -88.382099,
+          "zoom": 3.85
         }
       },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
       "title": "Panel Title",
-      "type": "timeseries"
+      "type": "geomap"
     },
     {
       "datasource": null,
@@ -194,7 +207,7 @@
       "gridPos": {
         "h": 8,
         "w": 12,
-        "x": 0,
+        "x": 12,
         "y": 8
       },
       "id": 4,
@@ -208,91 +221,6 @@
       },
       "title": "Panel Title",
       "type": "debug"
-    },
-    {
-      "datasource": null,
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "continuous-BlYlRd"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 14,
-        "w": 10,
-        "x": 0,
-        "y": 16
-      },
-      "id": 2,
-      "options": {
-        "basemap": {
-          "config": {
-            "server": "ocean"
-          },
-          "type": "esri-xyz"
-        },
-        "controls": {
-          "mouseWheelZoom": true,
-          "showAttribution": true,
-          "showDebug": true,
-          "showScale": false,
-          "showTooltip": true,
-          "showZoom": true
-        },
-        "layers": [
-          {
-            "config": {
-              "color": {
-                "field": "Count",
-                "fixed": "dark-green"
-              },
-              "fillOpacity": 0.4,
-              "shape": "circle",
-              "showLegend": true,
-              "size": {
-                "fixed": 5,
-                "max": 15,
-                "min": 2
-              }
-            },
-            "location": {
-              "mode": "auto"
-            },
-            "type": "markers"
-          }
-        ],
-        "view": {
-          "id": "coords",
-          "lat": 33.229189,
-          "lon": -88.382099,
-          "zoom": 3.85
-        }
-      },
-      "targets": [
-        {
-          "csvFileName": "flight_info_by_state.csv",
-          "refId": "A",
-          "scenarioId": "csv_file"
-        }
-      ],
-      "title": "Panel Title",
-      "type": "geomap"
     }
   ],
   "schemaVersion": 30,
