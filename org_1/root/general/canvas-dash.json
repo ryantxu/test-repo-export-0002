@@ -32,54 +32,6 @@
         "y": 0
       },
       "id": 2,
-      "options": {
-        "root": {
-          "elements": [
-            {
-              "background": {
-                "color": {
-                  "fixed": "semi-dark-purple"
-                }
-              },
-              "border": {
-                "color": {
-                  "fixed": "dark-green"
-                },
-                "width": 6
-              },
-              "config": {
-                "fill": {
-                  "fixed": "#F00"
-                },
-                "path": "aaaa"
-              },
-              "placement": {
-                "height": 75,
-                "width": 75
-              },
-              "type": "icon"
-            }
-          ],
-          "type": "group"
-        },
-        "selected": {
-          "elements": [
-            {
-              "config": {
-                "fill": {
-                  "fixed": "#F00"
-                },
-                "path": "question-circle.svg"
-              },
-              "placement": {
-                "height": 75,
-                "width": 75
-              },
-              "type": "icon"
-            }
-          ]
-        }
-      },
       "pluginVersion": "8.1.0-pre",
       "title": "Panel Title",
       "type": "canvas"
