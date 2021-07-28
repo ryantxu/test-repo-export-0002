@@ -32,6 +32,26 @@
         "y": 0
       },
       "id": 2,
+      "options": {
+        "root": {
+          "elements": [
+            {
+              "config": {
+                "fill": {
+                  "fixed": "#F00"
+                },
+                "path": "question-circle.svg",
+                "text": "agadsgasgd"
+              },
+              "placement": {
+                "height": 75,
+                "width": 75
+              },
+              "type": "text-box"
+            }
+          ]
+        }
+      },
       "pluginVersion": "8.1.0-pre",
       "title": "Panel Title",
       "type": "canvas"
