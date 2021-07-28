@@ -36,6 +36,17 @@
         "root": {
           "elements": [
             {
+              "background": {
+                "color": {
+                  "fixed": "semi-dark-purple"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-green"
+                },
+                "width": 6
+              },
               "config": {
                 "fill": {
                   "fixed": "#F00"
