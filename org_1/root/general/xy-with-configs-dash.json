@@ -83,12 +83,19 @@
       },
       "id": 2,
       "options": {
+        "dims": {
+          "exclude": [
+            "Lat",
+            "Lng"
+          ],
+          "x": "Count"
+        },
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
-        "mode": "scatter",
+        "mode": "xy",
         "tooltip": {
           "mode": "single"
         },
