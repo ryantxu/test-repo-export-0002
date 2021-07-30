@@ -95,11 +95,14 @@
           "displayMode": "list",
           "placement": "bottom"
         },
-        "mode": "xy",
+        "mode": "scatter",
         "tooltip": {
           "mode": "single"
         },
-        "trace": {},
+        "trace": {
+          "x": "Count",
+          "y": "Price"
+        },
         "useScatter": "xy"
       },
       "targets": [
