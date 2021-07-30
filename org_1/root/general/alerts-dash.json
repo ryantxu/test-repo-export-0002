@@ -46,7 +46,7 @@
             },
             "reducer": {
               "params": [],
-              "type": "avg"
+              "type": "last"
             },
             "type": "query"
           }
@@ -177,6 +177,7 @@
         "alertName": "",
         "dashboardAlerts": true,
         "dashboardTitle": "",
+        "folderId": null,
         "maxItems": 10,
         "showOptions": "current",
         "sortOrder": 1,
