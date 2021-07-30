@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -89,16 +88,25 @@
           "displayMode": "list",
           "placement": "bottom"
         },
+        "mode": "scatter",
         "tooltip": {
           "mode": "single"
         },
         "trace": {},
         "useScatter": "xy"
       },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
       "title": "Panel Title",
       "type": "xychart"
     }
   ],
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
