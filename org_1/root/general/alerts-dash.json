@@ -30,7 +30,7 @@
           {
             "evaluator": {
               "params": [
-                1.25
+                5
               ],
               "type": "lt"
             },
@@ -53,7 +53,7 @@
         ],
         "executionErrorState": "alerting",
         "for": "5m",
-        "frequency": "1m",
+        "frequency": "10s",
         "handler": 1,
         "name": "test alert for kyle",
         "noDataState": "no_data",
@@ -118,7 +118,7 @@
           "fill": true,
           "line": true,
           "op": "lt",
-          "value": 1.25,
+          "value": 5,
           "visible": true
         }
       ],
