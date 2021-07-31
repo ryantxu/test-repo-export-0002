@@ -48,15 +48,16 @@
                 "width": 0
               },
               "config": {
-                "align": "left",
-                "text": "asgsdasdgsa asdgasjlsajg s  dsag sal gjalsjgl jl jljlkasgj alksd jglksajglk",
-                "valign": "top"
+                "fill": {
+                  "fixed": "#F00"
+                },
+                "path": "question-circle.svg"
               },
               "placement": {
                 "height": 75,
                 "width": 75
               },
-              "type": "text-box"
+              "type": "icon"
             }
           ]
         }
