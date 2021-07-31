@@ -36,6 +36,17 @@
         "root": {
           "elements": [
             {
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                }
+              },
+              "border": {
+                "color": {
+                  "fixed": "dark-orange"
+                },
+                "width": 4
+              },
               "config": {
                 "fill": {
                   "fixed": "#F00"
@@ -55,6 +66,7 @@
       "type": "canvas"
     }
   ],
+  "refresh": "",
   "schemaVersion": 30,
   "style": "dark",
   "tags": [],
