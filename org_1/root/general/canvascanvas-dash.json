@@ -45,10 +45,11 @@
                 "color": {
                   "fixed": "dark-orange"
                 },
-                "width": 4
+                "width": 0
               },
               "config": {
-                "align": "center",
+                "align": "left",
+                "text": "asgsdasdgsa asdgasjlsajg s  dsag sal gjalsjgl jl jljlkasgj alksd jglksajglk",
                 "valign": "top"
               },
               "placement": {
