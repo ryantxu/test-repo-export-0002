@@ -48,16 +48,15 @@
                 "width": 0
               },
               "config": {
-                "fill": {
-                  "fixed": "#F00"
-                },
-                "path": "question-circle.svg"
+                "align": "left",
+                "text": "aaaa",
+                "valign": "middle"
               },
               "placement": {
                 "height": 75,
                 "width": 75
               },
-              "type": "icon"
+              "type": "text-box"
             }
           ]
         }
