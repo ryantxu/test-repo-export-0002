@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -135,6 +134,37 @@
       "datasource": null,
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -160,47 +190,17 @@
       },
       "id": 6,
       "options": {
-        "basemap": {
-          "config": {},
-          "type": "default"
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
         },
-        "controls": {
-          "mouseWheelZoom": true,
-          "showAttribution": true,
-          "showDebug": false,
-          "showScale": false,
-          "showZoom": true
-        },
-        "layers": [
-          {
-            "config": {
-              "color": {
-                "fixed": "dark-green"
-              },
-              "fillOpacity": 0.4,
-              "shape": "circle",
-              "showLegend": true,
-              "size": {
-                "fixed": 5,
-                "max": 15,
-                "min": 2
-              }
-            },
-            "location": {
-              "mode": "auto"
-            },
-            "type": "markers"
-          }
-        ],
-        "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
-          "zoom": 1
+        "tooltip": {
+          "mode": "single"
         }
       },
       "title": "geomap",
-      "type": "geomap"
+      "type": "timeseries"
     }
   ],
   "schemaVersion": 30,
