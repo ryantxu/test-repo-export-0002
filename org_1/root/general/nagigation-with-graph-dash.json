@@ -142,8 +142,8 @@
             "axisPlacement": "auto",
             "barAlignment": 0,
             "drawStyle": "line",
-            "fillOpacity": 12,
-            "gradientMode": "hue",
+            "fillOpacity": 0,
+            "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
@@ -155,7 +155,7 @@
             "scaleDistribution": {
               "type": "linear"
             },
-            "showPoints": "auto",
+            "showPoints": "always",
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -205,6 +205,7 @@
         "y": 8
       },
       "id": 6,
+      "maxDataPoints": 20,
       "options": {
         "legend": {
           "calcs": [],
@@ -219,7 +220,8 @@
         {
           "refId": "A",
           "scenarioId": "random_walk",
-          "seriesCount": 2
+          "seriesCount": 2,
+          "spread": 5
         }
       ],
       "title": "graph",
