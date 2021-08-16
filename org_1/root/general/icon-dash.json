@@ -1,0 +1,129 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "root": {
+          "elements": [
+            {
+              "background": {
+                "image": {
+                  "mode": "fixed"
+                },
+                "size": "fit"
+              },
+              "config": {
+                "fill": {
+                  "fixed": "#FFF899"
+                },
+                "path": {
+                  "0": "q",
+                  "1": "u",
+                  "10": "i",
+                  "11": "r",
+                  "12": "c",
+                  "13": "l",
+                  "14": "e",
+                  "15": ".",
+                  "16": "s",
+                  "17": "v",
+                  "18": "g",
+                  "2": "e",
+                  "3": "s",
+                  "4": "t",
+                  "5": "i",
+                  "6": "o",
+                  "7": "n",
+                  "8": "-",
+                  "9": "c",
+                  "field": "A-series",
+                  "fixed": "18-plus.svg",
+                  "mode": "fixed"
+                },
+                "stroke": {
+                  "color": {
+                    "fixed": "purple"
+                  },
+                  "width": 5
+                }
+              },
+              "placement": {
+                "height": 50,
+                "width": 50
+              },
+              "type": "icon"
+            }
+          ]
+        }
+      },
+      "title": "Panel Title",
+      "type": "canvas"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 30,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "ICON"
+}
