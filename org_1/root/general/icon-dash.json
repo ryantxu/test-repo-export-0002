@@ -60,6 +60,7 @@
             {
               "background": {
                 "image": {
+                  "fixed": "https://www.w3schools.com/cssref/paper.gif",
                   "mode": "fixed"
                 },
                 "size": "fit"
