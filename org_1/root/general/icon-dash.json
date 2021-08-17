@@ -48,8 +48,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 15,
+        "w": 13,
         "x": 0,
         "y": 0
       },
@@ -73,9 +73,9 @@
               "id": "boxo1a",
               "placement": {
                 "height": 226,
-                "left": 125,
+                "left": 39,
                 "top": 200,
-                "width": 141
+                "width": 269
               },
               "type": "Tank"
             },
@@ -91,11 +91,33 @@
               "id": "zcx4gj",
               "placement": {
                 "height": 136,
-                "left": 382,
-                "top": 80,
+                "left": 329,
+                "top": 48,
                 "width": 174
               },
               "type": "icon"
+            },
+            {
+              "anchor": {
+                "bottom": true,
+                "left": false,
+                "right": true,
+                "top": false
+              },
+              "args": {
+                "path": "lightbulb-alt.svg"
+              },
+              "dimension": "A-series",
+              "id": "a8wszf",
+              "placement": {
+                "bottom": null,
+                "height": 251,
+                "left": 633,
+                "right": null,
+                "top": 142,
+                "width": 174
+              },
+              "type": "wind-turbine"
             }
           ],
           "type": "layer"
@@ -134,7 +156,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 8
+        "y": 15
       },
       "id": 2,
       "options": {
