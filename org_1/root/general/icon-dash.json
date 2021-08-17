@@ -31,6 +31,8 @@
             "mode": "thresholds"
           },
           "mappings": [],
+          "max": 10,
+          "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -40,7 +42,7 @@
               },
               {
                 "color": "red",
-                "value": 80
+                "value": 6
               }
             ]
           }
@@ -59,6 +61,9 @@
           "elements": [
             {
               "background": {
+                "color": {
+                  "field": "Value2"
+                },
                 "image": {
                   "fixed": "https://www.w3schools.com/cssref/paper.gif",
                   "mode": "field"
@@ -67,6 +72,7 @@
               },
               "config": {
                 "fill": {
+                  "field": "Value",
                   "fixed": "#FFF899"
                 },
                 "path": {
@@ -89,15 +95,15 @@
                   "7": "n",
                   "8": "-",
                   "9": "c",
-                  "field": "A-series",
+                  "field": "IconField",
                   "fixed": "cloud-wind.svg",
-                  "mode": "fixed"
+                  "mode": "field"
                 },
                 "stroke": {
                   "color": {
                     "fixed": "purple"
                   },
-                  "width": 5
+                  "width": 0
                 }
               },
               "placement": {
