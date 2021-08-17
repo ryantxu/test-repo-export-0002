@@ -31,6 +31,87 @@
             "mode": "thresholds"
           },
           "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "action": {
+          "type": "ds"
+        },
+        "editing": true,
+        "mode": "design",
+        "root": {
+          "id": "xmpgoi",
+          "items": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "args": {},
+              "dimension": "A-series",
+              "id": "boxo1a",
+              "placement": {
+                "height": 226,
+                "left": 125,
+                "top": 200,
+                "width": 141
+              },
+              "type": "Tank"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "args": {
+                "path": "lightbulb-alt.svg"
+              },
+              "dimension": "A-series",
+              "id": "zcx4gj",
+              "placement": {
+                "height": 136,
+                "left": 382,
+                "top": 80,
+                "width": 174
+              },
+              "type": "icon"
+            }
+          ],
+          "type": "layer"
+        }
+      },
+      "title": "Panel Title",
+      "type": "edge-draw-panel"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
           "max": 10,
           "min": 0,
           "thresholds": {
@@ -53,7 +134,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 0
+        "y": 8
       },
       "id": 2,
       "options": {
