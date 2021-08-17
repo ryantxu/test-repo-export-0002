@@ -111,7 +111,7 @@
       },
       "targets": [
         {
-          "csvContent": "Name,Value,Value2,IconField,IconField2,ImageField\nHello,2.3,7.5,1,wind.svg,wind-sun.svg,https://www.w3schools.com/cssref/paper.gif",
+          "csvContent": "Name,Value,Value2,IconField,IconField2,ImageField\nHello,2.3,7.5,wind.svg,wind-sun.svg,https://www.w3schools.com/cssref/paper.gif",
           "refId": "A",
           "scenarioId": "csv_content"
         }
