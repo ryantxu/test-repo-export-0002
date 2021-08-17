@@ -62,7 +62,7 @@
             {
               "background": {
                 "color": {
-                  "field": "Value2"
+                  "fixed": "transparent"
                 },
                 "image": {
                   "fixed": "https://www.w3schools.com/cssref/paper.gif",
