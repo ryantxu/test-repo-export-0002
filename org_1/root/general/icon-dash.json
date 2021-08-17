@@ -48,8 +48,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 18,
-        "w": 14,
+        "h": 19,
+        "w": 15,
         "x": 0,
         "y": 0
       },
@@ -67,6 +67,7 @@
               "anchor": {
                 "bottom": true,
                 "left": true,
+                "right": true,
                 "top": true
               },
               "args": {},
@@ -75,8 +76,8 @@
               "placement": {
                 "bottom": 28,
                 "left": 24,
-                "top": 220,
-                "width": 269
+                "right": 752,
+                "top": 220
               },
               "type": "Tank"
             },
@@ -92,8 +93,8 @@
               "id": "zcx4gj",
               "placement": {
                 "height": 136,
-                "left": 365,
-                "top": 51,
+                "left": 537,
+                "top": 88,
                 "width": 174
               },
               "type": "icon"
@@ -101,9 +102,9 @@
             {
               "anchor": {
                 "bottom": true,
-                "left": true,
+                "left": false,
                 "right": true,
-                "top": true
+                "top": false
               },
               "args": {
                 "text": "Hello"
@@ -114,11 +115,9 @@
               "dimension": "A-series",
               "id": "0ac4w4",
               "placement": {
-                "bottom": -59,
+                "bottom": 65,
                 "height": 50,
-                "left": 817,
-                "right": -22,
-                "top": 549,
+                "right": 28,
                 "width": 200
               },
               "type": "static-text"
@@ -160,7 +159,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 18
+        "y": 19
       },
       "id": 2,
       "options": {
