@@ -48,7 +48,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 15,
+        "h": 18,
         "w": 13,
         "x": 0,
         "y": 0
@@ -65,6 +65,7 @@
           "items": [
             {
               "anchor": {
+                "bottom": true,
                 "left": true,
                 "top": true
               },
@@ -72,9 +73,9 @@
               "dimension": "A-series",
               "id": "boxo1a",
               "placement": {
-                "height": 226,
-                "left": 39,
-                "top": 200,
+                "bottom": 28,
+                "left": 24,
+                "top": 220,
                 "width": 269
               },
               "type": "Tank"
@@ -110,10 +111,10 @@
               "dimension": "A-series",
               "id": "a8wszf",
               "placement": {
-                "bottom": null,
+                "bottom": -243,
                 "height": 251,
                 "left": 633,
-                "right": null,
+                "right": -151,
                 "top": 142,
                 "width": 174
               },
@@ -156,7 +157,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 15
+        "y": 18
       },
       "id": 2,
       "options": {
