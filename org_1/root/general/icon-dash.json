@@ -171,8 +171,8 @@
                   "fixed": "transparent"
                 },
                 "image": {
-                  "fixed": "https://i1.wp.com/www.csscodelab.com/wp-content/uploads/2019/11/animated-html-css-ripples-background-example.png",
-                  "mode": "field"
+                  "fixed": "https://interactive-examples.mdn.mozilla.net/media/examples/lizard.png",
+                  "mode": "fixed"
                 },
                 "size": "strech"
               },
