@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "panels": [
     {
@@ -77,8 +76,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 11,
+        "w": 21,
         "x": 0,
         "y": 0
       },
@@ -94,7 +93,12 @@
           "color": {
             "fixed": "dark-purple"
           },
+          "label": {
+            "field": "A-series",
+            "mode": "template"
+          },
           "size": {
+            "field": "A-series",
             "fixed": 5,
             "max": 20,
             "min": 1
