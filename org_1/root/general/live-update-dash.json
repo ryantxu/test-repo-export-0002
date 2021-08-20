@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": true,
   "panels": [
@@ -78,8 +77,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 10,
+        "w": 24,
         "x": 0,
         "y": 0
       },
