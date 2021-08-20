@@ -1,0 +1,31 @@
+{
+  "id": 116,
+  "name": "AWS IoT Roci Datasource",
+  "type": "grafana-iot-roci-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "accessKeyId": "ASIAQFMJOTR7KRVCAU4D",
+    "assumeRoleArn": "",
+    "authType": "default",
+    "defaultRegion": "us-east-1",
+    "endpoint": "",
+    "secretAccessKey": "WnrHIRuff0yavRD2ZAn0YkGLpapDPKYLDYaEbSDz",
+    "sessionToken": "IQoJb3JpZ2luX2VjEP7//////////wEaCXVzLWVhc3QtMSJHMEUCIGXO572cKwJuhsnFeHcI7QRvjl0OMO6rrCytcId6hUmEAiEA3rd0x4D7ehf3kSZQQahYcxAdZFEvN33cNFt90rhr1hkqnwIINhABGgwwMTE1NjI1NTY1NDIiDH5V9VWj6Dra90U7NCr8AWFfHOaILEIUKkwhiA1oh19uWbeUAuJ4LjPqJMVmNdf+jc4Mf8rG0E+CzNOlV9YjNcrB2/AxZMCRa4gRTZy3tNkxxJ7Er+0pek1r7aTnwAKfYFWG/ZRXMciLYUOGIDoAMB4A/4iilnc+3KIGU9MKzCQ0lLBYwcB6ZIbdobjA3T1uC1xWVvffmCpjI5Gc67lHRwW4csFmxtpprhWcu83ZvsyO+FrKfByNwVxF6RFKD6QpFYzK89sJb1uXh2OzzQwqiJG6E5i3Im9OupP3EY7RdvcjaJdMAeP8s4mAlKHr/XIlg6wFMxGVQX3Go0B0VwmldOO/+ITSOLwYOE5e3jCww5WJBjqdASC5mL5YrL2uN0fajtTLY3BP3BakD8zyOtKdQXiblZ6CTmwlDIAF17EfkbxaL8D3MEfx+Wt1/z6jCZDB63QFQ2mEs6dKApPptR5JAfFeIZd0f3cECP7iG+JEsgbWfcKvGsvp+ByfB3fIK0ZAKIYNEgtNIuHAQoPF1J4w0on8ZO/clRvicEhUx3d9+yRe5/hX+w14cyk4lwieKtUDx2Q=",
+    "tokenAssumeRole": "",
+    "workspaceId": "CookieFactory-11-01"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "EjUXIa77k",
+  "created": "2021-08-19T17:33:05-07:00",
+  "updated": "2021-11-09T15:18:16-08:00"
+}
