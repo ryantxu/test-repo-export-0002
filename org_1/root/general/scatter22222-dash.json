@@ -21,8 +21,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
       "datasource": null,
@@ -89,10 +89,31 @@
           "displayMode": "list",
           "placement": "bottom"
         },
+        "mode": "scatter",
+        "series": {
+          "color": {
+            "field": "Count",
+            "fixed": "grey"
+          },
+          "size": {
+            "fixed": 5,
+            "max": 20,
+            "min": 1
+          },
+          "x": "Count",
+          "y": "Price"
+        },
         "tooltip": {
           "mode": "single"
         }
       },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
       "title": "Panel Title",
       "type": "xychart"
     }
