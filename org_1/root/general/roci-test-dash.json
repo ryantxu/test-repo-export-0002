@@ -21,22 +21,33 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": null,
+      "datasource": "AWS IoT Roci Datasource",
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 19,
+        "w": 13,
         "x": 0,
         "y": 0
       },
-      "id": 6,
-      "options": {},
+      "id": 2,
+      "options": {
+        "s3SceneFilePath": "",
+        "sceneId": "scene1"
+      },
+      "targets": [
+        {
+          "apiName": "GetAlarmKeysWithFilter",
+          "parameters": {
+            "alarmStatus": "ACTIVE"
+          },
+          "refId": "A"
+        }
+      ],
       "title": "Panel Title",
-      "type": "grafana-iot-roci-sitewatch-player-panel"
+      "type": "grafana-iot-roci-scene-viewer-panel"
     },
     {
       "datasource": "AWS IoT Roci Datasource",
@@ -87,29 +98,19 @@
       "type": "table"
     },
     {
-      "datasource": "AWS IoT Roci Datasource",
+      "datasource": null,
       "gridPos": {
-        "h": 15,
-        "w": 13,
-        "x": 0,
-        "y": 8
+        "h": 10,
+        "w": 11,
+        "x": 13,
+        "y": 9
       },
-      "id": 2,
+      "id": 6,
       "options": {
-        "s3SceneFilePath": "",
-        "sceneId": "scene1"
+        "kvsStreamName": ""
       },
-      "targets": [
-        {
-          "apiName": "GetAlarmKeysWithFilter",
-          "parameters": {
-            "alarmStatus": "ACTIVE"
-          },
-          "refId": "A"
-        }
-      ],
       "title": "Panel Title",
-      "type": "grafana-iot-roci-scene-viewer-panel"
+      "type": "grafana-iot-roci-sitewatch-player-panel"
     }
   ],
   "schemaVersion": 30,
