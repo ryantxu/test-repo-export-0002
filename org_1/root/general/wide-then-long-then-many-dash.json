@@ -112,6 +112,12 @@
         {
           "id": "labelsToFields",
           "options": {}
+        },
+        {
+          "id": "prepareTimeSeries",
+          "options": {
+            "format": "many"
+          }
         }
       ],
       "type": "timeseries"
