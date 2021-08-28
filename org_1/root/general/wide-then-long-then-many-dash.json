@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -84,6 +83,7 @@
         "y": 0
       },
       "id": 2,
+      "maxDataPoints": 5,
       "options": {
         "legend": {
           "calcs": [],
