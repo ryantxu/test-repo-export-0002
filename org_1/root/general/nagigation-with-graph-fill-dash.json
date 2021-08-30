@@ -21,8 +21,8 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
       "datasource": null,
@@ -70,7 +70,7 @@
       "datasource": null,
       "gridPos": {
         "h": 8,
-        "w": 12,
+        "w": 7,
         "x": 12,
         "y": 0
       },
@@ -85,9 +85,51 @@
         "showStarred": true,
         "tags": []
       },
-      "pluginVersion": "8.1.0-pre",
+      "pluginVersion": "8.2.0-pre",
       "title": "Navigation",
       "type": "dashlist"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 5,
+        "x": 19,
+        "y": 0
+      },
+      "id": 8,
+      "options": {
+        "counters": {
+          "dataChanged": true,
+          "render": true,
+          "schemaChanged": true
+        },
+        "mode": "ex"
+      },
+      "title": "Panel Title",
+      "type": "debug"
     },
     {
       "datasource": null,
