@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -62,7 +61,7 @@
           "render": true,
           "schemaChanged": true
         },
-        "mode": "cursor"
+        "mode": "ex"
       },
       "title": "Panel Title",
       "type": "debug"
