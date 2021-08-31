@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -106,6 +105,48 @@
       ],
       "title": "Panel Title",
       "type": "geomap"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 7,
+        "x": 12,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "counters": {
+          "dataChanged": true,
+          "render": true,
+          "schemaChanged": true
+        },
+        "mode": "ex"
+      },
+      "title": "Panel Title",
+      "type": "debug"
     }
   ],
   "refresh": "",
