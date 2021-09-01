@@ -46,27 +46,6 @@
       },
       "title": "Panel Title",
       "type": "ryantxu-board-panel"
-    },
-    {
-      "datasource": null,
-      "gridPos": {
-        "h": 13,
-        "w": 12,
-        "x": 0,
-        "y": 13
-      },
-      "id": 4,
-      "options": {
-        "channel": {
-          "namespace": "broadcast",
-          "path": "ryantxu/board/trello/board",
-          "scope": "grafana"
-        },
-        "message": "json",
-        "publish": false
-      },
-      "title": "Panel Title",
-      "type": "live"
     }
   ],
   "schemaVersion": 30,
