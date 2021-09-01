@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -60,6 +59,7 @@
       "options": {
         "channel": {
           "namespace": "broadcast",
+          "path": "ryantxu/board/trello/board",
           "scope": "grafana"
         },
         "message": "json",
