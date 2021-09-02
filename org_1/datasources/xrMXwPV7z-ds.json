@@ -1,0 +1,23 @@
+{
+  "id": 120,
+  "name": "Roci 33333",
+  "type": "grafana-iot-roci-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "authType": "default"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "xrMXwPV7z",
+  "created": "2021-09-02T13:00:44-07:00",
+  "updated": "2021-09-02T13:00:50-07:00"
+}
