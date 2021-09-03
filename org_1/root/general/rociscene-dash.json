@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -36,7 +35,11 @@
       "id": 2,
       "options": {
         "datasource": "",
-        "scendId": "aasgasgd"
+        "links": {
+          "mixer": "agdsagas"
+        },
+        "scendId": "aasgasgd",
+        "sceneId": "aaaaa"
       },
       "title": "Panel Title",
       "type": "grafana-iot-roci-scene-viewer-panel"
