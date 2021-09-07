@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -94,6 +93,12 @@
           "mode": "single"
         }
       },
+      "targets": [
+        {
+          "queryType": "list",
+          "refId": "A"
+        }
+      ],
       "title": "Panel Title",
       "type": "timeseries"
     }
