@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -71,7 +70,7 @@
         "layers": [
           {
             "config": {
-              "src": "public/maps/countries.geojson"
+              "src": "public/maps/gg_bts_cell.geojson"
             },
             "location": {
               "mode": "auto"
@@ -90,6 +89,7 @@
       "type": "geomap"
     }
   ],
+  "refresh": "",
   "schemaVersion": 31,
   "style": "dark",
   "tags": [],
