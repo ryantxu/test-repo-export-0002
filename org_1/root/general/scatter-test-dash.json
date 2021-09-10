@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -89,6 +88,20 @@
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
+        },
+        "mode": "scatter",
+        "series": {
+          "color": {
+            "fixed": "grey"
+          },
+          "size": {
+            "field": "s",
+            "fixed": 5,
+            "max": 20,
+            "min": 1
+          },
+          "x": "x",
+          "y": "y"
         },
         "tooltip": {
           "mode": "single"
