@@ -70,7 +70,7 @@
         "layers": [
           {
             "config": {
-              "src": "public/maps/gg_contour.geojson"
+              "src": "https://storage.googleapis.com/plugins-ci/plugins/temp/ggg_bts.geojson"
             },
             "location": {
               "mode": "auto"
@@ -79,14 +79,14 @@
           }
         ],
         "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
+          "id": "coords",
+          "lat": 39.061849,
+          "lon": -98.129883,
           "shared": true,
-          "zoom": 1
+          "zoom": 4
         }
       },
-      "title": "Panel Title",
+      "title": "Cell towers",
       "type": "geomap"
     },
     {
@@ -135,7 +135,7 @@
         "layers": [
           {
             "config": {
-              "src": "public/maps/gg_bts_cell.geojson"
+              "src": "https://storage.googleapis.com/plugins-ci/plugins/temp/ggg_contour.geojson"
             },
             "location": {
               "mode": "auto"
@@ -151,7 +151,7 @@
           "zoom": 1
         }
       },
-      "title": "Panel Title",
+      "title": "Contours",
       "type": "geomap"
     }
   ],
