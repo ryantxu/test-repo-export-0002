@@ -22,9 +22,29 @@
   "gnetId": null,
   "graphTooltip": 0,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
       "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 15,
         "w": 10,
@@ -38,16 +58,18 @@
             {
               "config": {
                 "fill": {
-                  "fixed": "#F00"
+                  "fixed": "#FFF899"
                 },
-                "path": "question-circle.svg",
-                "text": "AAAAAAA"
+                "path": {
+                  "fixed": "img/icons/unicons/question-circle.svg",
+                  "mode": "fixed"
+                }
               },
               "placement": {
                 "height": 75,
                 "width": 75
               },
-              "type": "text-box"
+              "type": "icon"
             }
           ]
         }
@@ -58,7 +80,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 30,
+  "schemaVersion": 31,
   "style": "dark",
   "tags": [],
   "templating": {
