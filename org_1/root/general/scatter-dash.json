@@ -101,8 +101,8 @@
           "size": {
             "field": "Price",
             "fixed": 5,
-            "max": 20,
-            "min": 1
+            "max": 5,
+            "min": 2
           },
           "x": "Count",
           "y": "Price"
