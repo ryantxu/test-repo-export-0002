@@ -22,6 +22,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
       "datasource": null,
@@ -94,28 +95,35 @@
             "fixed": "dark-purple"
           },
           "label": {
-            "field": "A-series",
+            "field": "State",
             "mode": "template"
           },
           "size": {
-            "field": "A-series",
+            "field": "Price",
             "fixed": 5,
             "max": 20,
             "min": 1
           },
-          "x": "A-series",
-          "y": "A-series"
+          "x": "Count",
+          "y": "Price"
         },
         "tooltip": {
           "mode": "single"
         }
       },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
       "title": "Panel Title",
       "type": "xychart"
     }
   ],
   "refresh": "",
-  "schemaVersion": 30,
+  "schemaVersion": 31,
   "style": "dark",
   "tags": [],
   "templating": {
