@@ -101,7 +101,11 @@
           "displayMode": "list",
           "placement": "bottom"
         },
-        "mode": "xy",
+        "mode": "single",
+        "single": {
+          "x": "Count",
+          "y": "Price"
+        },
         "tooltip": {
           "mode": "single"
         }
