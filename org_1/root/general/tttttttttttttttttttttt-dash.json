@@ -21,7 +21,6 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -35,29 +34,26 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "points",
-            "fillOpacity": 0,
-            "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
+            "labelText": {
+              "fixed": "grey"
+            },
+            "line": "none",
+            "lineColor": {
+              "fixed": "grey"
+            },
             "lineWidth": 1,
+            "point": "auto",
+            "pointColor": {
+              "fixed": "grey"
+            },
             "pointSize": 5,
             "scaleDistribution": {
               "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
             }
           },
           "mappings": [],
@@ -85,6 +81,13 @@
       },
       "id": 2,
       "options": {
+        "dims": {
+          "exclude": [
+            "Lng",
+            "Lat"
+          ],
+          "x": "Count"
+        },
         "legend": {
           "calcs": [],
           "displayMode": "list",
@@ -95,6 +98,13 @@
           "mode": "single"
         }
       },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
       "title": "Panel Title",
       "type": "xychart"
     }
