@@ -39,8 +39,11 @@
               "tooltip": false,
               "viz": false
             },
+            "label": "auto",
             "labelText": {
-              "fixed": "grey"
+              "field": "Lat",
+              "mode": "fixed",
+              "placeholderText": "Value"
             },
             "line": "none",
             "lineColor": {
@@ -52,6 +55,7 @@
               "fixed": "grey"
             },
             "pointSize": {
+              "field": "Count",
               "fixed": 1,
               "max": 1,
               "min": 0
@@ -90,7 +94,7 @@
             "Lng",
             "Lat"
           ],
-          "x": "Count"
+          "frame": 0
         },
         "legend": {
           "calcs": [],
