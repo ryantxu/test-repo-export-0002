@@ -51,7 +51,11 @@
             "pointColor": {
               "fixed": "grey"
             },
-            "pointSize": 5,
+            "pointSize": {
+              "fixed": 1,
+              "max": 1,
+              "min": 0
+            },
             "scaleDistribution": {
               "type": "linear"
             }
