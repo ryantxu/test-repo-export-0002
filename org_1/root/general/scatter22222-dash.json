@@ -52,7 +52,12 @@
             "pointColor": {
               "fixed": "grey"
             },
-            "pointSize": 5,
+            "pointSize": {
+              "field": "Forks",
+              "fixed": 0.5,
+              "max": 10,
+              "min": 4
+            },
             "scaleDistribution": {
               "type": "linear"
             }
@@ -102,8 +107,8 @@
           "y": "Price"
         },
         "single": {
-          "x": "Count",
-          "y": "Price"
+          "x": "Github Stars",
+          "y": "Watchers"
         },
         "tooltip": {
           "mode": "single"
@@ -111,7 +116,7 @@
       },
       "targets": [
         {
-          "csvFileName": "flight_info_by_state.csv",
+          "csvFileName": "js_libraries.csv",
           "refId": "A",
           "scenarioId": "csv_file"
         }
