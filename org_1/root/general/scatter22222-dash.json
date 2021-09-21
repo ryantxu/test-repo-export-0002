@@ -34,29 +34,27 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "points",
-            "fillOpacity": 0,
-            "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
+            "label": "auto",
+            "labelText": {
+              "placeholderText": "Value"
+            },
+            "line": "none",
+            "lineColor": {
+              "fixed": "grey"
+            },
             "lineWidth": 1,
+            "point": "auto",
+            "pointColor": {
+              "fixed": "grey"
+            },
             "pointSize": 5,
             "scaleDistribution": {
               "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
             }
           },
           "mappings": [],
@@ -89,7 +87,7 @@
           "displayMode": "list",
           "placement": "bottom"
         },
-        "mode": "scatter",
+        "mode": "single",
         "series": {
           "color": {
             "field": "Count",
@@ -100,6 +98,10 @@
             "max": 20,
             "min": 1
           },
+          "x": "Count",
+          "y": "Price"
+        },
+        "single": {
           "x": "Count",
           "y": "Price"
         },
@@ -119,7 +121,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 30,
+  "schemaVersion": 31,
   "style": "dark",
   "tags": [],
   "templating": {
