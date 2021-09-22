@@ -62,13 +62,11 @@
                 }
               },
               "config": {
-                "fill": {
-                  "fixed": "dark-yellow"
+                "align": "left",
+                "text": {
+                  "fixed": "First element (purple)"
                 },
-                "path": {
-                  "fixed": "img/icons/unicons/align-center-h.svg",
-                  "mode": "fixed"
-                }
+                "valign": "top"
               },
               "placement": {
                 "height": 200,
@@ -76,7 +74,7 @@
                 "top": 20,
                 "width": 100
               },
-              "type": "icon"
+              "type": "text-box"
             },
             {
               "background": {
@@ -87,9 +85,9 @@
               "config": {
                 "align": "left",
                 "text": {
-                  "fixed": "Hello"
+                  "fixed": "Second (blue)"
                 },
-                "valign": "middle"
+                "valign": "top"
               },
               "placement": {
                 "height": 75,
