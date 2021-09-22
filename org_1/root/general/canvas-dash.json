@@ -56,12 +56,38 @@
         "root": {
           "elements": [
             {
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                }
+              },
               "config": {
                 "fill": {
-                  "fixed": "#FFF899"
+                  "fixed": "dark-yellow"
                 },
                 "path": {
-                  "fixed": "img/icons/unicons/question-circle.svg",
+                  "fixed": "img/icons/unicons/align-center-h.svg",
+                  "mode": "fixed"
+                }
+              },
+              "placement": {
+                "height": 75,
+                "width": 75
+              },
+              "type": "icon"
+            },
+            {
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                }
+              },
+              "config": {
+                "fill": {
+                  "fixed": "dark-yellow"
+                },
+                "path": {
+                  "fixed": "img/icons/unicons/align-center-h.svg",
                   "mode": "fixed"
                 }
               },
