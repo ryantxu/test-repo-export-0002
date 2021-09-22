@@ -85,13 +85,11 @@
                 }
               },
               "config": {
-                "fill": {
-                  "fixed": "dark-yellow"
+                "align": "left",
+                "text": {
+                  "fixed": "Hello"
                 },
-                "path": {
-                  "fixed": "img/icons/unicons/align-center-h.svg",
-                  "mode": "fixed"
-                }
+                "valign": "middle"
               },
               "placement": {
                 "height": 75,
@@ -99,7 +97,7 @@
                 "top": 200,
                 "width": 25
               },
-              "type": "icon"
+              "type": "text-box"
             }
           ]
         }
