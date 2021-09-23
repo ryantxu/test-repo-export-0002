@@ -43,7 +43,7 @@
             "lineWidth": 1,
             "point": "auto",
             "pointSize": {
-              "fixed": 0.5
+              "fixed": 7
             },
             "scaleDistribution": {
               "type": "linear"
@@ -90,6 +90,11 @@
       },
       "id": 2,
       "options": {
+        "dims": {
+          "exclude": [
+            "Price"
+          ]
+        },
         "legend": {
           "calcs": [],
           "displayMode": "list",
