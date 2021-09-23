@@ -95,7 +95,7 @@
           "displayMode": "list",
           "placement": "bottom"
         },
-        "mode": "single",
+        "mode": "xy",
         "series": {
           "color": {
             "fixed": "grey"
