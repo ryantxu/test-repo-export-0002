@@ -1,0 +1,178 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "line": "none",
+            "lineWidth": 1,
+            "point": "auto",
+            "pointSize": {
+              "fixed": 20
+            },
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Price"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyUSD"
+              },
+              {
+                "id": "custom.axisLabel",
+                "value": "Price"
+              },
+              {
+                "id": "custom.pointSize.fixed",
+                "value": 40
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Lng"
+            },
+            "properties": [
+              {
+                "id": "custom.axisLabel",
+                "value": "Lng"
+              },
+              {
+                "id": "custom.pointSize.fixed",
+                "value": 30
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Lat"
+            },
+            "properties": [
+              {
+                "id": "custom.axisLabel",
+                "value": "Lat"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 15,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "dims": {},
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "mode": "xy",
+        "series": {
+          "color": {
+            "fixed": "grey"
+          },
+          "size": {
+            "field": "s",
+            "fixed": 5,
+            "max": 20,
+            "min": 1
+          },
+          "x": "x",
+          "y": "y"
+        },
+        "single": {
+          "x": "x",
+          "y": "y"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "refId": "A",
+          "scenarioId": "csv_file"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "xychart"
+    }
+  ],
+  "schemaVersion": 31,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "scatter9000"
+}
