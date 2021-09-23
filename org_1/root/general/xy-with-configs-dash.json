@@ -82,14 +82,14 @@
             "Lat",
             "Lng"
           ],
-          "x": "Count"
+          "frame": 0
         },
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
-        "mode": "single",
+        "mode": "xy",
         "single": {
           "x": "temp",
           "y": "sales"
@@ -114,8 +114,14 @@
       },
       "targets": [
         {
-          "csvContent": "temp,sales\n14.2,215\n16.4,325\n11.9,185\n15.2,332\n18.5,406\n22.1,522\n19.4,412\n25.1,614\n23.4,544\n18.1,421\n22.6,445\n17.2,408\n\n",
+          "csvFileName": "js_libraries.csv",
           "refId": "A",
+          "scenarioId": "csv_file"
+        },
+        {
+          "csvContent": "temp,sales\n14.2,215\n16.4,325\n11.9,185\n15.2,332\n18.5,406\n22.1,522\n19.4,412\n25.1,614\n23.4,544\n18.1,421\n22.6,445\n17.2,408\n\n",
+          "hide": true,
+          "refId": "B",
           "scenarioId": "csv_content"
         }
       ],
