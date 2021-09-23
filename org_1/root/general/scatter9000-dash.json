@@ -43,7 +43,7 @@
             "lineWidth": 1,
             "point": "auto",
             "pointSize": {
-              "fixed": 20
+              "fixed": 10
             },
             "scaleDistribution": {
               "type": "linear"
@@ -162,6 +162,7 @@
       "type": "xychart"
     }
   ],
+  "refresh": "",
   "schemaVersion": 31,
   "style": "dark",
   "tags": [],
