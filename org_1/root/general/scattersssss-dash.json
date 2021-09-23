@@ -39,24 +39,11 @@
               "tooltip": false,
               "viz": false
             },
-            "label": "auto",
-            "labelText": {
-              "placeholderText": "Value"
-            },
             "line": "none",
-            "lineColor": {
-              "fixed": "grey"
-            },
             "lineWidth": 1,
             "point": "auto",
-            "pointColor": {
-              "fixed": "grey"
-            },
             "pointSize": {
-              "field": "s",
-              "fixed": 0.5,
-              "max": 1,
-              "min": 0
+              "fixed": 0.5
             },
             "scaleDistribution": {
               "type": "linear"
@@ -77,7 +64,23 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "y"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 18,
@@ -116,14 +119,9 @@
       },
       "targets": [
         {
-          "csvContent": "x,y,s\n1,2,10\n4,5,20\n7,8,40",
+          "csvFileName": "flight_info_by_state.csv",
           "refId": "A",
-          "scenarioId": "csv_content"
-        },
-        {
-          "csvContent": "x1,y1,s1\n10,20,30\n40,50,60\n70,80,90",
-          "refId": "B",
-          "scenarioId": "csv_content"
+          "scenarioId": "csv_file"
         }
       ],
       "title": "Panel Title",
