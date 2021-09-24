@@ -70,7 +70,13 @@
         "layers": [
           {
             "config": {
-              "src": "https://storage.googleapis.com/plugins-ci/plugins/temp/ggg_bts.geojson"
+              "src": "https://storage.googleapis.com/plugins-ci/plugins/temp/ggg_bts.geojson",
+              "styles": [
+                {
+                  "fillColor": "#FF00CC22",
+                  "strokeWidth": 2
+                }
+              ]
             },
             "location": {
               "mode": "auto"
