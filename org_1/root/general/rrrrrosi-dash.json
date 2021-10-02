@@ -75,6 +75,7 @@
         {
           "apiName": "Test",
           "componentName": "bbb",
+          "entityId": "aaaa",
           "queryType": "GetValues",
           "refId": "A"
         }
@@ -83,6 +84,7 @@
       "type": "table"
     }
   ],
+  "refresh": "",
   "schemaVersion": 31,
   "style": "dark",
   "tags": [],
