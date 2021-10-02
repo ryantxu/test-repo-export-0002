@@ -19,9 +19,9 @@
     ]
   },
   "editable": true,
+  "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -74,7 +74,8 @@
       "targets": [
         {
           "apiName": "Test",
-          "queryType": "ListWorkspace",
+          "componentName": "bbb",
+          "queryType": "GetValues",
           "refId": "A"
         }
       ],
