@@ -75,7 +75,7 @@
         {
           "apiName": "Test",
           "componentName": "bbb",
-          "entityId": "de7c7a21-5968-43ca-b557-125b8cd4d507",
+          "entityId": "Mixer1",
           "queryType": "GetEntity",
           "refId": "A"
         }
