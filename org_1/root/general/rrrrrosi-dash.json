@@ -70,13 +70,13 @@
         },
         "showHeader": true
       },
-      "pluginVersion": "8.3.0-pre",
+      "pluginVersion": "8.2.0-beta.2",
       "targets": [
         {
           "apiName": "Test",
           "componentName": "bbb",
-          "entityId": "aaaa",
-          "queryType": "GetValues",
+          "entityId": "de7c7a21-5968-43ca-b557-125b8cd4d507",
+          "queryType": "GetEntity",
           "refId": "A"
         }
       ],
