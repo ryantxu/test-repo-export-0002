@@ -74,9 +74,10 @@
       "targets": [
         {
           "apiName": "Test",
-          "componentName": "bbb",
+          "componentName": "Mixer1Alarm",
+          "componentTypeId": "com.cookiefactory.snowflake.alarm:1",
           "entityId": "Mixer1",
-          "queryType": "GetEntity",
+          "queryType": "GetPropertyHistory",
           "refId": "A"
         }
       ],
