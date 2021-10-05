@@ -1,0 +1,24 @@
+{
+  "id": 133,
+  "name": "AWS IoT Roci Datasource-10",
+  "type": "grafana-iot-roci-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "authType": "keys",
+    "defaultRegion": "us-east-1"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "k5VT75vnz",
+  "created": "2021-10-05T16:39:22-07:00",
+  "updated": "2021-11-02T12:50:08-07:00"
+}
