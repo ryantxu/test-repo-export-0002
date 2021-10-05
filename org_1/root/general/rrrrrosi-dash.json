@@ -26,6 +26,21 @@
   "liveNow": false,
   "panels": [
     {
+      "datasource": null,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "datasource": ""
+      },
+      "title": "Panel Title",
+      "type": "grafana-iot-roci-scene-viewer-panel"
+    },
+    {
       "datasource": "AWS IoT Roci Datasource",
       "fieldConfig": {
         "defaults": {
@@ -57,7 +72,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 0
+        "y": 8
       },
       "id": 2,
       "options": {
@@ -70,7 +85,7 @@
         },
         "showHeader": true
       },
-      "pluginVersion": "8.2.0-beta.2",
+      "pluginVersion": "8.3.0-pre",
       "targets": [
         {
           "apiName": "Test",
