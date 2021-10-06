@@ -22,7 +22,6 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 2,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -101,8 +100,8 @@
     {
       "datasource": null,
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 15,
+        "w": 20,
         "x": 0,
         "y": 9
       },
@@ -119,6 +118,8 @@
       },
       "targets": [
         {
+          "levelColumn": false,
+          "lines": 10,
           "refId": "A",
           "scenarioId": "logs"
         }
@@ -134,7 +135,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
