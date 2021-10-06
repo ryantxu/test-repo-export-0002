@@ -111,8 +111,8 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
-    "to": "now"
+    "from": "2021-08-01T07:00:00.000Z",
+    "to": "2021-08-04T07:00:00.000Z"
   },
   "timepicker": {},
   "timezone": "",
