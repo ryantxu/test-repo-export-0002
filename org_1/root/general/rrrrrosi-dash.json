@@ -92,6 +92,9 @@
           "componentName": "Mixer1Alarm",
           "componentTypeId": "com.cookiefactory.snowflake.alarm:1",
           "entityId": "Mixer1",
+          "properties": [
+            "alarm_status"
+          ],
           "queryType": "GetPropertyHistory",
           "refId": "A"
         }
@@ -100,7 +103,7 @@
       "type": "table"
     }
   ],
-  "refresh": "",
+  "refresh": false,
   "schemaVersion": 31,
   "style": "dark",
   "tags": [],
