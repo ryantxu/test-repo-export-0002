@@ -79,11 +79,9 @@
               },
               "placement": {
                 "bottom": 20,
-                "height": 307,
-                "left": 112.00900000000001,
-                "right": 20,
-                "top": 65,
-                "width": 284.99
+                "height": 100,
+                "right": 193,
+                "width": 50
               },
               "type": "text-box"
             }
