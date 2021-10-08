@@ -1,0 +1,111 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 13,
+        "w": 16,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "inlineEditing": true,
+        "root": {
+          "elements": [
+            {
+              "anchor": {
+                "bottom": true,
+                "right": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "aaaa"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "bottom": 20,
+                "height": 307,
+                "left": 112.00900000000001,
+                "right": 20,
+                "top": 65,
+                "width": 284.99
+              },
+              "type": "text-box"
+            }
+          ],
+          "type": "group"
+        }
+      },
+      "title": "Panel Title",
+      "type": "canvas"
+    }
+  ],
+  "schemaVersion": 31,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "canvas simple"
+}
