@@ -62,6 +62,31 @@
           "elements": [
             {
               "anchor": {
+                "left": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "top/left"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "height": 100,
+                "left": 10,
+                "top": 10,
+                "width": 100
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
                 "bottom": true,
                 "right": true
               },
@@ -73,7 +98,7 @@
               "config": {
                 "align": "left",
                 "text": {
-                  "fixed": "aaaa"
+                  "fixed": "bottom/right"
                 },
                 "valign": "middle"
               },
