@@ -50,8 +50,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 13,
-        "w": 16,
+        "h": 19,
+        "w": 17,
         "x": 0,
         "y": 0
       },
@@ -59,6 +59,10 @@
       "options": {
         "inlineEditing": true,
         "root": {
+          "anchor": {
+            "left": true,
+            "top": true
+          },
           "elements": [
             {
               "anchor": {
@@ -79,8 +83,8 @@
               },
               "placement": {
                 "height": 100,
-                "left": 197,
-                "top": 132,
+                "left": 126,
+                "top": 206,
                 "width": 100
               },
               "type": "text-box"
@@ -104,15 +108,19 @@
               },
               "placement": {
                 "bottom": 57,
-                "height": 276.997,
-                "left": 851.004,
+                "height": 123.99599999999998,
                 "right": 54,
-                "top": 67.00399999999999,
-                "width": 168.9943
+                "width": 291.9943
               },
               "type": "text-box"
             }
           ],
+          "placement": {
+            "height": 100,
+            "left": 0,
+            "top": 0,
+            "width": 100
+          },
           "type": "group"
         }
       },
