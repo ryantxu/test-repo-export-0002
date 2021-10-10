@@ -86,8 +86,64 @@
               },
               "placement": {
                 "height": 113.99000000000001,
-                "left": 37,
-                "top": 53,
+                "left": 43,
+                "top": 34,
+                "width": 137.976
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
+                "bottom": true,
+                "left": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                },
+                "image": {
+                  "mode": "field"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "bottom/left"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "bottom": 37,
+                "height": 113.99000000000001,
+                "left": 35,
+                "width": 137.976
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
+                "right": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                },
+                "image": {
+                  "mode": "field"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "top/right"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "height": 113.99000000000001,
+                "right": 24,
+                "top": 37,
                 "width": 137.976
               },
               "type": "text-box"
@@ -111,9 +167,9 @@
               },
               "placement": {
                 "bottom": 24,
-                "height": 123.99599999999998,
-                "right": 24.99999999999997,
-                "width": 133.9943
+                "height": 109,
+                "right": 25,
+                "width": 125
               },
               "type": "text-box"
             }
