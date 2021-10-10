@@ -96,7 +96,7 @@
               },
               "background": {
                 "color": {
-                  "fixed": "dark-purple"
+                  "fixed": "dark-red"
                 }
               },
               "config": {
@@ -107,9 +107,9 @@
                 "valign": "middle"
               },
               "placement": {
-                "bottom": 57,
+                "bottom": 237,
                 "height": 123.99599999999998,
-                "right": 54,
+                "right": 193.99999999999997,
                 "width": 291.9943
               },
               "type": "text-box"
