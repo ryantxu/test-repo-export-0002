@@ -113,10 +113,10 @@
                 "valign": "middle"
               },
               "placement": {
-                "bottom": 37,
-                "height": 113.99000000000001,
-                "left": 35,
-                "width": 137.976
+                "bottom": 33,
+                "height": 123.979,
+                "left": 34,
+                "width": 130.972
               },
               "type": "text-box"
             },
@@ -141,10 +141,10 @@
                 "valign": "middle"
               },
               "placement": {
-                "height": 113.99000000000001,
-                "right": 24,
-                "top": 37,
-                "width": 137.976
+                "height": 184.982,
+                "right": 21,
+                "top": 40,
+                "width": 195.97
               },
               "type": "text-box"
             },
