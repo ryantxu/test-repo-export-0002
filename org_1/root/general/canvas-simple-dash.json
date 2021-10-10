@@ -50,8 +50,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 13,
-        "w": 19,
+        "h": 14,
+        "w": 20,
         "x": 0,
         "y": 0
       },
@@ -59,39 +59,7 @@
       "options": {
         "inlineEditing": true,
         "root": {
-          "anchor": {
-            "left": true,
-            "top": true
-          },
           "elements": [
-            {
-              "anchor": {
-                "left": true,
-                "top": true
-              },
-              "background": {
-                "color": {
-                  "fixed": "dark-purple"
-                },
-                "image": {
-                  "mode": "field"
-                }
-              },
-              "config": {
-                "align": "left",
-                "text": {
-                  "fixed": "top/left"
-                },
-                "valign": "middle"
-              },
-              "placement": {
-                "height": 196.98399999999998,
-                "left": 76,
-                "top": 70,
-                "width": 203.976
-              },
-              "type": "text-box"
-            },
             {
               "anchor": {
                 "bottom": true,
@@ -117,6 +85,34 @@
                 "height": 184.977,
                 "left": 34,
                 "width": 273.966
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                },
+                "image": {
+                  "mode": "field"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "top/left"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "height": 196.98399999999998,
+                "left": 76,
+                "top": 70,
+                "width": 203.976
               },
               "type": "text-box"
             },
@@ -166,21 +162,14 @@
                 "valign": "middle"
               },
               "placement": {
-                "bottom": 54,
+                "bottom": 53,
                 "height": 176.999,
-                "right": 111,
+                "right": 124,
                 "width": 303
               },
               "type": "text-box"
             }
-          ],
-          "placement": {
-            "height": 100,
-            "left": 0,
-            "top": 0,
-            "width": 100
-          },
-          "type": "group"
+          ]
         }
       },
       "title": "Panel Title",
