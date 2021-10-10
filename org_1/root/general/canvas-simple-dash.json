@@ -86,8 +86,8 @@
               },
               "placement": {
                 "height": 196.98399999999998,
-                "left": 78,
-                "top": 35,
+                "left": 76,
+                "top": 70,
                 "width": 203.976
               },
               "type": "text-box"
@@ -166,9 +166,9 @@
                 "valign": "middle"
               },
               "placement": {
-                "bottom": 45,
+                "bottom": 54,
                 "height": 176.999,
-                "right": 38,
+                "right": 111,
                 "width": 303
               },
               "type": "text-box"
