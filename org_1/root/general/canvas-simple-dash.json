@@ -50,8 +50,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 19,
-        "w": 17,
+        "h": 13,
+        "w": 19,
         "x": 0,
         "y": 0
       },
@@ -72,6 +72,9 @@
               "background": {
                 "color": {
                   "fixed": "dark-purple"
+                },
+                "image": {
+                  "mode": "field"
                 }
               },
               "config": {
@@ -82,10 +85,10 @@
                 "valign": "middle"
               },
               "placement": {
-                "height": 100,
-                "left": 24,
-                "top": 12,
-                "width": 557.99
+                "height": 113.99000000000001,
+                "left": 37,
+                "top": 53,
+                "width": 137.976
               },
               "type": "text-box"
             },
@@ -107,10 +110,10 @@
                 "valign": "middle"
               },
               "placement": {
-                "bottom": 237,
+                "bottom": 24,
                 "height": 123.99599999999998,
-                "right": 193.99999999999997,
-                "width": 291.9943
+                "right": 24.99999999999997,
+                "width": 133.9943
               },
               "type": "text-box"
             }
