@@ -85,10 +85,10 @@
                 "valign": "middle"
               },
               "placement": {
-                "height": 113.99000000000001,
-                "left": 43,
-                "top": 34,
-                "width": 137.976
+                "height": 196.98399999999998,
+                "left": 78,
+                "top": 35,
+                "width": 203.976
               },
               "type": "text-box"
             },
@@ -114,9 +114,9 @@
               },
               "placement": {
                 "bottom": 33,
-                "height": 123.979,
+                "height": 184.977,
                 "left": 34,
-                "width": 130.972
+                "width": 273.966
               },
               "type": "text-box"
             },
@@ -141,10 +141,10 @@
                 "valign": "middle"
               },
               "placement": {
-                "height": 184.982,
+                "height": 156.977,
                 "right": 21,
-                "top": 40,
-                "width": 195.97
+                "top": 82,
+                "width": 345.97
               },
               "type": "text-box"
             },
@@ -166,10 +166,10 @@
                 "valign": "middle"
               },
               "placement": {
-                "bottom": 24,
-                "height": 109,
-                "right": 25,
-                "width": 125
+                "bottom": 45,
+                "height": 176.999,
+                "right": 38,
+                "width": 303
               },
               "type": "text-box"
             }
