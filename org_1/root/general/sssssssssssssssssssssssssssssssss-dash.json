@@ -40,7 +40,7 @@
       "targets": [
         {
           "apiName": "Test",
-          "queryType": "Scene",
+          "queryType": "ListScenes",
           "refId": "A"
         }
       ],
@@ -48,7 +48,7 @@
       "type": "grafana-iot-roci-scene-viewer-panel"
     },
     {
-      "datasource": null,
+      "datasource": "AWS IoT Roci Datasource",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -116,6 +116,13 @@
           "mode": "single"
         }
       },
+      "targets": [
+        {
+          "apiName": "Test",
+          "queryType": "Scene",
+          "refId": "A"
+        }
+      ],
       "title": "graph (listening to scene)",
       "type": "timeseries"
     }
