@@ -26,7 +26,7 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": "AWS IoT Roci Datasource",
+      "datasource": "TestData DB",
       "gridPos": {
         "h": 9,
         "w": 12,
@@ -35,12 +35,14 @@
       },
       "id": 2,
       "options": {
-        "datasource": ""
+        "datasource": "",
+        "sceneId": "CookieFactory"
       },
       "targets": [
         {
           "apiName": "Test",
-          "queryType": "ListScenes",
+          "datasource": "TestData DB",
+          "queryType": "frontend",
           "refId": "A"
         }
       ],
