@@ -119,8 +119,11 @@
       "targets": [
         {
           "apiName": "Test",
+          "datasource": "AWS IoT Roci Datasource",
+          "panelId": 2,
           "queryType": "Scene",
-          "refId": "A"
+          "refId": "A",
+          "show": "selection"
         }
       ],
       "title": "graph (listening to scene)",
