@@ -22,16 +22,78 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
+  "iteration": 1634247999148,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": "TestData DB",
+      "datasource": "AWS IoT Roci Datasource",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
-        "h": 16,
-        "w": 11,
+        "h": 8,
+        "w": 12,
         "x": 0,
         "y": 0
+      },
+      "id": 11,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "frameIndex": 1,
+        "showHeader": true
+      },
+      "pluginVersion": "8.3.0-pre",
+      "targets": [
+        {
+          "apiName": "Test",
+          "datasource": "AWS IoT Roci Datasource",
+          "entityId": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f",
+          "panelId": 9,
+          "queryType": "GetPropertyHistory",
+          "refId": "A",
+          "show": "selectedAlarm"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "table"
+    },
+    {
+      "datasource": "TestData DB",
+      "gridPos": {
+        "h": 7,
+        "w": 11,
+        "x": 0,
+        "y": 8
       },
       "id": 2,
       "options": {
@@ -81,7 +143,7 @@
         "h": 5,
         "w": 13,
         "x": 11,
-        "y": 0
+        "y": 8
       },
       "id": 4,
       "options": {
@@ -99,10 +161,10 @@
         {
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
-          "panelId": 2,
+          "panelId": 9,
           "queryType": "Scene",
           "refId": "A",
-          "show": "selection"
+          "show": "selectedItem"
         }
       ],
       "title": "Selection",
@@ -140,7 +202,7 @@
         "h": 5,
         "w": 13,
         "x": 11,
-        "y": 5
+        "y": 13
       },
       "id": 5,
       "options": {
@@ -166,6 +228,30 @@
       ],
       "title": "View",
       "type": "table"
+    },
+    {
+      "datasource": "TestData DB",
+      "gridPos": {
+        "h": 7,
+        "w": 11,
+        "x": 0,
+        "y": 15
+      },
+      "id": 9,
+      "options": {
+        "datasource": "mSyHoKD7k",
+        "sceneId": "CookieFactory"
+      },
+      "targets": [
+        {
+          "apiName": "Test",
+          "datasource": "TestData DB",
+          "queryType": "frontend",
+          "refId": "A"
+        }
+      ],
+      "title": "ROSI scene 2222",
+      "type": "grafana-iot-roci-scene-viewer-panel"
     },
     {
       "datasource": "AWS IoT Roci Datasource",
@@ -199,7 +285,7 @@
         "h": 6,
         "w": 13,
         "x": 11,
-        "y": 10
+        "y": 18
       },
       "id": 6,
       "options": {
@@ -232,7 +318,7 @@
         "h": 6,
         "w": 4,
         "x": 0,
-        "y": 16
+        "y": 22
       },
       "id": 8,
       "title": "Panel Title",
@@ -244,7 +330,30 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "1,2,3",
+          "value": "1,2,3"
+        },
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "label": "aaaaa",
+        "name": "query0",
+        "options": [
+          {
+            "selected": true,
+            "text": "1,2,3",
+            "value": "1,2,3"
+          }
+        ],
+        "query": "1,2,3",
+        "skipUrlSync": false,
+        "type": "textbox"
+      }
+    ]
   },
   "time": {
     "from": "2021-08-01T07:00:00.000Z",
