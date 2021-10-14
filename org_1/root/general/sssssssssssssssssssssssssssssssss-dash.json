@@ -28,7 +28,7 @@
     {
       "datasource": "TestData DB",
       "gridPos": {
-        "h": 18,
+        "h": 16,
         "w": 11,
         "x": 0,
         "y": 0
@@ -78,7 +78,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
+        "h": 5,
         "w": 13,
         "x": 11,
         "y": 0
@@ -137,10 +137,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
+        "h": 5,
         "w": 13,
         "x": 11,
-        "y": 6
+        "y": 5
       },
       "id": 5,
       "options": {
@@ -199,7 +199,7 @@
         "h": 6,
         "w": 13,
         "x": 11,
-        "y": 12
+        "y": 10
       },
       "id": 6,
       "options": {
@@ -225,6 +225,18 @@
       ],
       "title": "Anchors",
       "type": "table"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 6,
+        "w": 4,
+        "x": 0,
+        "y": 16
+      },
+      "id": 8,
+      "title": "Panel Title",
+      "type": "grafana-iot-roci-debug-panel"
     }
   ],
   "refresh": false,
