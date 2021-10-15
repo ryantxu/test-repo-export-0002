@@ -22,78 +22,17 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1634247999148,
+  "iteration": 1634257881388,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": "AWS IoT Roci Datasource",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "custom": {
-            "align": "auto",
-            "displayMode": "auto"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 11,
-      "options": {
-        "footer": {
-          "fields": "",
-          "reducer": [
-            "sum"
-          ],
-          "show": false
-        },
-        "frameIndex": 1,
-        "showHeader": true
-      },
-      "pluginVersion": "8.3.0-pre",
-      "targets": [
-        {
-          "apiName": "Test",
-          "datasource": "AWS IoT Roci Datasource",
-          "entityId": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f",
-          "panelId": 9,
-          "queryType": "GetPropertyHistory",
-          "refId": "A",
-          "show": "selectedAlarm"
-        }
-      ],
-      "title": "Panel Title",
-      "type": "table"
-    },
-    {
       "datasource": "TestData DB",
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 11,
         "x": 0,
-        "y": 8
+        "y": 0
       },
       "id": 2,
       "options": {
@@ -108,7 +47,7 @@
           "refId": "A"
         }
       ],
-      "title": "ROSI scene viewer",
+      "title": "First scene viewer",
       "type": "grafana-iot-roci-scene-viewer-panel"
     },
     {
@@ -143,7 +82,7 @@
         "h": 5,
         "w": 13,
         "x": 11,
-        "y": 8
+        "y": 0
       },
       "id": 4,
       "options": {
@@ -202,7 +141,7 @@
         "h": 5,
         "w": 13,
         "x": 11,
-        "y": 13
+        "y": 5
       },
       "id": 5,
       "options": {
@@ -232,10 +171,10 @@
     {
       "datasource": "TestData DB",
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 11,
         "x": 0,
-        "y": 15
+        "y": 8
       },
       "id": 9,
       "options": {
@@ -250,7 +189,7 @@
           "refId": "A"
         }
       ],
-      "title": "ROSI scene 2222",
+      "title": "Second scene viewer",
       "type": "grafana-iot-roci-scene-viewer-panel"
     },
     {
@@ -285,7 +224,7 @@
         "h": 6,
         "w": 13,
         "x": 11,
-        "y": 18
+        "y": 10
       },
       "id": 6,
       "options": {
@@ -316,12 +255,12 @@
       "datasource": null,
       "gridPos": {
         "h": 6,
-        "w": 4,
+        "w": 8,
         "x": 0,
-        "y": 22
+        "y": 16
       },
       "id": 8,
-      "title": "Panel Title",
+      "title": "A debug panel",
       "type": "grafana-iot-roci-debug-panel"
     }
   ],
@@ -330,30 +269,7 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": [
-      {
-        "current": {
-          "selected": false,
-          "text": "1,2,3",
-          "value": "1,2,3"
-        },
-        "description": null,
-        "error": null,
-        "hide": 0,
-        "label": "aaaaa",
-        "name": "query0",
-        "options": [
-          {
-            "selected": true,
-            "text": "1,2,3",
-            "value": "1,2,3"
-          }
-        ],
-        "query": "1,2,3",
-        "skipUrlSync": false,
-        "type": "textbox"
-      }
-    ]
+    "list": []
   },
   "time": {
     "from": "2021-08-01T07:00:00.000Z",
