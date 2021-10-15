@@ -1,0 +1,186 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "inlineEditing": true,
+        "root": {
+          "elements": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "red"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "HELLO"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "height": 92,
+                "left": 297,
+                "top": 92,
+                "width": 128
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "red"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "CCCCCC"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "height": 92,
+                "left": 297,
+                "top": 92,
+                "width": 128
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "red"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "BBBBB"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "height": 92,
+                "left": 297,
+                "top": 92,
+                "width": 128
+              },
+              "type": "text-box"
+            },
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "red"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "AAAAA"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "height": 92,
+                "left": 297,
+                "top": 92,
+                "width": 128
+              },
+              "type": "text-box"
+            }
+          ],
+          "type": "group"
+        }
+      },
+      "title": "Panel Title",
+      "type": "canvas"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 31,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "many"
+}
