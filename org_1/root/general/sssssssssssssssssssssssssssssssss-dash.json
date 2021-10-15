@@ -22,7 +22,6 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1634257881388,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -100,8 +99,8 @@
         {
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
-          "panelId": 9,
-          "queryType": "Scene",
+          "panelId": 8,
+          "queryType": "PanelState",
           "refId": "A",
           "show": "selectedItem"
         }
