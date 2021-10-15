@@ -22,7 +22,6 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -60,6 +59,10 @@
       "options": {
         "inlineEditing": true,
         "root": {
+          "anchor": {
+            "left": true,
+            "top": true
+          },
           "elements": [
             {
               "anchor": {
@@ -80,8 +83,8 @@
               },
               "placement": {
                 "height": 92,
-                "left": 297,
-                "top": 92,
+                "left": 600,
+                "top": 170,
                 "width": 128
               },
               "type": "text-box"
@@ -105,8 +108,8 @@
               },
               "placement": {
                 "height": 92,
-                "left": 297,
-                "top": 92,
+                "left": 104,
+                "top": 159,
                 "width": 128
               },
               "type": "text-box"
@@ -130,8 +133,8 @@
               },
               "placement": {
                 "height": 92,
-                "left": 297,
-                "top": 92,
+                "left": 88,
+                "top": 24,
                 "width": 128
               },
               "type": "text-box"
@@ -155,13 +158,19 @@
               },
               "placement": {
                 "height": 92,
-                "left": 297,
-                "top": 92,
+                "left": 623,
+                "top": 60,
                 "width": 128
               },
               "type": "text-box"
             }
           ],
+          "placement": {
+            "height": 100,
+            "left": 0,
+            "top": 0,
+            "width": 100
+          },
           "type": "group"
         }
       },
