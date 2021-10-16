@@ -88,7 +88,7 @@
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
           "panelId": 2,
-          "queryType": "PanelState",
+          "queryType": "RociPanel",
           "refId": "A",
           "show": "selectedItem"
         }
@@ -147,9 +147,9 @@
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
           "panelId": 2,
-          "queryType": "PanelState",
+          "queryType": "RociPanel",
           "refId": "A",
-          "show": "selectedAlarm"
+          "show": "visibleComponents"
         }
       ],
       "title": "Selected Alarm",
@@ -206,9 +206,9 @@
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
           "panelId": 2,
-          "queryType": "PanelState",
+          "queryType": "RociPanel",
           "refId": "A",
-          "show": "visibleComponents"
+          "show": "visibleAnchors"
         }
       ],
       "title": "Visible components",
