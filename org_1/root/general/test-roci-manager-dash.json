@@ -90,7 +90,8 @@
           "panelId": 2,
           "queryType": "RociPanel",
           "refId": "A",
-          "show": "selectedItem"
+          "show": "selectedItem",
+          "topic": "selectedItem"
         }
       ],
       "title": "Selected item",
@@ -149,7 +150,8 @@
           "panelId": 2,
           "queryType": "RociPanel",
           "refId": "A",
-          "show": "visibleComponents"
+          "show": "visibleComponents",
+          "topic": "visibleComponents"
         }
       ],
       "title": "Selected Alarm",
@@ -208,7 +210,8 @@
           "panelId": 2,
           "queryType": "RociPanel",
           "refId": "A",
-          "show": "visibleAnchors"
+          "show": "visibleAnchors",
+          "topic": "visibleAnchors"
         }
       ],
       "title": "Visible components",
