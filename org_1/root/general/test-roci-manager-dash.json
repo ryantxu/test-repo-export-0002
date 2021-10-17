@@ -28,13 +28,13 @@
     {
       "datasource": null,
       "gridPos": {
-        "h": 15,
+        "h": 14,
         "w": 12,
         "x": 0,
         "y": 0
       },
       "id": 2,
-      "title": "Panel Title",
+      "title": "Debug panel (11111)",
       "type": "grafana-iot-roci-debug-panel"
     },
     {
@@ -186,7 +186,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 5,
+        "h": 4,
         "w": 12,
         "x": 12,
         "y": 10
@@ -215,6 +215,78 @@
         }
       ],
       "title": "Visible components",
+      "type": "table"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 14,
+        "w": 12,
+        "x": 0,
+        "y": 14
+      },
+      "id": 7,
+      "title": "Debug panel (2222)",
+      "type": "grafana-iot-roci-debug-panel"
+    },
+    {
+      "datasource": "AWS IoT Roci Datasource",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 14
+      },
+      "id": 8,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.3.0-pre",
+      "targets": [
+        {
+          "apiName": "Test",
+          "datasource": "AWS IoT Roci Datasource",
+          "panelId": 7,
+          "queryType": "RociPanel",
+          "refId": "A",
+          "show": "selectedItem",
+          "topic": "selectedItem"
+        }
+      ],
+      "title": "Selected item",
       "type": "table"
     }
   ],
