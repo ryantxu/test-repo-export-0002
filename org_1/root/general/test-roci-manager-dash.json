@@ -88,7 +88,7 @@
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
           "panelId": 2,
-          "queryType": "RociPanel",
+          "queryType": "GetPropertyHistory",
           "refId": "A",
           "show": "selectedItem",
           "topic": "selectedItem"
@@ -218,6 +218,7 @@
       "type": "table"
     }
   ],
+  "refresh": "",
   "schemaVersion": 31,
   "style": "dark",
   "tags": [],
