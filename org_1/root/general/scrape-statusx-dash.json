@@ -1,76 +1,118 @@
 {
-  "datasource": "grafanacloud-destinydefinitions-prom",
-  "fieldConfig": {
-    "defaults": {
-      "color": {
-        "mode": "thresholds"
-      },
-      "custom": {
-        "fillOpacity": 90,
-        "lineWidth": 0
-      },
-      "mappings": [
-        {
-          "options": {
-            "0": {
-              "color": "red",
-              "index": 0,
-              "text": "Down"
-            },
-            "1": {
-              "color": "green",
-              "index": 1,
-              "text": "​"
-            }
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-RdYlGr"
           },
-          "type": "value"
+          "custom": {
+            "fillOpacity": 70,
+            "lineWidth": 0
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "red",
+                  "index": 0,
+                  "text": "ZZZZZ"
+                },
+                "1": {
+                  "color": "dark-green",
+                  "index": 1,
+                  "text": "YYYYYY"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "alignValue": "left",
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "mergeValues": true,
+        "rowHeight": 0.9,
+        "showValue": "auto",
+        "tooltip": {
+          "mode": "single"
+        }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "scenarioId": "csv_metric_values",
+          "stringInput": "0,1,1,1,0,0,1"
         }
       ],
-      "thresholds": {
-        "mode": "absolute",
-        "steps": [
-          {
-            "color": "green",
-            "value": null
-          },
-          {
-            "color": "red",
-            "value": 80
-          }
-        ]
-      }
-    },
-    "overrides": []
-  },
-  "gridPos": {
-    "h": 5,
-    "w": 24,
-    "x": 0,
-    "y": 0
-  },
-  "options": {
-    "alignValue": "center",
-    "legend": {
-      "displayMode": "hidden",
-      "placement": "bottom"
-    },
-    "mergeValues": true,
-    "rowHeight": 1,
-    "showValue": "auto",
-    "tooltip": {
-      "mode": "single"
-    }
-  },
-  "targets": [
-    {
-      "exemplar": true,
-      "expr": "up{job=\"destiny_stats\"}",
-      "instant": false,
-      "interval": "",
-      "legendFormat": "​",
-      "refId": "A"
+      "title": "Panel Title",
+      "type": "state-timeline"
     }
   ],
+  "refresh": "",
+  "schemaVersion": 31,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
   "title": "Scrape statusX",
-  "type": "state-timeline"
+  "weekStart": ""
 }
