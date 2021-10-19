@@ -1,0 +1,76 @@
+{
+  "datasource": "grafanacloud-destinydefinitions-prom",
+  "fieldConfig": {
+    "defaults": {
+      "color": {
+        "mode": "thresholds"
+      },
+      "custom": {
+        "fillOpacity": 90,
+        "lineWidth": 0
+      },
+      "mappings": [
+        {
+          "options": {
+            "0": {
+              "color": "red",
+              "index": 0,
+              "text": "Down"
+            },
+            "1": {
+              "color": "green",
+              "index": 1,
+              "text": "​"
+            }
+          },
+          "type": "value"
+        }
+      ],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "color": "green",
+            "value": null
+          },
+          {
+            "color": "red",
+            "value": 80
+          }
+        ]
+      }
+    },
+    "overrides": []
+  },
+  "gridPos": {
+    "h": 5,
+    "w": 24,
+    "x": 0,
+    "y": 0
+  },
+  "options": {
+    "alignValue": "center",
+    "legend": {
+      "displayMode": "hidden",
+      "placement": "bottom"
+    },
+    "mergeValues": true,
+    "rowHeight": 1,
+    "showValue": "auto",
+    "tooltip": {
+      "mode": "single"
+    }
+  },
+  "targets": [
+    {
+      "exemplar": true,
+      "expr": "up{job=\"destiny_stats\"}",
+      "instant": false,
+      "interval": "",
+      "legendFormat": "​",
+      "refId": "A"
+    }
+  ],
+  "title": "Scrape statusX",
+  "type": "state-timeline"
+}
