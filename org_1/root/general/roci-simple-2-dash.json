@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1634884058557,
+  "iteration": 1634884713917,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -77,7 +77,7 @@
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
           "entityId": "${entity}",
-          "queryType": "GetEntity",
+          "queryType": "ListEntities",
           "refId": "A"
         }
       ],
@@ -94,7 +94,7 @@
       },
       "id": 4,
       "options": {
-        "content": "| Variable      | Value |\n| ----------- | ----------- |\n| entity      | ${entity}       |\n| compId   | ${compId}        |\n\n\n\n## Links (entity):\n[Mixer1](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=78e55728-cf70-4053-9ddd-64e83c27d627), \n[Mixer2](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=5ac7776e-f6fe-4040-b6c3-fdecf64257d7)\n\n\n## Links (comp):\n[aaa](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=78e55728-cf70-4053-9ddd-64e83c27d627), \n[bbb](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=5ac7776e-f6fe-4040-b6c3-fdecf64257d7)\n",
+        "content": "| Variable      | Value |\n| ----------- | ----------- |\n| entity      | ${entity}       |\n| compId   | ${compId}        |\n\n\n\n## Links (entity):\n[Mixer1](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=78e55728-cf70-4053-9ddd-64e83c27d627), \n[Mixer2](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=5ac7776e-f6fe-4040-b6c3-fdecf64257d7)\n\n\n## Links (comp):\n[aaa](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=com.amazon.iotroci.documents:1), \n[bbb](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=com.snowflake.connector:1)\n[ccc](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=com.example.cookiefactory.space:1)\n[ddd](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=com.example.timestream-telemetry:1)\n",
         "mode": "markdown"
       },
       "pluginVersion": "8.3.0-pre",
@@ -141,6 +141,32 @@
         "query": "the value",
         "skipUrlSync": false,
         "type": "constant"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "text": "com.example.timestream-telemetry:1",
+          "value": "com.example.timestream-telemetry:1"
+        },
+        "datasource": "AWS IoT Roci Datasource",
+        "definition": "",
+        "description": "description here",
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "",
+        "multi": false,
+        "name": "selectableEntity",
+        "options": [],
+        "query": {
+          "queryType": "ListComponentTypes"
+        },
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
       }
     ]
   },
