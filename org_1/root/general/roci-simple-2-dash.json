@@ -22,6 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
+  "iteration": 1634875788054,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -113,11 +114,6 @@
   "templating": {
     "list": [
       {
-        "current": {
-          "selected": false,
-          "text": "aaa",
-          "value": "aaa"
-        },
         "description": "constant query",
         "error": null,
         "hide": 2,
@@ -130,9 +126,9 @@
       {
         "allValue": null,
         "current": {
-          "selected": false,
-          "text": "aaa",
-          "value": "aaa"
+          "selected": true,
+          "text": "bbb",
+          "value": "bbb"
         },
         "description": "a list",
         "error": null,
@@ -143,12 +139,12 @@
         "name": "second",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "aaa",
             "value": "aaa"
           },
           {
-            "selected": false,
+            "selected": true,
             "text": "bbb",
             "value": "bbb"
           },
@@ -170,7 +166,11 @@
       },
       {
         "allValue": null,
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "aaa",
+          "value": "aaa"
+        },
         "datasource": "AWS IoT Roci Datasource",
         "definition": "",
         "description": "description here",
@@ -183,7 +183,7 @@
         "options": [],
         "query": "",
         "refresh": 1,
-        "regex": "",
+        "regex": "hello",
         "skipUrlSync": false,
         "sort": 0,
         "type": "query"
