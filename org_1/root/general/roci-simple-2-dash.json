@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1634882725861,
+  "iteration": 1634883207721,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -83,6 +83,23 @@
       ],
       "title": "Panel Title",
       "type": "table"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 4,
+      "options": {
+        "content": "# The selected entity is:\n\n${entity}\n\n\n## Links:\n[Mixer1](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=78e55728-cf70-4053-9ddd-64e83c27d627), \n[Mixer2](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=5ac7776e-f6fe-4040-b6c3-fdecf64257d7)\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "8.3.0-pre",
+      "title": "Simple text panel",
+      "type": "text"
     }
   ],
   "refresh": "",
@@ -94,9 +111,9 @@
       {
         "allValue": null,
         "current": {
-          "selected": false,
-          "text": "SiteWatchEntity",
-          "value": "85d32794-68b4-4146-ad2c-e92f4fccfb8d"
+          "selected": true,
+          "text": "Mixer2",
+          "value": "5ac7776e-f6fe-4040-b6c3-fdecf64257d7"
         },
         "datasource": "AWS IoT Roci Datasource",
         "definition": "",
