@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1634880439397,
+  "iteration": 1634882725861,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -31,35 +31,11 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "thresholds"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "align": "auto",
+            "displayMode": "auto"
           },
           "mappings": [],
           "thresholds": {
@@ -79,32 +55,34 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 8,
+        "w": 24,
         "x": 0,
         "y": 0
       },
       "id": 2,
       "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom"
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
         },
-        "tooltip": {
-          "mode": "single"
-        }
+        "showHeader": true
       },
+      "pluginVersion": "8.3.0-pre",
       "targets": [
         {
           "apiName": "Test",
           "datasource": "AWS IoT Roci Datasource",
+          "entityId": "${entity}",
           "queryType": "GetEntity",
           "refId": "A"
         }
       ],
       "title": "Panel Title",
-      "type": "timeseries"
+      "type": "table"
     }
   ],
   "refresh": "",
@@ -114,62 +92,11 @@
   "templating": {
     "list": [
       {
-        "description": "constant query",
-        "error": null,
-        "hide": 2,
-        "label": "Show this value",
-        "name": "hello",
-        "query": "aaa",
-        "skipUrlSync": false,
-        "type": "constant"
-      },
-      {
-        "allValue": null,
-        "current": {
-          "selected": true,
-          "text": "bbb",
-          "value": "bbb"
-        },
-        "description": "a list",
-        "error": null,
-        "hide": 0,
-        "includeAll": false,
-        "label": null,
-        "multi": false,
-        "name": "second",
-        "options": [
-          {
-            "selected": false,
-            "text": "aaa",
-            "value": "aaa"
-          },
-          {
-            "selected": true,
-            "text": "bbb",
-            "value": "bbb"
-          },
-          {
-            "selected": false,
-            "text": "ccc",
-            "value": "ccc"
-          },
-          {
-            "selected": false,
-            "text": "ddd",
-            "value": "ddd"
-          }
-        ],
-        "query": "aaa, bbb, ccc, ddd",
-        "queryValue": "",
-        "skipUrlSync": false,
-        "type": "custom"
-      },
-      {
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "Equipment",
-          "value": "Equipment_1e08647c-e601-4346-83a0-df12879605a1"
+          "text": "SiteWatchEntity",
+          "value": "85d32794-68b4-4146-ad2c-e92f4fccfb8d"
         },
         "datasource": "AWS IoT Roci Datasource",
         "definition": "",
@@ -179,7 +106,7 @@
         "includeAll": false,
         "label": "",
         "multi": false,
-        "name": "template3",
+        "name": "entity",
         "options": [],
         "query": "",
         "refresh": 1,
