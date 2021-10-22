@@ -113,10 +113,15 @@
   "templating": {
     "list": [
       {
+        "current": {
+          "selected": false,
+          "text": "aaa",
+          "value": "aaa"
+        },
         "description": "constant query",
         "error": null,
         "hide": 2,
-        "label": null,
+        "label": "Show this value",
         "name": "hello",
         "query": "aaa",
         "skipUrlSync": false,
@@ -159,6 +164,7 @@
           }
         ],
         "query": "aaa, bbb, ccc, ddd",
+        "queryValue": "",
         "skipUrlSync": false,
         "type": "custom"
       },
@@ -167,11 +173,11 @@
         "current": {},
         "datasource": "AWS IoT Roci Datasource",
         "definition": "",
-        "description": null,
+        "description": "description here",
         "error": {},
         "hide": 0,
         "includeAll": false,
-        "label": null,
+        "label": "",
         "multi": false,
         "name": "template3",
         "options": [],
