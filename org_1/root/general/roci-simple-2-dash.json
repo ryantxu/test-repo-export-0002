@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1634883207721,
+  "iteration": 1634884058557,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -94,7 +94,7 @@
       },
       "id": 4,
       "options": {
-        "content": "# The selected entity is:\n\n${entity}\n\n\n## Links:\n[Mixer1](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=78e55728-cf70-4053-9ddd-64e83c27d627), \n[Mixer2](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=5ac7776e-f6fe-4040-b6c3-fdecf64257d7)\n",
+        "content": "| Variable      | Value |\n| ----------- | ----------- |\n| entity      | ${entity}       |\n| compId   | ${compId}        |\n\n\n\n## Links (entity):\n[Mixer1](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=78e55728-cf70-4053-9ddd-64e83c27d627), \n[Mixer2](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-entity=5ac7776e-f6fe-4040-b6c3-fdecf64257d7)\n\n\n## Links (comp):\n[aaa](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=78e55728-cf70-4053-9ddd-64e83c27d627), \n[bbb](http://localhost:3000/d/uKsMlLOnk/roci-simple-2?orgId=1\u0026var-compId=5ac7776e-f6fe-4040-b6c3-fdecf64257d7)\n",
         "mode": "markdown"
       },
       "pluginVersion": "8.3.0-pre",
@@ -111,7 +111,7 @@
       {
         "allValue": null,
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "Mixer2",
           "value": "5ac7776e-f6fe-4040-b6c3-fdecf64257d7"
         },
@@ -131,6 +131,16 @@
         "skipUrlSync": false,
         "sort": 0,
         "type": "query"
+      },
+      {
+        "description": null,
+        "error": null,
+        "hide": 2,
+        "label": "Selected component",
+        "name": "compId",
+        "query": "the value",
+        "skipUrlSync": false,
+        "type": "constant"
       }
     ]
   },
