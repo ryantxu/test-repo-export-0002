@@ -51,7 +51,7 @@
       },
       "gridPos": {
         "h": 14,
-        "w": 20,
+        "w": 16,
         "x": 0,
         "y": 0
       },
@@ -59,7 +59,41 @@
       "options": {
         "inlineEditing": true,
         "root": {
+          "anchor": {
+            "left": true,
+            "top": true
+          },
           "elements": [
+            {
+              "anchor": {
+                "bottom": true,
+                "left": true,
+                "right": true,
+                "top": true
+              },
+              "background": {
+                "color": {
+                  "fixed": "blue"
+                },
+                "image": {
+                  "mode": "field"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "bottom/left"
+                },
+                "valign": "middle"
+              },
+              "placement": {
+                "bottom": 100,
+                "left": 100,
+                "right": 100,
+                "top": 100
+              },
+              "type": "text-box"
+            },
             {
               "anchor": {
                 "bottom": true,
@@ -110,8 +144,8 @@
               },
               "placement": {
                 "height": 196.98399999999998,
-                "left": 76,
-                "top": 70,
+                "left": 63,
+                "top": 33,
                 "width": 203.976
               },
               "type": "text-box"
@@ -138,8 +172,8 @@
               },
               "placement": {
                 "height": 156.977,
-                "right": 21,
-                "top": 82,
+                "right": 33,
+                "top": 17,
                 "width": 345.97
               },
               "type": "text-box"
@@ -165,11 +199,17 @@
                 "bottom": 53,
                 "height": 176.999,
                 "right": 124,
-                "width": 303
+                "width": 265
               },
               "type": "text-box"
             }
-          ]
+          ],
+          "placement": {
+            "height": 100,
+            "left": 0,
+            "top": 0,
+            "width": 100
+          }
         }
       },
       "title": "Panel Title",
@@ -189,5 +229,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "canvas simple"
+  "title": "canvas simple",
+  "weekStart": ""
 }
