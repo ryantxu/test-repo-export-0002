@@ -116,9 +116,9 @@
       "id": 5,
       "options": {
         "channel": {
-          "namespace": "testdata",
-          "path": "random-2s-stream",
-          "scope": "plugin"
+          "namespace": "telegraf",
+          "path": "motor_fb",
+          "scope": "stream"
         },
         "message": "json",
         "publish": false
