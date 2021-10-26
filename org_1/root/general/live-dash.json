@@ -106,84 +106,25 @@
       "type": "timeseries"
     },
     {
-      "datasource": "-- Grafana --",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
+      "datasource": null,
       "gridPos": {
-        "h": 9,
+        "h": 18,
         "w": 12,
         "x": 12,
         "y": 0
       },
-      "id": 3,
+      "id": 5,
       "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom"
+        "channel": {
+          "namespace": "testdata",
+          "path": "random-2s-stream",
+          "scope": "grafana"
         },
-        "tooltip": {
-          "mode": "single"
-        }
+        "message": "json",
+        "publish": false
       },
-      "targets": [
-        {
-          "channel": "plugin/testdata/random-2s-stream",
-          "datasource": "-- Grafana --",
-          "queryType": "measurements",
-          "refId": "A"
-        }
-      ],
       "title": "Panel Title",
-      "type": "timeseries"
+      "type": "live"
     },
     {
       "datasource": "-- Grafana --",
@@ -240,10 +181,10 @@
       "gridPos": {
         "h": 9,
         "w": 12,
-        "x": 12,
+        "x": 0,
         "y": 9
       },
-      "id": 4,
+      "id": 3,
       "options": {
         "legend": {
           "calcs": [],
