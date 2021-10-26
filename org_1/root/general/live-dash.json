@@ -96,7 +96,7 @@
       },
       "targets": [
         {
-          "channel": "plugin/testdata/random-2s-stream",
+          "channel": "stream/telegraf/motor_fb",
           "datasource": "-- Grafana --",
           "queryType": "measurements",
           "refId": "A"
@@ -197,7 +197,7 @@
       },
       "targets": [
         {
-          "channel": "plugin/testdata/random-2s-stream",
+          "channel": "stream/telegraf/motor_fb",
           "datasource": "-- Grafana --",
           "queryType": "measurements",
           "refId": "A"
