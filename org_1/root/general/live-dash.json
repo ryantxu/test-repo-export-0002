@@ -118,7 +118,7 @@
         "channel": {
           "namespace": "testdata",
           "path": "random-2s-stream",
-          "scope": "grafana"
+          "scope": "plugin"
         },
         "message": "json",
         "publish": false
