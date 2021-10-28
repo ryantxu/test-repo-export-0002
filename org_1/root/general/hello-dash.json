@@ -22,7 +22,6 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -51,8 +50,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 15,
+        "w": 7,
         "x": 0,
         "y": 0
       },
@@ -86,7 +85,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 31,
+  "schemaVersion": 32,
   "style": "dark",
   "tags": [],
   "templating": {
