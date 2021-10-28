@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1634884713917,
+  "iteration": 1635451190855,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -100,10 +100,74 @@
       "pluginVersion": "8.3.0-pre",
       "title": "Simple text panel",
       "type": "text"
+    },
+    {
+      "datasource": "AWS IoT Roci Datasource",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 11,
+        "x": 12,
+        "y": 8
+      },
+      "id": 7,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.3.0-pre",
+      "targets": [
+        {
+          "apiName": "Test",
+          "datasource": "AWS IoT Roci Datasource",
+          "entityId": "${entity}",
+          "queryType": "ListEntities",
+          "refId": "A"
+        }
+      ],
+      "title": "With transform!",
+      "transformations": [
+        {
+          "id": "roci-register-links",
+          "options": {}
+        }
+      ],
+      "type": "table"
     }
   ],
   "refresh": "",
-  "schemaVersion": 31,
+  "schemaVersion": 32,
   "style": "dark",
   "tags": [],
   "templating": {
