@@ -109,6 +109,16 @@
           },
           "hide": false,
           "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "__expr__",
+            "uid": "__expr__"
+          },
+          "expression": "$A + $B",
+          "hide": false,
+          "refId": "C",
+          "type": "math"
         }
       ],
       "title": "Panel Title",
