@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1636055956958,
+  "iteration": 1636056237388,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -319,7 +319,7 @@
         "name": "sel_entity",
         "options": [
           {
-            "selected": false,
+            "selected": true,
             "text": "x",
             "value": "x"
           },
@@ -342,8 +342,8 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "Mixer2Alarm",
-          "value": "Mixer2Alarm"
+          "text": "AlarmComponent",
+          "value": "AlarmComponent"
         },
         "description": "var one",
         "error": null,
