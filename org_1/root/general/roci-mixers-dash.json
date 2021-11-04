@@ -22,8 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
-  "iteration": 1636053573523,
+  "iteration": 1636053815128,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -232,85 +231,21 @@
       "type": "grafana-iot-babymaker-layout-panel"
     },
     {
-      "datasource": {
-        "type": "grafana-iot-roci-datasource",
-        "uid": "EjUXIa77k"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "custom": {
-            "align": "auto",
-            "displayMode": "auto"
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
+      "datasource": null,
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 12,
         "x": 12,
         "y": 7
       },
-      "id": 2,
+      "id": 13,
       "options": {
-        "footer": {
-          "fields": "",
-          "reducer": [
-            "sum"
-          ],
-          "show": false
-        },
-        "showHeader": true
+        "content": "# Mixer Mixer\n",
+        "mode": "markdown"
       },
       "pluginVersion": "8.3.0-pre",
-      "targets": [
-        {
-          "apiName": "Test",
-          "datasource": {
-            "type": "grafana-iot-roci-datasource",
-            "uid": "EjUXIa77k"
-          },
-          "queryType": "GetAlarms",
-          "refId": "A"
-        }
-      ],
-      "title": "Get Alarms",
-      "transformations": [
-        {
-          "id": "roci-register-links",
-          "options": {
-            "addSelectionField": true,
-            "vars": [
-              {
-                "fieldName": "entityId",
-                "name": "${sel_entity}"
-              },
-              {
-                "fieldName": "alarmName",
-                "name": "${sel_comp}"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "table"
+      "title": "Panel Title",
+      "type": "text"
     }
   ],
   "refresh": "",
@@ -335,7 +270,7 @@
         "name": "sel_entity",
         "options": [
           {
-            "selected": false,
+            "selected": true,
             "text": "x",
             "value": "x"
           },
@@ -370,7 +305,7 @@
         "name": "sel_comp",
         "options": [
           {
-            "selected": false,
+            "selected": true,
             "text": "x",
             "value": "x"
           },
