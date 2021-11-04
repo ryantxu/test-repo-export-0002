@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1636053867962,
+  "iteration": 1636054833426,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -326,8 +326,8 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "5ac7776e-f6fe-4040-b6c3-fdecf64257d7",
-          "value": "5ac7776e-f6fe-4040-b6c3-fdecf64257d7"
+          "text": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f",
+          "value": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f"
         },
         "description": "var one",
         "error": null,
@@ -338,7 +338,7 @@
         "name": "sel_entity",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "x",
             "value": "x"
           },
