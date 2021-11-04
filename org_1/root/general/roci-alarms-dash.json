@@ -293,7 +293,7 @@
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "Alarms query with table panel",
       "type": "table"
     }
   ],
