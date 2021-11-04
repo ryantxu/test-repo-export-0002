@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1636053573507,
+  "iteration": 1636053867962,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -223,7 +223,11 @@
         "rules": [
           {
             "componentTypeId": "com.example.cookiefactory.mixer:1",
-            "dashboard": "LefOZbrGk"
+            "dashboard": "wE5U3UF7k"
+          },
+          {
+            "componentTypeId": "com.example.cookiefactory.alarm:1",
+            "dashboard": "_a8l0tOnz"
           }
         ]
       },
@@ -334,7 +338,7 @@
         "name": "sel_entity",
         "options": [
           {
-            "selected": false,
+            "selected": true,
             "text": "x",
             "value": "x"
           },
@@ -369,7 +373,7 @@
         "name": "sel_comp",
         "options": [
           {
-            "selected": false,
+            "selected": true,
             "text": "x",
             "value": "x"
           },
