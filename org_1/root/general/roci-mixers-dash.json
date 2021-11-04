@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1636053815128,
+  "iteration": 1636056186848,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -244,7 +244,7 @@
         "mode": "markdown"
       },
       "pluginVersion": "8.3.0-pre",
-      "title": "Panel Title",
+      "title": "Text panel for mixers page",
       "type": "text"
     }
   ],
