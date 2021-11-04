@@ -235,7 +235,36 @@
       "type": "grafana-iot-babymaker-layout-panel"
     },
     {
-      "datasource": null,
+      "datasource": {
+        "type": "grafana-iot-roci-datasource",
+        "uid": "EjUXIa77k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 8,
         "w": 12,
@@ -244,12 +273,28 @@
       },
       "id": 13,
       "options": {
-        "content": "# Mixer Mixer\n",
-        "mode": "markdown"
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
       },
       "pluginVersion": "8.3.0-pre",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-iot-roci-datasource",
+            "uid": "EjUXIa77k"
+          },
+          "queryType": "GetAlarms",
+          "refId": "A"
+        }
+      ],
       "title": "Panel Title",
-      "type": "text"
+      "type": "table"
     }
   ],
   "refresh": "",
