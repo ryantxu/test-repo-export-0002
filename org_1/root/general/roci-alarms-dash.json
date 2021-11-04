@@ -1,0 +1,396 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "iteration": 1635999833676,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "grafana-iot-roci-datasource",
+        "uid": "EjUXIa77k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "entityId"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 278
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 10,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true,
+        "sortBy": []
+      },
+      "pluginVersion": "8.3.0-pre",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-iot-roci-datasource",
+            "uid": "EjUXIa77k"
+          },
+          "queryType": "ListEntities",
+          "refId": "A"
+        }
+      ],
+      "title": "List entities",
+      "transformations": [
+        {
+          "id": "roci-register-links",
+          "options": {
+            "addSelectionField": true,
+            "vars": [
+              {
+                "fieldName": "entityId",
+                "name": "${sel_entity}"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "grafana-iot-roci-datasource",
+        "uid": "EjUXIa77k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "componentTypeId"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 259
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 11,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true,
+        "sortBy": []
+      },
+      "pluginVersion": "8.3.0-pre",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-iot-roci-datasource",
+            "uid": "EjUXIa77k"
+          },
+          "entityId": "${sel_entity}",
+          "queryType": "GetEntity",
+          "refId": "A"
+        }
+      ],
+      "title": "Get Entity Components",
+      "transformations": [
+        {
+          "id": "roci-register-links",
+          "options": {
+            "addSelectionField": true,
+            "vars": [
+              {
+                "fieldName": "component",
+                "name": "${sel_comp}"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 8,
+      "options": {
+        "component": "${sel_comp}",
+        "datasource": "",
+        "entityId": "${sel_entity}"
+      },
+      "title": "Panel Title",
+      "type": "grafana-iot-twinmaker-layout-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-iot-roci-datasource",
+        "uid": "EjUXIa77k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 11,
+        "x": 12,
+        "y": 8
+      },
+      "id": 2,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.3.0-pre",
+      "targets": [
+        {
+          "apiName": "Test",
+          "datasource": {
+            "type": "grafana-iot-roci-datasource",
+            "uid": "EjUXIa77k"
+          },
+          "queryType": "GetAlarms",
+          "refId": "A"
+        }
+      ],
+      "title": "Get Alarms",
+      "transformations": [
+        {
+          "id": "roci-register-links",
+          "options": {
+            "addSelectionField": true,
+            "vars": [
+              {
+                "fieldName": "entityId",
+                "name": "${sel_entity}"
+              },
+              {
+                "fieldName": "alarmName",
+                "name": "${sel_comp}"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "table"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 33,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "5ac7776e-f6fe-4040-b6c3-fdecf64257d7",
+          "value": "5ac7776e-f6fe-4040-b6c3-fdecf64257d7"
+        },
+        "description": "var one",
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "sel_entity",
+        "options": [
+          {
+            "selected": false,
+            "text": "x",
+            "value": "x"
+          },
+          {
+            "selected": false,
+            "text": "y",
+            "value": "y"
+          },
+          {
+            "selected": false,
+            "text": "z",
+            "value": "z"
+          }
+        ],
+        "query": "x,y,z",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "Mixer2Alarm",
+          "value": "Mixer2Alarm"
+        },
+        "description": "var one",
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": null,
+        "multi": false,
+        "name": "sel_comp",
+        "options": [
+          {
+            "selected": false,
+            "text": "x",
+            "value": "x"
+          },
+          {
+            "selected": false,
+            "text": "y",
+            "value": "y"
+          },
+          {
+            "selected": false,
+            "text": "z",
+            "value": "z"
+          }
+        ],
+        "query": "x,y,z",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "2021-08-01T07:00:00.000Z",
+    "to": "2021-08-04T15:00:00.000Z"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Roci Alarms",
+  "weekStart": ""
+}
