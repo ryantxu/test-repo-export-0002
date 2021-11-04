@@ -22,7 +22,7 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1636049745190,
+  "iteration": 1636052701392,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -219,7 +219,13 @@
       "options": {
         "component": "${sel_comp}",
         "datasource": "",
-        "entityId": "${sel_entity}"
+        "entityId": "${sel_entity}",
+        "rules": [
+          {
+            "componentTypeId": "com.example.cookiefactory.mixer:1",
+            "dashboard": "LefOZbrGk"
+          }
+        ]
       },
       "title": "Panel Title",
       "type": "grafana-iot-babymaker-layout-panel"
@@ -328,7 +334,7 @@
         "name": "sel_entity",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "x",
             "value": "x"
           },
@@ -363,7 +369,7 @@
         "name": "sel_comp",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "x",
             "value": "x"
           },
