@@ -22,7 +22,6 @@
   "fiscalYearStartMonth": 0,
   "gnetId": null,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -76,7 +75,23 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "B-series"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fromField": "A-series",
+                  "mode": "field"
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 9,
