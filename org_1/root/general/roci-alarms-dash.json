@@ -20,9 +20,8 @@
   },
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1636056237388,
+  "iteration": 1636494520831,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -208,7 +207,6 @@
       "type": "table"
     },
     {
-      "datasource": null,
       "gridPos": {
         "h": 10,
         "w": 12,
@@ -217,22 +215,14 @@
       },
       "id": 8,
       "options": {
-        "component": "${sel_comp}",
+        "component": "",
         "datasource": "",
-        "entityId": "${sel_entity}",
-        "rules": [
-          {
-            "componentTypeId": "com.example.cookiefactory.mixer:1",
-            "dashboard": "wE5U3UF7k"
-          },
-          {
-            "componentTypeId": "com.example.cookiefactory.alarm:1",
-            "dashboard": "_a8l0tOnz"
-          }
-        ]
+        "entityId": "",
+        "rules": [],
+        "show": "entityName"
       },
       "title": "Layout Manager",
-      "type": "grafana-iot-babymaker-layout-panel"
+      "type": "grafana-iot-roci-layout-panel"
     },
     {
       "datasource": {
@@ -304,17 +294,14 @@
   "templating": {
     "list": [
       {
-        "allValue": null,
         "current": {
           "selected": false,
           "text": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f",
           "value": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f"
         },
         "description": "var one",
-        "error": null,
         "hide": 0,
         "includeAll": false,
-        "label": null,
         "multi": false,
         "name": "sel_entity",
         "options": [
@@ -339,22 +326,19 @@
         "type": "custom"
       },
       {
-        "allValue": null,
         "current": {
           "selected": false,
           "text": "AlarmComponent",
           "value": "AlarmComponent"
         },
         "description": "var one",
-        "error": null,
         "hide": 0,
         "includeAll": false,
-        "label": null,
         "multi": false,
         "name": "sel_comp",
         "options": [
           {
-            "selected": false,
+            "selected": true,
             "text": "x",
             "value": "x"
           },
