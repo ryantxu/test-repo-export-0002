@@ -83,7 +83,7 @@
         "y": 0
       },
       "id": 2,
-      "maxDataPoints": 100,
+      "maxDataPoints": 20,
       "options": {
         "colorStrategy": "intra",
         "colors": {
