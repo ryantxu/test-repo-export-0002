@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -92,7 +91,7 @@
           "up": "green"
         },
         "fields": {
-          "close": "Max",
+          "high": "Max",
           "low": "Min",
           "open": "A"
         },
