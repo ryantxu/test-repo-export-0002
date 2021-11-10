@@ -90,11 +90,7 @@
           "down": "red",
           "up": "green"
         },
-        "fields": {
-          "high": "Max",
-          "low": "Min",
-          "open": "A"
-        },
+        "fields": {},
         "legend": {
           "calcs": [],
           "displayMode": "list",
