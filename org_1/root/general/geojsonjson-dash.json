@@ -55,6 +55,11 @@
       },
       "id": 4,
       "options": {
+        "basemap": {
+          "config": {},
+          "name": "Layer 0",
+          "type": "default"
+        },
         "controls": {
           "mouseWheelZoom": true,
           "showAttribution": true,
@@ -62,6 +67,30 @@
           "showScale": false,
           "showZoom": true
         },
+        "layers": [
+          {
+            "config": {
+              "color": {
+                "fixed": "red"
+              },
+              "fillOpacity": 0.5,
+              "fontSize": {
+                "fixed": 20,
+                "max": 100,
+                "min": 5
+              },
+              "labelText": {
+                "fixed": "",
+                "mode": "field"
+              }
+            },
+            "location": {
+              "mode": "auto"
+            },
+            "name": "Layer 1",
+            "type": "text-labels"
+          }
+        ],
         "view": {
           "id": "zero",
           "lat": 0,
