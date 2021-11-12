@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1636756234624,
+  "iteration": 1636757225304,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -222,15 +222,20 @@
           {
             "actions": [
               {
-                "value": "agasgasdg",
-                "variable": "adsgdasg"
-              },
-              {
-                "value": "agdasg",
-                "variable": "asgasdga"
+                "value": "AAAA",
+                "variable": "ext"
               }
             ],
             "componentTypeId": "com.example.cookiefactory.mixer:1"
+          },
+          {
+            "actions": [
+              {
+                "value": "BBBBB",
+                "variable": "ext"
+              }
+            ],
+            "componentTypeId": "com.example.cookiefactory.alarm:1"
           }
         ],
         "show": "entityName"
