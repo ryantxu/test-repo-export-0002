@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1636497797924,
+  "iteration": 1636756234624,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -215,10 +215,24 @@
       },
       "id": 8,
       "options": {
-        "component": "",
+        "component": "${sel_comp}",
         "datasource": "",
-        "entityId": "",
-        "rules": [],
+        "entityId": "${sel_entity}",
+        "rules": [
+          {
+            "actions": [
+              {
+                "value": "agasgasdg",
+                "variable": "adsgdasg"
+              },
+              {
+                "value": "agdasg",
+                "variable": "asgasdga"
+              }
+            ],
+            "componentTypeId": "com.example.cookiefactory.mixer:1"
+          }
+        ],
         "show": "entityName"
       },
       "title": "Layout Manager",
@@ -296,8 +310,8 @@
       {
         "current": {
           "selected": false,
-          "text": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f",
-          "value": "Mixer_2_dbdafcea-ee60-4a49-846d-f8f16a031e0f"
+          "text": "Mixer_1_4b57cbee-c391-4de6-b882-622c633a697e",
+          "value": "Mixer_1_4b57cbee-c391-4de6-b882-622c633a697e"
         },
         "description": "var one",
         "hide": 0,
@@ -306,7 +320,7 @@
         "name": "sel_entity",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "x",
             "value": "x"
           },
@@ -328,8 +342,8 @@
       {
         "current": {
           "selected": false,
-          "text": "AlarmComponent",
-          "value": "AlarmComponent"
+          "text": "MixerComponent",
+          "value": "MixerComponent"
         },
         "description": "var one",
         "hide": 0,
@@ -338,7 +352,7 @@
         "name": "sel_comp",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "x",
             "value": "x"
           },
@@ -355,6 +369,37 @@
         ],
         "query": "x,y,z",
         "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "a",
+          "value": "a"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "name": "ext",
+        "options": [
+          {
+            "selected": true,
+            "text": "a",
+            "value": "a"
+          },
+          {
+            "selected": false,
+            "text": "b",
+            "value": "b"
+          },
+          {
+            "selected": false,
+            "text": "c",
+            "value": "c"
+          }
+        ],
+        "query": "a,b,c",
         "skipUrlSync": false,
         "type": "custom"
       }
