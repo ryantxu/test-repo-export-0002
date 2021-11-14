@@ -70,6 +70,28 @@
         "layers": [
           {
             "config": {
+              "showLegend": true,
+              "style": {
+                "color": {
+                  "fixed": "dark-green"
+                },
+                "opacity": 1,
+                "size": {
+                  "fixed": 40,
+                  "max": 15,
+                  "min": 2
+                },
+                "symbol": {
+                  "fixed": "img/icons/marker/circle.svg",
+                  "mode": "fixed"
+                }
+              }
+            },
+            "name": "Layer 2",
+            "type": "markers"
+          },
+          {
+            "config": {
               "color": {
                 "fixed": "red"
               },
@@ -82,6 +104,13 @@
               "labelText": {
                 "fixed": "",
                 "mode": "field"
+              },
+              "style": {
+                "size": {
+                  "fixed": 20,
+                  "max": 50,
+                  "min": 2
+                }
               }
             },
             "location": {
