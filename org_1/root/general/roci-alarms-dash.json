@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1637017299285,
+  "iteration": 1637018405607,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -38,7 +38,7 @@
       },
       "id": 15,
       "options": {
-        "customSelCompVarName": "sel_comp",
+        "customSelCompVarName": "sel_entity",
         "customSelEntityVarName": "sel_entity",
         "datasource": "",
         "sceneId": "CookieFactory"
@@ -354,9 +354,9 @@
     "list": [
       {
         "current": {
-          "selected": false,
-          "text": "Mixer_14_456ba291-bf60-417a-848f-22a52bc1cb66",
-          "value": "Mixer_14_456ba291-bf60-417a-848f-22a52bc1cb66"
+          "selected": true,
+          "text": "y",
+          "value": "y"
         },
         "description": "var one",
         "hide": 0,
@@ -370,7 +370,7 @@
             "value": "x"
           },
           {
-            "selected": false,
+            "selected": true,
             "text": "y",
             "value": "y"
           },
@@ -381,6 +381,7 @@
           }
         ],
         "query": "x,y,z",
+        "queryValue": "",
         "skipUrlSync": false,
         "type": "custom"
       },
