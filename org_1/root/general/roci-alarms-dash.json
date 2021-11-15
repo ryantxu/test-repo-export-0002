@@ -21,7 +21,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1637011647107,
+  "iteration": 1637017299285,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -51,7 +51,14 @@
             "uid": "EjUXIa77k"
           },
           "entityId": "${sel_entity}",
-          "queryType": "GetPropertyValue",
+          "filter": [
+            {
+              "name": "alarm_status",
+              "op": "=",
+              "value": "ACTIVE"
+            }
+          ],
+          "queryType": "GetAlarms",
           "refId": "A"
         }
       ],
@@ -348,8 +355,8 @@
       {
         "current": {
           "selected": false,
-          "text": "Mixer_23_017d92a8-6bc8-44d0-aacf-8943fb776877",
-          "value": "Mixer_23_017d92a8-6bc8-44d0-aacf-8943fb776877"
+          "text": "Mixer_14_456ba291-bf60-417a-848f-22a52bc1cb66",
+          "value": "Mixer_14_456ba291-bf60-417a-848f-22a52bc1cb66"
         },
         "description": "var one",
         "hide": 0,
