@@ -21,11 +21,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "${db}"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -77,12 +80,12 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "id": 2,
+      "id": 4,
       "options": {
         "legend": {
           "calcs": [],
@@ -97,11 +100,9 @@
         {
           "datasource": {
             "type": "testdata",
-            "uid": "7w0eseKGz"
+            "uid": "${db}"
           },
-          "refId": "A",
-          "scenarioId": "random_walk",
-          "seriesCount": 2
+          "refId": "A"
         }
       ],
       "title": "Panel Title",
@@ -112,7 +113,25 @@
   "style": "dark",
   "tags": [],
   "templating": {
-    "list": []
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "gdev-testdata",
+          "value": "gdev-testdata"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "name": "db",
+        "options": [],
+        "query": "testdata",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      }
+    ]
   },
   "time": {
     "from": "now-6h",
