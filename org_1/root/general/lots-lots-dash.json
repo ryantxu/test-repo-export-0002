@@ -29,32 +29,6 @@
         "type": "grafana-iot-twinmaker-datasource",
         "uid": "OmidEr5nz"
       },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "custom": {
-            "fillOpacity": 70,
-            "lineWidth": 0
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
       "gridPos": {
         "h": 9,
         "w": 12,
@@ -63,17 +37,8 @@
       },
       "id": 2,
       "options": {
-        "alignValue": "left",
-        "legend": {
-          "displayMode": "list",
-          "placement": "bottom"
-        },
-        "mergeValues": false,
-        "rowHeight": 0.9,
-        "showValue": "auto",
-        "tooltip": {
-          "mode": "single"
-        }
+        "datasource": "",
+        "sceneId": "CookieFactory"
       },
       "pluginVersion": "8.3.0-pre",
       "targets": [
@@ -99,7 +64,7 @@
         }
       ],
       "title": "Panel Title",
-      "type": "state-timeline"
+      "type": "grafana-iot-twinmaker-sceneviewer-panel"
     }
   ],
   "refresh": "",
