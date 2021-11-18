@@ -74,8 +74,7 @@
                 {
                   "check": {
                     "operation": "gt",
-                    "property": "density",
-                    "value": 50
+                    "property": "name"
                   },
                   "style": {
                     "color": {
