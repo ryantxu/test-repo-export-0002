@@ -1,0 +1,21 @@
+{
+  "id": 146,
+  "name": "AWS IoT TwinMaker",
+  "type": "grafana-iot-twinmaker-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "sZSUQ9c7z",
+  "created": "2021-11-18T09:28:45-08:00",
+  "updated": "2021-11-18T09:28:45-08:00"
+}
