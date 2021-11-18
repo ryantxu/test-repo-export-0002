@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -36,8 +35,8 @@
             "mode": "thresholds"
           },
           "custom": {
-            "align": "auto",
-            "displayMode": "auto"
+            "fillOpacity": 70,
+            "lineWidth": 0
           },
           "mappings": [],
           "thresholds": {
@@ -64,14 +63,17 @@
       },
       "id": 2,
       "options": {
-        "footer": {
-          "fields": "",
-          "reducer": [
-            "sum"
-          ],
-          "show": false
+        "alignValue": "left",
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
         },
-        "showHeader": true
+        "mergeValues": true,
+        "rowHeight": 0.9,
+        "showValue": "auto",
+        "tooltip": {
+          "mode": "single"
+        }
       },
       "pluginVersion": "8.3.0-pre",
       "targets": [
@@ -88,6 +90,7 @@
               "value": "ACTIVE"
             }
           ],
+          "order": "DESCENDING",
           "properties": [
             "alarm_status"
           ],
@@ -96,10 +99,10 @@
         }
       ],
       "title": "Panel Title",
-      "type": "table"
+      "type": "state-timeline"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 33,
   "style": "dark",
   "tags": [],
