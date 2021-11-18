@@ -1,0 +1,21 @@
+{
+  "id": 144,
+  "name": "AWS IoT SiteWise",
+  "type": "grafana-iot-sitewise-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "pZg5w957z",
+  "created": "2021-11-18T09:22:05-08:00",
+  "updated": "2021-11-18T09:22:05-08:00"
+}
