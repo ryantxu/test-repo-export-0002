@@ -73,8 +73,9 @@
               "rules": [
                 {
                   "check": {
-                    "operation": "gt",
-                    "property": "name"
+                    "operation": "eq",
+                    "property": "density",
+                    "value": "241.7"
                   },
                   "style": {
                     "color": {
