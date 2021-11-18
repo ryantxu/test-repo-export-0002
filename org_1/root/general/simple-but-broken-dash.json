@@ -70,6 +70,37 @@
         "layers": [
           {
             "config": {
+              "rules": [
+                {
+                  "check": {
+                    "operation": "gt",
+                    "property": "density",
+                    "value": 50
+                  },
+                  "style": {
+                    "color": {
+                      "fixed": "#8F3BB8"
+                    },
+                    "opacity": 0.4,
+                    "size": {
+                      "fixed": 5,
+                      "max": 15,
+                      "min": 2
+                    },
+                    "symbol": {
+                      "fixed": "img/icons/marker/circle.svg",
+                      "mode": "fixed"
+                    },
+                    "textConfig": {
+                      "fontSize": 12,
+                      "offsetX": 0,
+                      "offsetY": 0,
+                      "textAlign": "center",
+                      "textBaseline": "middle"
+                    }
+                  }
+                }
+              ],
               "src": "public/maps/usa-states.geojson",
               "style": {
                 "color": {
@@ -92,44 +123,10 @@
                   "textAlign": "center",
                   "textBaseline": "middle"
                 }
-              },
-              "styles": [
-                {
-                  "rule": {
-                    "operation": "eq",
-                    "property": "",
-                    "value": ""
-                  },
-                  "style": {
-                    "color": {
-                      "fixed": "dark-green"
-                    },
-                    "opacity": 0.4,
-                    "size": {
-                      "fixed": 5,
-                      "max": 15,
-                      "min": 2
-                    },
-                    "symbol": {
-                      "fixed": "img/icons/marker/circle.svg",
-                      "mode": "fixed"
-                    },
-                    "textConfig": {
-                      "fontSize": 12,
-                      "offsetX": 0,
-                      "offsetY": 0,
-                      "textAlign": "center",
-                      "textBaseline": "middle"
-                    }
-                  }
-                }
-              ]
-            },
-            "location": {
-              "mode": "auto"
+              }
             },
             "name": "Layer 1",
-            "type": "geojson-value-mapper"
+            "type": "geojson"
           }
         ],
         "view": {
