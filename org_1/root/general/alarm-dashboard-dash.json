@@ -19,12 +19,17 @@
     ]
   },
   "editable": true,
-  "gnetId": null,
+  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
+  "iteration": 1637254677087,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
-      "datasource": null,
+      "datasource": {
+        "type": "grafana-iot-twinmaker-datasource",
+        "uid": "OmidEr5nz"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -55,11 +60,22 @@
       },
       "id": 2,
       "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
         "showHeader": true
       },
-      "pluginVersion": "8.2.0",
+      "pluginVersion": "8.3.0-pre",
       "targets": [
         {
+          "datasource": {
+            "type": "grafana-iot-twinmaker-datasource",
+            "uid": "OmidEr5nz"
+          },
           "queryType": "GetAlarms",
           "refId": "A"
         }
@@ -87,7 +103,10 @@
       "type": "table"
     },
     {
-      "datasource": null,
+      "datasource": {
+        "type": "grafana-iot-twinmaker-datasource",
+        "uid": "OmidEr5nz"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -158,12 +177,11 @@
       },
       "targets": [
         {
-          "componentName": "${sel_comp}",
-          "entityId": "${sel_entity}",
-          "properties": [
-            "alarm_status"
-          ],
-          "queryType": "EntityHistory",
+          "datasource": {
+            "type": "grafana-iot-twinmaker-datasource",
+            "uid": "OmidEr5nz"
+          },
+          "queryType": "GetAlarms",
           "refId": "A"
         }
       ],
@@ -171,7 +189,6 @@
       "type": "state-timeline"
     },
     {
-      "datasource": null,
       "gridPos": {
         "h": 12,
         "w": 24,
@@ -183,7 +200,7 @@
         "customSelCompVarName": "${sel_comp}",
         "customSelEntityVarName": "${sel_entity}",
         "datasource": "",
-        "sceneId": ""
+        "sceneId": "CookieFactory"
       },
       "targets": [
         {
@@ -207,7 +224,7 @@
       "type": "grafana-iot-twinmaker-sceneviewer-panel"
     }
   ],
-  "schemaVersion": 31,
+  "schemaVersion": 33,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -218,10 +235,7 @@
           "text": "",
           "value": ""
         },
-        "description": null,
-        "error": null,
         "hide": 2,
-        "label": null,
         "name": "sel_entity",
         "options": [
           {
@@ -240,10 +254,7 @@
           "text": "",
           "value": ""
         },
-        "description": null,
-        "error": null,
         "hide": 2,
-        "label": null,
         "name": "sel_comp",
         "options": [
           {
@@ -264,5 +275,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Alarm Dashboard"
+  "title": "Alarm Dashboard",
+  "weekStart": ""
 }
