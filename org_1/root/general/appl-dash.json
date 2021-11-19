@@ -122,7 +122,6 @@
           }
         },
         {
-          "disabled": true,
           "id": "convertFieldType",
           "options": {
             "conversions": [
@@ -133,6 +132,28 @@
               }
             ],
             "fields": {}
+          }
+        },
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "a",
+                "av",
+                "c",
+                "e",
+                "ev",
+                "h",
+                "l",
+                "o",
+                "op",
+                "s",
+                "sym",
+                "vw",
+                "z"
+              ]
+            }
           }
         }
       ],
@@ -147,8 +168,8 @@
     "list": []
   },
   "time": {
-    "from": "now-3h",
-    "to": "now"
+    "from": "2021-11-19T15:11:46.264Z",
+    "to": "2021-11-19T16:21:36.230Z"
   },
   "timepicker": {},
   "timezone": "",
