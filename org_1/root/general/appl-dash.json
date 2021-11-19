@@ -93,6 +93,7 @@
           "down": "red",
           "up": "green"
         },
+        "includeAllFields": false,
         "legend": {
           "calcs": [],
           "displayMode": "list",
@@ -121,10 +122,12 @@
           }
         },
         {
+          "disabled": true,
           "id": "convertFieldType",
           "options": {
             "conversions": [
               {
+                "dateFormat": "x",
                 "destinationType": "time",
                 "targetField": "s"
               }
