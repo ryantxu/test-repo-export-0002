@@ -111,6 +111,7 @@
       },
       "id": 2,
       "options": {
+        "barRadius": 0,
         "barWidth": 0.97,
         "colorByField": "Status",
         "groupWidth": 0.7,
@@ -129,7 +130,11 @@
       },
       "targets": [
         {
-          "csvContent": "Time,Duration,Status\n2020-01-01T00:00:00Z, 10, 1\n2020-01-01T00:00:00Z, 19, 1\n2020-01-01T00:00:00Z,10, 2\n2020-01-01T00:00:00Z,15, 1\n2020-01-01T00:00:00Z,15, 3",
+          "csvContent": "Time,Duration,Status\n2020-01-01T00:00:00Z, 10, 1\n2020-01-01T00:00:00Z, 19, 1\n2020-01-01T00:00:00Z,10, 2\n2020-01-01T00:00:00Z,15, 1\n2020-01-01T00:00:00Z,15, 3\n2020-01-01T00:00:00Z, 10, 1\n2020-01-01T00:00:00Z, 19, 1\n2020-01-01T00:00:00Z,10, 2\n2020-01-01T00:00:00Z,15, 1\n2020-01-01T00:00:00Z,15, 3",
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
           "refId": "A",
           "scenarioId": "csv_content"
         }
