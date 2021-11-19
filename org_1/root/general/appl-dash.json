@@ -116,7 +116,20 @@
         {
           "id": "extractFields",
           "options": {
+            "replace": true,
             "source": "line {event=\"AM\", job=\"polygon\", symbol=\"AAPL\"}"
+          }
+        },
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "time",
+                "targetField": "s"
+              }
+            ],
+            "fields": {}
           }
         }
       ],
