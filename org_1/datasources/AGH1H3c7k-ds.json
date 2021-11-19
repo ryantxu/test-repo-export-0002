@@ -1,0 +1,21 @@
+{
+  "id": 147,
+  "name": "grafanacloud-grafanaberg-logs",
+  "type": "loki",
+  "access": "proxy",
+  "url": "https://logs-prod-us-central1.grafana.net",
+  "user": "",
+  "database": "",
+  "basicAuth": true,
+  "basicAuthUser": "73174",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "AGH1H3c7k",
+  "created": "2021-11-18T23:06:20-08:00",
+  "updated": "2021-11-18T23:19:23-08:00"
+}
