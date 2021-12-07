@@ -1,0 +1,23 @@
+{
+  "id": 148,
+  "name": "Local loki",
+  "type": "loki",
+  "access": "proxy",
+  "url": "http://localhost:3100",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "derivedFields": []
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "w-rbuKhnk",
+  "created": "2021-12-06T16:05:06-08:00",
+  "updated": "2021-12-06T16:07:33-08:00"
+}
