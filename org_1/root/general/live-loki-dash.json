@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -80,6 +79,8 @@
             "type": "loki",
             "uid": "w-rbuKhnk"
           },
+          "expr": "{test=\"first\"}",
+          "queryType": "stream",
           "refId": "A"
         }
       ],
