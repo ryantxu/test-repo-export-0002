@@ -79,7 +79,7 @@
             "type": "loki",
             "uid": "w-rbuKhnk"
           },
-          "expr": "{test=\"first\"}",
+          "expr": "{foo=\"bar\"}",
           "queryType": "stream",
           "refId": "A"
         }
