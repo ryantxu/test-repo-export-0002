@@ -21,13 +21,12 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "gridPos": {
-        "h": 8,
+        "h": 20,
         "w": 7,
         "x": 0,
         "y": 0
