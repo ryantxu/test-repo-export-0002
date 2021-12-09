@@ -104,7 +104,7 @@
             "uid": "w-rbuKhnk"
           },
           "expr": "last_over_time({job=\"node-exporter\"} |= \"go_memstats_heap_inuse_bytes\" | json | unwrap val[1s])\n\n",
-          "queryType": "range",
+          "queryType": "stream",
           "refId": "A"
         }
       ],
@@ -196,11 +196,35 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "thresholds"
+            "mode": "palette-classic"
           },
           "custom": {
-            "align": "auto",
-            "displayMode": "auto"
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
           },
           "mappings": [],
           "thresholds": {
@@ -217,32 +241,7 @@
             ]
           }
         },
-        "overrides": [
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "time"
-            },
-            "properties": [
-              {
-                "id": "custom.width",
-                "value": 225
-              }
-            ]
-          },
-          {
-            "matcher": {
-              "id": "byName",
-              "options": "vvv"
-            },
-            "properties": [
-              {
-                "id": "custom.width",
-                "value": 71
-              }
-            ]
-          }
-        ]
+        "overrides": []
       },
       "gridPos": {
         "h": 8,
@@ -252,15 +251,14 @@
       },
       "id": 2,
       "options": {
-        "footer": {
-          "fields": "",
-          "reducer": [
-            "sum"
-          ],
-          "show": false
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
         },
-        "showHeader": true,
-        "sortBy": []
+        "tooltip": {
+          "mode": "single"
+        }
       },
       "pluginVersion": "8.4.0-pre",
       "targets": [
@@ -275,7 +273,7 @@
         }
       ],
       "title": "tail: api/v2alpha",
-      "type": "table"
+      "type": "timeseries"
     }
   ],
   "refresh": "",
