@@ -53,7 +53,20 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "line {job=\"node-exporter\", metric=\"go_memstats_heap_inuse_bytes\"}"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 496
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 6,
@@ -70,7 +83,9 @@
           ],
           "show": false
         },
-        "showHeader": true
+        "frameIndex": 1,
+        "showHeader": true,
+        "sortBy": []
       },
       "pluginVersion": "8.4.0-pre",
       "targets": [
@@ -79,7 +94,7 @@
             "type": "loki",
             "uid": "w-rbuKhnk"
           },
-          "expr": "{foo=\"bar\"}",
+          "expr": "{job=\"node-exporter\",metric=\"go_memstats_heap_inuse_bytes\"}",
           "refId": "A"
         }
       ],
@@ -167,7 +182,7 @@
             "type": "loki",
             "uid": "w-rbuKhnk"
           },
-          "expr": "{foo=\"bar\"}",
+          "expr": "{job=\"node-exporter\",metric=\"go_memstats_heap_inuse_bytes\"}",
           "queryType": "stream",
           "refId": "A"
         }
