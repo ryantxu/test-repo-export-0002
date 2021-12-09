@@ -19,51 +19,16 @@
     ]
   },
   "editable": true,
-  "gnetId": null,
+  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
-      "alert": {
-        "alertRuleTags": {},
-        "conditions": [
-          {
-            "evaluator": {
-              "params": [
-                5
-              ],
-              "type": "lt"
-            },
-            "operator": {
-              "type": "and"
-            },
-            "query": {
-              "params": [
-                "A",
-                "5m",
-                "now"
-              ]
-            },
-            "reducer": {
-              "params": [],
-              "type": "last"
-            },
-            "type": "query"
-          }
-        ],
-        "executionErrorState": "alerting",
-        "for": "5m",
-        "frequency": "10s",
-        "handler": 1,
-        "name": "test alert for kyle",
-        "noDataState": "no_data",
-        "notifications": []
-      },
       "aliasColors": {},
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": null,
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -90,7 +55,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "8.1.0-pre",
+      "pluginVersion": "8.4.0-pre",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -112,19 +77,8 @@
           "scenarioId": "predictable_pulse"
         }
       ],
-      "thresholds": [
-        {
-          "colorMode": "critical",
-          "fill": true,
-          "line": true,
-          "op": "lt",
-          "value": 5,
-          "visible": true
-        }
-      ],
-      "timeFrom": null,
+      "thresholds": [],
       "timeRegions": [],
-      "timeShift": null,
       "title": "Panel Title",
       "tooltip": {
         "shared": true,
@@ -133,9 +87,7 @@
       },
       "type": "graph",
       "xaxis": {
-        "buckets": null,
         "mode": "time",
-        "name": null,
         "show": true,
         "values": []
       },
@@ -143,29 +95,21 @@
         {
           "$$hashKey": "object:115",
           "format": "short",
-          "label": null,
           "logBase": 1,
-          "max": null,
-          "min": null,
           "show": true
         },
         {
           "$$hashKey": "object:116",
           "format": "short",
-          "label": null,
           "logBase": 1,
-          "max": null,
-          "min": null,
           "show": true
         }
       ],
       "yaxis": {
-        "align": false,
-        "alignLevel": null
+        "align": false
       }
     },
     {
-      "datasource": null,
       "gridPos": {
         "h": 21,
         "w": 12,
@@ -177,7 +121,6 @@
         "alertName": "",
         "dashboardAlerts": true,
         "dashboardTitle": "",
-        "folderId": null,
         "maxItems": 10,
         "showOptions": "current",
         "sortOrder": 1,
@@ -191,12 +134,11 @@
         },
         "tags": []
       },
-      "pluginVersion": "8.1.0-pre",
+      "pluginVersion": "8.4.0-pre",
       "title": "Panel Title",
       "type": "alertlist"
     },
     {
-      "datasource": null,
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -280,13 +222,11 @@
           "scenarioId": "predictable_pulse"
         }
       ],
-      "timeFrom": null,
-      "timeShift": null,
       "title": "Panel Title",
       "type": "timeseries"
     }
   ],
-  "schemaVersion": 30,
+  "schemaVersion": 34,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -298,5 +238,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "alerts"
+  "title": "alerts",
+  "weekStart": ""
 }
