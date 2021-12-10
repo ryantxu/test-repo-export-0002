@@ -104,6 +104,7 @@
             "uid": "w-rbuKhnk"
           },
           "expr": "last_over_time({job=\"node-exporter\"} |= \"go_memstats_heap_inuse_bytes\" | json | unwrap val[1s])\n\n",
+          "legendFormat": "XXX {{metric}}",
           "queryType": "stream",
           "refId": "A"
         }
