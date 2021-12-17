@@ -230,8 +230,8 @@
             "mode": "continuous-reds"
           },
           "custom": {
-            "fillOpacity": 70,
-            "lineWidth": 1
+            "fillOpacity": 82,
+            "lineWidth": 0
           },
           "mappings": [],
           "thresholds": {
@@ -258,12 +258,12 @@
       },
       "id": 4,
       "options": {
-        "colWidth": 0.9,
+        "colWidth": 1,
         "legend": {
           "displayMode": "list",
           "placement": "bottom"
         },
-        "rowHeight": 0.9,
+        "rowHeight": 1,
         "showValue": "auto",
         "tooltip": {
           "mode": "single"
