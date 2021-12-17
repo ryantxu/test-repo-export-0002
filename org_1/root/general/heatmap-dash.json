@@ -78,7 +78,7 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "continuous-GrYlRd"
+            "mode": "continuous-reds"
           },
           "custom": {
             "fillOpacity": 70,
