@@ -76,11 +76,13 @@
         "groupWidth": 0.7,
         "legend": {
           "calcs": [
-            "max"
+            "max",
+            "min",
+            "last"
           ],
           "displayMode": "table",
           "placement": "right",
-          "sortBy": "Max",
+          "sortBy": "Last",
           "sortDesc": true
         },
         "orientation": "auto",
@@ -123,6 +125,7 @@
       "type": "barchart"
     }
   ],
+  "refresh": "",
   "schemaVersion": 34,
   "style": "dark",
   "tags": [],
