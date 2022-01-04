@@ -1,0 +1,21 @@
+{
+  "id": 149,
+  "name": "k6",
+  "type": "grafana-k6-datasource",
+  "access": "proxy",
+  "url": "",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {},
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": false,
+  "uid": "LGgUWE0nz",
+  "created": "2022-01-04T12:11:30-08:00",
+  "updated": "2022-01-04T12:11:30-08:00"
+}
