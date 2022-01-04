@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -113,16 +112,27 @@
               "longitude": "lng",
               "mode": "auto"
             },
-            "name": "Layer 1",
+            "name": "Route",
             "tooltip": true,
             "type": "route"
+          },
+          {
+            "config": {
+              "icon": "https://openlayers.org/en/latest/examples/data/icon.png"
+            },
+            "location": {
+              "mode": "auto"
+            },
+            "name": "Last point",
+            "tooltip": true,
+            "type": "last-point-tracker"
           }
         ],
         "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
-          "zoom": 1
+          "id": "coords",
+          "lat": 37.816953,
+          "lon": -122.40834,
+          "zoom": 12.69
         }
       },
       "pluginVersion": "8.4.0-pre",
