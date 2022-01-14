@@ -76,7 +76,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 7,
         "w": 11,
         "x": 0,
         "y": 0
@@ -138,7 +138,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 7,
         "w": 13,
         "x": 11,
         "y": 0
@@ -179,10 +179,10 @@
         "uid": "-- Dashboard --"
       },
       "gridPos": {
-        "h": 8,
+        "h": 7,
         "w": 11,
         "x": 0,
-        "y": 8
+        "y": 7
       },
       "heatmap": {},
       "hideZeroBuckets": false,
@@ -233,10 +233,10 @@
         "uid": "-- Dashboard --"
       },
       "gridPos": {
-        "h": 8,
+        "h": 7,
         "w": 13,
         "x": 11,
-        "y": 8
+        "y": 7
       },
       "heatmap": {},
       "hideZeroBuckets": false,
