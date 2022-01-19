@@ -42,8 +42,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -100,9 +99,11 @@
             "mode": "thresholds"
           },
           "custom": {
-            "align": "auto",
-            "displayMode": "auto",
-            "filterable": false
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
           },
           "mappings": [],
           "thresholds": {
@@ -129,21 +130,26 @@
       },
       "id": 3,
       "options": {
-        "footer": {
-          "fields": "",
-          "reducer": [
-            "sum"
-          ],
-          "show": false
+        "controls": {
+          "mouseWheelZoom": true,
+          "showAttribution": true,
+          "showDebug": false,
+          "showScale": false,
+          "showZoom": true
         },
-        "showHeader": true
+        "view": {
+          "id": "zero",
+          "lat": 0,
+          "lon": 0,
+          "zoom": 1
+        }
       },
       "pluginVersion": "8.4.0-pre",
       "targets": [
         {
-          "csvFileName": "flight_info_by_state.csv",
+          "csvContent": "ID,Lat,Lng,Elevation,Airport,Speed\n1,37.880764,-122.174937,100,OAK,225\n2,37.89377,-122.232653,99,OAK,220\n3,37.89377,-122.323349,98,OAK,215\n4,37.878597,-122.401678,97,OAK,210\n5,37.853661,-122.482755,96,SFO,205\n6,37.79834,-122.537723,95,SFO,200\n7,37.707132,-122.445652,94,SFO,195\n8,37.690833,-122.367323,93,SFO,190\n9,37.675618,-122.276627,92,OAK,185",
           "refId": "A",
-          "scenarioId": "csv_file"
+          "scenarioId": "csv_content"
         }
       ],
       "title": "Panel Title",
@@ -151,13 +157,19 @@
         {
           "id": "setGeometry",
           "options": {
+            "action": "lineTo",
+            "lineTo": {
+              "target": {
+                "mode": "lookup"
+              }
+            },
             "source": {
-              "mode": "auto"
+              "mode": "coords"
             }
           }
         }
       ],
-      "type": "table"
+      "type": "geomap"
     }
   ],
   "refresh": "",
