@@ -215,7 +215,7 @@
                 "color": {
                   "fixed": "dark-green"
                 },
-                "opacity": 0.4,
+                "opacity": 0.9,
                 "rotation": {
                   "field": "Heading",
                   "fixed": 0,
