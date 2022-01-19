@@ -223,7 +223,7 @@
         {
           "id": "setGeometry",
           "options": {
-            "action": "setField",
+            "action": "lineTo",
             "lineTo": {
               "calculateDistance": true,
               "target": {
