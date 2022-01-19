@@ -225,7 +225,15 @@
         {
           "id": "setGeometry",
           "options": {
-            "action": "setField",
+            "action": "lineTo",
+            "lineTo": {
+              "calculateDistance": true,
+              "target": {
+                "gazetteer": "public/gazetteer/airports.geojson",
+                "lookup": "Airport",
+                "mode": "lookup"
+              }
+            },
             "source": {
               "mode": "auto"
             }
