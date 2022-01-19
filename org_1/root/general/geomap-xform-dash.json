@@ -188,7 +188,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 13,
         "w": 12,
         "x": 0,
         "y": 9
@@ -206,7 +206,7 @@
           "id": "coords",
           "lat": 37.801738,
           "lon": -122.295399,
-          "zoom": 9
+          "zoom": 10
         }
       },
       "pluginVersion": "8.4.0-pre",
