@@ -203,10 +203,10 @@
           "showZoom": true
         },
         "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
-          "zoom": 1
+          "id": "coords",
+          "lat": 37.801738,
+          "lon": -122.295399,
+          "zoom": 9
         }
       },
       "pluginVersion": "8.4.0-pre",
@@ -230,75 +230,6 @@
               "mode": "auto"
             }
           }
-        }
-      ],
-      "type": "geomap"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 9,
-        "w": 12,
-        "x": 0,
-        "y": 18
-      },
-      "id": 2,
-      "options": {
-        "controls": {
-          "mouseWheelZoom": true,
-          "showAttribution": true,
-          "showDebug": false,
-          "showScale": false,
-          "showZoom": true
-        },
-        "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
-          "zoom": 1
-        }
-      },
-      "pluginVersion": "8.4.0-pre",
-      "targets": [
-        {
-          "csvFileName": "flight_info_by_state.csv",
-          "refId": "A",
-          "scenarioId": "csv_file"
-        }
-      ],
-      "title": "Panel Title",
-      "transformations": [
-        {
-          "id": "setGeometry",
-          "options": {}
         }
       ],
       "type": "geomap"
