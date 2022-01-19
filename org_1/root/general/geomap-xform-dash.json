@@ -31,18 +31,16 @@
             "mode": "thresholds"
           },
           "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
+            "align": "auto",
+            "displayMode": "auto"
           },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -59,7 +57,143 @@
         "x": 0,
         "y": 0
       },
-      "id": 2,
+      "id": 3,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.4.0-pre",
+      "targets": [
+        {
+          "csvContent": "ID,Lat,Lng,Elevation,Airport,Speed\n1,37.880764,-122.174937,100,OAK,225\n2,37.89377,-122.232653,99,OAK,220\n3,37.89377,-122.323349,98,OAK,215\n4,37.878597,-122.401678,97,OAK,210\n5,37.853661,-122.482755,96,SFO,205\n6,37.79834,-122.537723,95,SFO,200\n7,37.707132,-122.445652,94,SFO,195\n8,37.690833,-122.367323,93,SFO,190\n9,37.675618,-122.276627,92,OAK,185",
+          "refId": "A",
+          "scenarioId": "csv_content"
+        }
+      ],
+      "title": "line to airport (raw)",
+      "transformations": [],
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.4.0-pre",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
+        }
+      ],
+      "title": "with xform",
+      "transformations": [
+        {
+          "id": "setGeometry",
+          "options": {
+            "action": "setField",
+            "source": {
+              "mode": "auto"
+            }
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 9
+      },
+      "id": 5,
       "options": {
         "controls": {
           "mouseWheelZoom": true,
@@ -78,16 +212,24 @@
       "pluginVersion": "8.4.0-pre",
       "targets": [
         {
-          "csvFileName": "flight_info_by_state.csv",
-          "refId": "A",
-          "scenarioId": "csv_file"
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 3,
+          "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "with xform",
       "transformations": [
         {
           "id": "setGeometry",
-          "options": {}
+          "options": {
+            "action": "setField",
+            "source": {
+              "mode": "auto"
+            }
+          }
         }
       ],
       "type": "geomap"
@@ -125,10 +267,10 @@
       "gridPos": {
         "h": 9,
         "w": 12,
-        "x": 12,
-        "y": 0
+        "x": 0,
+        "y": 18
       },
-      "id": 3,
+      "id": 2,
       "options": {
         "controls": {
           "mouseWheelZoom": true,
@@ -147,26 +289,16 @@
       "pluginVersion": "8.4.0-pre",
       "targets": [
         {
-          "csvContent": "ID,Lat,Lng,Elevation,Airport,Speed\n1,37.880764,-122.174937,100,OAK,225\n2,37.89377,-122.232653,99,OAK,220\n3,37.89377,-122.323349,98,OAK,215\n4,37.878597,-122.401678,97,OAK,210\n5,37.853661,-122.482755,96,SFO,205\n6,37.79834,-122.537723,95,SFO,200\n7,37.707132,-122.445652,94,SFO,195\n8,37.690833,-122.367323,93,SFO,190\n9,37.675618,-122.276627,92,OAK,185",
+          "csvFileName": "flight_info_by_state.csv",
           "refId": "A",
-          "scenarioId": "csv_content"
+          "scenarioId": "csv_file"
         }
       ],
       "title": "Panel Title",
       "transformations": [
         {
           "id": "setGeometry",
-          "options": {
-            "action": "lineTo",
-            "lineTo": {
-              "target": {
-                "mode": "lookup"
-              }
-            },
-            "source": {
-              "mode": "coords"
-            }
-          }
+          "options": {}
         }
       ],
       "type": "geomap"
