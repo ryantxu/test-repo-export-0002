@@ -235,7 +235,9 @@
               }
             },
             "source": {
-              "mode": "auto"
+              "gazetteer": "public/gazetteer/airports.geojson",
+              "lookup": "Airport",
+              "mode": "lookup"
             }
           }
         }
