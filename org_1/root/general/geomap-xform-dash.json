@@ -39,8 +39,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -99,8 +98,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -272,7 +270,7 @@
         {
           "id": "setGeometry",
           "options": {
-            "action": "calculate",
+            "action": "modify",
             "calculate": {
               "what": "heading"
             },
@@ -284,10 +282,20 @@
                 "mode": "lookup"
               }
             },
+            "modify": {
+              "fn": "lineTo",
+              "lineTo": {
+                "gazetteer": "public/gazetteer/airports.geojson",
+                "lookup": "Airport",
+                "mode": "lookup"
+              }
+            },
             "source": {
               "gazetteer": "public/gazetteer/airports.geojson",
+              "latitude": "Lat",
+              "longitude": "Lng",
               "lookup": "Airport",
-              "mode": "auto"
+              "mode": "coords"
             }
           }
         }
