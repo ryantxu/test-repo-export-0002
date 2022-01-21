@@ -175,8 +175,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -268,45 +267,11 @@
         }
       ],
       "title": "with xform",
-      "transformations": [
-        {
-          "id": "setGeometry",
-          "options": {
-            "action": "modify",
-            "calculate": {
-              "what": "heading"
-            },
-            "lineTo": {
-              "calculateDistance": true,
-              "target": {
-                "gazetteer": "public/gazetteer/airports.geojson",
-                "lookup": "Airport",
-                "mode": "lookup"
-              }
-            },
-            "modify": {
-              "fn": "lineTo",
-              "lineTo": {
-                "gazetteer": "public/gazetteer/airports.geojson",
-                "lookup": "Airport",
-                "mode": "lookup"
-              }
-            },
-            "source": {
-              "gazetteer": "public/gazetteer/airports.geojson",
-              "latitude": "Lat",
-              "longitude": "Lng",
-              "lookup": "Airport",
-              "mode": "coords"
-            }
-          }
-        }
-      ],
       "type": "geomap"
     }
   ],
   "refresh": "",
-  "schemaVersion": 34,
+  "schemaVersion": 35,
   "style": "dark",
   "tags": [],
   "templating": {
