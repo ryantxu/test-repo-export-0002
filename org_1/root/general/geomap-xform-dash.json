@@ -175,7 +175,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -267,6 +268,20 @@
         }
       ],
       "title": "with xform",
+      "transformations": [
+        {
+          "id": "spatial",
+          "options": {
+            "action": "modify",
+            "modify": {
+              "op": "lineBuilder"
+            },
+            "source": {
+              "mode": "lookup"
+            }
+          }
+        }
+      ],
       "type": "geomap"
     }
   ],
