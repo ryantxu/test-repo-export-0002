@@ -63,8 +63,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -125,8 +124,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -331,18 +329,45 @@
       },
       "id": 10,
       "options": {
+        "cellPadding": 0,
+        "cellRadius": 0,
+        "heatmap": {
+          "xAxis": {
+            "value": "10"
+          }
+        },
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
-        "source": "auto"
+        "source": "calculate",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
       },
       "title": "Heatmap NG (with calculation)",
+      "transformations": [
+        {
+          "id": "heatmap",
+          "options": {
+            "xAxis": {
+              "mode": "size",
+              "value": "10"
+            },
+            "yAxis": {
+              "mode": "size",
+              "value": "5"
+            }
+          }
+        }
+      ],
       "type": "heatmap-new"
     }
   ],
-  "schemaVersion": 34,
+  "refresh": "",
+  "schemaVersion": 35,
   "style": "dark",
   "tags": [],
   "templating": {
