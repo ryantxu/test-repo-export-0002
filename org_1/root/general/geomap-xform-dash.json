@@ -52,12 +52,12 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "id": 3,
+      "id": 7,
       "options": {
         "footer": {
           "fields": "",
@@ -71,13 +71,27 @@
       "pluginVersion": "8.4.0-pre",
       "targets": [
         {
-          "csvContent": "ID,Lat,Lng,Elevation,Airport,Speed\n1,37.880764,-122.174937,100,OAK,225\n2,37.89377,-122.232653,99,OAK,220\n3,37.89377,-122.323349,98,OAK,215\n4,37.878597,-122.401678,97,OAK,210\n5,37.853661,-122.482755,96,SFO,205\n6,37.79834,-122.537723,95,SFO,200\n7,37.707132,-122.445652,94,SFO,195\n8,37.690833,-122.367323,93,SFO,190\n9,37.675618,-122.276627,92,OAK,185",
+          "csvFileName": "flight_info_by_state.csv",
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
           "refId": "A",
-          "scenarioId": "csv_content"
+          "scenarioId": "csv_file"
         }
       ],
-      "title": "line to airport (raw)",
-      "transformations": [],
+      "title": "Panel Title",
+      "transformations": [
+        {
+          "id": "spatial",
+          "options": {
+            "action": "prepare",
+            "source": {
+              "mode": "auto"
+            }
+          }
+        }
+      ],
       "type": "table"
     },
     {
@@ -154,6 +168,62 @@
       "type": "table"
     },
     {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 3,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "8.4.0-pre",
+      "targets": [
+        {
+          "csvContent": "ID,Lat,Lng,Elevation,Airport,Speed\n1,37.880764,-122.174937,100,OAK,225\n2,37.89377,-122.232653,99,OAK,220\n3,37.89377,-122.323349,98,OAK,215\n4,37.878597,-122.401678,97,OAK,210\n5,37.853661,-122.482755,96,SFO,205\n6,37.79834,-122.537723,95,SFO,200\n7,37.707132,-122.445652,94,SFO,195\n8,37.690833,-122.367323,93,SFO,190\n9,37.675618,-122.276627,92,OAK,185",
+          "refId": "A",
+          "scenarioId": "csv_content"
+        }
+      ],
+      "title": "line to airport (raw)",
+      "transformations": [],
+      "type": "table"
+    },
+    {
       "datasource": {
         "type": "datasource",
         "uid": "-- Dashboard --"
@@ -191,7 +261,7 @@
         "h": 13,
         "w": 12,
         "x": 0,
-        "y": 9
+        "y": 17
       },
       "id": 5,
       "options": {
