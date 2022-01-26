@@ -132,23 +132,6 @@
         "layers": [
           {
             "config": {
-              "color": {
-                "fixed": "dark-green"
-              },
-              "fillOpacity": 0.4,
-              "shape": "circle",
-              "showLegend": true,
-              "size": {
-                "fixed": 5,
-                "max": 15,
-                "min": 2
-              }
-            },
-            "name": "Flights",
-            "type": "markers"
-          },
-          {
-            "config": {
               "rules": [],
               "src": "public/maps/countries.geojson",
               "style": {
@@ -183,6 +166,60 @@
             "name": "Countries",
             "tooltip": true,
             "type": "geojson"
+          },
+          {
+            "config": {
+              "rules": [],
+              "src": "public/gazetteer/airports.geojson",
+              "style": {
+                "color": {
+                  "fixed": "#F2495C"
+                },
+                "opacity": 0.4,
+                "rotation": {
+                  "fixed": 0,
+                  "max": 360,
+                  "min": -360,
+                  "mode": "mod"
+                },
+                "size": {
+                  "fixed": 5,
+                  "max": 15,
+                  "min": 2
+                },
+                "symbol": {
+                  "fixed": "img/icons/marker/circle.svg",
+                  "mode": "fixed"
+                },
+                "textConfig": {
+                  "fontSize": 12,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "textAlign": "center",
+                  "textBaseline": "middle"
+                }
+              }
+            },
+            "name": "airports",
+            "tooltip": true,
+            "type": "geojson"
+          },
+          {
+            "config": {
+              "color": {
+                "fixed": "dark-green"
+              },
+              "fillOpacity": 0.4,
+              "shape": "circle",
+              "showLegend": true,
+              "size": {
+                "fixed": 5,
+                "max": 15,
+                "min": 2
+              }
+            },
+            "name": "Flights",
+            "type": "markers"
           }
         ],
         "mode": "render",
