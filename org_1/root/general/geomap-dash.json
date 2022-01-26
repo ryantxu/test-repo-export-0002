@@ -280,6 +280,17 @@
               "mode": "off"
             }
           },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "link 1",
+              "url": "hello!"
+            },
+            {
+              "title": "link2",
+              "url": "http://sdgasgsa"
+            }
+          ],
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
