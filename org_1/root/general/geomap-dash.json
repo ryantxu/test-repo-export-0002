@@ -307,6 +307,49 @@
       "type": "geomap"
     },
     {
+      "circleMaxSize": 30,
+      "circleMinSize": 2,
+      "colors": [
+        "#37872D",
+        "#E0B400",
+        "#C4162A",
+        "#8F3BB8"
+      ],
+      "decimals": 0,
+      "esMetric": "Count",
+      "gridPos": {
+        "h": 11,
+        "w": 7,
+        "x": 17,
+        "y": 0
+      },
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 7,
+      "initialZoom": "6",
+      "locationData": "countries",
+      "mapCenter": "Europe",
+      "mapCenterLatitude": 46,
+      "mapCenterLongitude": 14,
+      "maxDataPoints": 1,
+      "mouseWheelZoom": true,
+      "showLegend": true,
+      "stickyLabels": false,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "latitudeField": "latitude",
+        "longitudeField": "longitude",
+        "metricField": "metric",
+        "queryType": "geohash"
+      },
+      "thresholds": "0,50,100",
+      "title": "Panel Title",
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "total"
+    },
+    {
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -371,8 +414,8 @@
       "gridPos": {
         "h": 11,
         "w": 7,
-        "x": 17,
-        "y": 0
+        "x": 0,
+        "y": 11
       },
       "id": 4,
       "options": {
@@ -388,6 +431,65 @@
       },
       "title": "Panel Title",
       "type": "timeseries"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "links": [
+            {
+              "targetBlank": true,
+              "title": "link 1",
+              "url": "hello!"
+            },
+            {
+              "title": "link2",
+              "url": "http://sdgasgsa"
+            }
+          ],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 6,
+        "x": 7,
+        "y": 11
+      },
+      "id": 12,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "8.4.0-pre",
+      "title": "Panel Title",
+      "type": "stat"
     },
     {
       "fieldConfig": {
@@ -429,9 +531,9 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
-        "w": 10,
-        "x": 0,
+        "h": 11,
+        "w": 11,
+        "x": 13,
         "y": 11
       },
       "id": 11,
@@ -467,49 +569,6 @@
       ],
       "title": "Panel Title",
       "type": "barchart"
-    },
-    {
-      "circleMaxSize": 30,
-      "circleMinSize": 2,
-      "colors": [
-        "#37872D",
-        "#E0B400",
-        "#C4162A",
-        "#8F3BB8"
-      ],
-      "decimals": 0,
-      "esMetric": "Count",
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 10,
-        "y": 11
-      },
-      "hideEmpty": false,
-      "hideZero": false,
-      "id": 7,
-      "initialZoom": "6",
-      "locationData": "countries",
-      "mapCenter": "Europe",
-      "mapCenterLatitude": 46,
-      "mapCenterLongitude": 14,
-      "maxDataPoints": 1,
-      "mouseWheelZoom": true,
-      "showLegend": true,
-      "stickyLabels": false,
-      "tableQueryOptions": {
-        "geohashField": "geohash",
-        "latitudeField": "latitude",
-        "longitudeField": "longitude",
-        "metricField": "metric",
-        "queryType": "geohash"
-      },
-      "thresholds": "0,50,100",
-      "title": "Panel Title",
-      "type": "grafana-worldmap-panel",
-      "unitPlural": "",
-      "unitSingle": "",
-      "valueName": "total"
     }
   ],
   "refresh": "",
