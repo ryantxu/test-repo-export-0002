@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -100,6 +99,7 @@
             "type": "testdata",
             "uid": "PD8C576611E62080A"
           },
+          "rawFrameContent": "[{\"schema\":{\"name\":\"data\",\"refId\":\"A\",\"fields\":[{\"name\":\"time\",\"type\":\"time\",\"typeInfo\":{\"frame\":\"time.Time\",\"nullable\":true}},{\"name\":\"1\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"2\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"4\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"8\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"16\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"32\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"64\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"128\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"256\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}},{\"name\":\"512\",\"type\":\"number\",\"typeInfo\":{\"frame\":\"float64\",\"nullable\":true}}]},\"data\":{\"values\":[[1643392057525,1643392157525,1643392257525,1643392357525,1643392457525,1643392557525,1643392657525,1643392757525,1643392857525,1643392957525],[74,86,6,33,21,12,72,9,85,77],[47,59,56,29,18,30,22,63,5,2],[88,12,85,73,34,86,68,62,99,41],[71,76,60,2,86,38,13,17,51,84],[20,25,38,88,13,73,93,94,0,72],[94,56,1,54,85,48,20,57,93,12],[16,5,79,88,82,47,11,81,37,74],[97,85,35,56,13,49,27,60,23,35],[70,43,5,8,15,23,33,29,75,95],[93,30,58,72,64,16,99,23,46,85]]}}]",
           "refId": "A",
           "scenarioId": "raw_frame"
         }
