@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -38,6 +37,17 @@
               "viz": false
             }
           },
+          "links": [
+            {
+              "title": "aaaa",
+              "url": "aaagagds"
+            },
+            {
+              "targetBlank": true,
+              "title": "bbbb",
+              "url": "agadsga"
+            }
+          ],
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
