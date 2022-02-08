@@ -1,0 +1,24 @@
+{
+  "id": 151,
+  "name": "gdev-mssql-tls",
+  "type": "mssql",
+  "access": "proxy",
+  "url": "localhost:1434",
+  "user": "grafana",
+  "database": "grafana",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "encrypt": "true",
+    "tlsSkipVerify": true
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "PB8EB3547D9522A75",
+  "created": "2022-02-08T08:39:50-08:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
