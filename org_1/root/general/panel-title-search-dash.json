@@ -26,7 +26,7 @@
   "panels": [
     {
       "datasource": {
-        "type": "grafana",
+        "type": "datasource",
         "uid": "grafana"
       },
       "fieldConfig": {
@@ -79,6 +79,8 @@
             "type": "datasource",
             "uid": "grafana"
           },
+          "query": "asgasdg",
+          "queryType": "search",
           "refId": "A"
         }
       ],
