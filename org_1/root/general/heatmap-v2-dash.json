@@ -63,7 +63,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -124,7 +125,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -152,7 +154,7 @@
         },
         "showHeader": true
       },
-      "pluginVersion": "8.4.0-pre",
+      "pluginVersion": "8.5.0-pre",
       "targets": [
         {
           "refId": "A",
@@ -271,38 +273,14 @@
       "yBucketBound": "auto"
     },
     {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "mode": "thresholds"
           },
           "mappings": [],
           "thresholds": {
@@ -322,47 +300,49 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 7,
         "w": 11,
         "x": 0,
         "y": 14
       },
-      "id": 10,
+      "id": 9,
       "options": {
         "cellPadding": 0,
         "cellRadius": 0,
-        "heatmap": {
-          "xAxis": {
-            "value": "10"
-          }
+        "color": {
+          "exponent": 0.5,
+          "fill": "dark-orange",
+          "mode": "scheme",
+          "scale": "exponential",
+          "scheme": "Oranges",
+          "steps": 256
         },
+        "heatmap": {},
         "legend": {
           "calcs": [],
-          "displayMode": "list",
+          "displayMode": "hidden",
           "placement": "bottom"
         },
+        "showValue": "never",
         "source": "calculate",
         "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
+          "show": true,
+          "yHistogram": true
+        },
+        "yAxisLabels": "auto",
+        "yAxisReverse": false
       },
-      "title": "Heatmap NG (with calculation)",
-      "transformations": [
+      "targets": [
         {
-          "id": "heatmap",
-          "options": {
-            "xAxis": {
-              "mode": "size",
-              "value": "10"
-            },
-            "yAxis": {
-              "mode": "size",
-              "value": "5"
-            }
-          }
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 2,
+          "refId": "A"
         }
       ],
+      "title": "Flot heatmap (default arguments)",
       "type": "heatmap-new"
     }
   ],
