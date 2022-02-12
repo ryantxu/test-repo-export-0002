@@ -36,7 +36,8 @@
           },
           "custom": {
             "align": "auto",
-            "displayMode": "auto"
+            "displayMode": "auto",
+            "filterable": true
           },
           "mappings": [],
           "thresholds": {
@@ -81,8 +82,8 @@
         ]
       },
       "gridPos": {
-        "h": 10,
-        "w": 24,
+        "h": 14,
+        "w": 14,
         "x": 0,
         "y": 0
       },
@@ -91,12 +92,18 @@
         "footer": {
           "fields": "",
           "reducer": [
-            "sum"
+            "count"
           ],
           "show": false
         },
+        "frameIndex": 1,
         "showHeader": true,
-        "sortBy": []
+        "sortBy": [
+          {
+            "desc": false,
+            "displayName": "Type"
+          }
+        ]
       },
       "pluginVersion": "8.5.0-pre",
       "targets": [
