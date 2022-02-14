@@ -343,7 +343,7 @@
           "refId": "A"
         }
       ],
-      "title": "Flot heatmap (default arguments)",
+      "title": "new heatmap",
       "type": "heatmap-new"
     }
   ],
