@@ -295,7 +295,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "areaF2"
         },
         "overrides": []
       },
