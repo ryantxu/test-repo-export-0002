@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -32,7 +31,7 @@
         "colorScale": "sqrt",
         "colorScheme": "interpolateOranges",
         "exponent": 0.5,
-        "mode": "spectrum"
+        "mode": "opacity"
       },
       "dataFormat": "timeseries",
       "gridPos": {
@@ -46,10 +45,10 @@
       "highlightCards": true,
       "id": 2,
       "legend": {
-        "show": false
+        "show": true
       },
       "reverseYBuckets": false,
-      "title": "Panel Title",
+      "title": "flot based heatmap",
       "tooltip": {
         "show": true,
         "showHistogram": false
