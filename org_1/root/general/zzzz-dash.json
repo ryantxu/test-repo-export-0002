@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -34,17 +33,29 @@
           "custom": {
             "axisLabel": "",
             "axisPlacement": "auto",
-            "axisSoftMin": 0,
-            "fillOpacity": 80,
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
+            "lineInterpolation": "linear",
             "lineWidth": 1,
+            "pointSize": 5,
             "scaleDistribution": {
               "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
             }
           },
           "mappings": [],
@@ -65,34 +76,38 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "id": 2,
-      "maxDataPoints": 20,
+      "id": 4,
       "options": {
-        "barRadius": 0,
-        "barWidth": 0.97,
-        "groupWidth": 0.7,
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
-        "orientation": "auto",
-        "showValue": "auto",
-        "stacking": "none",
         "tooltip": {
           "mode": "single",
           "sort": "none"
-        },
-        "xTickLabelRotation": 0,
-        "xTickLabelSpacing": 0
+        }
       },
       "title": "Panel Title",
-      "type": "barchart"
+      "type": "timeseries"
+    },
+    {
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 2,
+      "libraryPanel": {
+        "name": "my first library panel",
+        "uid": "c5styTfnz"
+      }
     }
   ],
   "refresh": "",
