@@ -55,17 +55,18 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 13,
+        "w": 11,
         "x": 0,
         "y": 0
       },
       "id": 2,
+      "maxDataPoints": 30,
       "options": {
         "controls": {
           "mouseWheelZoom": true,
           "showAttribution": true,
-          "showDebug": false,
+          "showDebug": true,
           "showScale": false,
           "showZoom": true
         },
@@ -73,7 +74,7 @@
           "id": "fit",
           "lat": 33.033529,
           "lon": -103.785504,
-          "zoom": 12
+          "zoom": 16
         }
       },
       "pluginVersion": "8.5.0-pre",
