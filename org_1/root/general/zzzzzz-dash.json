@@ -61,7 +61,7 @@
         "y": 0
       },
       "id": 2,
-      "maxDataPoints": 30,
+      "maxDataPoints": 60,
       "options": {
         "controls": {
           "mouseWheelZoom": true,
