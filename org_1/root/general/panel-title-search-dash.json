@@ -37,7 +37,8 @@
           "custom": {
             "align": "auto",
             "displayMode": "auto",
-            "filterable": true
+            "filterable": true,
+            "inspect": false
           },
           "mappings": [],
           "thresholds": {
@@ -112,7 +113,7 @@
             "type": "datasource",
             "uid": "grafana"
           },
-          "query": "",
+          "query": "\u003cEXPORT\u003e",
           "queryType": "search",
           "refId": "A"
         }
