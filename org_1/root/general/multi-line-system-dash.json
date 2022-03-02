@@ -108,6 +108,25 @@
               "mode": "lookup"
             }
           }
+        },
+        {
+          "id": "spatial",
+          "options": {
+            "action": "modify",
+            "modify": {
+              "op": "lineBuilder",
+              "target": {
+                "gazetteer": "public/gazetteer/airports.geojson",
+                "lookup": "EXTRA",
+                "mode": "lookup"
+              }
+            },
+            "source": {
+              "gazetteer": "public/gazetteer/airports.geojson",
+              "lookup": "START",
+              "mode": "lookup"
+            }
+          }
         }
       ],
       "type": "geomap"
