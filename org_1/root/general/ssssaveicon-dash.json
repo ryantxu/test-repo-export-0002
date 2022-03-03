@@ -1,0 +1,124 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "from": -1,
+                "result": {
+                  "color": "green",
+                  "index": 1,
+                  "text": "XXX"
+                },
+                "to": 100
+              },
+              "type": "range"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "inlineEditing": true,
+        "root": {
+          "elements": [
+            {
+              "anchor": {
+                "left": true,
+                "top": true
+              },
+              "config": {
+                "fill": {
+                  "field": "A-series",
+                  "fixed": "#FFF899"
+                },
+                "path": {
+                  "field": "A-series",
+                  "fixed": "img/icons/unicons/question-circle.svg",
+                  "mode": "field"
+                }
+              },
+              "name": "Element 1",
+              "placement": {
+                "height": 50,
+                "left": 43,
+                "top": 27,
+                "width": 50
+              },
+              "type": "icon"
+            }
+          ],
+          "name": "Element 1646326189251",
+          "type": "group"
+        }
+      },
+      "title": "Panel Title",
+      "type": "canvas"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 35,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "ssssaveicon",
+  "weekStart": ""
+}
