@@ -28,35 +28,17 @@
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "thresholds"
           },
           "custom": {
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
+            "fillOpacity": 80,
             "gradientMode": "none",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
+            "lineWidth": 1
           },
           "mappings": [],
           "thresholds": {
@@ -83,18 +65,15 @@
       },
       "id": 2,
       "options": {
+        "bucketOffset": 0,
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
         }
       },
       "title": "Panel Title",
-      "type": "timeseries"
+      "type": "histogram"
     }
   ],
   "refresh": "",
@@ -110,6 +89,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "LAST XXXX",
+  "title": "NNNNNNNNNN",
   "weekStart": ""
 }
