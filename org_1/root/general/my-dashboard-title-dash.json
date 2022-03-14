@@ -83,8 +83,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 19,
-        "w": 6,
+        "h": 17,
+        "w": 11,
         "x": 0,
         "y": 0
       },
@@ -117,6 +117,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "The title",
+  "title": "My panel title",
   "weekStart": ""
 }
