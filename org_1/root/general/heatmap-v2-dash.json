@@ -361,7 +361,7 @@
       "type": "heatmap-new"
     }
   ],
-  "refresh": "",
+  "refresh": false,
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
