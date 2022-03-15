@@ -24,7 +24,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -78,10 +77,10 @@
           "showZoom": true
         },
         "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
-          "zoom": 1
+          "id": "coords",
+          "lat": 40.245992,
+          "lon": -113.90625,
+          "zoom": 4
         }
       },
       "pluginVersion": "8.5.0-pre",
