@@ -3,7 +3,10 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -25,6 +28,10 @@
   "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -192,7 +199,7 @@
           "zoom": 3
         }
       },
-      "pluginVersion": "8.4.0-pre",
+      "pluginVersion": "8.5.0-pre",
       "targets": [
         {
           "csvFileName": "flight_info_by_state.csv",
@@ -204,6 +211,10 @@
       "type": "geomap"
     },
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -302,7 +313,7 @@
           "zoom": 4
         }
       },
-      "pluginVersion": "8.4.0-pre",
+      "pluginVersion": "8.5.0-pre",
       "title": "Panel Title",
       "type": "geomap"
     },
@@ -315,6 +326,10 @@
         "#C4162A",
         "#8F3BB8"
       ],
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "decimals": 0,
       "esMetric": "Count",
       "gridPos": {
@@ -350,6 +365,10 @@
       "valueName": "total"
     },
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -433,6 +452,10 @@
       "type": "timeseries"
     },
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -487,11 +510,15 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "8.4.0-pre",
+      "pluginVersion": "8.5.0-pre",
       "title": "Panel Title",
       "type": "stat"
     },
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -572,9 +599,14 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 35,
+  "schemaVersion": 36,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "aaaa",
+    "geomap",
+    "somehting",
+    "here"
+  ],
   "templating": {
     "list": []
   },
