@@ -63,12 +63,13 @@
           },
           "editorMode": "builder",
           "expr": "rpc_durations_histogram_seconds_bucket{job=\"prometheus-random-data\"}",
+          "format": "heatmap",
           "legendFormat": "{{le}}",
           "range": true,
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "Flot heatmap with prometheus heatmap query",
       "tooltip": {
         "show": true,
         "showHistogram": false
@@ -86,8 +87,8 @@
     },
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "PE1C5CBDA0504A6A3"
+        "type": "datasource",
+        "uid": "-- Dashboard --"
       },
       "fieldConfig": {
         "defaults": {
@@ -160,13 +161,10 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "PE1C5CBDA0504A6A3"
+            "type": "datasource",
+            "uid": "-- Dashboard --"
           },
-          "editorMode": "builder",
-          "expr": "rpc_durations_histogram_seconds_bucket{job=\"prometheus-random-data\"}",
-          "legendFormat": "{{le}}",
-          "range": true,
+          "panelId": 2,
           "refId": "A"
         }
       ],
@@ -175,8 +173,8 @@
     },
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "PE1C5CBDA0504A6A3"
+        "type": "datasource",
+        "uid": "-- Dashboard --"
       },
       "fieldConfig": {
         "defaults": {
@@ -237,13 +235,10 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "PE1C5CBDA0504A6A3"
+            "type": "datasource",
+            "uid": "-- Dashboard --"
           },
-          "editorMode": "builder",
-          "expr": "rpc_durations_histogram_seconds_bucket{job=\"prometheus-random-data\"}",
-          "legendFormat": "{{le}}",
-          "range": true,
+          "panelId": 2,
           "refId": "A"
         }
       ],
@@ -252,8 +247,8 @@
     },
     {
       "datasource": {
-        "type": "prometheus",
-        "uid": "PE1C5CBDA0504A6A3"
+        "type": "datasource",
+        "uid": "-- Dashboard --"
       },
       "fieldConfig": {
         "defaults": {
@@ -303,13 +298,10 @@
       "targets": [
         {
           "datasource": {
-            "type": "prometheus",
-            "uid": "PE1C5CBDA0504A6A3"
+            "type": "datasource",
+            "uid": "-- Dashboard --"
           },
-          "editorMode": "builder",
-          "expr": "rpc_durations_histogram_seconds_bucket{job=\"prometheus-random-data\"}",
-          "legendFormat": "{{le}}",
-          "range": true,
+          "panelId": 2,
           "refId": "A"
         }
       ],
