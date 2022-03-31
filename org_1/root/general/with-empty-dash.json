@@ -1,0 +1,122 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto",
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
+      },
+      "pluginVersion": "v1.0",
+      "targets": [
+        {
+          "csvContent": "a,b,c\n1,2,3",
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
+          "hide": false,
+          "refId": "Query1",
+          "scenarioId": "csv_content"
+        },
+        {
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
+          "hide": false,
+          "rawFrameContent": "[\n                {\n                    \"schema\": {\n                        \"refId\": \"PV Leistung\",\n                        \"meta\": {\n                            \"executedQueryString\": \"from(bucket: \\\"PV\\\")\\r\\n  |\\u003e range(start: 2022-02-28T02:44:58.031Z, stop: 2022-02-28T02:45:35.745Z)\\r\\n  |\\u003e filter(fn: (r) =\\u003e r[\\\"_measurement\\\"] == \\\"mbmd\\\")\\r\\n  |\\u003e filter(fn: (r) =\\u003e r[\\\"_field\\\"] == \\\"value\\\")\\r\\n  |\\u003e filter(fn: (r) =\\u003e r[\\\"device\\\"] == \\\"SUNSPEC1.126\\\")\\r\\n  |\\u003e filter(fn: (r) =\\u003e r[\\\"type\\\"] == \\\"Power\\\")\\r\\n  |\\u003e aggregateWindow(every: 1s, fn: mean, createEmpty: false)\\r\\n  |\\u003e yield(name: \\\"mean\\\")\"\n                        },\n                        \"fields\": []\n                    },\n                    \"data\": {\n                        \"values\": []\n                    }\n                }\n            ]",
+          "refId": "EmptyQuery",
+          "scenarioId": "raw_frame"
+        }
+      ],
+      "title": "Panel Title",
+      "type": "table"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "with empty",
+  "weekStart": ""
+}
