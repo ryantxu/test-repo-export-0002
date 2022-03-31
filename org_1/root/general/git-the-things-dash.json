@@ -1,0 +1,126 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Hello",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "gridPos": {
+        "h": 16,
+        "w": 13,
+        "x": 0,
+        "y": 0
+      },
+      "id": 8,
+      "options": {
+        "content": "\u003cimg src=\"https://gogitit.online/lbimages/logo.png\" /\u003e",
+        "mode": "html"
+      },
+      "pluginVersion": "v1.0",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 11,
+        "x": 13,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "content": "\u003ch1\u003e\u003ca href=\"/g/\"\u003eExplore dashboards\u003c/a\u003e\u003c/h1\u003e\n\n\u003ch4\u003eGit Repos used in the examples:\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href=\"https://github.com/grafana/hackathon-2022-03-git-dash-A\"\u003eRepo A\u003c/a\u003e is limited to PR Workflows\u003c/li\u003e\n  \u003cli\u003e\u003ca href=\"https://github.com/grafana/hackathon-2022-03-git-dash-B\"\u003eRepo B\u003c/a\u003e allows for saves/commits\u003c/li\u003e\n\u003c/ul\u003e\n\n\n",
+        "mode": "html"
+      },
+      "pluginVersion": "v1.0",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 11,
+        "x": 13,
+        "y": 6
+      },
+      "id": 6,
+      "options": {
+        "content": "\n* SQL (internal)\n* GIT (and github!)\n* GCS\n* S3\n* Local Storage (Add to devenv directly!)\n\n\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "v1.0",
+      "title": "Supported storage engines",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 11,
+        "x": 13,
+        "y": 11
+      },
+      "id": 10,
+      "options": {
+        "content": "## Try it for yourself\n\nCheckout and run `grafana` using the `git-the-things` branch.\n\nCurrently the storage endpoints are hardcoded. You'll need to create a Github token and set the `GITHUB_AUTH_TOKEN` environment variable.\n\nThe feature flags being used are `saveDashboardDrawer, panelTitleSearch, fileStoreApi, storage`",
+        "mode": "markdown"
+      },
+      "pluginVersion": "v1.0",
+      "type": "text"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Git the things",
+  "weekStart": ""
+}
