@@ -138,8 +138,8 @@
               "tick": 10,
               "type": "flight"
             },
-            "last": true,
-            "stream": false
+            "last": false,
+            "stream": true
           }
         }
       ],
