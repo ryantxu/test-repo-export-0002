@@ -24,7 +24,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -129,7 +128,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-30s",
     "to": "now"
   },
   "timepicker": {},
