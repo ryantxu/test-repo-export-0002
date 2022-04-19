@@ -112,7 +112,9 @@
             "key": {
               "tick": 10,
               "type": "flight"
-            }
+            },
+            "last": false,
+            "stream": true
           }
         }
       ],
