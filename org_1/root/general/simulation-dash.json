@@ -216,10 +216,10 @@
           }
         ],
         "view": {
-          "id": "zero",
-          "lat": 0,
-          "lon": 0,
-          "zoom": 1
+          "id": "coords",
+          "lat": 37.826598,
+          "lon": -122.434216,
+          "zoom": 12.61
         }
       },
       "pluginVersion": "9.0.0-pre",
