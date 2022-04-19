@@ -100,6 +100,22 @@
           "sort": "none"
         }
       },
+      "targets": [
+        {
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
+          "refId": "A",
+          "scenarioId": "simulation",
+          "sim": {
+            "key": {
+              "tick": 10,
+              "type": "sine"
+            }
+          }
+        }
+      ],
       "title": "Panel Title",
       "type": "timeseries"
     },
