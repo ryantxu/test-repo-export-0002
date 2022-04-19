@@ -138,7 +138,7 @@
               "tick": 10,
               "type": "flight"
             },
-            "last": false,
+            "last": true,
             "stream": true
           }
         }
