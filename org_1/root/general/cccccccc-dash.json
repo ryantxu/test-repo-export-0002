@@ -1,0 +1,149 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "hideControls": false,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "inlineEditing": true,
+        "root": {
+          "elements": [
+            {
+              "background": {
+                "color": {
+                  "fixed": "grey"
+                }
+              },
+              "config": {
+                "align": "center",
+                "text": {
+                  "field": "",
+                  "fixed": "HELLO",
+                  "mode": "fixed"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "HELLO",
+              "placement": {
+                "height": 100,
+                "left": 224,
+                "top": 109,
+                "width": 100
+              },
+              "type": "text-box"
+            },
+            {
+              "background": {
+                "color": {
+                  "fixed": "orange"
+                }
+              },
+              "config": {
+                "align": "center",
+                "text": {
+                  "field": "",
+                  "fixed": "VVVVV",
+                  "mode": "fixed"
+                },
+                "valign": "middle"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "COPY",
+              "placement": {
+                "height": 100,
+                "left": 462,
+                "top": 252,
+                "width": 100
+              },
+              "type": "text-box"
+            }
+          ],
+          "name": "Element 1650688507161",
+          "type": "group"
+        }
+      },
+      "title": "Panel Title",
+      "type": "canvas"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 36,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "cccccccc",
+  "weekStart": ""
+}
