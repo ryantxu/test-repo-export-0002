@@ -40,7 +40,7 @@
           "custom": {
             "align": "auto",
             "displayMode": "auto",
-            "inspect": false
+            "inspect": true
           },
           "mappings": [],
           "thresholds": {
@@ -84,7 +84,7 @@
             "type": "datasource",
             "uid": "grafana"
           },
-          "query": "*",
+          "query": "aqi",
           "queryType": "search",
           "refId": "A"
         }
