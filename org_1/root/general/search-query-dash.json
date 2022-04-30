@@ -60,8 +60,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 13,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -84,7 +84,7 @@
             "type": "datasource",
             "uid": "grafana"
           },
-          "query": "aqi",
+          "query": "*",
           "queryType": "search",
           "refId": "A"
         }
