@@ -1,0 +1,23 @@
+{
+  "id": 152,
+  "name": "gdev-alertmanager",
+  "type": "alertmanager",
+  "access": "proxy",
+  "url": "http://localhost:9093",
+  "user": "",
+  "database": "",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "implementation": "prometheus"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "gdev-alertmanager",
+  "created": "2022-05-02T09:27:44-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
