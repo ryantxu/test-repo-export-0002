@@ -3,22 +3,35 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
         "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
         "type": "dashboard"
       }
     ]
   },
   "editable": true,
-  "gnetId": null,
+  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
-      "datasource": null,
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -126,7 +139,7 @@
       "gridPos": {
         "h": 12,
         "w": 17,
-        "x": 0,
+        "x": 5,
         "y": 0
       },
       "id": 5,
@@ -138,7 +151,8 @@
           "placement": "bottom"
         },
         "tooltip": {
-          "mode": "single"
+          "mode": "single",
+          "sort": "none"
         }
       },
       "pluginVersion": "7.4.0-pre",
@@ -149,8 +163,6 @@
           "scenarioId": "random_walk_table"
         }
       ],
-      "timeFrom": null,
-      "timeShift": null,
       "title": "signal",
       "transformations": [
         {
@@ -171,7 +183,7 @@
       "type": "timeseries"
     }
   ],
-  "schemaVersion": 30,
+  "schemaVersion": 36,
   "style": "dark",
   "tags": [
     "events"
@@ -185,5 +197,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "simple"
+  "title": "simple",
+  "weekStart": ""
 }
