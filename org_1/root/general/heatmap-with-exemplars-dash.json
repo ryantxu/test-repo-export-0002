@@ -96,7 +96,8 @@
           "min": 1,
           "refId": "A",
           "scenarioId": "random_walk",
-          "spread": 20
+          "spread": 20,
+          "startValue": 0.1
         },
         {
           "datasource": {
@@ -112,7 +113,7 @@
       "type": "heatmap-new"
     }
   ],
-  "refresh": "",
+  "refresh": false,
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
