@@ -96,7 +96,7 @@
           "min": 1,
           "refId": "A",
           "scenarioId": "random_walk",
-          "spread": 10
+          "spread": 20
         },
         {
           "datasource": {
