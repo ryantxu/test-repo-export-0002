@@ -92,7 +92,11 @@
             "type": "testdata",
             "uid": "PD8C576611E62080A"
           },
-          "refId": "A"
+          "max": 100,
+          "min": 1,
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "spread": 10
         },
         {
           "datasource": {
