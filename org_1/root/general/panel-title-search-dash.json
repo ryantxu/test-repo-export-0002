@@ -41,7 +41,7 @@
             "align": "auto",
             "displayMode": "auto",
             "filterable": true,
-            "inspect": false
+            "inspect": true
           },
           "mappings": [],
           "thresholds": {
@@ -94,6 +94,7 @@
       "id": 2,
       "options": {
         "footer": {
+          "enablePagination": false,
           "fields": "",
           "reducer": [
             "count"
@@ -112,13 +113,38 @@
       "pluginVersion": "9.0.0-pre",
       "targets": [
         {
+          "accessInfo": true,
           "datasource": {
             "type": "datasource",
             "uid": "grafana"
           },
-          "query": "*",
+          "ds_uid": "",
+          "explain": true,
+          "facet": [
+            {
+              "field": "kind"
+            },
+            {
+              "field": "tags"
+            },
+            {
+              "field": "type"
+            }
+          ],
+          "folder": "",
+          "from": 0,
+          "hasPreview": "dark",
+          "id": [],
+          "kind": [
+            "folder"
+          ],
+          "limit": 20,
+          "query": "*root*",
           "queryType": "search",
-          "refId": "A"
+          "refId": "A",
+          "sort": "score desc",
+          "tags": [],
+          "uid": []
         }
       ],
       "title": "Panel Title",
