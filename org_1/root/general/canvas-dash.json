@@ -61,37 +61,7 @@
       "options": {
         "inlineEditing": true,
         "root": {
-          "constraint": {
-            "horizontal": "left",
-            "vertical": "top"
-          },
           "elements": [
-            {
-              "background": {
-                "color": {
-                  "fixed": "dark-purple"
-                }
-              },
-              "config": {
-                "align": "left",
-                "text": {
-                  "fixed": "First element (purple)"
-                },
-                "valign": "top"
-              },
-              "constraint": {
-                "horizontal": "left",
-                "vertical": "top"
-              },
-              "name": "Element 1",
-              "placement": {
-                "height": 258,
-                "left": 216,
-                "top": 42,
-                "width": 250
-              },
-              "type": "text-box"
-            },
             {
               "background": {
                 "color": {
@@ -112,20 +82,40 @@
               "name": "Element 2",
               "placement": {
                 "height": 181,
-                "left": 50,
-                "top": 200,
+                "left": 81,
+                "top": 257,
                 "width": 304
+              },
+              "type": "text-box"
+            },
+            {
+              "background": {
+                "color": {
+                  "fixed": "dark-purple"
+                }
+              },
+              "config": {
+                "align": "left",
+                "text": {
+                  "fixed": "First element (purple)"
+                },
+                "valign": "top"
+              },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 1",
+              "placement": {
+                "height": 258,
+                "left": 191,
+                "top": 61,
+                "width": 250
               },
               "type": "text-box"
             }
           ],
-          "name": "Element 1652656907982",
-          "placement": {
-            "height": 100,
-            "left": 0,
-            "top": 0,
-            "width": 100
-          }
+          "name": "Element 1652656907982"
         }
       },
       "pluginVersion": "8.1.0-pre",
