@@ -3,7 +3,10 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -19,13 +22,16 @@
     ]
   },
   "editable": true,
-  "gnetId": null,
+  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": null,
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "mappings": [],
@@ -47,13 +53,18 @@
       },
       "gridPos": {
         "h": 15,
-        "w": 10,
+        "w": 14,
         "x": 0,
         "y": 0
       },
       "id": 2,
       "options": {
+        "inlineEditing": true,
         "root": {
+          "constraint": {
+            "horizontal": "left",
+            "vertical": "top"
+          },
           "elements": [
             {
               "background": {
@@ -68,11 +79,16 @@
                 },
                 "valign": "top"
               },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 1",
               "placement": {
-                "height": 200,
-                "left": 300,
-                "top": 20,
-                "width": 100
+                "height": 258,
+                "left": 216,
+                "top": 42,
+                "width": 250
               },
               "type": "text-box"
             },
@@ -89,15 +105,27 @@
                 },
                 "valign": "top"
               },
+              "constraint": {
+                "horizontal": "left",
+                "vertical": "top"
+              },
+              "name": "Element 2",
               "placement": {
-                "height": 75,
+                "height": 181,
                 "left": 50,
                 "top": 200,
-                "width": 25
+                "width": 304
               },
               "type": "text-box"
             }
-          ]
+          ],
+          "name": "Element 1652656907982",
+          "placement": {
+            "height": 100,
+            "left": 0,
+            "top": 0,
+            "width": 100
+          }
         }
       },
       "pluginVersion": "8.1.0-pre",
@@ -106,7 +134,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 31,
+  "schemaVersion": 36,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -118,5 +146,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "canvas"
+  "title": "canvas",
+  "weekStart": ""
 }
