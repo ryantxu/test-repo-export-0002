@@ -181,7 +181,7 @@
       "color": {
         "cardColor": "#b4ff00",
         "colorScale": "sqrt",
-        "colorScheme": "interpolateYlGnBu",
+        "colorScheme": "interpolateInferno",
         "exponent": 0.5,
         "mode": "spectrum"
       },
@@ -312,7 +312,7 @@
           "fill": "dark-orange",
           "mode": "scheme",
           "scale": "exponential",
-          "scheme": "Oranges",
+          "scheme": "Inferno",
           "steps": 256
         },
         "heatmap": {},
@@ -358,7 +358,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 13,
         "x": 11,
         "y": 14
@@ -412,7 +412,7 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-3h",
     "to": "now"
   },
   "timepicker": {},
