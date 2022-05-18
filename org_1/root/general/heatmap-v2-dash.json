@@ -70,7 +70,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -136,7 +137,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -164,7 +166,7 @@
         },
         "showHeader": true
       },
-      "pluginVersion": "8.5.0-pre",
+      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
           "refId": "A",
@@ -289,28 +291,13 @@
       },
       "fieldConfig": {
         "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
           "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green"
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
           "unit": "areaF2"
         },
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 11,
         "x": 0,
         "y": 14
@@ -333,7 +320,8 @@
         "legend": {
           "calcs": [],
           "displayMode": "hidden",
-          "placement": "bottom"
+          "placement": "bottom",
+          "show": true
         },
         "showValue": "never",
         "source": "calculate",
@@ -344,6 +332,7 @@
         "yAxisLabels": "auto",
         "yAxisReverse": false
       },
+      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
           "datasource": {
@@ -356,9 +345,66 @@
       ],
       "title": "new heatmap",
       "type": "heatmap-new"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 13,
+        "x": 11,
+        "y": 14
+      },
+      "id": 10,
+      "options": {
+        "cellGap": 1,
+        "cellSize": 0,
+        "color": {
+          "exponent": 0.5,
+          "fill": "dark-orange",
+          "mode": "scheme",
+          "scale": "exponential",
+          "scheme": "Spectral",
+          "steps": 256
+        },
+        "heatmap": {},
+        "hideThreshold": 1e-9,
+        "legend": {
+          "show": true
+        },
+        "showValue": "never",
+        "source": "data",
+        "tooltip": {
+          "show": true,
+          "yHistogram": true
+        },
+        "yAxisLabels": "auto",
+        "yAxisReverse": false
+      },
+      "pluginVersion": "9.0.0-pre",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "title": "Flot \"time series buckets\" format",
+      "type": "heatmap-new"
     }
   ],
-  "refresh": "",
+  "refresh": false,
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
