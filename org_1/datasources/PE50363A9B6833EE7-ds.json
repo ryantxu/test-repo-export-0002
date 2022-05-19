@@ -1,0 +1,27 @@
+{
+  "id": 153,
+  "name": "gdev-elasticsearch",
+  "type": "elasticsearch",
+  "access": "proxy",
+  "url": "http://localhost:9200",
+  "user": "",
+  "database": "[logs-]YYYY.MM.DD",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "esVersion": "8.0.0",
+    "interval": "Daily",
+    "logLevelField": "level",
+    "logMessageField": "line",
+    "timeField": "@timestamp"
+  },
+  "secureJsonData": {
+    "TODO": "c2VjcmV0IHN0b3JlIGxvb2t1cA=="
+  },
+  "readOnly": true,
+  "uid": "PE50363A9B6833EE7",
+  "created": "2022-05-19T11:12:26-07:00",
+  "updated": "2022-07-06T18:24:49-07:00"
+}
