@@ -3,50 +3,55 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
         "name": "Annotations \u0026 Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
         "type": "dashboard"
       }
     ]
   },
   "editable": true,
-  "gnetId": null,
+  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
-      "datasource": null,
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "palette-classic"
           },
           "custom": {
-            "align": null,
             "axisLabel": "",
             "axisPlacement": "auto",
-            "drawStyle": "line",
-            "fillGradient": {
-              "label": "None"
-            },
-            "fillOpacity": 10,
-            "filterable": false,
             "hideFrom": {
               "graph": false,
               "legend": false,
-              "tooltip": false
+              "tooltip": false,
+              "viz": false
             },
-            "lineInterpolation": "linear",
+            "line": "none",
             "lineWidth": 1,
-            "pointSize": 5,
+            "point": "auto",
             "scaleDistribution": {
               "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false
+            }
           },
           "mappings": [],
           "thresholds": {
@@ -90,11 +95,24 @@
           }
         },
         "legend": {
+          "calcs": [],
           "displayMode": "list",
           "placement": "bottom"
         },
-        "tooltipOptions": {
-          "mode": "single"
+        "mode": "single",
+        "series": [
+          {
+            "pointColor": {},
+            "pointSize": {
+              "fixed": 5,
+              "max": 50,
+              "min": 1
+            }
+          }
+        ],
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
         },
         "xyPlotConfig": {
           "xFields": {
@@ -139,9 +157,12 @@
       "type": "xychart"
     }
   ],
-  "schemaVersion": 27,
+  "schemaVersion": 36,
   "style": "dark",
-  "tags": [],
+  "tags": [
+    "aaa",
+    "bbb"
+  ],
   "templating": {
     "list": []
   },
@@ -151,5 +172,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "a vs v"
+  "title": "a vs v",
+  "weekStart": ""
 }
