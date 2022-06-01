@@ -145,6 +145,7 @@
       "type": "heatmap-new"
     }
   ],
+  "refresh": "",
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
