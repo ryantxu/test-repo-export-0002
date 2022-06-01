@@ -79,7 +79,6 @@
       "fieldConfig": {
         "defaults": {
           "decimals": 3,
-          "mappings": [],
           "unit": "areaM2"
         },
         "overrides": []
@@ -122,9 +121,10 @@
           "yHistogram": false
         },
         "yAxis": {
-          "alignment": "auto",
-          "placement": "left",
-          "reverse": false
+          "alignment": "upper",
+          "placement": "right",
+          "reverse": true,
+          "width": 400
         },
         "yAxisLabels": "auto",
         "yAxisReverse": false
