@@ -78,6 +78,72 @@
       },
       "fieldConfig": {
         "defaults": {
+          "custom": {
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "bucket": {
+          "layout": "auto"
+        },
+        "calculate": {},
+        "cellGap": 0,
+        "cellSize": 0,
+        "color": {
+          "exponent": 0.5,
+          "fill": "dark-orange",
+          "mode": "opacity",
+          "scale": "exponential",
+          "scheme": "Oranges",
+          "steps": 128
+        },
+        "exemplars": {
+          "color": "rgba(255,0,255,0.7)"
+        },
+        "filterValues": {
+          "min": 1e-9
+        },
+        "legend": {
+          "show": true
+        },
+        "mode": "calculate",
+        "showValue": "never",
+        "tooltip": {
+          "show": true,
+          "yHistogram": false
+        },
+        "yAxis": {
+          "axisPlacement": "left",
+          "reverse": false
+        }
+      },
+      "pluginVersion": "9.0.0-pre",
+      "title": "flot based heatmap",
+      "type": "heatmap-new"
+    },
+    {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
           "decimals": 3,
           "unit": "areaM2"
         },
@@ -91,6 +157,9 @@
       },
       "id": 4,
       "options": {
+        "bucket": {
+          "layout": "auto"
+        },
         "cellGap": 3,
         "color": {
           "exponent": 0.5,
@@ -122,6 +191,7 @@
         },
         "yAxis": {
           "alignment": "upper",
+          "axisPlacement": "left",
           "placement": "right",
           "reverse": true,
           "width": 400
