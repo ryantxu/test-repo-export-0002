@@ -78,7 +78,7 @@
         "show": true
       },
       "yAxis": {
-        "format": "accFS2",
+        "format": "areaM2",
         "logBase": 2,
         "show": true,
         "splitFactor": 2
@@ -101,7 +101,8 @@
             "scaleDistribution": {
               "type": "linear"
             }
-          }
+          },
+          "unit": "areaM2"
         },
         "overrides": []
       },
