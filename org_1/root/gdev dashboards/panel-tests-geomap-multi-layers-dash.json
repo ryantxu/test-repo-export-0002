@@ -3,10 +3,7 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": {
-          "type": "datasource",
-          "uid": "grafana"
-        },
+        "datasource": "-- Grafana --",
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -28,28 +25,18 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "thresholds"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
           },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 20
               },
               {
                 "color": "red",
@@ -309,7 +296,7 @@
           "zoom": 3.58
         }
       },
-      "pluginVersion": "9.0.0-pre",
+      "pluginVersion": "8.3.0-pre",
       "targets": [
         {
           "csvFileName": "flight_info_by_state.csv",
@@ -321,28 +308,18 @@
       "type": "geomap"
     },
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "thresholds"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
           },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 20
               },
               {
                 "color": "red",
@@ -423,7 +400,7 @@
           "zoom": 3.58
         }
       },
-      "pluginVersion": "9.0.0-pre",
+      "pluginVersion": "8.3.0-pre",
       "targets": [
         {
           "csvFileName": "flight_info_by_state.csv",
@@ -435,7 +412,7 @@
       "type": "geomap"
     }
   ],
-  "schemaVersion": 36,
+  "schemaVersion": 33,
   "style": "dark",
   "tags": [
     "gdev",
