@@ -32,9 +32,9 @@
       "color": {
         "cardColor": "#b4ff00",
         "colorScale": "sqrt",
-        "colorScheme": "interpolateOranges",
+        "colorScheme": "interpolateTurbo",
         "exponent": 0.5,
-        "mode": "opacity"
+        "mode": "spectrum"
       },
       "dataFormat": "timeseries",
       "datasource": {
@@ -54,31 +54,50 @@
       "legend": {
         "show": true
       },
+      "maxDataPoints": 100,
       "reverseYBuckets": false,
-      "title": "flot based heatmap",
+      "targets": [
+        {
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "seriesCount": 3
+        }
+      ],
+      "title": "flot log2 heatmap",
       "tooltip": {
         "show": true,
         "showHistogram": false
       },
+      "tooltipDecimals": 3,
       "type": "heatmap",
       "xAxis": {
         "show": true
       },
       "yAxis": {
-        "format": "short",
-        "logBase": 1,
-        "show": true
+        "format": "accFS2",
+        "logBase": 2,
+        "show": true,
+        "splitFactor": 2
       },
-      "yBucketBound": "auto"
+      "yBucketBound": "middle"
     },
     {
       "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
+        "type": "datasource",
+        "uid": "-- Dashboard --"
       },
       "fieldConfig": {
         "defaults": {
           "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "scaleDistribution": {
               "type": "linear"
             }
@@ -92,20 +111,30 @@
         "x": 12,
         "y": 0
       },
-      "id": 5,
+      "id": 6,
+      "maxDataPoints": 100,
       "options": {
         "bucket": {
-          "layout": "auto"
+          "layout": "unknown"
         },
-        "calculate": {},
+        "calculate": {
+          "yAxis": {
+            "mode": "count",
+            "scale": {
+              "log": 2,
+              "type": "log"
+            },
+            "value": "2"
+          }
+        },
         "cellGap": 0,
         "cellSize": 0,
         "color": {
           "exponent": 0.5,
           "fill": "dark-orange",
-          "mode": "opacity",
+          "mode": "scheme",
           "scale": "exponential",
-          "scheme": "Oranges",
+          "scheme": "Turbo",
           "steps": 128
         },
         "exemplars": {
@@ -129,7 +158,17 @@
         }
       },
       "pluginVersion": "9.0.0-pre",
-      "title": "flot based heatmap",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 2,
+          "refId": "A"
+        }
+      ],
+      "title": "uplot (same data)",
       "type": "heatmap-new"
     },
     {
@@ -140,6 +179,11 @@
       "fieldConfig": {
         "defaults": {
           "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
             "scaleDistribution": {
               "type": "linear"
             }
@@ -150,15 +194,16 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 9,
         "w": 12,
         "x": 0,
         "y": 9
       },
       "id": 4,
+      "maxDataPoints": 40,
       "options": {
         "bucket": {
-          "layout": "auto"
+          "layout": "ge"
         },
         "cellGap": 3,
         "color": {
