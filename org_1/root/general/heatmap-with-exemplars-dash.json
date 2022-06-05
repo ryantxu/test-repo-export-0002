@@ -34,23 +34,17 @@
       },
       "fieldConfig": {
         "defaults": {
-          "color": {
-            "mode": "thresholds"
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "scaleDistribution": {
+              "type": "linear"
+            }
           },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
+          "unit": "areaF2"
         },
         "overrides": []
       },
@@ -62,6 +56,10 @@
       },
       "id": 2,
       "options": {
+        "bucket": {
+          "layout": "auto"
+        },
+        "calculate": true,
         "cellGap": 3,
         "color": {
           "exponent": 0.5,
@@ -71,11 +69,18 @@
           "scheme": "Oranges",
           "steps": 64
         },
+        "exemplars": {
+          "color": "rgba(255,0,255,0.7)"
+        },
+        "filterValues": {
+          "le": 1e-9
+        },
         "hideThreshold": 1e-9,
         "legend": {
           "calcs": [],
           "displayMode": "list",
-          "placement": "bottom"
+          "placement": "bottom",
+          "show": true
         },
         "showValue": "auto",
         "source": "auto",
@@ -83,9 +88,14 @@
           "show": true,
           "yHistogram": false
         },
+        "yAxis": {
+          "axisPlacement": "left",
+          "reverse": false
+        },
         "yAxisLabels": "auto",
         "yAxisReverse": false
       },
+      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
           "datasource": {
@@ -113,7 +123,7 @@
       "type": "heatmap-new"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
