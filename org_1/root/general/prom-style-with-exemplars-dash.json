@@ -102,7 +102,7 @@
       "type": "heatmap-new"
     }
   ],
-  "refresh": "",
+  "refresh": false,
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
@@ -110,8 +110,8 @@
     "list": []
   },
   "time": {
-    "from": "2022-06-05T17:14:42.136Z",
-    "to": "2022-06-05T20:21:01.527Z"
+    "from": "2022-06-05T22:01:42.340Z",
+    "to": "2022-06-05T23:27:35.011Z"
   },
   "timepicker": {},
   "timezone": "",
