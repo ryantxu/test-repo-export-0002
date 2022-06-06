@@ -198,8 +198,9 @@
       "highlightCards": true,
       "id": 4,
       "legend": {
-        "show": false
+        "show": true
       },
+      "pluginVersion": "9.0.0-pre",
       "reverseYBuckets": false,
       "targets": [
         {
@@ -214,7 +215,7 @@
       "title": "Flot heatmap",
       "tooltip": {
         "show": true,
-        "showHistogram": false
+        "showHistogram": true
       },
       "type": "heatmap",
       "xAxis": {
