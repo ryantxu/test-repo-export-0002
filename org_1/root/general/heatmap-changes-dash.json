@@ -134,7 +134,7 @@
         "bucketFrame": {
           "layout": "auto"
         },
-        "calculate": false,
+        "calculate": true,
         "cellGap": 3,
         "color": {
           "exponent": 0.5,
