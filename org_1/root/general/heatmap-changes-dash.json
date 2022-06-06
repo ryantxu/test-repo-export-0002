@@ -178,7 +178,7 @@
       "color": {
         "cardColor": "#b4ff00",
         "colorScale": "sqrt",
-        "colorScheme": "interpolateInferno",
+        "colorScheme": "interpolatePuRd",
         "exponent": 0.5,
         "mode": "spectrum"
       },
