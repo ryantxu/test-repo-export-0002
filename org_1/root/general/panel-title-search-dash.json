@@ -142,6 +142,9 @@
           "query": "*root*",
           "queryType": "search",
           "refId": "A",
+          "search": {
+            "query": "*"
+          },
           "sort": "score desc",
           "tags": [],
           "uid": []
