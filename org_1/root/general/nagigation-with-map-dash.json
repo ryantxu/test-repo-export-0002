@@ -3,7 +3,10 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -19,13 +22,16 @@
     ]
   },
   "editable": true,
-  "gnetId": null,
+  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "hideControls": false,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
-      "datasource": null,
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -36,8 +42,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -67,7 +72,10 @@
       "type": "debug"
     },
     {
-      "datasource": null,
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "gridPos": {
         "h": 8,
         "w": 12,
@@ -89,7 +97,10 @@
       "type": "dashlist"
     },
     {
-      "datasource": null,
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -100,8 +111,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -131,7 +141,36 @@
       "type": "debug"
     },
     {
-      "datasource": null,
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 11,
         "w": 12,
@@ -139,11 +178,49 @@
         "y": 8
       },
       "id": 6,
+      "options": {
+        "controls": {
+          "mouseWheelZoom": true,
+          "showAttribution": true,
+          "showDebug": false,
+          "showScale": false,
+          "showZoom": true
+        },
+        "view": {
+          "id": "zero",
+          "lat": 0,
+          "lon": 0,
+          "zoom": 1
+        }
+      },
+      "pluginVersion": "9.0.0-pre",
+      "targets": [
+        {
+          "csvFileName": "flight_info_by_state.csv",
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
+          "hide": false,
+          "refId": "A",
+          "scenarioId": "csv_file"
+        },
+        {
+          "csvContent": "lat,lon,name\n1,1,hello\n50,50,BBB\n",
+          "datasource": {
+            "type": "testdata",
+            "uid": "PD8C576611E62080A"
+          },
+          "refId": "B",
+          "scenarioId": "csv_content"
+        }
+      ],
       "title": "geomap",
       "type": "geomap"
     }
   ],
-  "schemaVersion": 30,
+  "refresh": "",
+  "schemaVersion": 36,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -155,5 +232,6 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "nagigation-with-map"
+  "title": "nagigation-with-map",
+  "weekStart": ""
 }
