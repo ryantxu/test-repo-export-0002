@@ -3,7 +3,10 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -26,18 +29,22 @@
   "panels": [
     {
       "gridPos": {
-        "h": 9,
+        "h": 3,
         "w": 12,
         "x": 0,
         "y": 0
       },
-      "id": 2,
       "libraryPanel": {
-        "name": "all green circle",
+        "name": "all green circleXX",
         "uid": "TaaNUoBnk"
-      }
+      },
+      "title": "Panel Title name here"
     },
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -92,7 +99,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 9
+        "y": 3
       },
       "id": 4,
       "options": {
@@ -111,7 +118,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 35,
+  "schemaVersion": 36,
   "style": "dark",
   "tags": [],
   "templating": {
