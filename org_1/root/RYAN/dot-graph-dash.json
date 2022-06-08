@@ -29,11 +29,12 @@
   "panels": [
     {
       "gridPos": {
-        "h": 8,
-        "w": 12,
+        "h": 7,
+        "w": 22,
         "x": 0,
         "y": 0
       },
+      "id": 5,
       "libraryPanel": {
         "name": "all green circleXX",
         "uid": "TaaNUoBnk"
@@ -99,7 +100,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 8
+        "y": 7
       },
       "id": 4,
       "options": {
