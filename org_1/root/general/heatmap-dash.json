@@ -92,7 +92,7 @@
           "reverse": false
         }
       },
-      "pluginVersion": "9.1.0-pre",
+      "pluginVersion": "8.5.0-pre",
       "title": "Panel Title",
       "type": "heatmap"
     },
@@ -413,7 +413,7 @@
       "type": "state-timeline"
     }
   ],
-  "refresh": false,
+  "refresh": "",
   "schemaVersion": 37,
   "style": "dark",
   "tags": [],
