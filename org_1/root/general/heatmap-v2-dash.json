@@ -23,7 +23,7 @@
   },
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "graphTooltip": 0,
+  "graphTooltip": 1,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -291,7 +291,16 @@
       },
       "fieldConfig": {
         "defaults": {
-          "mappings": [],
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
           "unit": "areaF2"
         },
         "overrides": []
@@ -304,6 +313,7 @@
       },
       "id": 9,
       "options": {
+        "calculate": false,
         "cellGap": 3,
         "cellPadding": 0,
         "cellRadius": 0,
@@ -315,6 +325,12 @@
           "scheme": "Inferno",
           "steps": 256
         },
+        "exemplars": {
+          "color": "rgba(255,0,255,0.7)"
+        },
+        "filterValues": {
+          "le": 1e-9
+        },
         "heatmap": {},
         "hideThreshold": 1e-9,
         "legend": {
@@ -323,11 +339,18 @@
           "placement": "bottom",
           "show": true
         },
+        "rowsFrame": {
+          "layout": "auto"
+        },
         "showValue": "never",
         "source": "calculate",
         "tooltip": {
           "show": true,
           "yHistogram": true
+        },
+        "yAxis": {
+          "axisPlacement": "left",
+          "reverse": false
         },
         "yAxisLabels": "auto",
         "yAxisReverse": false
@@ -353,7 +376,16 @@
       },
       "fieldConfig": {
         "defaults": {
-          "mappings": []
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          }
         },
         "overrides": []
       },
@@ -365,6 +397,7 @@
       },
       "id": 10,
       "options": {
+        "calculate": false,
         "cellGap": 1,
         "cellSize": 0,
         "color": {
@@ -375,16 +408,29 @@
           "scheme": "Spectral",
           "steps": 256
         },
+        "exemplars": {
+          "color": "rgba(255,0,255,0.7)"
+        },
+        "filterValues": {
+          "le": 1e-9
+        },
         "heatmap": {},
         "hideThreshold": 1e-9,
         "legend": {
           "show": true
+        },
+        "rowsFrame": {
+          "layout": "auto"
         },
         "showValue": "never",
         "source": "data",
         "tooltip": {
           "show": true,
           "yHistogram": true
+        },
+        "yAxis": {
+          "axisPlacement": "left",
+          "reverse": false
         },
         "yAxisLabels": "auto",
         "yAxisReverse": false
