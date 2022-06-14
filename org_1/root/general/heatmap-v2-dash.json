@@ -127,11 +127,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "custom": {
-            "align": "auto",
-            "displayMode": "auto",
-            "inspect": false
-          },
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -150,31 +145,23 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
-        "w": 13,
-        "x": 11,
+        "h": 13,
+        "w": 11,
+        "x": 13,
         "y": 0
       },
-      "id": 8,
+      "id": 12,
       "options": {
-        "footer": {
-          "fields": "",
-          "reducer": [
-            "sum"
-          ],
-          "show": false
+        "counters": {
+          "dataChanged": true,
+          "render": true,
+          "schemaChanged": true
         },
-        "showHeader": true
+        "mode": "cursor",
+        "stateView": ""
       },
-      "pluginVersion": "9.0.0-pre",
-      "targets": [
-        {
-          "refId": "A",
-          "scenarioId": "exponential_heatmap_bucket_data"
-        }
-      ],
-      "title": "Testdata heatmap",
-      "type": "table"
+      "title": "Panel Title",
+      "type": "debug"
     },
     {
       "cards": {},
@@ -231,58 +218,63 @@
       "yBucketBound": "auto"
     },
     {
-      "cards": {},
-      "color": {
-        "cardColor": "#b4ff00",
-        "colorScale": "sqrt",
-        "colorScheme": "interpolateSpectral",
-        "exponent": 0.5,
-        "mode": "spectrum"
-      },
-      "dataFormat": "tsbuckets",
       "datasource": {
-        "type": "datasource",
-        "uid": "-- Dashboard --"
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "displayMode": "auto",
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
       },
       "gridPos": {
         "h": 7,
         "w": 13,
         "x": 11,
-        "y": 7
+        "y": 13
       },
-      "heatmap": {},
-      "hideZeroBuckets": false,
-      "highlightCards": true,
-      "id": 6,
-      "legend": {
-        "show": false
+      "id": 8,
+      "options": {
+        "footer": {
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true
       },
-      "reverseYBuckets": false,
+      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
-          "datasource": {
-            "type": "datasource",
-            "uid": "-- Dashboard --"
-          },
-          "panelId": 8,
-          "refId": "A"
+          "refId": "A",
+          "scenarioId": "exponential_heatmap_bucket_data"
         }
       ],
-      "title": "Flot \"time series buckets\" format",
-      "tooltip": {
-        "show": true,
-        "showHistogram": true
-      },
-      "type": "heatmap",
-      "xAxis": {
-        "show": true
-      },
-      "yAxis": {
-        "format": "short",
-        "logBase": 1,
-        "show": true
-      },
-      "yBucketBound": "auto"
+      "title": "Testdata heatmap",
+      "type": "table"
     },
     {
       "datasource": {
@@ -370,6 +362,60 @@
       "type": "heatmap-new"
     },
     {
+      "cards": {},
+      "color": {
+        "cardColor": "#b4ff00",
+        "colorScale": "sqrt",
+        "colorScheme": "interpolateSpectral",
+        "exponent": 0.5,
+        "mode": "spectrum"
+      },
+      "dataFormat": "tsbuckets",
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 13,
+        "x": 11,
+        "y": 20
+      },
+      "heatmap": {},
+      "hideZeroBuckets": false,
+      "highlightCards": true,
+      "id": 6,
+      "legend": {
+        "show": false
+      },
+      "reverseYBuckets": false,
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 8,
+          "refId": "A"
+        }
+      ],
+      "title": "Flot \"time series buckets\" format",
+      "tooltip": {
+        "show": true,
+        "showHistogram": true
+      },
+      "type": "heatmap",
+      "xAxis": {
+        "show": true
+      },
+      "yAxis": {
+        "format": "short",
+        "logBase": 1,
+        "show": true
+      },
+      "yBucketBound": "auto"
+    },
+    {
       "datasource": {
         "type": "datasource",
         "uid": "-- Dashboard --"
@@ -393,7 +439,7 @@
         "h": 8,
         "w": 13,
         "x": 11,
-        "y": 14
+        "y": 27
       },
       "id": 10,
       "options": {
