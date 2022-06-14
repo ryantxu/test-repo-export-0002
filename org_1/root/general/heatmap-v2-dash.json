@@ -145,9 +145,9 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 13,
+        "h": 15,
         "w": 11,
-        "x": 13,
+        "x": 11,
         "y": 0
       },
       "id": 12,
@@ -162,6 +162,91 @@
       },
       "title": "Panel Title",
       "type": "debug"
+    },
+    {
+      "datasource": {
+        "type": "datasource",
+        "uid": "-- Dashboard --"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "scaleDistribution": {
+              "type": "linear"
+            }
+          },
+          "unit": "areaF2"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 11,
+        "x": 0,
+        "y": 7
+      },
+      "id": 9,
+      "options": {
+        "calculate": false,
+        "cellGap": 3,
+        "cellPadding": 0,
+        "cellRadius": 0,
+        "color": {
+          "exponent": 0.5,
+          "fill": "dark-orange",
+          "mode": "scheme",
+          "scale": "exponential",
+          "scheme": "Inferno",
+          "steps": 256
+        },
+        "exemplars": {
+          "color": "rgba(255,0,255,0.7)"
+        },
+        "filterValues": {
+          "le": 1e-9
+        },
+        "heatmap": {},
+        "hideThreshold": 1e-9,
+        "legend": {
+          "calcs": [],
+          "displayMode": "hidden",
+          "placement": "bottom",
+          "show": true
+        },
+        "rowsFrame": {
+          "layout": "auto"
+        },
+        "showValue": "never",
+        "source": "calculate",
+        "tooltip": {
+          "show": true,
+          "yHistogram": true
+        },
+        "yAxis": {
+          "axisPlacement": "left",
+          "reverse": false
+        },
+        "yAxisLabels": "auto",
+        "yAxisReverse": false
+      },
+      "pluginVersion": "9.0.0-pre",
+      "targets": [
+        {
+          "datasource": {
+            "type": "datasource",
+            "uid": "-- Dashboard --"
+          },
+          "panelId": 2,
+          "refId": "A"
+        }
+      ],
+      "title": "new heatmap",
+      "type": "heatmap-new"
     },
     {
       "cards": {},
@@ -181,7 +266,7 @@
         "h": 7,
         "w": 11,
         "x": 0,
-        "y": 7
+        "y": 15
       },
       "heatmap": {},
       "hideZeroBuckets": false,
@@ -253,7 +338,7 @@
         "h": 7,
         "w": 13,
         "x": 11,
-        "y": 13
+        "y": 15
       },
       "id": 8,
       "options": {
@@ -277,91 +362,6 @@
       "type": "table"
     },
     {
-      "datasource": {
-        "type": "datasource",
-        "uid": "-- Dashboard --"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "scaleDistribution": {
-              "type": "linear"
-            }
-          },
-          "unit": "areaF2"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 11,
-        "x": 0,
-        "y": 14
-      },
-      "id": 9,
-      "options": {
-        "calculate": false,
-        "cellGap": 3,
-        "cellPadding": 0,
-        "cellRadius": 0,
-        "color": {
-          "exponent": 0.5,
-          "fill": "dark-orange",
-          "mode": "scheme",
-          "scale": "exponential",
-          "scheme": "Inferno",
-          "steps": 256
-        },
-        "exemplars": {
-          "color": "rgba(255,0,255,0.7)"
-        },
-        "filterValues": {
-          "le": 1e-9
-        },
-        "heatmap": {},
-        "hideThreshold": 1e-9,
-        "legend": {
-          "calcs": [],
-          "displayMode": "hidden",
-          "placement": "bottom",
-          "show": true
-        },
-        "rowsFrame": {
-          "layout": "auto"
-        },
-        "showValue": "never",
-        "source": "calculate",
-        "tooltip": {
-          "show": true,
-          "yHistogram": true
-        },
-        "yAxis": {
-          "axisPlacement": "left",
-          "reverse": false
-        },
-        "yAxisLabels": "auto",
-        "yAxisReverse": false
-      },
-      "pluginVersion": "9.0.0-pre",
-      "targets": [
-        {
-          "datasource": {
-            "type": "datasource",
-            "uid": "-- Dashboard --"
-          },
-          "panelId": 2,
-          "refId": "A"
-        }
-      ],
-      "title": "new heatmap",
-      "type": "heatmap-new"
-    },
-    {
       "cards": {},
       "color": {
         "cardColor": "#b4ff00",
@@ -379,7 +379,7 @@
         "h": 7,
         "w": 13,
         "x": 11,
-        "y": 20
+        "y": 22
       },
       "heatmap": {},
       "hideZeroBuckets": false,
@@ -439,7 +439,7 @@
         "h": 8,
         "w": 13,
         "x": 11,
-        "y": 27
+        "y": 29
       },
       "id": 10,
       "options": {
