@@ -28,24 +28,18 @@
   "liveNow": false,
   "panels": [
     {
+      "cards": {},
+      "color": {
+        "cardColor": "#b4ff00",
+        "colorScale": "sqrt",
+        "colorScheme": "interpolatePurples",
+        "exponent": 0.5,
+        "mode": "spectrum"
+      },
+      "dataFormat": "timeseries",
       "datasource": {
         "type": "testdata",
         "uid": "PD8C576611E62080A"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "scaleDistribution": {
-              "type": "linear"
-            }
-          }
-        },
-        "overrides": []
       },
       "gridPos": {
         "h": 8,
@@ -53,7 +47,13 @@
         "x": 0,
         "y": 0
       },
+      "heatmap": {},
+      "hideZeroBuckets": false,
+      "highlightCards": true,
       "id": 7,
+      "legend": {
+        "show": false
+      },
       "options": {
         "bucketFrame": {
           "layout": "auto"
@@ -92,9 +92,25 @@
           "reverse": false
         }
       },
-      "pluginVersion": "8.5.0-pre",
+      "pluginVersion": "9.0.0-pre",
+      "reverseYBuckets": false,
       "title": "Panel Title",
-      "type": "heatmap"
+      "tooltip": {
+        "show": true,
+        "showHistogram": false
+      },
+      "tooltipDecimals": 2,
+      "type": "heatmap",
+      "xAxis": {
+        "show": true
+      },
+      "yAxis": {
+        "decimals": 3,
+        "format": "areaMI2",
+        "logBase": 1,
+        "show": true
+      },
+      "yBucketBound": "auto"
     },
     {
       "datasource": {
@@ -195,21 +211,6 @@
       "datasource": {
         "type": "testdata",
         "uid": "PD8C576611E62080A"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "scaleDistribution": {
-              "type": "linear"
-            }
-          }
-        },
-        "overrides": []
       },
       "gridPos": {
         "h": 9,
@@ -414,7 +415,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 37,
+  "schemaVersion": 36,
   "style": "dark",
   "tags": [],
   "templating": {
