@@ -3,10 +3,7 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": {
-          "type": "datasource",
-          "uid": "grafana"
-        },
+        "datasource": "-- Grafana --",
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -22,27 +19,15 @@
     ]
   },
   "editable": true,
-  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "continuous-GrYlRd"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
           },
           "mappings": [],
           "thresholds": {
@@ -70,7 +55,6 @@
       "options": {
         "basemap": {
           "config": {},
-          "name": "Layer 0",
           "type": "default"
         },
         "controls": {
@@ -102,7 +86,6 @@
               "lookup": "State",
               "mode": "auto"
             },
-            "name": "Layer 1",
             "type": "markers"
           }
         ],
@@ -114,7 +97,6 @@
           "zoom": 3.98
         }
       },
-      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
           "csvFileName": "flight_info_by_state.csv",
@@ -126,21 +108,10 @@
       "type": "geomap"
     },
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "thresholds"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
           },
           "mappings": [],
           "thresholds": {
@@ -172,7 +143,6 @@
       "options": {
         "basemap": {
           "config": {},
-          "name": "Layer 0",
           "type": "default"
         },
         "controls": {
@@ -204,7 +174,6 @@
               "lookup": "State",
               "mode": "auto"
             },
-            "name": "Layer 1",
             "type": "markers"
           }
         ],
@@ -216,7 +185,6 @@
           "zoom": 3.98
         }
       },
-      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
           "csvFileName": "flight_info_by_state.csv",
@@ -228,21 +196,10 @@
       "type": "geomap"
     },
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "continuous-BlYlRd"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
           },
           "mappings": [],
           "thresholds": {
@@ -270,7 +227,6 @@
       "options": {
         "basemap": {
           "config": {},
-          "name": "Layer 0",
           "type": "default"
         },
         "controls": {
@@ -297,7 +253,6 @@
               "lookup": "State",
               "mode": "auto"
             },
-            "name": "Layer 1",
             "type": "heatmap"
           }
         ],
@@ -309,7 +264,6 @@
           "zoom": 4.15
         }
       },
-      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
           "csvFileName": "flight_info_by_state.csv",
@@ -322,21 +276,10 @@
       "type": "geomap"
     },
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
             "mode": "continuous-GrYlRd"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
           },
           "mappings": [],
           "thresholds": {
@@ -366,7 +309,6 @@
           "config": {
             "server": "world-imagery"
           },
-          "name": "Layer 0",
           "type": "esri-xyz"
         },
         "controls": {
@@ -397,7 +339,6 @@
               "lookup": "State",
               "mode": "auto"
             },
-            "name": "Layer 1",
             "type": "markers"
           }
         ],
@@ -409,7 +350,6 @@
           "zoom": 3.83
         }
       },
-      "pluginVersion": "9.0.0-pre",
       "targets": [
         {
           "csvFileName": "flight_info_by_state.csv",
@@ -422,7 +362,7 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 36,
+  "schemaVersion": 33,
   "style": "dark",
   "tags": [
     "gdev",
@@ -449,6 +389,5 @@
     ]
   },
   "timezone": "",
-  "title": "Panel Tests - Geomap",
-  "weekStart": ""
+  "title": "Panel Tests - Geomap"
 }
