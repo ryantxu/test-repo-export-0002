@@ -3,7 +3,10 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": "-- Grafana --",
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -19,10 +22,16 @@
     ]
   },
   "editable": true,
+  "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
   "links": [],
+  "liveNow": false,
   "panels": [
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -30,7 +39,8 @@
           },
           "custom": {
             "fillOpacity": 70,
-            "lineWidth": 1
+            "lineWidth": 1,
+            "spanNulls": false
           },
           "mappings": [],
           "thresholds": {
@@ -200,6 +210,10 @@
       "type": "state-timeline"
     },
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -207,7 +221,8 @@
           },
           "custom": {
             "fillOpacity": 70,
-            "lineWidth": 1
+            "lineWidth": 1,
+            "spanNulls": false
           },
           "mappings": [],
           "thresholds": {
@@ -272,6 +287,10 @@
       "type": "state-timeline"
     },
     {
+      "datasource": {
+        "type": "testdata",
+        "uid": "PD8C576611E62080A"
+      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -360,7 +379,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 33,
+  "schemaVersion": 36,
   "style": "dark",
   "tags": [
     "gdev",
@@ -376,5 +395,6 @@
   },
   "timepicker": {},
   "timezone": "utc",
-  "title": "Timeline Modes"
+  "title": "Timeline Modes",
+  "weekStart": ""
 }
