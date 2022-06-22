@@ -3,10 +3,7 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": {
-          "type": "datasource",
-          "uid": "grafana"
-        },
+        "datasource": "-- Grafana --",
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -24,16 +21,12 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "iteration": 1652465607869,
+  "iteration": 1640181157128,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "collapsed": false,
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -43,7 +36,7 @@
       "id": 2,
       "panels": [],
       "repeat": "row",
-      "title": "Row $row",
+      "title": "Row title $row",
       "type": "row"
     },
     {
@@ -118,7 +111,7 @@
           "sort": "none"
         }
       },
-      "title": "Row $row non-repeating panel",
+      "title": "Panel Title",
       "type": "timeseries"
     },
     {
@@ -195,11 +188,11 @@
       },
       "repeat": "horizontal",
       "repeatDirection": "h",
-      "title": "Row $row repeating panel $horizontal",
+      "title": "Horizontal repeating $horizontal",
       "type": "timeseries"
     }
   ],
-  "schemaVersion": 36,
+  "schemaVersion": 34,
   "style": "dark",
   "tags": [],
   "templating": {
