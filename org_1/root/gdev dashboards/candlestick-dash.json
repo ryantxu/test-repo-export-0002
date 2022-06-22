@@ -3,10 +3,7 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": {
-          "type": "datasource",
-          "uid": "grafana"
-        },
+        "datasource": "-- Grafana --",
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -28,10 +25,6 @@
   "liveNow": false,
   "panels": [
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -176,10 +169,6 @@
       "type": "candlestick"
     },
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -265,10 +254,6 @@
       "type": "candlestick"
     },
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -354,10 +339,6 @@
       "type": "candlestick"
     },
     {
-      "datasource": {
-        "type": "testdata",
-        "uid": "PD8C576611E62080A"
-      },
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -477,7 +458,7 @@
     }
   ],
   "refresh": false,
-  "schemaVersion": 36,
+  "schemaVersion": 33,
   "style": "dark",
   "tags": [
     "gdev",
