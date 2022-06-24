@@ -1,0 +1,12 @@
+{
+  "theme": "dark",
+  "locale": "",
+  "timezone": "America/Los_Angeles",
+  "week_start": "sunday",
+  "navbar": {
+    "savedItems": null
+  },
+  "queryHistory": {
+    "homeTab": ""
+  }
+}
