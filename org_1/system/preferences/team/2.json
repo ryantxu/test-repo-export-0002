@@ -1,0 +1,12 @@
+{
+  "theme": "dark",
+  "locale": "",
+  "timezone": "utc",
+  "week_start": "monday",
+  "navbar": {
+    "savedItems": null
+  },
+  "queryHistory": {
+    "homeTab": ""
+  }
+}
