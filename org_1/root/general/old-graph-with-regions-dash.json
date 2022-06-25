@@ -82,8 +82,12 @@
             "type": "testdata",
             "uid": "PD8C576611E62080A"
           },
+          "max": 100,
+          "min": 20,
+          "noise": 5,
           "refId": "A",
-          "scenarioId": "random_walk"
+          "scenarioId": "random_walk",
+          "spread": 10
         }
       ],
       "thresholds": [
@@ -157,6 +161,7 @@
           "$$hashKey": "object:351",
           "format": "short",
           "logBase": 1,
+          "max": "100",
           "show": true
         },
         {
@@ -247,7 +252,6 @@
       "type": "timeseries"
     }
   ],
-  "refresh": "",
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
