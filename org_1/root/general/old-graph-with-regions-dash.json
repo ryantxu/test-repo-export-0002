@@ -45,8 +45,8 @@
       "fill": 0,
       "fillGradient": 6,
       "gridPos": {
-        "h": 15,
-        "w": 12,
+        "h": 9,
+        "w": 24,
         "x": 0,
         "y": 0
       },
@@ -86,7 +86,26 @@
           "scenarioId": "random_walk"
         }
       ],
-      "thresholds": [],
+      "thresholds": [
+        {
+          "$$hashKey": "object:469",
+          "colorMode": "critical",
+          "fill": true,
+          "line": true,
+          "op": "gt",
+          "value": 91,
+          "yaxis": "left"
+        },
+        {
+          "$$hashKey": "object:475",
+          "colorMode": "warning",
+          "fill": true,
+          "line": true,
+          "op": "gt",
+          "value": 88,
+          "yaxis": "left"
+        }
+      ],
       "timeRegions": [
         {
           "$$hashKey": "object:111",
@@ -135,11 +154,13 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:351",
           "format": "short",
           "logBase": 1,
           "show": true
         },
         {
+          "$$hashKey": "object:352",
           "format": "short",
           "logBase": 1,
           "show": true
@@ -208,7 +229,7 @@
         "h": 9,
         "w": 12,
         "x": 0,
-        "y": 15
+        "y": 9
       },
       "id": 2,
       "options": {
@@ -226,6 +247,7 @@
       "type": "timeseries"
     }
   ],
+  "refresh": "",
   "schemaVersion": 36,
   "style": "dark",
   "tags": [],
