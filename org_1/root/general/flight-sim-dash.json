@@ -62,8 +62,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 12,
+        "h": 15,
+        "w": 16,
         "x": 0,
         "y": 0
       },
@@ -86,9 +86,9 @@
             "config": {
               "style": {
                 "color": {
-                  "fixed": "dark-green"
+                  "fixed": "#8F3BB8"
                 },
-                "lineWidth": 2,
+                "lineWidth": 5,
                 "opacity": 1,
                 "rotation": {
                   "fixed": 0,
