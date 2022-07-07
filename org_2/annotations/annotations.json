@@ -1,0 +1,81 @@
+{
+  "schema": {
+    "fields": [
+      {
+        "name": "ID",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "DashboardID",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "PanelID",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "Epoch",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "EpochEnd",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time",
+          "nullable": true
+        }
+      },
+      {
+        "name": "Text",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "Tags",
+        "type": "other",
+        "typeInfo": {
+          "frame": "json.RawMessage"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        
+      ],
+      [
+        
+      ],
+      [
+        
+      ],
+      [
+        
+      ],
+      [
+        
+      ],
+      [
+        
+      ],
+      [
+        
+      ]
+    ]
+  }
+}
