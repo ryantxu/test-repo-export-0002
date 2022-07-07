@@ -1,0 +1,81 @@
+{
+  "schema": {
+    "fields": [
+      {
+        "name": "ID",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "DashboardID",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "PanelID",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "Epoch",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "EpochEnd",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time",
+          "nullable": true
+        }
+      },
+      {
+        "name": "Text",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "Tags",
+        "type": "other",
+        "typeInfo": {
+          "frame": "json.RawMessage"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        29,20,27,26,28,23,25,24,22,21,30,31,33,32,34,35,37,36,38,39,40,50,95,643
+      ],
+      [
+        482,0,482,482,482,482,482,482,482,482,493,493,493,493,493,493,493,493,493,493,493,0,493,1328
+      ],
+      [
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,5
+      ],
+      [
+        1568415806721,1621392680738,1626696232573,1626720854062,1626745358507,1626761998198,1626762023212,1626762047531,1626762263328,1626783110416,1627070213525,1627077659478,1627080578275,1627081064389,1627085220719,1627087410776,1627088197166,1627088538295,1627139880575,1627145015756,1627146819960,1636687959828,1652910512482,1655909542700
+      ],
+      [
+        null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1652911251846,null
+      ],
+      [
+        "two years ago","asgasgd","agsdgasdg","asgsadga","asgadsg","aasgadsg","sadgasgd","agadsg","asasdgasdg","hello","aaaaa","aaaaaaaaa","asgsgasdg","aaaa","BBBBB","asgasdgsagd","asgsadga","hello","aaaa","aaaa","zzzzz","something here","helo","annoagasgsa"
+      ],
+      [
+        ["old"],[],[],[],[],["sagsa"],[],[],["bbbb"],["aaa","bbbb"],["bbbb","sagsa"],["bbbb"],["old"],["old"],[],[],["sagsa"],["aaa","old"],["bbbb"],["sagsa"],["sagsa"],[],[],["bbbb"]
+      ]
+    ]
+  }
+}
