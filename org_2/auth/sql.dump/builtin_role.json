@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "name": "builtin_role",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "role_id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        43,44,45
+      ],
+      [
+        "Editor","Viewer","Admin"
+      ],
+      [
+        59,60,62
+      ],
+      [
+        1655960616000,1655960616000,1656532034000
+      ],
+      [
+        1655960616000,1655960616000,1656532034000
+      ]
+    ]
+  }
+}

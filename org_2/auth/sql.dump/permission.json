@@ -1,0 +1,71 @@
+{
+  "schema": {
+    "name": "permission",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "role_id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "action",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "scope",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        4057,4058,4059,4060,4061,4062,4063,4064,4065,4145,4146,4147
+      ],
+      [
+        58,58,58,58,58,59,59,59,60,62,62,62
+      ],
+      [
+        "dashboards:read","dashboards:write","dashboards:delete","dashboards.permissions:read","dashboards.permissions:write","dashboards:read","dashboards:write","dashboards:delete","dashboards:read","dashboards:delete","dashboards:read","dashboards:write"
+      ],
+      [
+        "dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk","dashboards:uid:AA8KIdqnk"
+      ],
+      [
+        1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1656532034000,1656532034000,1656532034000
+      ],
+      [
+        1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1655960616000,1656532034000,1656532034000,1656532034000
+      ]
+    ]
+  }
+}

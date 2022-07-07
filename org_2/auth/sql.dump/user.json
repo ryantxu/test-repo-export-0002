@@ -1,0 +1,171 @@
+{
+  "schema": {
+    "name": "user",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "login",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "rands",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "password",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "email_verified",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "salt",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "company",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "last_seen_at",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "is_disabled",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "is_admin",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "is_service_account",
+        "type": "boolean",
+        "typeInfo": {
+          "frame": "bool"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        1,7
+      ],
+      [
+        "","dashboard-previews-crawler-org-2"
+      ],
+      [
+        "admin","sa-dashboard-previews-crawler-org-2"
+      ],
+      [
+        "admin@localhost","sa-dashboard-previews-crawler-org-2"
+      ],
+      [
+        "Admin","Viewer"
+      ],
+      [
+        "XMGQoLu7oL","AIVV2v971b"
+      ],
+      [
+        "\u003crole\u003e","\u003crole\u003e"
+      ],
+      [
+        0,0
+      ],
+      [
+        "\u003crole\u003e","\u003crole\u003e"
+      ],
+      [
+        "",""
+      ],
+      [
+        1657157090000,1340999234000
+      ],
+      [
+        0,0
+      ],
+      [
+        1,0
+      ],
+      [
+        false,true
+      ],
+      [
+        1601921851000,1656532034000
+      ],
+      [
+        1601921851000,1656532034000
+      ]
+    ]
+  }
+}

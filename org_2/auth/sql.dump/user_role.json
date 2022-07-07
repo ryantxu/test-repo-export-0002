@@ -1,0 +1,51 @@
+{
+  "schema": {
+    "name": "user_role",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "role_id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "user_id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        2,7,8,9
+      ],
+      [
+        58,50,22,53
+      ],
+      [
+        1,7,7,7
+      ],
+      [
+        1655960616000,1656532034000,1656532034000,1656532034000
+      ]
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": {
+    "name": "role",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "uid",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "display_name",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "group_name",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "hidden",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        58,59,60,62
+      ],
+      [
+        "managed:users:1:permissions","managed:builtins:editor:permissions","managed:builtins:viewer:permissions","managed:builtins:admin:permissions"
+      ],
+      [
+        "","","",""
+      ],
+      [
+        "U0UKSdq7k","XA8KIO37z","rA8FIdqnk","RAzOHX37k"
+      ],
+      [
+        "","","",""
+      ],
+      [
+        "","","",""
+      ],
+      [
+        0,0,0,0
+      ],
+      [
+        1655960616000,1655960616000,1655960616000,1656532034000
+      ],
+      [
+        1655960616000,1655960616000,1655960616000,1656532034000
+      ]
+    ]
+  }
+}
