@@ -1,0 +1,71 @@
+{
+  "schema": {
+    "name": "api_key",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "key",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        1,2,3,4,5,6,7,8
+      ],
+      [
+        "xxx","aaaa","bbbb","publish","yyy","tttt","test","ALL ADMIN"
+      ],
+      [
+        "Admin","Admin","Admin","Admin","Viewer","Admin","Admin","Admin"
+      ],
+      [
+        "49593e5f36cf9de460b8d5513d1de498312642e0ef1071058fc5c3c3f3f2da9d275981afc71de51edf47bf3bff44687ebd64","8d5ca67d01a9987fe6c7c3ec35e2758f003f2b3579d0b1bf078246e94b31326a77f20d86adbff8169fe008956a5559c8d894","268523edd5d6ec5437f2144d5af6ab5e1608e61addfacac58a1ba7f0eee628c852b0317a2beab7af76e1cbe9adf6f4e6229c","264f2cfc1fdc45ce8401b58178f3c5e08080f4ba5f7c75b5c5a3d674e8717283aebd6a7b5f47fc2088482961e3e35fb74200","452c4e55d4664f53540cb8c4ceea1d1e2c9f3cf9597f746ef0b8a835efafc817a75d38b34cf65c816ff0014bcd098cf78843","038f23a631d42d72f839c2829f81cf5ea7e1524bc25bf0032024de84f4328b965fed45494d030cb0f291fd4a2be29caeda3f","8544c747ded709c427dd2f4d675b43d8f7a0501b30188e33dd828b1cb7a4f1be2ee7c5ad485b887481f11228e6097f172243","b81bc66c3ebf06cfbb37973e4cf6e8938410c1af638c450aa85c55930c8f8f71cfaf333ad9b6ae8f52590cc2ec31e0fa9140"
+      ],
+      [
+        1601922564000,1611682408000,1617386494000,1619632946000,1638309449000,1638309831000,1650473132000,1650608229000
+      ],
+      [
+        1601922564000,1611682408000,1617386494000,1619632946000,1638309449000,1638309831000,1650473132000,1650608229000
+      ]
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": {
+    "name": "team_member",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "team_id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "user_id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "external",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "permission",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        1,2,3
+      ],
+      [
+        1,2,2
+      ],
+      [
+        1,1,5
+      ],
+      [
+        0,0,0
+      ],
+      [
+        4,4,0
+      ],
+      [
+        1656109991000,1656110115000,1656110126000
+      ],
+      [
+        1656109991000,1656110115000,1656110126000
+      ]
+    ]
+  }
+}

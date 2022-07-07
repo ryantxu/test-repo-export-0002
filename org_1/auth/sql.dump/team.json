@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "name": "team",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "created",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        1,2
+      ],
+      [
+        "TeamA","TeamB"
+      ],
+      [
+        "teamA@xyz.org","bbbb@xyz.org"
+      ],
+      [
+        1656109991000,1656110115000
+      ],
+      [
+        1656109991000,1656110185000
+      ]
+    ]
+  }
+}

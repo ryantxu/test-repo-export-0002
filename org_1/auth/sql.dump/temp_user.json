@@ -1,0 +1,131 @@
+{
+  "schema": {
+    "name": "temp_user",
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "invited_by_user_id",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "code",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "email_sent_on",
+        "type": "time",
+        "typeInfo": {
+          "frame": "time.Time"
+        }
+      },
+      {
+        "name": "remote_addr",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "typeInfo": {
+          "frame": "string"
+        }
+      },
+      {
+        "name": "email_sent",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "created",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      },
+      {
+        "name": "updated",
+        "type": "number",
+        "typeInfo": {
+          "frame": "int64"
+        }
+      }
+    ]
+  },
+  "data": {
+    "values": [
+      [
+        1,2
+      ],
+      [
+        "","ryan"
+      ],
+      [
+        "ryan","ryan@grafana.org"
+      ],
+      [
+        "Viewer","Editor"
+      ],
+      [
+        1,1
+      ],
+      [
+        "03SqSZtWYHr2ycwon7mu0DGYrwXBH8","1TfJYj4k4i5gGAMq8xozXA1MCqb1rr"
+      ],
+      [
+        1631306960000,1656110032000
+      ],
+      [
+        "[::1]:60396","[::1]:62853"
+      ],
+      [
+        "Completed","Expired"
+      ],
+      [
+        0,0
+      ],
+      [
+        1631306960,1656110032
+      ],
+      [
+        1631306960,1656196735
+      ]
+    ]
+  }
+}
